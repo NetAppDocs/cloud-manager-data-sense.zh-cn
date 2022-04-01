@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-managing-data-fusion.html 
+keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
+summary: '我们称之为 "Data Fusion " 的功能允许您扫描组织的数据，以确定您的数据库中的唯一标识符是在文件中还是在其他数据库中找到的，这基本上是您自己的 " 个人数据 " 列表，该列表是在云数据感知扫描中标识的。这样，您就可以全面了解潜在敏感数据在所有文件中的位置。' 
+---
+= 使用 Data Fusion 添加个人数据标识符
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+我们称为 _Data Fusion _ 的一项功能允许您扫描组织的数据，以确定您的数据库中的唯一标识符是在文件中还是在其他数据库中找到的，这项功能基本上是您自己创建的 " 个人数据 " 列表，该列表会在云数据感知扫描中标识。这样，您就可以全面了解潜在敏感数据在 _all_ 文件中的位置。
+
+由于您正在扫描自己的数据库，因此无论数据存储使用何种语言，在未来的 Cloud Data sense 扫描中都会使用这些语言来标识数据。
+
+
+NOTE: 只有在选择对数据源执行完整分类扫描后，才可以使用本节所述的功能。已执行仅映射扫描的数据源不会显示文件级详细信息。
+
+
+
+== 从数据库创建自定义个人数据标识符
+
+您可以通过在数据库表中选择特定列来选择 Cloud Data sense 在其扫描中查找的其他标识符。例如，下图显示了如何使用 Data Fusion 扫描卷，分段和数据库，以确定 Oracle 数据库中所有客户 ID 是否存在。
+
+image:diagram_compliance_data_fusion.png["一个图，显示如何将数据库中的内容用作源来标识包含相同数据的文件。"]
+
+如您所见，在两个卷和一个 S3 存储分段中发现了两个唯一的客户 ID 。此外，还将确定数据库表中的任何匹配项。
+
+您必须拥有 link:task-scanning-databases.html#adding-the-database-server["已至少添加一个数据库服务器"^] 在添加数据 Fusion 源之前，请先将数据迁移到云数据感知。
+
+. 在配置页面中，单击源数据所在数据库中的 * 管理 Data Fusion * 。
++
+image:screenshot_compliance_manage_data_fusion.png["选择 Manage Data Fusion 按钮以添加源列的屏幕截图。"]
+
+. 单击下一页的 * 添加 Data Fusion 源 * 。
+. 在 _Add Data Fusion Sources_ 页面中：
++
+.. 从下拉菜单中选择数据库架构。
+.. 输入该模式中的表名称。
+.. 输入包含要使用的唯一标识符的 Column 或 Columns 。
++
+添加多个列时，请在单独的行中输入每个列名称或表视图名称。
+
++
+image:screenshot_compliance_add_data_fusion.png["用于标识数据 Fusion 源的架构，表和列的屏幕截图。"]
+
+
+
+. 单击 * 添加 Data Fusion 源 * 。
++
+Data Fusion 清单页面将显示您为 Cloud Data sense 配置的要扫描的数据库源列。
+
++
+image:screenshot_compliance_data_fusion_list.png["您已使用 Data Fusion 配置的所有数据源引用的屏幕截图。"]
+
+
+
+下次扫描后，结果将在信息板的 " 个人 " 结果部分下以及调查页面的 " 个人数据 " 筛选器中包含此新信息。您添加的每个源列都会在筛选器列表中显示为 "Table.Column" ，例如 `Customs.Customer ID` 。
+
+
+
+== 删除 Data Fusion 源
+
+如果您在某个时刻决定不使用某个 Data Fusion 源扫描文件，则可以从 Data Fusion 清单页面中选择源行，然后单击 * 删除 Data Fusion 源 * 。
+
+image:screenshot_compliance_delete_data_fusion.png["显示如何删除数据 Fusion 源的屏幕截图。"]

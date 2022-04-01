@@ -1,0 +1,179 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-anf.html 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, Azure NetApp Files, data sense 
+summary: 完成几个步骤，开始使用适用于 Azure NetApp Files 的云数据感知。 
+---
+= 开始使用适用于 Azure NetApp Files 的云数据感知
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+完成几个步骤，开始使用适用于 Azure NetApp Files 的云数据感知。
+
+
+
+== 快速入门
+
+按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
+
+[role="quick-margin-para"]
+扫描 Azure NetApp Files 卷之前， https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["必须设置 Cloud Manager 才能发现配置"^]。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["在 Cloud Manager 中部署 Cloud Data sense"^] 如果尚未部署实例。
+
+[role="quick-margin-para"]
+单击 * 合规性 * ，选择 * 配置 * 选项卡，然后为特定工作环境中的卷激活合规性扫描。
+
+[role="quick-margin-para"]
+启用 Cloud Data sense 后，请确保它可以访问所有卷。
+
+* 云数据感知实例需要与每个 Azure NetApp Files 子网建立网络连接。
+* 确保这些端口对 Data sense 实例开放：
++
+** 对于 NFS —端口 111 和 2049 。
+** 对于 CIFS —端口 139 和 445 。
+
+
+* NFS 卷导出策略必须允许从 Data sense 实例进行访问。
+* Data sense 需要 Active Directory 凭据才能扫描 CIFS 卷。
++
+单击 * 合规性 * > * 配置 * > * 编辑 CIFS 凭据 * 并提供凭据。
+
+
+
+[role="quick-margin-para"]
+选择或取消选择要扫描的卷， Cloud Data sense 将开始或停止扫描这些卷。
+
+
+
+== 正在发现要扫描的 Azure NetApp Files 系统
+
+如果您要扫描的 Azure NetApp Files 系统尚未作为工作环境在 Cloud Manager 中，您可以此时将其添加到画布中。
+
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["了解如何在 Cloud Manager 中发现 Azure NetApp Files 系统"^]。
+
+
+
+== 部署 Cloud Data sense 实例
+
+link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"^] 如果尚未部署实例。
+
+扫描 Azure NetApp Files 卷时，必须在云中部署数据感知，并且数据感知必须与要扫描的卷部署在同一区域。
+
+* 注意： * 扫描 Azure NetApp Files 卷时，当前不支持在内部位置部署云数据感知。
+
+只要实例具有 Internet 连接，就会自动升级到 Data sense 软件。
+
+
+
+== 在您的工作环境中实现云数据感知
+
+您可以在 Azure NetApp Files 卷上启用云数据感知。
+
+. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后选择 * 配置 * 选项卡。
++
+image:screenshot_cloud_compliance_anf_scan_config.png["部署 Cloud Data sense 实例后立即显示配置选项卡的屏幕截图。"]
+
+. 选择要如何扫描每个工作环境中的卷。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["了解映射和分类扫描"]：
++
+** 要映射所有卷，请单击 * 映射所有卷 * 。
+** 要映射所有卷并对其进行分类，请单击 * 映射并分类所有卷 * 。
+** 要自定义每个卷的扫描，请单击 * 或选择每个卷的扫描类型 * ，然后选择要映射和 / 或分类的卷。
++
+请参见 <<Enabling and disabling compliance scans on volumes,在卷上启用和禁用合规性扫描>> 了解详细信息。
+
+
+
+. 在确认对话框中，单击 * 批准 * 以使 Data sense 开始扫描卷。
+
+
+Cloud Data sense 开始扫描您在工作环境中选择的卷。一旦 Cloud Data sense 完成初始扫描， " 合规性 " 信息板将显示结果。所需时间取决于数据量—可能需要几分钟或几小时。
+
+
+
+== 验证 Cloud Data sense 是否有权访问卷
+
+通过检查网络，安全组和导出策略，确保 Cloud Data sense 可以访问卷。您需要为 Data sense 提供 CIFS 凭据，以便它可以访问 CIFS 卷。
+
+.步骤
+. 确保云数据感知实例与包含 Azure NetApp Files 卷的每个网络之间存在网络连接。
++
+
+NOTE: 对于 Azure NetApp Files ， Cloud Data sense 只能扫描与 Cloud Manager 位于同一区域的卷。
+
+. 确保以下端口对 Data sense 实例开放：
++
+** 对于 NFS —端口 111 和 2049 。
+** 对于 CIFS —端口 139 和 445 。
+
+
+. 确保 NFS 卷导出策略包含 Data sense 实例的 IP 地址，以便它可以访问每个卷上的数据。
+. 如果使用 CIFS ，请为 Data sense 提供 Active Directory 凭据，以便它可以扫描 CIFS 卷。
++
+.. 在 Cloud Manager 顶部，单击 * 数据感知 * 。
+.. 单击 * 配置 * 选项卡。
++
+image:screenshot_cifs_credentials.gif["合规性选项卡的屏幕截图，其中显示了内容窗格右上角的扫描状态按钮。"]
+
+.. 对于每个工作环境，单击 * 编辑 CIFS 凭据 * ，然后输入 Data sense 访问系统上 CIFS 卷所需的用户名和密码。
++
+这些凭据可以是只读的，但提供管理员凭据可确保 Data sense 可以读取任何需要提升权限的数据。这些凭据存储在 Cloud Data sense 实例上。
+
++
+输入凭据后，您应看到一条消息，指出所有 CIFS 卷均已成功通过身份验证。
+
++
+image:screenshot_cifs_status.gif["屏幕截图显示了配置页面以及已成功提供 CIFS 凭据的一个 Cloud Volumes ONTAP 系统。"]
+
+
+
+. 在 _Configuration_ 页面上，单击 * 查看详细信息 * 以查看每个 CIFS 和 NFS 卷的状态并更正任何错误。
++
+例如，下图显示了四个卷；其中一个卷由于 Data sense 实例与卷之间的网络连接问题而无法扫描。
+
++
+image:screenshot_compliance_volume_details.gif["扫描配置中 \" 查看详细信息 \" 页面的屏幕截图，其中显示了四个卷；其中一个卷由于 Data sense 与卷之间的网络连接而未进行扫描。"]
+
+
+
+
+
+== 在卷上启用和禁用合规性扫描
+
+您可以随时从 " 配置 " 页面在工作环境中启动或停止仅映射扫描或映射和分类扫描。您也可以从仅映射扫描更改为映射和分类扫描，反之亦然。建议您扫描所有卷。
+
+image:screenshot_volume_compliance_selection.png["配置页面的屏幕截图，您可以在其中启用或禁用单个卷的扫描。"]
+
+[cols="45,45"]
+|===
+| 收件人： | 执行以下操作： 
+
+
+| 在卷上启用仅映射扫描 | 在卷区域中，单击 * 映射 * 
+
+
+| 对卷启用完全扫描 | 在卷区域中，单击 * 映射和分类 * 
+
+
+| 禁用对卷的扫描 | 在卷区域中，单击 * 关闭 * 
+
+
+|  |  
+
+
+| 在所有卷上启用仅映射扫描 | 在标题区域中，单击 * 映射 * 
+
+
+| 对所有卷启用完全扫描 | 在标题区域中，单击 * 映射和分类 * 
+
+
+| 禁用对所有卷的扫描 | 在标题区域中，单击 * 关闭 * 
+|===
+
+NOTE: 只有在标题区域中设置了 * 映射 * 或 * 映射和分类 * 设置后，才会自动扫描添加到工作环境中的新卷。如果在标题区域中设置为 * 自定义 * 或 * 关闭 * ，则需要在工作环境中添加的每个新卷上激活映射和 / 或完全扫描。

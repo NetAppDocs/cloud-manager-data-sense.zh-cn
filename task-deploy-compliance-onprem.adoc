@@ -1,0 +1,318 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-compliance-onprem.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
+summary: 完成以下几个步骤，在您的网络或云中可访问 Internet 的 Linux 主机上部署 Cloud Data sense 。 
+---
+= 在可访问 Internet 的 Linux 主机上部署 Cloud Data sense
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+完成以下几个步骤，在您的网络或云中可访问 Internet 的 Linux 主机上部署 Cloud Data sense 。
+
+如果您希望使用也位于内部的数据感知实例扫描内部 ONTAP 系统，则内部安装可能是一个不错的选择，但这并不是一项要求。无论您选择哪种安装方法，软件的工作方式都完全相同。
+
+请注意，您也可以 link:task-deploy-compliance-dark-site.html["在无法访问 Internet 的内部站点中部署 Data sense"] 适用于完全安全的站点。
+
+
+
+== 快速入门
+
+按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
+
+[role="quick-margin-para"]
+如果您还没有 Connector ，请立即创建一个 Connector 。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中创建连接器"^]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中创建连接器"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在 GCP 中创建连接器"^]。
+
+[role="quick-margin-para"]
+您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在内部部署 Connector"^] 在网络或云中的 Linux 主机上。
+
+[role="quick-margin-para"]
+确保您的环境可以满足前提条件。其中包括实例的出站 Internet 访问，通过端口 443 在 Connector 和 Cloud Data sense 之间建立连接等。 <<Verify Cloud Manager and Data Sense prerequisites,请参见完整列表>>。
+
+[role="quick-margin-para"]
+您还需要满足的 Linux 系统 <<Prepare the Linux host system,以下要求>>。
+
+[role="quick-margin-para"]
+从 NetApp 支持站点下载 Cloud Data sense 软件，并将安装程序文件复制到您计划使用的 Linux 主机。然后启动安装向导并按照提示部署 Data sense 实例。
+
+[role="quick-margin-para"]
+Cloud Manager 中 Cloud Data 感知扫描的前 1 TB 数据是免费的。要在这之后继续扫描数据，需要订阅云提供商 Marketplace 或获得 NetApp 的 BYOL 许可证。
+
+
+
+== 创建连接器
+
+如果您还没有 Connector ，请在云提供商中创建一个 Connector 。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中创建连接器"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中创建连接器"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在 GCP 中创建连接器"^]。在大多数情况下，您可能会在尝试激活 Cloud Data sense 之前设置 Connector ，因为大多数情况下都是这样 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Cloud Manager 功能需要使用 Connector"]但在某些情况下，您需要立即设置一个。
+
+在某些情况下，您必须使用部署在特定云提供商中的 Connector ：
+
+* 在 AWS 中的 Cloud Volumes ONTAP ，适用于 ONTAP 的 Amazon FSx 或 AWS S3 存储分段中扫描数据时，您可以使用 AWS 中的连接器。
+* 在 Azure 或 Azure NetApp Files 中的 Cloud Volumes ONTAP 中扫描数据时，您可以使用 Azure 中的连接器。
+* 在 GCP 的 Cloud Volumes ONTAP 中扫描数据时，您可以在 GCP 中使用连接器。
+
+
+内部 ONTAP 系统，非 NetApp 文件共享，通用 S3 对象存储，数据库， OneDrive 文件夹和 SharePoint 帐户均可使用这些 Cloud Connector 中的任何一种进行扫描。
+
+请注意，您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在内部部署 Connector"^] 在网络或云中的 Linux 主机上。某些计划在内部安装 Data sense 的用户也可以选择在内部安装 Connector 。
+
+如您所见，在某些情况下可能需要使用 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多个连接器"]。
+
+
+NOTE: 如果您计划扫描 Azure NetApp Files 卷，则需要确保将部署在与要扫描的卷相同的区域。
+
+
+
+== 准备 Linux 主机系统
+
+数据感知软件必须在满足特定操作系统要求， RAM 要求，软件要求等要求的主机上运行。
+
+* 操作系统： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版
++
+** 可以使用版本 7.8 ，但 Linux 内核版本必须为 4.14 或更高版本
+** 操作系统必须能够安装 Docker 引擎（例如，根据需要禁用 _firewalld_ 服务）
+
+
+* 磁盘： SSD ， 500 GiB 可在 / ，或上使用
++
+** /opt 上提供 100 GiB
+** /var 上提供 400 GiB
+
+
+* RAM ： 64 GB （必须在主机上禁用交换内存）
+* CPU ： 16 个核心
++
+请注意，您可以在 CPU 较少且 RAM 较少的系统上部署 Data sense ，但使用这些系统时会有一些限制。请参见 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用较小的实例类型"] 了解详细信息。
+
+* Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果未注册，则系统无法在安装期间访问存储库以更新所需的第三方软件。
+* 主机上必须安装以下软件。如果此主机上尚不存在此软件，则安装程序将为您安装此软件：
++
+** Docker 引擎版本 19 或更高版本。 https://docs.docker.com/engine/install/["查看安装说明"^]。
+** Python 3 3.6 或更高版本。 https://www.python.org/downloads/["查看安装说明"^]。
+
+
+
+
+
+
+== 验证 Cloud Manager 和 Data sense 前提条件
+
+在 Linux 系统上部署 Cloud Data sense 之前，请查看以下前提条件，以确保您的配置受支持。
+
+从 Cloud Data sense 启用出站 Internet 访问:: 云数据感知需要出站 Internet 访问。如果虚拟或物理网络使用代理服务器访问 Internet ，请确保 Data sense 实例具有出站 Internet 访问权限，以便与以下端点联系。
++
+--
+[cols="43,57"]
+|===
+| 端点 | 目的 
+
+
+| https://cloudmanager.cloud.netapp.com | 与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。 
+
+
+| https://netapp-cloud-account.auth0.com \https://auth0.com | 与 NetApp Cloud Central 进行通信以实现集中式用户身份验证。 
+
+
+| https://support.compliance.cloudmanager.cloud.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 可用于访问软件映像，清单，模板以及发送日志和指标。 
+
+
+| https://support.compliance.cloudmanager.cloud.netapp.com/ | 使 NetApp 能够从审计记录流化数据。 
+
+
+| https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | 提供安装必备软件包。 
+|===
+--
+确保 Cloud Manager 具有所需权限:: 确保 Cloud Manager 有权为 Cloud Data sense 实例部署资源并创建安全组。您可以在中找到最新的 Cloud Manager 权限 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp 提供的策略"^]。
++
+--
+* 注： * 如果您使用 Cloud Manager 3.9.10 或更高版本在 GCP 中创建了 Connector ，则表示您已设置完毕。如果您使用早期版本创建了 Connector ，则需要将以下权限添加到与 Connector 关联的 GCP 服务帐户，以便将 Cloud Data sense 部署到 GCP 。
+
+[source, json]
+----
+compute.instances.addAccessConfig
+compute.subnetworks.use
+compute.subnetworks.useExternalIp
+----
+--
+确保 Cloud Manager Connector 可以访问 Cloud Data sense:: 确保 Connector 与 Cloud Data sense 实例之间的连接。Connector 的安全组必须允许通过端口 443 与 Data sense 实例之间的入站和出站流量。
++
+--
+通过此连接，可以部署 Data sense 实例，并可在合规性和监管选项卡中查看信息。
+
+确保端口 8080 已打开，以便您可以在 Cloud Manager 中查看安装进度。
+
+--
+确保您可以保持 Cloud Data sense 正常运行:: 云数据感知实例需要保持运行状态才能持续扫描数据。
+确保 Web 浏览器连接到 Cloud Data sense:: 启用 Cloud Data sense 后，请确保用户从连接到 Data sense 实例的主机访问 Cloud Manager 界面。
++
+--
+数据感知实例使用专用 IP 地址来确保索引数据无法通过 Internet 访问。因此，用于访问 Cloud Manager 的 Web 浏览器必须连接到该专用 IP 地址。此连接可以来自与云提供商的直接连接（例如 VPN ），也可以来自与 Data sense 实例位于同一网络中的主机。
+
+--
+
+
+
+
+== 在内部部署 Data sense
+
+对于典型配置，您将在一个主机系统上安装该软件。 <<Single-host installation for typical configurations,请在此处查看这些步骤>>。
+
+对于需要扫描数 PB 数据的大型配置，您可以使用多个主机来提供额外的处理能力。 <<Multi-host installation for large configurations,请在此处查看这些步骤>>。
+
+请参见 <<Prepare the Linux host system,准备 Linux 主机系统>> 和 <<Verify Cloud Manager and Data Sense prerequisites,查看前提条件>> 了解部署 Cloud Data sense 之前的完整要求列表。
+
+只要实例具有 Internet 连接，就会自动升级到 Data sense 软件。
+
+
+NOTE: 如果软件安装在内部环境中，则 Cloud Data sense 当前无法扫描 S3 存储分段， Azure NetApp Files 或 FSX for ONTAP 。在这种情况下，您需要在云和中部署单独的 Connector 和 Data sense 实例 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-switch-between-connectors["在连接器之间切换"^] 不同的数据源。
+
+
+
+=== 典型配置的单主机安装
+
+在单个内部主机上安装 Data sense 软件时，请按照以下步骤进行操作。
+
+.您需要什么？ #8217 ；将需要什么
+* 验证您的 Linux 系统是否满足 <<Prepare the Linux host system,主机要求>>。
+* （可选）验证系统是否已安装两个必备软件包（ Docker 引擎和 Python 3 ）。如果此软件尚未安装在系统上，安装程序将安装此软件。
+* 确保您在 Linux 系统上具有 root 权限。
+* 验证脱机环境是否满足要求 <<Verify Cloud Manager and Data Sense prerequisites,权限和连接>>。
+
+
+.步骤
+. 从下载 Cloud Data sense 软件 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支持站点"^]。您应选择的文件名为 * cc_onprem_installer_< 版本 >.tar.gz* 。
+. 将安装程序文件复制到您计划使用的 Linux 主机（使用 `scp` 或其他方法）。
+. 在 Cloud Manager 中，单击 * 数据感知 * 。
+. 单击 * 激活数据感知 * 。
++
+image:screenshot_cloud_compliance_deploy_start.png["选择用于激活 Cloud Data sense 的按钮的屏幕截图。"]
+
+. 单击 * 激活数据感知 * 以启动内部部署向导。
++
+image:screenshot_cloud_compliance_deploy_onprem.png["选择按钮在内部部署 Cloud Data sense 的屏幕截图。"]
+
+. 在 _Deploy Data sense on premises_ 对话框中，复制提供的命令并将其粘贴到文本文件中，以便稍后使用，然后单击 * 关闭 * 。例如：
++
+`sudo ./install.sh -a 12345 -c 27ag75 -t 2198qq`
+
+. 解压缩主机上的安装程序文件，例如：
++
+[source, cli]
+----
+tar -xzf cc_onprem_installer_1.10.0.tar.gz
+----
+. 安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令：
++
+[cols="50a,50"]
+|===
+| 根据提示输入参数： | 输入完整命令： 
+
+
+ a| 
+.. 粘贴您从第 6 步复制的信息： `sUdo ./install.sh -a <account_id> -c <agent_id> -t <token>`
+.. 输入 Data sense 主机的 IP 地址或主机名，以便 Connector 实例可以访问它。
+.. 输入 Cloud Manager Connector 主机的 IP 地址或主机名，以便 Data sense 实例可以访问它。
+.. 根据提示输入代理详细信息。如果您的 Cloud Manager 已使用代理，则无需在此重新输入此信息，因为 Data sense 将自动使用 Cloud Manager 使用的代理。
+
+| 或者，您也可以预先创建整个命令并在第一个提示符处输入它： `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -cm-host <cm_host> -proxy-host <proxy_host> -proxy-port <proxy_port> -proxy-user-proxy_scheme> <proxy_proxy_name> -<proxy_password>` 
+|===
++
+变量值：
+
++
+** _account_id_ = NetApp 帐户 ID
+** _agent_id_ = 连接器 ID
+** _token_ = JWT 用户令牌
+** _ds_host_ = Data sense Linux 系统的 IP 地址或主机名。
+** _cm_host_ = Cloud Manager Connector 系统的 IP 地址或主机名。
+** _proxy_host_ = 代理服务器的 IP 或主机名（如果主机位于代理服务器之后）。
+** _proxy_port_ = 用于连接到代理服务器的端口（默认值为 80 ）。
+** _proxy_scheme_= 连接方案： HTTPS 或 http （默认为 http ）。
+** _proxy_user_= 已通过身份验证的用户，用于连接到代理服务器（如果需要基本身份验证）。
+** _proxy_password_ = 指定用户名的密码。
+
+
+
+
+Cloud Data sense 安装程序可安装软件包，安装 Docker ，注册安装以及安装 Data sense 。安装可能需要 10 到 20 分钟。
+
+如果主机和 Connector 实例之间通过端口 8080 建立连接，则您将在 Cloud Manager 的 Data sense 选项卡中看到安装进度。
+
+在配置页面中，您可以选择要扫描的数据源。
+
+您也可以 link:task-licensing-datasense.html["为 Cloud Data sense 设置许可"] 目前。在数据量超过 1 TB 之前，不会向您收取任何费用。
+
+
+
+=== 适用于大型配置的多主机安装
+
+对于需要扫描数 PB 数据的大型配置，您可以使用多个主机来提供额外的处理能力。使用多个主机系统时，主系统称为 _Manager node_ ，提供额外处理能力的其他系统称为 _扫描 程序 nodes_ 。
+
+在多个内部主机上安装 Data sense 软件时，请按照以下步骤进行操作。
+
+.您需要什么？ #8217 ；将需要什么
+* 验证管理器和扫描程序节点的所有 Linux 系统是否都符合 <<Prepare the Linux host system,主机要求>>。
+* （可选）验证系统是否已安装两个必备软件包（ Docker 引擎和 Python 3 ）。如果此软件尚未安装在系统上，安装程序将安装此软件。
+* 确保您在 Linux 系统上具有 root 权限。
+* 验证您的环境是否满足要求 <<Verify Cloud Manager and Data Sense prerequisites,权限和连接>>。
+* 您必须具有计划使用的扫描程序节点主机的 IP 地址。
+* 必须在所有主机上启用以下端口和协议：
++
+[cols="15,20,55"]
+|===
+| Port | 协议 | Description 
+
+
+| 2377 | TCP | 集群管理通信 
+
+
+| 7946 | TCP ， UDP | 节点间通信 
+
+
+| 4789 | UDP | 覆盖网络流量 
+
+
+| 50 | 电子服务 | 加密的 IPsec 覆盖网络（ ESP ）流量 
+
+
+| 111. | TCP ， UDP | 用于在主机之间共享文件的 NFS 服务器（需要从每个扫描程序节点到管理器节点） 
+
+
+| 2049. | TCP ， UDP | 用于在主机之间共享文件的 NFS 服务器（需要从每个扫描程序节点到管理器节点） 
+|===
+
+
+.步骤
+. 按照中的步骤 1 至 7 进行操作 <<Single-host installation for typical configurations,单主机安装>> 在管理器节点上。
+. 如步骤 8 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令。
++
+除了可用于单主机安装的变量之外，还会使用一个新选项 * -n <node_IP>* 来指定扫描程序节点的 IP 地址。多个扫描程序节点 IP 以逗号分隔。
+
++
+例如，此命令会添加 3 个扫描程序节点： `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -cm-host <cm_host> * -n <node_ip1> ， <node_ip2> ， <node_ip3>* — proxy-proxy-host-proxy-port-<proxy-proxy-user-proxy_password>`
+
+. 在管理器节点安装完成之前，将显示一个对话框，其中显示了扫描程序节点所需的安装命令。复制命令并将其保存在文本文件中。例如：
++
+`sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`
+
+. 在 * 每个 * 扫描程序节点主机上：
++
+.. 将 Data sense 安装程序文件（ * cc_onprem_installer_<version>.tar.gz* ）复制到主机（使用 `scp` 或其他方法）。
+.. 解压缩安装程序文件。
+.. 粘贴并执行步骤 3 中复制的命令。
++
+在所有扫描程序节点上完成安装且这些节点已加入管理器节点后，管理器节点安装也会完成。
+
+
+
+
+
+Cloud Data sense 安装程序将完成软件包， Docker 的安装并注册安装。安装可能需要 10 到 20 分钟。
+
+在配置页面中，您可以选择要扫描的数据源。
+
+您也可以 link:task-licensing-datasense.html["为 Cloud Data sense 设置许可"] 目前。在数据量超过 1 TB 之前，不会向您收取任何费用。

@@ -1,0 +1,104 @@
+---
+sidebar: sidebar 
+permalink: task-managing-compliance.html 
+keywords: remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense 
+summary: 如果需要，您可以阻止 Cloud Data sense 扫描一个或多个工作环境，数据库，文件共享组， OneDrive 帐户或 SharePoint 帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。 
+---
+= 从 Cloud Data sense 中删除数据源
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果需要，您可以阻止 Cloud Data sense 扫描一个或多个工作环境，数据库，文件共享组， OneDrive 帐户或 SharePoint 帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。
+
+
+
+== 为工作环境停用合规性扫描
+
+停用扫描时， Cloud Data sense 不再扫描工作环境中的数据，而是从 Data sense 实例中删除索引合规性洞察（不会删除工作环境中的数据）。
+
+. 从 _Configuration_ 页面中，单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮，然后单击 * 停用数据感知 * 。
+
+
+image:screenshot_deactivate_compliance_scan.png["操作图标的屏幕截图，您可以在其中选择停用数据感知。从 \" 画布 \" 页面选择工作环境后，此选项将可用。"]
+
+
+TIP: 您也可以在选择工作环境时从服务面板为工作环境禁用合规性扫描。
+
+
+
+== 从 Cloud Data sense 中删除数据库
+
+如果您不想再扫描某个数据库，可以从 Cloud Data sense 界面中将其删除并停止所有扫描。
+
+. 从 _Configuration_ 页面中，单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮，然后单击 * 删除数据库服务器 * 。
+
+
+image:screenshot_compliance_remove_db.png["扫描配置页面中的删除数据库服务器按钮的屏幕截图。"]
+
+
+
+== 从 Cloud Data sense 中删除 OneDrive 或 SharePoint 帐户
+
+如果您不想再从某个 OneDrive 帐户或特定 SharePoint 帐户扫描用户文件，则可以从 Cloud Data sense 界面删除此帐户并停止所有扫描。
+
+.步骤
+. 从 _Configuration_ 页面中，单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮，然后单击 * 删除 OneDrive 帐户 * 或 * 删除 SharePoint 帐户 * 。
++
+image:screenshot_compliance_remove_onedrive.png["扫描配置页面中的删除 OneDrive 按钮的屏幕截图。"]
+
+. 单击确认对话框中的 * 删除帐户 * 。
+
+
+
+
+== 从 Cloud Data sense 中删除一组文件共享
+
+如果您不再需要扫描文件共享组中的用户文件，则可以从云数据感知界面中删除文件共享组并停止所有扫描。
+
+.步骤
+. 从 _Configuration_ 页面中，单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮，然后单击 * 删除文件共享组 * 。
++
+image:screenshot_compliance_remove_fileshare_group.png["扫描配置页面中的删除文件共享组按钮的屏幕截图。"]
+
+. 单击确认对话框中的 * 删除共享组 * 。
+
+
+
+
+== 降低数据感知扫描速度
+
+数据扫描对存储系统和数据的影响可以忽略不计。但是，如果您担心即使影响很小，也可以将 Data sense 配置为执行 " 缓慢 " 扫描。启用后，所有数据源都会使用慢速扫描—您不能为单个工作环境或数据源配置慢速扫描。
+
+
+TIP: 扫描数据库时，扫描速度不能降低。
+
+.步骤
+. 从 _Configuration_ 页面底部，向右移动滑块以激活慢速扫描。
++
+image:screenshot_slow_scan_enable.png["显示如何启用合规性扫描较慢的屏幕截图。"]
+
++
+配置页面顶部指示已启用慢速扫描。
+
++
+image:screenshot_slow_scan_disable.png["显示如何启用合规性扫描较慢的屏幕截图。"]
+
+. 您可以通过单击此消息中的 * 禁用 * 来禁用慢速扫描。
+
+
+
+
+== 正在删除 Cloud Data sense 实例
+
+如果您不想再使用 Data sense ，可以删除 Cloud Data sense 实例。删除此实例还会删除索引数据所在的关联磁盘。
+
+. 转到云提供商的控制台并删除 Cloud Data sense 实例。
++
+此实例名为 _CloudCompliance_ ，并与生成的哈希（ UUID ）串联在一起。例如： _CloudCompliance" — 16bb6564-38AD-4080-9a92 — 36f5fd2f71c7_
+
+

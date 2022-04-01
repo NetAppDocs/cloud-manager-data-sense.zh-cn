@@ -1,0 +1,172 @@
+---
+sidebar: sidebar 
+permalink: task-licensing-datasense.html 
+keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, data sense, cloud data sense 
+summary: Cloud Data 感知在 Cloud Manager 工作空间中扫描的前 1 TB 数据是免费的。要在这之后继续扫描数据，需要 NetApp 提供的 BYOL 许可证或云提供商 Marketplace 提供的 Cloud Manager 订阅。 
+---
+= 为 Cloud Data sense 设置许可
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Data 感知在 Cloud Manager 工作空间中扫描的前 1 TB 数据是免费的。要在这之后继续扫描数据，需要 NetApp 提供的 BYOL 许可证或云提供商所在市场提供的 Cloud Manager 订阅。
+
+在阅读其他内容之前，请先阅读一些注释：
+
+* 如果您已在云提供商的市场中订阅 Cloud Manager 按需购买（ PAYGO ）订阅，则您也会自动订阅 Cloud Data sense 。您无需重新订阅。
+* Cloud Data sense 自带许可证（ BYOL ）是一种 _float_ 许可证，您可以在计划扫描的工作空间中的所有工作环境和数据源中使用。您将在数字电子钱包中看到有效订阅。
+
+
+link:concept-cloud-compliance.html#cost["详细了解与 Cloud Data sense 相关的许可和成本"]。
+
+
+
+== 使用 Cloud Data sense PAYGO 订阅
+
+您可以从云提供商的市场订阅按需购买，从而获得使用 Cloud Volumes ONTAP 系统和云数据服务（如云数据感知）的许可。
+
+您可以随时订阅，在数据量超过 1 TB 之前，不会向您收取任何费用。您始终可以从数据感知信息板查看正在扫描的总数据量。现在订阅 _ 按钮可以让您在准备就绪后轻松订阅。
+
+image:screenshot_compliance_subscribe.png["屏幕截图显示了正在扫描的数据量以及用于订阅服务的 \" 订阅 \" 按钮。"]
+
+这些步骤必须由具有 _Account Admin_ 角色的用户完成。
+
+. 在 Cloud Manager 控制台的右上角，单击设置图标，然后选择 * 凭据 * 。
++
+image:screenshot_settings_icon.gif["Cloud Manager 右上角横幅的屏幕截图，您可以在其中选择 \" 设置 \" 图标。"]
+
+. 查找 AWS 实例配置文件， Azure 托管服务身份或 Google Project 的凭据。
++
+必须将订阅添加到实例配置文件，托管服务身份或 Google Project 中。否则，充电将不起作用。
+
++
+如果您已订阅（如下所示为 AWS ），则表示您已准备就绪—无需执行任何其他操作。
+
++
+image:screenshot_profile_subscription.gif["\" 凭据 \" 页面中的屏幕截图，其中显示了订阅处于活动状态的实例配置文件。"]
+
+. 如果您尚未订阅，请将鼠标悬停在凭据上，单击操作菜单，然后单击 * 关联订阅 * 。
++
+image:screenshot_add_subscription.gif["凭据页面中菜单的屏幕截图。此时将显示一个按钮，用于将订阅与凭据关联。"]
+
+. 选择现有订阅并单击 * 关联 * ，或者单击 * 添加订阅 * 并按照步骤进行操作。
++
+以下视频显示了如何关联 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] 订阅 AWS 订阅：
+
++
+video::video_subscribing_aws.mp4[width=848,height=480]
++
+以下视频显示了如何关联 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^] 订阅 Azure ：
+
++
+video::video_subscribing_azure.mp4[width=848,height=480]
++
+以下视频显示了如何关联 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP 市场"^] 订阅 GCP ：
+
++
+video::video_subscribing_gcp.mp4[width=848,height=480]
+
+
+
+
+== 使用 Cloud Data sense BYOL 许可证
+
+NetApp 自带许可证的期限为 1 年， 2 年或 3 年。BYOL * 云数据感知 * 许可证是一种 _float_ 许可证，其中总容量由所有 * 工作环境和数据源共享，从而使初始许可和续订变得轻松。
+
+如果您没有 Cloud Data sense 许可证，请联系我们购买一个：
+
+* mailto ： ng-contact-data-sense@netapp.com ？ Subject=Licensing[ 发送电子邮件以购买许可证 ] 。
+* 单击 Cloud Manager 右下角的聊天图标以请求许可证。
+
+
+或者，如果您已为 Cloud Volumes ONTAP 取消分配了基于节点的许可证，而您不会使用该许可证，则可以将其转换为具有相同美元等价性和相同到期日期的云数据感知许可证。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-licenses.html#exchange-unassigned-node-based-licenses["有关详细信息，请访问此处"^]。
+
+您可以使用 Cloud Manager 中的数字电子钱包页面管理 Cloud Data sense BYOL 许可证。您可以添加新许可证并更新现有许可证。
+
+
+
+=== 获取 Cloud Data sense 许可证文件
+
+购买 Cloud Data sense 许可证后，您可以通过输入 Cloud Data sense 序列号和 NSS 帐户或上传 NLF 许可证文件在 Cloud Manager 中激活此许可证。以下步骤显示了如果您计划使用此方法，如何获取 NLF 许可证文件。
+
+如果您已在无法访问 Internet 的内部站点中的主机上部署 Cloud Data sense ，则需要从已连接 Internet 的系统获取许可证文件。使用序列号和 NSS 帐户激活许可证不适用于非公开站点安装。
+
+.步骤
+. 登录到 https://mysupport.netapp.com["NetApp 支持站点"^] 然后单击 * 系统 > 软件许可证 * 。
+. 输入 Cloud Data sense 许可证序列号。
++
+image:screenshot_cloud_tiering_license_step1.gif["按序列号搜索后显示许可证表的屏幕截图。"]
+
+. 在 * 许可证密钥 * 下，单击 * 获取 NetApp 许可证文件 * 。
+. 输入您的 Cloud Manager 帐户 ID （在支持站点上称为租户 ID ），然后单击 * 提交 * 下载许可证文件。
++
+image:screenshot_cloud_tiering_license_step2.gif["屏幕截图显示了获取许可证对话框，您可以在其中输入租户 ID ，然后单击提交下载许可证文件。"]
+
++
+您可以通过从 Cloud Manager 顶部选择 * 帐户 * 下拉列表，然后单击您帐户旁边的 * 管理帐户 * 来查找 Cloud Manager 帐户 ID 。您的帐户 ID 位于概述选项卡中。
+
+
+
+
+
+=== 将 Cloud Data sense BYOL 许可证添加到您的帐户中
+
+为 Cloud Manager 帐户购买 Cloud Data sense 许可证后，您需要将此许可证添加到 Cloud Manager 中才能使用 Data sense 服务。
+
+.步骤
+. 单击 * 所有服务 > 数字电子钱包 > 数据服务许可证 * 。
+. 单击 * 添加许可证 * 。
+. 在 _Add License_ 对话框中，输入许可证信息并单击 * 添加许可证 * ：
++
+** 如果您拥有数据感知许可证序列号并知道您的 NSS 帐户，请选择 * 输入序列号 * 选项并输入该信息。
++
+如果下拉列表中没有您的 NetApp 支持站点帐户， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["将 NSS 帐户添加到 Cloud Manager"^]。
+
+** 如果您有数据感知许可证文件（安装在非公开站点时需要），请选择 * 上传许可证文件 * 选项，然后按照提示附加该文件。
++
+image:screenshot_services_license_add.png["显示用于添加 Cloud Data sense BYOL 许可证的页面的屏幕截图。"]
+
+
+
+
+
+Cloud Manager 会添加许可证，以便 Cloud Data sense 服务处于活动状态。
+
+
+
+=== 更新 Cloud Data sense BYOL 许可证
+
+如果您的许可期限即将到期，或者您的许可容量即将达到限制，您将在 Cloud Data sense 中收到通知。
+
+image:screenshot_services_license_expire_cc1.png["在 Cloud Data sense 页面中显示即将到期许可证的屏幕截图。"]
+
+此状态也会显示在 " 数字电子钱包 " 页面中。
+
+image:screenshot_services_license_expire_cc2.png["在 \" 数字电子钱包 \" 页面中显示即将到期许可证的屏幕截图。"]
+
+您可以在 Cloud Data sense 许可证到期之前对其进行更新，以便扫描数据的能力不会中断。
+
+.步骤
+. 单击 Cloud Manager 右下角的聊天图标以请求延长您的期限或为特定序列号请求 Cloud Data sense 许可证的额外容量。您也可以发送电子邮件至： ng-contact-data-sense@netapp.com ？ Subject=Licensing[ 发送电子邮件以请求更新您的许可证 ] 。
++
+在您为许可证付费并将其注册到 NetApp 支持站点后， Cloud Manager 会自动在数字电子邮件中更新许可证，并且数据服务许可证页面将在 5 到 10 分钟内反映此更改。
+
+
+
+. 如果 Cloud Manager 无法自动更新许可证（例如，安装在非公开站点时），则需要手动上传许可证文件。
++
+.. 您可以 <<Obtain your Cloud Data Sense license file,从 NetApp 支持站点获取许可证文件>>。
+.. 在数字电子邮件页面的 _Data Services Licenses_ 选项卡中，单击 image:screenshot_horizontal_more_button.gif["更多图标"] 对于要更新的服务序列号，请单击 * 更新许可证 * 。
++
+image:screenshot_services_license_update.png["选择特定服务的更新许可证按钮的屏幕截图。"]
+
+.. 在 _Update License_ 页面中，上传许可证文件并单击 * 更新许可证 * 。
+
+
+
+
+Cloud Manager 会更新许可证，以便 Cloud Data sense 服务继续保持活动状态。

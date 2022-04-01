@@ -1,0 +1,185 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-cloud-compliance.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
+summary: 完成几个步骤，在云中部署 Cloud Data sense 。 
+---
+= 在云中部署 Cloud Data sense
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+完成几个步骤，在云中部署 Cloud Data sense 。
+
+请注意，您也可以 link:task-deploy-compliance-onprem.html["在可访问 Internet 的 Linux 主机上部署 Data sense"]。如果您希望使用也位于内部的数据感知实例扫描内部 ONTAP 系统，则安装类型可能是一个不错的选择，但这并不是一项要求。无论您选择哪种安装方法，软件的工作方式都完全相同。
+
+
+
+== 快速入门
+
+按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
+
+[role="quick-margin-para"]
+如果您还没有 Connector ，请立即创建一个 Connector 。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中创建连接器"^]， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中创建连接器"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在 GCP 中创建连接器"^]。
+
+[role="quick-margin-para"]
+您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在内部部署 Connector"^] 在网络或云中的 Linux 主机上。
+
+[role="quick-margin-para"]
+确保您的环境可以满足前提条件。其中包括实例的出站 Internet 访问，通过端口 443 在 Connector 和 Cloud Data sense 之间建立连接等。 <<Review prerequisites,请参见完整列表>>。
+
+[role="quick-margin-para"]
+默认配置要求云数据感知实例使用 16 个 vCPU 。请参见 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["有关实例类型的更多详细信息"^]。
+
+[role="quick-margin-para"]
+启动安装向导以在云中部署 Cloud Data sense 实例。
+
+[role="quick-margin-para"]
+Cloud Manager 中 Cloud Data 感知扫描的前 1 TB 数据是免费的。要在这之后继续扫描数据，需要通过云提供商 Marketplace 订阅 Cloud Manager 或从 NetApp 获得 BYOL 许可证。
+
+
+
+== 创建连接器
+
+如果您还没有 Connector ，请在云提供商中创建一个 Connector 。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中创建连接器"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中创建连接器"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在 GCP 中创建连接器"^]。在大多数情况下，您可能会在尝试激活 Cloud Data sense 之前设置 Connector ，因为大多数情况下都是这样 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Cloud Manager 功能需要使用 Connector"]但在某些情况下，您需要立即设置一个。
+
+在某些情况下，您必须使用部署在特定云提供商中的 Connector ：
+
+* 在 AWS 中的 Cloud Volumes ONTAP ，适用于 ONTAP 的 Amazon FSx 或 AWS S3 存储分段中扫描数据时，您可以使用 AWS 中的连接器。
+* 在 Azure 或 Azure NetApp Files 中的 Cloud Volumes ONTAP 中扫描数据时，您可以使用 Azure 中的连接器。
+* 在 GCP 的 Cloud Volumes ONTAP 中扫描数据时，您可以在 GCP 中使用连接器。
+
+
+使用上述任一 Cloud Connector 时，可以扫描内部 ONTAP 系统，非 NetApp 文件共享，通用 S3 对象存储，数据库， OneDrive 文件夹和 SharePoint 帐户。
+
+请注意，您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在内部部署 Connector"^] 在网络或云中的 Linux 主机上。某些计划在内部安装 Data sense 的用户也可以选择在内部安装 Connector 。
+
+如您所见，在某些情况下可能需要使用 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多个连接器"]。
+
+
+NOTE: 如果您计划扫描 Azure NetApp Files 卷，则需要确保将部署在与要扫描的卷相同的区域。
+
+
+
+== 查看前提条件
+
+在云中部署 Cloud Data sense 之前，请查看以下前提条件以确保您的配置受支持。
+
+从 Cloud Data sense 启用出站 Internet 访问:: 云数据感知需要出站 Internet 访问。如果虚拟或物理网络使用代理服务器访问 Internet ，请确保 Data sense 实例具有出站 Internet 访问权限，以便与以下端点联系。在云中部署 Data sense 时，它与 Connector 位于同一子网中。
++
+--
+根据您是在 AWS ， Azure 还是 GCP 中部署 Cloud Data sense ，查看下表。
+
+* AWS 部署所需的端点： *
+
+[cols="43,57"]
+|===
+| 端点 | 目的 
+
+
+| https://cloudmanager.cloud.netapp.com | 与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。 
+
+
+| https://netapp-cloud-account.auth0.com \https://auth0.com | 与 NetApp Cloud Central 进行通信以实现集中式用户身份验证。 
+
+
+| https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 提供对软件映像、清单和模板的访问。 
+
+
+| https://kinesis.us-east-1.amazonaws.com | 使 NetApp 能够从审计记录流化数据。 
+
+
+| https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \https://customer-data-production.s3.us-west-2.amazonaws.com | 支持 Cloud Data sense 访问和下载清单和模板，以及发送日志和指标。 
+|===
+* Azure 和 GCP 部署所需的端点： *
+
+[cols="43,57"]
+|===
+| 端点 | 目的 
+
+
+| https://cloudmanager.cloud.netapp.com | 与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。 
+
+
+| https://netapp-cloud-account.auth0.com \https://auth0.com | 与 NetApp Cloud Central 进行通信以实现集中式用户身份验证。 
+
+
+| https://support.compliance.cloudmanager.cloud.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 可用于访问软件映像，清单，模板以及发送日志和指标。 
+
+
+| https://support.compliance.cloudmanager.cloud.netapp.com/ | 使 NetApp 能够从审计记录流化数据。 
+|===
+--
+确保 Cloud Manager 具有所需权限:: 确保 Cloud Manager 有权为 Cloud Data sense 实例部署资源并创建安全组。您可以在中找到最新的 Cloud Manager 权限 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp 提供的策略"^]。
++
+--
+* 注： * 如果您使用 Cloud Manager 3.9.10 或更高版本在 GCP 中创建了 Connector ，则表示您已设置完毕。如果您使用早期版本创建了 Connector ，则需要将以下权限添加到与 Connector 关联的 GCP 服务帐户，以便将 Cloud Data sense 部署到 GCP 。
+
+[source, json]
+----
+compute.instances.addAccessConfig
+compute.subnetworks.use
+compute.subnetworks.useExternalIp
+----
+--
+检查 vCPU 限制:: 确保云提供商的 vCPU 限制允许部署包含 16 个核心的实例。您需要验证运行 Cloud Manager 的区域中相关实例系列的 vCPU 限制。 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["请参见所需的实例类型"]。
++
+--
+有关 vCPU 限制的详细信息，请参见以下链接：
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS 文档： Amazon EC2 服务配额"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure 文档：虚拟机 vCPU 配额"^]
+* https://cloud.google.com/compute/quotas["Google Cloud 文档：资源配额"^]
++
+请注意，您可以在 CPU 较少且 RAM 较少的系统上部署 Data sense ，但使用这些系统时会有一些限制。请参见 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用较小的实例类型"] 了解详细信息。
+
+
+
+--
+确保 Cloud Manager Connector 可以访问 Cloud Data sense:: 确保 Connector 与 Cloud Data sense 实例之间的连接。Connector 的安全组必须允许通过端口 443 与 Data sense 实例之间的入站和出站流量。通过此连接，可以部署 Data sense 实例，并可在合规性和监管选项卡中查看信息。
++
+--
+AWS 和 Azure 中的政府区域支持云数据感知。AWS 和 AWS GovCloud 部署还需要其他入站和出站规则。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-aws["AWS 中连接器的规则"^] 了解详细信息。
+
+--
+确保您可以保持 Cloud Data sense 正常运行:: 云数据感知实例需要保持运行状态才能持续扫描数据。
+确保 Web 浏览器连接到 Cloud Data sense:: 启用 Cloud Data sense 后，请确保用户从连接到 Data sense 实例的主机访问 Cloud Manager 界面。
++
+--
+数据感知实例使用专用 IP 地址来确保索引数据无法通过 Internet 访问。因此，用于访问 Cloud Manager 的 Web 浏览器必须连接到该专用 IP 地址。此连接可以来自与云提供商的直接连接（例如 VPN ），也可以来自与 Data sense 实例位于同一网络中的主机。
+
+--
+
+
+
+
+== 在云中部署 Data sense
+
+按照以下步骤在云中部署 Cloud Data sense 实例。
+
+.步骤
+. 在 Cloud Manager 中，单击 * 数据感知 * 。
+. 单击 * 激活数据感知 * 。
++
+image:screenshot_cloud_compliance_deploy_start.png["选择用于激活 Cloud Data sense 的按钮的屏幕截图。"]
+
+. 单击 * 激活数据感知 * 以启动云部署向导。
++
+image:screenshot_cloud_compliance_deploy_cloud.png["选择在云中部署 Cloud Data sense 的按钮的屏幕截图。"]
+
+. 向导将在完成部署步骤时显示进度。如果遇到任何问题，它将停止并请求输入。
++
+image:screenshot_cloud_compliance_wizard_start.png["用于部署新实例的 Cloud Data sense 向导的屏幕截图。"]
+
+. 部署实例后，单击 * 继续配置 * 以转到 _Configuration_ 页面。
+
+
+Cloud Manager 在云提供商中部署 Cloud Data sense 实例。
+
+在配置页面中，您可以选择要扫描的数据源。
+
+您也可以 link:task-licensing-datasense.html["为 Cloud Data sense 设置许可"] 目前。在数据量超过 1 TB 之前，不会向您收取任何费用。

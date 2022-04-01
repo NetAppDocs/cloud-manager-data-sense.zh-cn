@@ -1,0 +1,145 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-file-shares.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, Data Sense 
+summary: 完成几个步骤，直接使用 Cloud Data sense 扫描非 NetApp NFS 或 CIFS 文件共享。这些文件共享可以驻留在内部或云中。 
+---
+= 正在扫描文件共享
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+完成几个步骤，直接使用 Cloud Data sense 扫描非 NetApp NFS 或 CIFS 文件共享。这些文件共享可以驻留在内部或云中。
+
+
+
+== 快速入门
+
+按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
+
+[role="quick-margin-para"]
+对于 CIFS （ SMB ）共享，请确保您具有访问这些共享的凭据。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"^] 如果尚未部署实例。
+
+[role="quick-margin-para"]
+组是要扫描的文件共享的容器，它用作这些文件共享的工作环境名称。
+
+[role="quick-margin-para"]
+添加要扫描的文件共享列表并选择扫描类型。一次最多可以添加 100 个文件共享。
+
+
+
+== 查看文件共享要求
+
+在启用 Cloud Data sense 之前，请查看以下前提条件以确保您的配置受支持。
+
+* 共享可以托管在任何位置，包括云或内部。这些文件共享驻留在非 NetApp 存储系统上。
+* Data sense 实例和共享之间需要有网络连接。
+* 确保这些端口对 Data sense 实例开放：
++
+** 对于 NFS —端口 111 和 2049 。
+** 对于 CIFS —端口 139 和 445 。
+
+
+* 您需要采用格式 ` <host_name> ： /<share_path>` 添加的共享列表。您可以单独输入共享，也可以提供要扫描的文件共享的行分隔列表。
+* 对于 CIFS （ SMB ）共享，请确保您具有 Active Directory 凭据来提供对共享的读取访问权限。如果 Cloud Data sense 需要扫描任何需要提升权限的数据，则最好使用管理员凭据。
+
+
+
+
+== 部署 Cloud Data sense 实例
+
+如果尚未部署实例，请部署 Cloud Data sense 。
+
+数据感知可以是 link:task-deploy-cloud-compliance.html["部署在云中"^] 或 link:task-deploy-compliance-onprem.html["位于可访问 Internet 的内部位置"^]。
+
+只要实例具有 Internet 连接，就会自动升级到 Data sense 软件。
+
+
+
+== 为文件共享创建组
+
+您必须先添加文件共享 "group" ，然后才能添加文件共享。组是要扫描的文件共享的容器，组名称用作这些文件共享的工作环境名称。
+
+您可以在同一个组中混用 NFS 和 CIFS 共享，但是，一个组中的所有 CIFS 文件共享都需要使用相同的 Active Directory 凭据。如果您计划添加使用不同凭据的 CIFS 共享，则必须为每组唯一的凭据创建一个单独的组。
+
+.步骤
+. 在工作环境配置页面中，单击 * 添加数据源 * > * 添加文件共享组 * 。
++
+image:screenshot_compliance_add_fileshares_button.png["扫描配置页面的屏幕截图，您可以在其中单击添加文件共享组按钮。"]
+
+. 在添加文件共享组对话框中，输入共享组的名称，然后单击 * 继续 * 。
+
+
+新的文件共享组将添加到工作环境列表中。
+
+
+
+== 将文件共享添加到组
+
+您可以将文件共享添加到文件共享组，以便 Cloud Data sense 扫描这些共享中的文件。添加的共享格式为 ` <host_name> ： /<share_path>` 。
+
+您可以添加单个文件共享，也可以提供要扫描的文件共享的行分隔列表。一次最多可以添加 100 个共享。
+
+在一个组中同时添加 NFS 和 CIFS 共享时，您需要运行此过程两次，一次是添加 NFS 共享，然后再次添加 CIFS 共享。
+
+.步骤
+. 在 _Working Environments_ 页面中，单击文件共享组的 * 配置 * 按钮。
++
+image:screenshot_compliance_fileshares_add_shares.png["扫描配置页面的屏幕截图，您可以在其中选择配置按钮。"]
+
+. 如果这是首次为此文件共享组添加文件共享，请单击 * 添加您的第一个共享 * 。
++
+image:screenshot_compliance_fileshares_add_initial_shares.png["屏幕截图显示了用于向组添加初始共享的 \" 添加第一个共享 \" 按钮。"]
+
++
+如果要向现有组添加文件共享，请单击 * 添加共享 * 。
+
++
+image:screenshot_compliance_fileshares_add_more_shares.png["显示添加共享按钮以向组添加更多共享的屏幕截图。"]
+
+. 选择要添加的文件共享的协议，添加要扫描的文件共享 - 每行一个文件共享 - 然后单击 * 继续 * 。
++
+添加 CIFS （ SMB ）共享时，您需要输入 Active Directory 凭据，以提供对共享的读取访问权限。首选管理员凭据。
+
++
+image:screenshot_compliance_fileshares_add_file_shares.png["添加文件共享页面的屏幕截图，您可以在其中添加要扫描的共享。"]
+
++
+确认对话框将显示已添加的共享数量。
+
++
+如果此对话框列出了任何无法添加的共享，请捕获此信息，以便解析此问题描述。在某些情况下，您可以使用更正后的主机名或共享名称重新添加共享。
+
+. 在每个文件共享上启用仅映射扫描或映射和分类扫描。
++
+[cols="45,45"]
+|===
+| 收件人： | 执行以下操作： 
+
+
+| 对文件共享启用仅映射扫描 | 单击 * 映射 * 
+
+
+| 对文件共享启用完全扫描 | 单击 * 映射和分类 * 
+
+
+| 禁用对文件共享的扫描 | 单击 * 关闭 * 
+|===
+
+
+Cloud Data sense 开始扫描您添加的文件共享中的文件，结果将显示在信息板和其他位置。
+
+
+
+== 从合规性扫描中删除文件共享
+
+如果您不再需要扫描某些文件共享，则可以随时从扫描其文件中删除各个文件共享。只需单击配置页面中的 * 删除共享 * 即可。
+
+image:screenshot_compliance_fileshares_remove_share.png["屏幕截图显示了如何从扫描单个文件共享的文件中删除该文件共享。"]

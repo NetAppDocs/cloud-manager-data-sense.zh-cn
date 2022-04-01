@@ -1,0 +1,327 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-private-data.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, highlights, policies 
+summary: 通过查看有关组织中个人数据和敏感个人数据的详细信息来控制您的私有数据。您还可以通过查看数据中的 Cloud Data 感知的类别和文件类型来获得可见性。 
+---
+= 查看有关存储在组织中的数据的合规性详细信息
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+通过查看有关组织中个人数据和敏感个人数据的详细信息来控制您的私有数据。您还可以通过查看数据中的 Cloud Data 感知的类别和文件类型来获得可见性。
+
+
+NOTE: 只有在选择对数据源执行完整分类扫描后，才可以使用本节所述的功能。已执行仅映射扫描的数据源不会显示文件级详细信息。
+
+默认情况下， Cloud Data sense 信息板会显示所有工作环境和数据库的合规性数据。
+
+image:screenshot_compliance_dashboard.png["Cloud Data sense 信息板的屏幕截图"]
+
+如果只想查看某些工作环境的数据， <<Viewing Dashboard data for specific working environments,选择这些工作环境>>。
+
+您还可以从 " 数据调查 " 页面筛选结果，并以 CSV 文件的形式下载结果报告。请参见 <<Filtering data in the Data Investigation page,筛选 " 数据调查 " 页面中的数据>> 了解详细信息。
+
+
+
+== 查看包含个人数据的文件
+
+Cloud Data sense 可自动识别数据中的特定字词，字符串和模式（ Reex ）。例如，个人身份识别信息（ PiII ），信用卡号，社会保险号，银行帐号，密码， 等等。 link:reference-private-data-categories.html#types-of-personal-data["请参见完整列表"^]。
+
+此外，如果您添加了要扫描的数据库服务器，则 _Data Fusion 功能允许您扫描文件，以确定这些文件或其他数据库中是否存在数据库中的唯一标识符。请参见 link:task-managing-data-fusion.html["使用 Data Fusion 添加个人数据标识符"^] 了解详细信息。
+
+对于某些类型的个人数据， Data sense 使用 _proximity validation_来 验证其结果。通过查找与所发现的个人数据相邻的一个或多个预定义关键字来进行验证。例如， Data sense 可识别美国如果在 SSN 旁边看到一个接近词，则将社会安全号（ SSN ）作为 SSN ，例如 _SSN_ 或 _社交 安全 _ 。 link:reference-private-data-categories.html#types-of-personal-data["个人数据表"^] 显示 Data sense 何时使用接近验证。
+
+.步骤
+. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。
+. 要调查所有个人数据的详细信息，请单击个人数据百分比旁边的图标。
++
+image:screenshot_compliance_personal.gif["选择个人数据百分比的屏幕截图。"]
+
+. 要调查特定类型的个人数据的详细信息，请单击 * 全部查看 * ，然后单击特定类型的个人数据的 * 调查结果 * 图标；例如，电子邮件地址。
++
+image:screenshot_personal_files.gif["个人文件对话框的屏幕截图，您可以在其中单击个人数据类型旁边的调查结果图标。"]
+
+. 通过搜索，排序，展开特定文件的详细信息，单击 * 调查结果 * 以查看屏蔽信息或下载文件列表来调查数据。
++
+image:screenshot_compliance_investigation_page.gif["单击调查结果后的详细信息屏幕截图。"]
+
+
+
+
+
+== 查看包含敏感个人数据的文件
+
+Cloud Data sense 可自动识别隐私法规所定义的特殊类型的敏感个人信息 https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["《一般数据保护条例》第 9 条和第 10 条"^]。例如，有关个人健康，种族或性取向的信息。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["请参见完整列表"^]。
+
+Cloud Data sense 利用人工智能（ AI ），自然语言处理（ NLP ），机器学习（ ML ）和认知计算（ CC ）来了解其扫描内容的含义，以便提取实体并相应地进行分类。
+
+例如，一个敏感的 GDPR 数据类别是种族起源。由于其 NLP 能力， Data sense 可以区分 "George is Mexican " 一词（表示《一般数据保护条例》第 9 条规定的敏感数据）与 "George is eating Mexican f尽 " 这两者之间的区别。
+
+
+NOTE: 扫描敏感个人数据时，仅支持英语。稍后将添加对更多语言的支持。
+
+.步骤
+. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。
+. 要调查所有敏感个人数据的详细信息，请单击敏感个人数据百分比旁边的图标。
++
+image:screenshot_compliance_sensitive_personal.gif["选择敏感个人数据百分比的屏幕截图。"]
+
+. 要调查特定类型的敏感个人数据的详细信息，请单击 * 查看全部 * ，然后单击特定类型的敏感个人数据的 * 调查结果 * 图标。
++
+image:screenshot_sensitive_personal_files.gif["敏感个人文件对话框的屏幕截图，您可以在其中单击个人数据类型旁边的调查结果图标。"]
+
+. 通过搜索，排序，展开特定文件的详细信息，单击 * 调查结果 * 以查看屏蔽信息或下载文件列表来调查数据。
+
+
+
+
+== 按类别查看文件
+
+Cloud Data sense 会将扫描的数据划分为不同类型的类别。类别是基于 AI 对每个文件的内容和元数据的分析而得出的主题。 link:reference-private-data-categories.html#types-of-categories["查看类别列表"^]。
+
+类别可以通过向您显示所拥有的信息类型来帮助您了解数据的变化。例如，恢复或员工合同等类别可以包含敏感数据。调查结果时，您可能会发现员工合同存储在不安全的位置。然后，您可以更正此问题描述。
+
+
+NOTE: 类别支持英语，德语和西班牙语。稍后将添加对更多语言的支持。
+
+.步骤
+. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。
+. 直接从主屏幕中单击前 4 个类别之一的 * 调查结果 * 图标，或者单击 * 查看全部 * ，然后单击任意类别的图标。
++
+image:screenshot_categories.gif["类别对话框的屏幕截图，您可以在其中单击某个类别旁边的调查结果图标。"]
+
+. 通过搜索，排序，展开特定文件的详细信息，单击 * 调查结果 * 以查看屏蔽信息或下载文件列表来调查数据。
+
+
+
+
+== 按文件类型查看文件
+
+Cloud Data sense 会提取所扫描的数据，并按文件类型对其进行细分。查看文件类型有助于控制敏感数据，因为您可能会发现某些文件类型存储不正确。 link:reference-private-data-categories.html#types-of-files["请参见文件类型列表"^]。
+
+例如，您可能存储的 CAD 文件包含有关您的组织的非常敏感的信息。如果这些文件不安全，您可以通过限制权限或将文件移动到其他位置来控制敏感数据。
+
+.步骤
+. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。
+. 直接从主屏幕中单击前 4 种文件类型之一的 * 调查结果 * 图标，或者单击 * 查看全部 * ，然后单击任意文件类型的图标。
++
+image:screenshot_file_types.gif["文件类型对话框的屏幕截图，您可以在其中单击文件类型旁边的调查结果图标。"]
+
+. 通过搜索，排序，展开特定文件的详细信息，单击 * 调查结果 * 以查看屏蔽信息或下载文件列表来调查数据。
+
+
+
+
+== 查看文件元数据
+
+在数据调查结果窗格中，您可以单击 image:button_down_caret.png["注意"] 用于查看文件元数据的任何单个文件。
+
+image:screenshot_compliance_file_details.png["显示数据调查页面中文件的元数据详细信息的屏幕截图。"]
+
+除了向您显示文件所在的工作环境和卷之外，元数据还会显示更多信息，包括文件权限，文件所有者，此文件是否存在重复项以及分配的 AIP 标签（如果有） link:task-org-private-data.html#categorizing-your-data-using-aip-labels["在云数据感知中集成 AIP"^]）。如果您计划使用此信息，此信息将非常有用 link:task-org-private-data.html#creating-custom-policies["创建策略"] 因为您可以看到可用于筛选数据的所有信息。
+
+请注意，并非所有信息都可用于所有数据源—只是适合该数据源的信息。例如，卷名称，权限和 AIP 标签与数据库文件无关。
+
+查看单个文件的详细信息时，可以对该文件执行以下操作：
+
+* 您可以将此文件移动或复制到任何 NFS 共享。请参见 link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["将源文件移动到 NFS 共享"] 和 link:task-managing-highlights.html#copying-source-files["将源文件复制到 NFS 共享"] 了解详细信息。
+* 您可以删除此文件。请参见 link:task-managing-highlights.html#deleting-source-files["正在删除源文件"] 了解详细信息。
+* 您可以为文件分配特定状态。请参见 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["正在应用标记"] 了解详细信息。
+* 您可以将此文件分配给 Cloud Manager 用户，以负责对该文件执行任何后续操作。请参见 link:task-org-private-data.html#assigning-users-to-manage-certain-files["为文件分配用户"] 了解详细信息。
+* 如果您已将 AIP 标签与 Cloud Data sense 集成在一起，则可以为此文件分配一个标签，或者如果已存在另一个标签，则可以更改为其他标签。请参见 link:task-org-private-data.html#assigning-aip-labels-manually["手动分配 AIP 标签"^] 了解详细信息。
+
+
+
+
+== 查看文件的权限
+
+要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于 CIFS 共享， SharePoint 和 OneDrive 中的文件。
+
+image:screenshot_compliance_permissions.png["显示详细文件权限的屏幕截图。"]
+
+您可以单击某个用户或组的名称，此时将在 " 用户 / 组权限 " 筛选器中显示 " 调查 " 页面，并显示该用户或组的名称，以便您可以查看该用户或组有权访问的所有文件。
+
+请注意，如果您看到的是 SID （安全标识符），而不是用户和组名称，则应将 Active Directory 集成到 Data sense 中。 link:task-add-active-directory-datasense.html["了解如何执行此操作"]。
+
+
+
+== 检查存储系统中是否存在重复文件
+
+您可以查看存储系统中是否存储了重复的文件。如果您要确定可节省存储空间的区域，此功能非常有用。此外，确保具有特定权限或敏感信息的某些文件不会在存储系统中进行不必要的复制也会很有帮助。
+
+您可以下载重复文件列表并将其发送给存储管理员，以便他们确定可以删除哪些文件（如果有）。您也可以 link:task-managing-highlights.html#deleting-source-files["删除文件"^] 如果您确信不需要特定版本的文件，请自行选择。
+
+
+
+=== 查看所有重复的文件
+
+如果您需要列出在工作环境中复制的所有文件以及正在扫描的数据源，则可以在 " 数据调查 " 页面中使用名为 * 重复项 > 具有重复项 * 的筛选器。
+
+结果页面将显示所有文件类型（不包括数据库）中的重复文件，最小大小为 50 MB 且 / 或包含个人或敏感个人信息。
+
+
+
+=== 查看特定文件是否重复
+
+如果要查看单个文件是否存在重复项，可以在数据调查结果窗格中单击 image:button_down_caret.png["注意"] 用于查看文件元数据的任何单个文件。如果某个文件存在重复项，则此信息将显示在 _Duplicates_ 字段旁边。
+
+要查看重复文件的列表及其所在位置，请单击 * 查看详细信息 * 。在下一页中，单击 * 查看重复项 * 以查看调查页面中的文件。
+
+image:screenshot_compliance_duplicate_file.png["显示如何查看重复文件所在位置的屏幕截图。"]
+
+
+TIP: 您可以使用此页面中提供的 " 文件哈希 " 值并直接在 " 调查 " 页面中输入此值，以便随时搜索特定的重复文件，或者在策略中使用此值。
+
+
+
+== 查看特定工作环境的信息板数据
+
+您可以筛选 Cloud Data sense 信息板的内容，以查看所有工作环境和数据库的合规性数据，或者仅查看特定工作环境的合规性数据。
+
+筛选信息板时， Data sense 会将合规性数据和报告范围仅限于您选择的工作环境。
+
+.步骤
+. 单击筛选器下拉列表，选择要查看其数据的工作环境，然后单击 * 查看 * 。
++
+image:screenshot_cloud_compliance_filter.gif["显示如何筛选特定工作环境的调查结果的屏幕截图。"]
+
+
+
+
+
+== 筛选 " 数据调查 " 页面中的数据
+
+您可以筛选调查页面的内容，以便仅显示要查看的结果。如果要在对内容进行优化后将 CSV 版本的内容另存为报告，请单击 image:button_download.png["下载按钮"] 按钮。
+
+image:screenshot_compliance_investigation_filtered.png["在调查页面中细化结果时可用筛选器的屏幕截图。"]
+
+* 通过顶级选项卡，您可以查看文件（非结构化数据）或数据库（结构化数据）中的数据。
+* 通过每列顶部的控件，您可以按数字或字母顺序对结果进行排序。
+* 您可以通过左窗格筛选器从以下属性中进行选择来细化结果：
++
+[cols="35,65"]
+|===
+| 筛选器 | 详细信息 
+
+
+| 策略 | 选择一个或多个策略。开始 link:task-org-private-data.html#controlling-your-data-using-policies["此处"^] 可查看现有策略列表并创建您自己的策略。 
+
+
+| 打开权限 | 选择权限类型 
+
+
+| 用户 / 组权限 | 输入用户名，组名称或部分名称 
+
+
+| 文件所有者 | 输入文件所有者名称 
+
+
+| Label | 选择 AIP 标签 
+
+
+| 工作环境类型 | 选择工作环境的类型。请注意， OneDrive 和 SharePoint 归类为 " 云应用程序 " 。 
+
+
+| 工作环境名称 | 选择特定的工作环境 
+
+
+| 存储库 | 选择存储库，例如卷或模式 
+
+
+| 文件路径 | 输入部分路径或完整路径 
+
+
+| 类别 | 选择 link:reference-private-data-categories.html#types-of-categories["类别类型"^] 
+
+
+| 敏感度级别 | 选择敏感度级别 
+
+
+| 个人数据 | 选择 link:reference-private-data-categories.html#types-of-personal-data["个人数据的类型"^] 
+
+
+| 敏感个人数据 | 选择 link:reference-private-data-categories.html#types-of-sensitive-personal-data["敏感个人数据的类型"^] 
+
+
+| 数据主题 | 输入数据主体的全名或已知标识符 
+
+
+| 文件类型 | 选择 link:reference-private-data-categories.html#types-of-files["文件类型"^] 
+
+
+| 文件大小 | 选择文件大小范围 
+
+
+| 创建时间 | 创建文件时选择一个范围 
+
+
+| 发现时间 | 选择 Data sense 发现文件时的范围 
+
+
+| 上次修改时间 | 选择上次修改文件的时间范围 
+
+
+| 上次访问 | 选择上次访问文件的时间范围。对于 Data sense 扫描的文件类型，这是 Data sense 上次扫描该文件的时间。 
+
+
+| 重复 | 选择是否在存储库中复制文件 
+
+
+| 文件哈希 | 输入文件的哈希以查找特定文件，即使名称不同也是如此 
+
+
+| Tags | 选择一个或多个标记 
+
+
+| 已分配给 | 选择将文件分配到的人员的姓名 
+|===
+* " 筛选器 " 窗格顶部的 _Policies_ 筛选器列出了自定义筛选器，这些筛选器提供了常见请求的筛选器组合；例如保存的数据库查询或收藏夹列表。开始 link:task-org-private-data.html#controlling-your-data-using-policies["此处"^] 查看预定义策略列表以及如何创建自己的自定义策略。
+
+
+
+
+== 每个文件列表报告中包含的内容（ CSV 文件）
+
+在每个调查页面中，您可以单击 image:button_download.png["下载按钮"] 用于下载包含已标识文件详细信息的文件列表（ CSV 格式）的按钮。如果 Data sense 同时扫描结构化数据（数据库表）和非结构化数据（文件），则下载的 ZIP 文件中包含两个报告。
+
+如果结果超过 10 ， 000 个，则列表中仅显示排名前 10 ， 000 位的结果。
+
+* 非结构化数据报告 * 包含以下信息：
+
+* 文件名
+* 位置类型
+* Working environment name
+* 存储库（例如，卷，存储分段，共享）
+* Working environment type
+* 文件路径
+* 文件类型
+* 文件大小
+* 创建时间
+* 上次修改时间
+* 上次访问
+* 文件所有者
+* 类别
+* 个人信息
+* 敏感的个人信息
+* 删除检测日期
++
+删除检测日期用于标识文件被删除或移动的日期。这样，您就可以确定何时移动了敏感文件。已删除的文件不属于信息板或 " 调查 " 页面上显示的文件编号。这些文件仅显示在 CSV 报告中。
+
+
+
+* 结构化数据报告 * 包含以下信息：
+
+* 数据库表名称
+* 位置类型
+* Working environment name
+* 存储库（例如模式）
+* 列计数
+* 行数
+* 个人信息
+* 敏感的个人信息
+
