@@ -22,13 +22,13 @@ summary: 请完成几个步骤，开始使用 Cloud Data sense 扫描 Amazon FSX
 * 您需要在 AWS 中使用主动连接器来部署和管理 Data sense 。
 * 您在创建工作环境时选择的安全组必须允许来自云数据感知实例的流量。您可以使用连接到 FSX for ONTAP 文件系统的 ENI 来查找关联的安全组，并使用 AWS 管理控制台对其进行编辑。
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["适用于 Linux 实例的 AWS 安全组"]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["适用于 Linux 实例的 AWS 安全组"^]
 
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["适用于 Windows 实例的 AWS 安全组"]
+https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/security-group-rules.html["适用于 Windows 实例的 AWS 安全组"^]
 
 +
-link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性网络接口（ ENI ）"]
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性网络接口（ ENI ）"^]
 
 
 

@@ -83,7 +83,7 @@ NetApp 自带许可证的期限为 1 年， 2 年或 3 年。BYOL * 云数据感
 * 单击 Cloud Manager 右下角的聊天图标以请求许可证。
 
 
-或者，如果您已为 Cloud Volumes ONTAP 取消分配了基于节点的许可证，而您不会使用该许可证，则可以将其转换为具有相同美元等价性和相同到期日期的云数据感知许可证。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-licenses.html#exchange-unassigned-node-based-licenses["有关详细信息，请访问此处"^]。
+或者，如果您已为 Cloud Volumes ONTAP 取消分配了基于节点的许可证，而您不会使用该许可证，则可以将其转换为具有相同美元等价性和相同到期日期的云数据感知许可证。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["有关详细信息，请访问此处"^]。
 
 您可以使用 Cloud Manager 中的数字电子钱包页面管理 Cloud Data sense BYOL 许可证。您可以添加新许可证并更新现有许可证。
 

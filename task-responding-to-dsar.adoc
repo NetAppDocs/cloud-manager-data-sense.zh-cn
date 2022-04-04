@@ -42,7 +42,7 @@ NOTE: 目前，数据库不支持数据主题搜索。
 
 == 搜索数据主题并下载报告
 
-搜索数据主体的全名或已知标识符，然后下载文件列表报告或 DSAL 报告。您可以搜索依据 link:task-controlling-private-data.html#types-of-personal-data["任何个人信息类型"^]。
+搜索数据主体的全名或已知标识符，然后下载文件列表报告或 DSAL 报告。您可以搜索依据 link:reference-private-data-categories.html#types-of-personal-data["任何个人信息类型"^]。
 
 
 NOTE: 搜索数据主题的名称时，支持英语，德语和西班牙语。稍后将添加对更多语言的支持。

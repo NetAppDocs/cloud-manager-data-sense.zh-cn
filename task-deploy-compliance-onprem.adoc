@@ -127,17 +127,6 @@ NOTE: 如果您计划扫描 Azure NetApp Files 卷，则需要确保将部署在
 |===
 --
 确保 Cloud Manager 具有所需权限:: 确保 Cloud Manager 有权为 Cloud Data sense 实例部署资源并创建安全组。您可以在中找到最新的 Cloud Manager 权限 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp 提供的策略"^]。
-+
---
-* 注： * 如果您使用 Cloud Manager 3.9.10 或更高版本在 GCP 中创建了 Connector ，则表示您已设置完毕。如果您使用早期版本创建了 Connector ，则需要将以下权限添加到与 Connector 关联的 GCP 服务帐户，以便将 Cloud Data sense 部署到 GCP 。
-
-[source, json]
-----
-compute.instances.addAccessConfig
-compute.subnetworks.use
-compute.subnetworks.useExternalIp
-----
---
 确保 Cloud Manager Connector 可以访问 Cloud Data sense:: 确保 Connector 与 Cloud Data sense 实例之间的连接。Connector 的安全组必须允许通过端口 443 与 Data sense 实例之间的入站和出站流量。
 +
 --
@@ -180,6 +169,7 @@ NOTE: 如果软件安装在内部环境中，则 Cloud Data sense 当前无法�
 * 验证您的 Linux 系统是否满足 <<Prepare the Linux host system,主机要求>>。
 * （可选）验证系统是否已安装两个必备软件包（ Docker 引擎和 Python 3 ）。如果此软件尚未安装在系统上，安装程序将安装此软件。
 * 确保您在 Linux 系统上具有 root 权限。
+* 如果您使用的是代理，并且代理正在执行 TLS 截获，则需要了解 Data sense Linux 系统上用于存储 TLS CA 证书的路径。
 * 验证脱机环境是否满足要求 <<Verify Cloud Manager and Data Sense prerequisites,权限和连接>>。
 
 
@@ -205,7 +195,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["选择按钮在内部部署
 ----
 tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ----
-. 安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令：
+. 安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序：
 +
 [cols="50a,50"]
 |===
@@ -218,7 +208,7 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 .. 输入 Cloud Manager Connector 主机的 IP 地址或主机名，以便 Data sense 实例可以访问它。
 .. 根据提示输入代理详细信息。如果您的 Cloud Manager 已使用代理，则无需在此重新输入此信息，因为 Data sense 将自动使用 Cloud Manager 使用的代理。
 
-| 或者，您也可以预先创建整个命令并在第一个提示符处输入它： `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -cm-host <cm_host> -proxy-host <proxy_host> -proxy-port <proxy_port> -proxy-user-proxy_scheme> <proxy_proxy_name> -<proxy_password>` 
+| 或者，您也可以预先创建整个命令，并提供必要的主机和代理参数： `s` udo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -manager-host <cm_host> -proxy-host <proxy_host> -proxy-port <proxy_port> -proxy-user-proxy_name> <proxy_password> -proxy_proxy_proxy_name> -proxy_proxy_proxy_proxy_proxy_name> -<proxy_user> 
 |===
 +
 变量值：
@@ -234,6 +224,7 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ** _proxy_scheme_= 连接方案： HTTPS 或 http （默认为 http ）。
 ** _proxy_user_= 已通过身份验证的用户，用于连接到代理服务器（如果需要基本身份验证）。
 ** _proxy_password_ = 指定用户名的密码。
+** _ca_ct_dir_ = 包含其他 TLS CA 证书包的 Data sense Linux 系统上的路径。仅当代理正在执行 TLS 截获时才需要。
 
 
 
@@ -288,12 +279,12 @@ Cloud Data sense 安装程序可安装软件包，安装 Docker ，注册安装�
 
 .步骤
 . 按照中的步骤 1 至 7 进行操作 <<Single-host installation for typical configurations,单主机安装>> 在管理器节点上。
-. 如步骤 8 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令。
+. 如步骤 8 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序。
 +
 除了可用于单主机安装的变量之外，还会使用一个新选项 * -n <node_IP>* 来指定扫描程序节点的 IP 地址。多个扫描程序节点 IP 以逗号分隔。
 
 +
-例如，此命令会添加 3 个扫描程序节点： `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -cm-host <cm_host> * -n <node_ip1> ， <node_ip2> ， <node_ip3>* — proxy-proxy-host-proxy-port-<proxy-proxy-user-proxy_password>`
+例如，此命令会添加 3 个扫描程序节点： `s` udo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -manager-host <cm_host> * -n <node_ip1> ， <node_ip2> ， <node_ip3>* -host <proxy-host-proxy-user-proxy-port-<proxy-proxy_password>
 
 . 在管理器节点安装完成之前，将显示一个对话框，其中显示了扫描程序节点所需的安装命令。复制命令并将其保存在文本文件中。例如：
 +

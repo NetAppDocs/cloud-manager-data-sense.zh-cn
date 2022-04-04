@@ -216,9 +216,6 @@
   <block id="d56c40a575de98938d6b1b6814e422d2" category="inline-link-macro">位于可访问 Internet 的内部位置</block>
   <block id="cb4787e4f5b2886c42c46c918daec655" category="paragraph">数据感知可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> 或 <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block>。</block>
   <block id="151eca0a4859a8fbf17435fcbaa0001e" category="paragraph">只要实例具有 Internet 连接，就会自动升级到 Data sense 软件。</block>
-  <block id="1b602d3afff4393bd19938efb7312da3" category="inline-link-macro">部署在无法访问 Internet 的内部位置</block>
-  <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">请在此处查看所需端点的列表</block>
-  <block id="f81ff6b422de97a915d39fa62592b3a6" category="paragraph">数据感知也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。但是，要扫描 SharePoint 文件，您需要为一些选定端点提供 Internet 访问。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="2d625acbf82ccc24e4827ee53e0193d4" category="section-title">正在添加 SharePoint 帐户</block>
   <block id="7ab591f864cfe0a16aa275b9434fcde7" category="paragraph">添加用户文件所在的 SharePoint 帐户。</block>
   <block id="cb49e9afef4bc3127fbf2d354d00fd54" category="list-text">在工作环境配置页面中，单击 * 添加数据源 * &gt; * 添加 SharePoint Online 帐户 * 。</block>
@@ -295,7 +292,6 @@
   <block id="f6b0b01ee34208ec2e76e1fb8b0c7faf" category="list-text">mailto ： ng-contact-data-sense@netapp.com ？ Subject=Licensing[ 发送电子邮件以购买许可证 ] 。</block>
   <block id="666323488d4fa691054a8d6bff137cc3" category="list-text">单击 Cloud Manager 右下角的聊天图标以请求许可证。</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">有关详细信息，请访问此处</block>
-  <block id="cfe1cfbe6378fc9bdb451965f152e6d0" category="paragraph">或者，如果您已为 Cloud Volumes ONTAP 取消分配了基于节点的许可证，而您不会使用该许可证，则可以将其转换为具有相同美元等价性和相同到期日期的云数据感知许可证。<block ref="eba792cc4ea762abf667ddd327a7fe89" category="inline-link-rx"></block>。</block>
   <block id="90d64b886e00c3d7aab25a0d9ac47000" category="paragraph">您可以使用 Cloud Manager 中的数字电子钱包页面管理 Cloud Data sense BYOL 许可证。您可以添加新许可证并更新现有许可证。</block>
   <block id="b5675a346cef456374a13d7bf1fee6e3" category="section-title">获取 Cloud Data sense 许可证文件</block>
   <block id="5eb593d31b42e1e3e0858ac2f312e071" category="paragraph">购买 Cloud Data sense 许可证后，您可以通过输入 Cloud Data sense 序列号和 NSS 帐户或上传 NLF 许可证文件在 Cloud Manager 中激活此许可证。以下步骤显示了如果您计划使用此方法，如何获取 NLF 许可证文件。</block>
@@ -453,7 +449,6 @@
   <block id="d61cbf246bbdb9203d808a976fe515dc" category="paragraph">在启用 Cloud Data sense 之前，请查看以下前提条件以确保您的配置受支持。</block>
   <block id="6401be6f38d9325e9401705ef39197e8" category="list-text">您必须拥有 OneDrive for Business 帐户的管理员登录凭据，该帐户可提供对所有用户文件的读取访问权限。</block>
   <block id="316ac43c3476515e2672d78b5f7e054e" category="list-text">您需要列出要扫描其 OneDrive 文件夹的所有用户的电子邮件地址，并以行分隔。</block>
-  <block id="6d02402629e8e675a46f9e3142c8d1d2" category="paragraph">数据感知也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。但是，要扫描 OneDrive 文件，您需要为一些选定端点提供 Internet 访问。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="ff916f8aafd3dd060eaa015e5b21c9c7" category="section-title">正在添加 OneDrive 帐户</block>
   <block id="7a461f87d3978d33f6acd8b612c58b19" category="paragraph">添加用户文件所在的 OneDrive 帐户。</block>
   <block id="bef19ab5e14392fb5d2ee72ab0458c4b" category="list-text">在工作环境配置页面中，单击 * 添加数据源 * &gt; * 添加 OneDrive 帐户 * 。</block>
@@ -553,7 +548,6 @@
   <block id="fa35ffe79ce8cfa3c54cab66d30042aa" category="list-text">创建一个包含 "STS ： AssumeRole" 操作的策略，并指定您在目标帐户中创建的角色的 ARN 。</block>
   <block id="dfcacb7bb2fc2c0984bee57d93de97e0" category="paragraph">Cloud Data sense 实例配置文件帐户现在可以访问其他 AWS 帐户。</block>
   <block id="09a470fc0b523b7c361d20140ef0f34e" category="list-text">转到 * Amazon S3 Configuration* 页面，此时将显示新的 AWS 帐户。请注意， Cloud Data sense 可能需要几分钟时间来同步新帐户的工作环境并显示此信息。</block>
-  <block id="0ca84bf2b5295a1162997822bafd83bd" category="paragraph"><block ref="0ca84bf2b5295a1162997822bafd83bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e7cd110e747552b06f0f533c44e8165a" category="list-text">单击 * 激活数据感知并选择分段 * ，然后选择要扫描的分段。</block>
   <block id="94b8ae05ce3e7062b43a79d08eec1bfe" category="paragraph">Cloud Data sense 将开始扫描您启用的新 S3 存储分段。</block>
   <block id="1d7b157ba2877d6d0d3d8d256ab8cfb9" category="summary">完成几个步骤，开始使用适用于 Azure NetApp Files 的云数据感知。</block>
@@ -632,11 +626,8 @@
   <block id="2b8c960a15fe1935fd5872b84fee2da7" category="list-text">您需要在 AWS 中使用主动连接器来部署和管理 Data sense 。</block>
   <block id="bcccdcaafd61e0514c32641bfb339e1f" category="list-text">您在创建工作环境时选择的安全组必须允许来自云数据感知实例的流量。您可以使用连接到 FSX for ONTAP 文件系统的 ENI 来查找关联的安全组，并使用 AWS 管理控制台对其进行编辑。</block>
   <block id="869c81b4d4b741548bea2dd67973daa2" category="inline-link-macro">适用于 Linux 实例的 AWS 安全组</block>
-  <block id="ba25e73d818750194a7209799eddabb4" category="paragraph"><block ref="ba25e73d818750194a7209799eddabb4" category="inline-link-macro-rx"></block></block>
   <block id="a3c76b1fa69b7e81ae5c22f32760c3ad" category="inline-link-macro">适用于 Windows 实例的 AWS 安全组</block>
-  <block id="f90d03d1b70051ae7eae5a470b80dc23" category="paragraph"><block ref="f90d03d1b70051ae7eae5a470b80dc23" category="inline-link-macro-rx"></block></block>
   <block id="7ffe245546d3b7b3225d3db681da37ae" category="inline-link-macro">AWS 弹性网络接口（ ENI ）</block>
-  <block id="8501e519cf97a0b9d9d0cf462376a6f2" category="paragraph"><block ref="8501e519cf97a0b9d9d0cf462376a6f2" category="inline-link-macro-rx"></block></block>
   <block id="360c11bcd9a9bfedb1aa5353935d21cd" category="paragraph">按照以下步骤快速入门，或者向下滚动以查看完整详细信息。</block>
   <block id="d0e7ae8581484b514e52b4bee068c4f2" category="inline-link">您必须具有配置了卷的 FSX 工作环境</block>
   <block id="3894827bb26f487a20f94e2dc30a524f" category="paragraph">在扫描 ONTAP 卷的 FSX 之前，<block ref="4e0193706fbf8341d488aaec90d1333c" category="inline-link-rx"></block>。</block>
@@ -694,27 +685,22 @@
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
   <block id="c6455eb299528a8932b8dab6eab3db21" category="section-title">增加了对扫描 Microsoft SharePoint 联机帐户的支持。</block>
   <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link-macro">了解如何扫描 SharePoint 帐户</block>
-  <block id="659d1ffa40af561d84c53558562c1ec0" category="paragraph">现在，您可以将 SharePoint 联机帐户添加到 Data sense 中，以便扫描 SharePoint 站点中的文档和文件。 <block ref="7eefe10c1c468dca4cd0e6b3eed1adc0" category="inline-link-macro-rx"></block>。</block>
   <block id="0016e2969988059d89617a5a19121b57" category="section-title">Data sense 可以将文件从数据源复制到目标位置，并同步这些文件。</block>
   <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link">NetApp Cloud Sync</block>
   <block id="8430e6caa7f48c3b67a1d4bee15cdf08" category="paragraph">如果您要迁移数据，并且希望捕获最近对文件所做的任何更改，则此功能非常有用。此操作将使用<block ref="443242953ea2d033cafe32d6d6514a8c" category="inline-link-rx"></block> 用于将数据从源复制并同步到目标的功能。</block>
   <block id="48a274f4830d58bf94182b778830c862" category="inline-link-macro">请参见如何复制和同步文件</block>
-  <block id="77a75568e8846a1bf685d1ee50c690cf" category="paragraph"><block ref="6cdda3320a1281c9d4957b83cba366de" category="inline-link-macro-rx"></block>。</block>
   <block id="2344a9fc4e2f0117285de6fbb8ccfc92" category="section-title">为 DAR 报告提供了新的语言支持。</block>
   <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">现在，在搜索数据主体名称以创建数据主体访问请求（ Data Subject Access Request ， DSAar ）报告时，支持德语和西班牙语。本报告旨在帮助贵组织满足 GDPR 或类似数据隐私法律的要求。</block>
   <block id="f1bd07460557f3bfd41cfe4955c30e27" category="section-title">Data sense 可识别另外三种类型的个人数据。</block>
   <block id="da848e916ac29d03235a007036cf77ca" category="inline-link-macro">查看 Data sense 在扫描中标识的所有个人数据类型的列表</block>
-  <block id="d55b3233b82d41486408c8252b8ebafb" category="paragraph">Data sense 现在可以在文件中找到法语社会安全号码，法语 ID 和法语驱动程序许可证号码。 <block ref="685a6d4b5536628189414cd84011e60e" category="inline-link-macro-rx"></block>。</block>
   <block id="adadebc06cff6c0ac4463e1ff0c359f3" category="section-title">已更改安全组端口，以便与连接器进行数据感知通信。</block>
   <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector 的安全组将使用端口 443 而非端口 80 来处理传入和传出 Data sense 实例的入站和出站流量，以提高安全性。此时，这两个端口都保持打开状态，因此您不应看到任何问题，但您应在任何早期的 Connector 部署中更新安全组，因为端口 80 将在未来版本中弃用。</block>
   <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
   <block id="99b8b3c5a2dd0ee3c962eb7d9f6ba79b" category="section-title">能够集成全局 Active Directory 以确定文件所有者和权限。</block>
   <block id="e4a822ae3bd5d19b76fea8306ce5774c" category="paragraph">现在，您可以将全局 Active Directory 与 Cloud Data sense 集成在一起，以增强 Data sense 报告的有关文件所有者以及哪些用户和组有权访问您的文件的结果。</block>
   <block id="f8add8b46019d8016befb6aebc941e84" category="inline-link-macro">请参见如何设置全局 Active Directory</block>
-  <block id="eed42314c8425f21a986d3b70cb05658" category="paragraph">除了您输入 Active Directory 凭据以使 Data sense 能够从某些数据源扫描 CIFS 卷之外，此新集成还为其他用户和系统提供了额外的集成。Data sense 将在所有集成的 Active Directory 中查找用户和权限详细信息。 <block ref="64cba81c60533194508987e16994b8d7" category="inline-link-macro-rx"></block>。</block>
   <block id="aaa8cfc760432289a7a79ef5e2443065" category="section-title">现在，可以使用数据感知 " 策略 " 删除文件。</block>
   <block id="4fdca8fbbd2a76d7345e79fb0e7fd3fc" category="inline-link-macro">请参见如何创建自定义策略</block>
-  <block id="aa46c786779de0fbd3280d592901e64f" category="paragraph">Data sense 可以自动删除与策略中定义的查询匹配的文件。 <block ref="68f7176f15fa3737e845d858e7820489" category="inline-link-macro-rx"></block>。</block>
   <block id="096a1667ae412a6b3dd6d7318a0fb8d4" category="section-title">2021 年 12 月 16 日</block>
   <block id="de70d65908dbf00b3db904233205b2eb" category="section-title">数据感知功能可以扫描非公开站点中的数据。</block>
   <block id="9cf152a5e0126404c2835d3823d404fa" category="paragraph">Cloud Manager 和 Cloud Data sense 均可部署在无法访问 Internet 的内部站点中。现在，您的安全站点可以使用 Cloud Manager 管理内部 ONTAP 集群，在集群之间复制数据，以及使用 Cloud Data sense 扫描这些集群中的数据。</block>
@@ -727,7 +713,6 @@
   <block id="9d321eefe3fb98368019ac183d4f559f" category="paragraph"><block ref="99c1ffe6c02d2af43316b015cbc9c8a2" category="inline-link-macro-rx"></block>。</block>
   <block id="a9760d7195cde848a43dcf9f49ae5a3d" category="section-title">现在， Cloud Manager 的 GCP Marketplace 订阅支持 Cloud Data sense 。</block>
   <block id="4932ec0144d6d1640460f5cfee326e0f" category="inline-link-macro">Cloud Manager 的 GCP Marketplace 订阅</block>
-  <block id="8fb28c19c581ed5d21cc52e0f7a59cf6" category="paragraph">。 <block ref="f1e044908a3464ee2fe42cd6aa7d2d05" category="inline-link-macro-rx"></block> 现在支持 Cloud Data sense 。现在，除了使用 NetApp 的 BYOL 许可证之外，您还可以使用此按需购买（ PAYGO ）订阅从部署在 Google Cloud 存储上的 Cloud Volumes ONTAP 系统扫描数据。</block>
   <block id="d5b817fd2402b13ecd711e18cd96c889" category="section-title">能够查看长期运行的合规性操作的状态。</block>
   <block id="c066aa13effff0bea79252a20699074b" category="paragraph">从调查结果窗格对多个文件运行操作时，例如删除 50 个文件，此过程可能需要一些时间。现在，您可以监控这些异步操作的状态，以便了解它何时应用于所有文件。</block>
   <block id="7fc4a6242ce76e0415a989d1dbc8b9d4" category="inline-link-macro">了解如何查看持续合规操作的状态</block>
@@ -817,7 +802,6 @@
   <block id="e04501bf2142c7fbcbe675ce8d61226d" category="section-title">能够扫描存储在 Azure Blob 上的数据。</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">扫描使用 S3 协议的对象存储</block>
   <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link">MinIO 服务</block>
-  <block id="3734ac37773fc42dc3de6e600b55b08c" category="paragraph">现在，使用时支持扫描存储在 Azure Blob 上的数据<block ref="3b9fdaa52fc76f23fd47364e47f68590" category="inline-link-rx"></block>。请参见 <block ref="53ed5724ec3c5650162def279afa5e15" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="0e7f3bd52176e33fdeec7f114366de00" category="section-title">其他类型的个人数据可通过 Data sense 来识别。</block>
   <block id="2195e52cb889f9b1ac4706eeeea03f1d" category="paragraph">Cloud Data sense 现在可以在文件中找到奥地利的 SSN 。</block>
   <block id="59690da7c148890212e0b4711de94b97" category="summary">Cloud Data sense 可以在卷， Amazon S3 存储分段，数据库， OneDrive 文件夹和 SharePoint 帐户中识别多种类型的私有数据。请参见以下类别。</block>
@@ -1382,7 +1366,6 @@
   <block id="850dcc64352d6ec82fb2c15e439c169b" category="list-text">您可以为文件分配特定状态。请参见 <block ref="8a1b9fcafc24ba7d6db53f4a655335df" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="826ff42fce3b59aaac99a39a16e48c77" category="inline-link-macro">为文件分配用户</block>
   <block id="7f3e4f2b8ecea86e2f1c636c83d0be8a" category="list-text">您可以将此文件分配给 Cloud Manager 用户，以负责对该文件执行任何后续操作。请参见 <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> 了解详细信息。</block>
-  <block id="06ad588f101234d4ffe4ed1c2e0fa211" category="list-text">如果您已将 AIP 标签与 Cloud Data sense 集成在一起，则可以为此文件分配一个标签，或者如果已存在另一个标签，则可以更改为其他标签。请参见 <block ref="3bcd49322d6b980c5133a805b12f0102" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="3f35cf889c11310542bc8d10e634400d" category="section-title">查看文件的权限</block>
   <block id="e3231cf2e2415bcd0249cbb511e9a32b" category="paragraph">要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于 CIFS 共享， SharePoint 和 OneDrive 中的文件。</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">显示详细文件权限的屏幕截图。</block>
@@ -1393,7 +1376,6 @@
   <block id="c928af120c06b9565d871ba33db1c7f5" category="section-title">检查存储系统中是否存在重复文件</block>
   <block id="5180c6809f41234a64af29e1a7ad708c" category="paragraph">您可以查看存储系统中是否存储了重复的文件。如果您要确定可节省存储空间的区域，此功能非常有用。此外，确保具有特定权限或敏感信息的某些文件不会在存储系统中进行不必要的复制也会很有帮助。</block>
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">删除文件</block>
-  <block id="2c71650555356b3d0906ada394ed9990" category="paragraph">您可以下载重复文件列表并将其发送给存储管理员，以便他们确定可以删除哪些文件（如果有）。您也可以 <block ref="9fadd258473d902bb1105d48f5781f6a" category="inline-link-macro-rx"></block> 如果您确信不需要特定版本的文件，请自行选择。</block>
   <block id="05a9e2e2902a6ea5dacdfe3be87085eb" category="section-title">查看所有重复的文件</block>
   <block id="5b00edf3a5903017b22e268ae58998c0" category="paragraph">如果您需要列出在工作环境中复制的所有文件以及正在扫描的数据源，则可以在 " 数据调查 " 页面中使用名为 * 重复项 &gt; 具有重复项 * 的筛选器。</block>
   <block id="d093b6ce815865a414da07677b4c868c" category="paragraph">结果页面将显示所有文件类型（不包括数据库）中的重复文件，最小大小为 50 MB 且 / 或包含个人或敏感个人信息。</block>
@@ -1557,7 +1539,6 @@
   <block id="2e5ce55dec2ff1c76b2eb8662089db85" category="list-text">所有选定文件都必须来自同一源存储库（ ONTAP 卷， S3 存储分段， NFS 或 CIFS 共享等）。</block>
   <block id="7b3543922066dce10c949a9abf066434" category="list-text">一次最多可以复制 200 ， 000 个文件。</block>
   <block id="5698905e8d060e455d19636040ff425c" category="inline-link-macro">快速启动问题描述</block>
-  <block id="4039a6c402c6fd68c5ef3fb29f861b50" category="list-text">您需要激活 Cloud Sync 服务并至少配置一个数据代理，用于在源系统和目标系统之间传输文件。查看从开始的 Cloud Sync 要求 <block ref="21b0281f3352a7c71157c987bc024049" category="inline-link-macro-rx"></block>。</block>
   <block id="627bf959aabe96a1a08aad7eaf1ab97a" category="paragraph">请注意， Cloud Sync 服务会为您的同步关系单独收取服务费用，如果您在云中部署数据代理，则会产生资源费用。</block>
   <block id="ff0485cd041399c074cb840a8d93eafb" category="list-text">在数据调查窗格中，选择一个 * 工作环境 * 和一个 * 存储库 * 来创建筛选器，以确保所有文件都来自同一个存储库。</block>
   <block id="6b063a37c6525c913c2ebc03bba94e6e" category="paragraph">应用任何其他筛选器，以便您仅看到要复制并同步到目标系统的文件。</block>
@@ -1569,7 +1550,6 @@
   <block id="f99d47fc2b2d15f7a4e71c406605af8c" category="list-text">如果确实要将选定文件同步到目标位置，请单击 * 确定 * 。</block>
   <block id="b27c875fdb9650315d4416b44f982419" category="paragraph">Cloud Sync UI 将在 Cloud Manager 中打开。</block>
   <block id="41d86a9722ccbf049c18c60903920b5d" category="paragraph">系统将提示您定义同步关系。源系统会根据您在 Data sense 中选择的存储库和文件预先填充。</block>
-  <block id="9dae35ea405fffd9cf2594501b636853" category="list-text">您需要选择目标系统，然后选择（或创建）计划使用的数据代理。查看从开始的 Cloud Sync 要求 <block ref="21b0281f3352a7c71157c987bc024049" category="inline-link-macro-rx"></block>。</block>
   <block id="e6533856451037047a525dba26682255" category="paragraph">这些文件将复制到目标系统，并根据您定义的计划进行同步。如果选择一次性同步，则文件只会复制和同步一次。如果选择定期同步，则会根据计划同步文件。请注意，如果源系统添加的新文件与您使用筛选器创建的查询匹配，这些 _new_ 文件将复制到目标并在将来进行同步。</block>
   <block id="ebcbe4686337bc3124e5b405399e043b" category="paragraph">请注意，从数据感知调用某些常见 Cloud Sync 操作时，这些操作将被禁用：</block>
   <block id="9b955d2f8c7eb79fa331696ccaea0382" category="list-text">不能使用 * 删除源上的文件 * 或 * 删除目标上的文件 * 按钮。</block>
@@ -1640,15 +1620,11 @@
   <block id="ae9d17dd7732dafc7b97f62ac9094cf7" category="list-text">数据库架构</block>
   <block id="ec1fb1662782ed20e20c07aa72cea943" category="list-text">非 NetApp NFS 或 CIFS 文件共享</block>
   <block id="c6b920b524033c55e0dbc0115eae5c7e" category="list-text">使用简单存储服务（ S3 ）协议的对象存储</block>
-  <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint 和 OneDrive 的特殊要求</block>
-  <block id="ee3f6c9462489b0b279ee5210ea8b7b6" category="paragraph">如果您需要非常安全的 Cloud Manager 安装，但也希望扫描 OneDrive 帐户或 SharePoint 帐户，则可以使用 Data sense 脱机安装程序并提供对一些选定端点的 Internet 访问。请参见 <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> 了解详细信息。</block>
-  <block id="79e0848d1bc2a8a6b4a0f1371a93e4b3" category="paragraph">目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP 或 AWS S3 帐户。</block>
   <block id="5ba5b8eb3222cd77297eb876e3219895" category="paragraph">大多数 Data sense 功能都适用于部署在无法访问 Internet 的站点上的情况。但是，不支持某些需要访问 Internet 的功能，例如：</block>
   <block id="1d7a14d61308aecb5be9316e1481f947" category="list-text">管理 Microsoft Azure 信息保护（ AIP ）标签</block>
   <block id="a11bc353b91c78f50a85b950845a4b38" category="list-text">从 Cloud Manager 自动升级软件</block>
   <block id="bcf35880f7965059f014c3f42b15db3d" category="inline-link-macro">《云数据感知发行说明》</block>
   <block id="14840f2c01874b7a01eecfd86794b6d5" category="inline-xref">升级 Data sense 软件</block>
-  <block id="03ccebd0687cfa0c9b73907da8ce896f" category="paragraph">Cloud Manager Connector 和 Data sense 都需要定期手动升级才能启用新功能。您可以在 Data sense UI 页面底部看到 Data sense 版本。检查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 可查看每个版本中的新功能以及软件更新包何时可用。然后，您可以按照以下步骤进行操作 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="b2ddcf19cd8b44eb7a130f3b9f666f56" category="inline-link">部署连接器</block>
   <block id="ae1d335322e61ad9be15599df78220db" category="paragraph">如果您尚未在脱机内部站点上安装 Connector ，<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 现在在 Linux 主机上。</block>
   <block id="5462103113dfca7582cf43f266db09a2" category="inline-xref">主机要求</block>
@@ -1668,7 +1644,6 @@
   <block id="f12d2902352feb2353dd1667f55dc293" category="list-text">/var 上提供 400 GiB</block>
   <block id="a5c179e2fdd6f5e7316bce2d986b6a88" category="list-text">RAM ： 64 GB （必须在主机上禁用交换内存）</block>
   <block id="08e13bbbf0255b955820ad8ae3cc8c53" category="list-text">CPU ： 16 个核心</block>
-  <block id="72bbc077148e57e3d851fa9b8d31f046" category="paragraph">在安装 Data sense 之前，必须在主机上安装以下软件：</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">查看安装说明</block>
   <block id="978609569f7aa2ebd2e50aa2d7c3f2da" category="list-text">Docker 引擎版本 19 或更高版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="c0ffa5845aefb5e4bb0fa6089bcc513d" category="list-text">Python 3 3.6 或更高版本。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>。</block>
@@ -1681,14 +1656,10 @@
   <block id="75913c473742502800ae1c0a9a5a93df" category="list-text">确保您可以保持 Cloud Data sense 正常运行云数据感知实例需要保持运行状态才能持续扫描数据。</block>
   <block id="4aba7f90868b90b603949256a41d341e" category="list-text">确保 Web 浏览器连接到 Cloud Data sense启用 Cloud Data sense 后，请确保用户从连接到 Data sense 实例的主机访问 Cloud Manager 界面。</block>
   <block id="f782bd66a6cb879744380792574779e5" category="paragraph">Data sense 实例使用专用 IP 地址来确保索引数据不可供他人访问。因此，用于访问 Cloud Manager 的 Web 浏览器必须连接到该专用 IP 地址。此连接可以来自与 Data sense 实例位于同一网络中的主机。</block>
-  <block id="888dff3710a9070ecf769d24985daae9" category="paragraph">如果 Cloud Manager 和 Data sense 部署在无法访问 Internet 的站点中，则可以通过为一些选定端点提供 Internet 访问来扫描 SharePoint 和 OneDrive 帐户中的文件。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端点</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
-  <block id="ca31f5af8410452f51d81153fffb5c54" category="cell">login.microsoft.com \graph.microsoft.com</block>
-  <block id="bea203a1b40a7cbfe57a7032625d4eed" category="cell">与 Microsoft 服务器通信以登录到选定的联机服务。</block>
   <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">https://cloudmanager.cloud.netapp.com</block>
   <block id="e26cb925e48bab5bb2ee58ee723b2677" category="cell">与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。</block>
-  <block id="665921fa8f2b4f0c994ec8d226f8544f" category="paragraph">只有在首次连接到这些外部服务期间，才需要访问 _cloudmanager.cloud.netapp.com_ 。</block>
   <block id="8a344d9380d42668324bc0e5df589f1a" category="section-title">部署 Data sense</block>
   <block id="92aadc02d249003db0a3c659eb74f06b" category="inline-link-macro">请在此处查看这些步骤</block>
   <block id="2e7ee80a6e4d40bc409d4f4893e290bb" category="paragraph">对于典型配置，您将在一个主机系统上安装该软件。 <block ref="a4f6f244c9fb5caddddb02072a431c59" category="inline-link-macro-rx"></block>。</block>
@@ -1714,14 +1685,12 @@
   <block id="5ef86f30d02c8c5fb29b6604da109d51" category="list-text">在 _Deploy Data sense on premises_ 对话框中，复制提供的命令并将其粘贴到文本文件中，以便稍后使用，然后单击 * 关闭 * 。例如：</block>
   <block id="de228a79f2490bf5b3308e91ce0e8426" category="paragraph">`sudo ./install.sh -a 12345 -c 27ag75 -t 2198qq -dredestinm`</block>
   <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">解压缩主机上的安装文件，例如：</block>
-  <block id="f588e434656f7b49a0d7c9eebcd00f3f" category="list-text">安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令：</block>
   <block id="7811f7ac7277273963aaa041e6dee561" category="cell">根据提示输入参数：</block>
   <block id="92a8de5d873f4ac3a57f4d866c8ed98c" category="cell">输入完整命令：</block>
   <block id="ad9960c224b334ea469591738244827c" category="list-text">粘贴您从第 7 步复制的信息： `sUdo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -drestsite`</block>
   <block id="dde575296d7c18c713a24acdec3bb7b6" category="list-text">输入 Data sense 主机的 IP 地址或主机名，以便 Connector 实例可以访问它。</block>
   <block id="b5bbaa87f2597e452a45bf63ab12e658" category="list-text">输入 Cloud Manager Connector 主机的 IP 地址或主机名，以便 Data sense 实例可以访问它。</block>
   <block id="81e9249f85edb257cfa41b6de27f0520" category="list-text">根据提示输入代理详细信息。如果您的 Cloud Manager 已使用代理，则无需在此重新输入此信息，因为 Data sense 将自动使用 Cloud Manager 使用的代理。</block>
-  <block id="f8b0f02677e6c03dbf5976063768f976" category="cell">或者，您也可以事先创建整个命令并在第一个提示符处输入它： `sudo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -cm-host &lt;cm_host&gt; -proxy-host &lt;proxy_host&gt; -proxy-port &lt;proxy_port&gt; -proxy-user-proxy-password&gt; -proxy-proxy-proxy-proxy_name&gt;`</block>
   <block id="99a5b8fe9eadd5739e3e760584c579fc" category="paragraph">变量值：</block>
   <block id="82fbba9871c4c69830c0ea5c2c6fa6f8" category="list-text">_account_id_ = NetApp 帐户 ID</block>
   <block id="ce49b2db53a11ca7ddb5f05294345b09" category="list-text">_agent_id_ = 连接器 ID</block>
@@ -1766,9 +1735,7 @@
   <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049.</block>
   <block id="26285ebf37a162fef382f275814886c9" category="inline-link-macro">单主机安装</block>
   <block id="a34d1a701917dbbb1735e81c6c612bc0" category="list-text">按照中的步骤 1 至 8 进行操作 <block ref="80550799407a84f7dd8a18bd5786e6be" category="inline-link-macro-rx"></block> 在管理器节点上。</block>
-  <block id="2fbd7eaadac8e305081005e20adc9ea7" category="list-text">如步骤 9 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令。</block>
   <block id="5e2f5642806d5ddc2868631f2e508d3d" category="paragraph">除了可用于单主机安装的变量之外，还会使用一个新选项 * -n &lt;node_IP&gt;* 来指定扫描程序节点的 IP 地址。多个节点 IP 以逗号分隔。</block>
-  <block id="596cd584169daa1b614b76a04e6b7023" category="paragraph">例如，此命令会添加 3 个扫描程序节点： `sudo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -cm-host &lt;cm_host&gt; * -n &lt;node_ip1&gt; ， &lt;node_ip2&gt; ， &lt;node_ip3&gt;* -proxy-proxy-host-proxy-port-&lt;proxy-proxy-user-port-&lt;proxy_password&gt;`</block>
   <block id="743663a45dfd2f9237dfcf266bf499a6" category="list-text">在管理器节点安装完成之前，将显示一个对话框，其中显示了扫描程序节点所需的安装命令。复制命令并将其保存在文本文件中。例如：</block>
   <block id="bb70d223e1e51328f09038d97ad81b07" category="paragraph">`sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`</block>
   <block id="611c763bf4c9dbb7098d6afa814b754f" category="list-text">在 * 每个 * 扫描程序节点主机上：</block>
@@ -1918,7 +1885,6 @@
   <block id="a32077f03ac34ef87d1b9319f966a992" category="list-text">确保 Cloud Manager 具有所需权限</block>
   <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetApp 提供的策略</block>
   <block id="5bce1289e26c4befc9cf6f8c96aa42f4" category="list-text">确保 Cloud Manager 有权为 Cloud Data sense 实例部署资源并创建安全组。您可以在中找到最新的 Cloud Manager 权限<block ref="d2f8d77175d2dd5e5ed1a096c2593510" category="inline-link-rx"></block>。</block>
-  <block id="12375139b750ac57e73bed5344af7110" category="paragraph">* 注： * 如果您使用 Cloud Manager 3.9.10 或更高版本在 GCP 中创建了 Connector ，则表示您已设置完毕。如果您使用早期版本创建了 Connector ，则需要将以下权限添加到与 Connector 关联的 GCP 服务帐户，以便将 Cloud Data sense 部署到 GCP 。</block>
   <block id="1e4d2fe4f612f57b44ef8e5cef94c206" category="list-text">检查 vCPU 限制</block>
   <block id="6009dfe81252cdbe89810207bc79df09" category="inline-link-macro">请参见所需的实例类型</block>
   <block id="bc77f13d847e011b87b4f07524f054bd" category="list-text">确保云提供商的 vCPU 限制允许部署包含 16 个核心的实例。您需要验证运行 Cloud Manager 的区域中相关实例系列的 vCPU 限制。 <block ref="ced91b9ed92f648f7f8f7ec276835b9d" category="inline-link-macro-rx"></block>。</block>
@@ -1985,8 +1951,6 @@
   <block id="ef4a4eef354631d5e99b3e1ea91d46d7" category="list-text"><block ref="ef4a4eef354631d5e99b3e1ea91d46d7" category="inline-link-macro-rx"></block></block>
   <block id="33b8c7d67d1544ae9cd892551b3430a1" category="summary">您可以将全局 Active Directory 与 Cloud Data sense 集成在一起，以增强 Data sense 报告有关文件所有者以及哪些用户和组有权访问您的文件的结果。</block>
   <block id="ed06836223030df4ecc67bba1d86278b" category="doc">将 Active Directory 与 Cloud Data sense 集成</block>
-  <block id="7ca8802331f0282275ce9dccb7eea5e8" category="paragraph">在设置某些数据源（如下所示）时，您需要输入 Active Directory 凭据才能使 Data sense 扫描 CIFS 卷。此集成可为 Data sense 提供这些数据源的文件所有者和权限详细信息。为这些数据源输入的 Active Directory 可能与您在此输入的全局 Active Directory 凭据不同。Data sense 将在所有集成的 Active Directory 中查找用户和权限详细信息。</block>
-  <block id="f9bb166ddff2868de6c2221f27bc24c3" category="paragraph">这有助于在 Data sense 的以下位置：</block>
   <block id="b2c97ae425dd751b0e48a3acae79cf4a" category="inline-link-macro">筛选器</block>
   <block id="24f4168fd88693a87618a03db8811608" category="list-text">您可以使用 " 文件所有者 " <block ref="58ee51d48568237ca49c41cc2a7a829a" category="inline-link-macro-rx"></block> 并在 " 调查 " 窗格中查看文件元数据的结果。此文件所有者不包含 SID （安全标识符），而是使用实际用户名进行填充。</block>
   <block id="5f91c0845412e72586ca4ccff087de46" category="inline-link-macro">完整文件权限</block>
@@ -2000,12 +1964,9 @@
   <block id="e43e62e4bd2ef2b0d4d1e421a22a0be2" category="list-text">非 NetApp CIFS 文件共享（不适用于 NFS 文件共享）</block>
   <block id="b73af05fa76cf73f03025fa51eb8655a" category="paragraph">不支持从使用简单存储服务（ Simple Storage Service ， S3 ）协议的数据库架构， OneDrive 帐户， SharePoint 帐户， Amazon S3 帐户或对象存储中识别用户和权限信息。</block>
   <block id="cd77c160f6007bd570b07762f3b9388f" category="section-title">正在连接到 Active Directory 服务器</block>
-  <block id="20571a78d937e874105683e2ad0f0135" category="paragraph">在部署 Data sense 并对数据源激活扫描之后，您可以将 Data sense 与 Active Directory 集成。</block>
   <block id="fb4850605d162a3c4b4728471f852d3a" category="paragraph">Active Directory 凭据可以是只读凭据，但提供管理员凭据可确保 Data sense 可以读取任何需要提升权限的数据。这些凭据存储在 Cloud Data sense 实例上。</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">您必须已为公司中的用户设置 Active Directory 。</block>
   <block id="6fcd963bedffc4e92b9378afcac66a5a" category="list-text">您必须具有 Active Directory 的信息：</block>
-  <block id="4c1d159c6f87e616542feee759bfc905" category="list-text">DNS 服务器 IP 地址或多个 IP 地址</block>
-  <block id="196004c131c20b6770256be1148132f8" category="list-text">服务器的用户名和密码</block>
   <block id="02edada29b01e453b3830347ae8b9aa3" category="list-text">域名（ Active Directory 名称）</block>
   <block id="4d146be5b7cddee432214b6978ee8611" category="list-text">是否使用安全 LDAP （ LDAPS ）</block>
   <block id="edd00befdb31c3769c4fd5e2618d6ce1" category="list-text">LDAP 服务器端口（对于 LDAP ，通常为 389 ；对于安全 LDAP ，通常为 636 ）</block>
@@ -2025,7 +1986,6 @@
   <block id="fbf0e11ce0cd48bb9e2c4bd7e68ee6ed" category="list-text">在 "Cloud Data sense Configuration" 页面中，单击 * 添加 Active Directory* 。</block>
   <block id="13ef4cef9a1294a524c013c531209712" category="inline-image-macro">一个屏幕截图，显示单击按钮将 Active Directory 服务器添加到 Cloud Data sense 中。</block>
   <block id="eeebe23a5f0572597170601a3c83e0a6" category="paragraph"><block ref="eeebe23a5f0572597170601a3c83e0a6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="055c72af24e0596fffa20e9ffc7c40ec" category="list-text">在连接到 Active Directory 对话框中，输入 Active Directory 详细信息，然后单击 * 连接 * 。可以通过在条目之间添加逗号来添加多个 IP 地址。</block>
   <block id="c2a593956677f8907f780f25630bb298" category="inline-image-macro">用于定义要与 Data sense 集成的 Active Directory 的对话框的屏幕截图。</block>
   <block id="7e98f2e9be9b47a003653ab6f5d10a46" category="paragraph"><block ref="7e98f2e9be9b47a003653ab6f5d10a46" category="inline-image-macro-rx" type="image"></block></block>
   <block id="af349b83f832e7860c4d056a3ce6430a" category="paragraph">Data sense 可集成到 Active Directory ，并在配置页面中添加了一个新部分。</block>
@@ -2121,7 +2081,6 @@
   <block id="dd363d2f15cf39a647d862100dda0956" category="admonition">目前，数据库不支持数据主题搜索。</block>
   <block id="b6d9bc7bd8d7f42a7f70429316f4c5a8" category="section-title">搜索数据主题并下载报告</block>
   <block id="95fbc0e5629d1a6565b155bfc1a72f1f" category="inline-link-macro">任何个人信息类型</block>
-  <block id="8bae388a52f799f3709cff9cef620c41" category="paragraph">搜索数据主体的全名或已知标识符，然后下载文件列表报告或 DSAL 报告。您可以搜索依据 <block ref="3da144c0db1c2656b5a5a94195fee136" category="inline-link-macro-rx"></block>。</block>
   <block id="c5928463d331d08a07fbb5b6452d32f7" category="admonition">搜索数据主题的名称时，支持英语，德语和西班牙语。稍后将添加对更多语言的支持。</block>
   <block id="c9edde725bcfb1c133b505d4d1320784" category="list-text">单击 * 数据主题 * 。</block>
   <block id="f1c85eaf16c9599d4afcc94f0e5efb53" category="list-text">搜索数据主体的全名或已知标识符。</block>
@@ -2213,16 +2172,13 @@
   <block id="f7fe0f4c5bd3dd34e31c9eae80732a01" category="paragraph">`sudo ./install.sh -a 12345 -c 27ag75 -t 2198qq`</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">解压缩主机上的安装程序文件，例如：</block>
   <block id="0c3e94a9670a26d481343fe02b9df002" category="list-text">粘贴您从第 6 步复制的信息： `sUdo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt;`</block>
-  <block id="59d5bcdd5bbad819fcd4174543baf493" category="cell">或者，您也可以预先创建整个命令并在第一个提示符处输入它： `sudo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -cm-host &lt;cm_host&gt; -proxy-host &lt;proxy_host&gt; -proxy-port &lt;proxy_port&gt; -proxy-user-proxy_scheme&gt; &lt;proxy_proxy_name&gt; -&lt;proxy_password&gt;`</block>
   <block id="92950fbc35dd1c9fdc3896ffb51749bc" category="paragraph">Cloud Data sense 安装程序可安装软件包，安装 Docker ，注册安装以及安装 Data sense 。安装可能需要 10 到 20 分钟。</block>
   <block id="fbcdb0694a0a3b81a14856a399756e1f" category="paragraph">对于需要扫描数 PB 数据的大型配置，您可以使用多个主机来提供额外的处理能力。使用多个主机系统时，主系统称为 _Manager node_ ，提供额外处理能力的其他系统称为 _扫描 程序 nodes_ 。</block>
   <block id="2c340191b330c641363a55766c89b4bf" category="paragraph">在多个内部主机上安装 Data sense 软件时，请按照以下步骤进行操作。</block>
   <block id="9e1ecd43547b653bae3907b8b91d78bf" category="list-text">（可选）验证系统是否已安装两个必备软件包（ Docker 引擎和 Python 3 ）。如果此软件尚未安装在系统上，安装程序将安装此软件。</block>
   <block id="7fe5eab00f11de0e16f1783ba30c4723" category="list-text">验证您的环境是否满足要求 <block ref="30279dbc704eb5aee887c19477ab8cc7" category="inline-xref-macro-rx"></block>。</block>
   <block id="2f22ab4135a481a1450cf28cb5f05c26" category="list-text">按照中的步骤 1 至 7 进行操作 <block ref="ca10c193ae29117fbfb6ce9e3e248e8b" category="inline-xref-macro-rx"></block> 在管理器节点上。</block>
-  <block id="66cbd553537da22d998e9ee71407a7bc" category="list-text">如步骤 8 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令。</block>
   <block id="8b1cdcd166f0c70f7233d0d11c7bddf2" category="paragraph">除了可用于单主机安装的变量之外，还会使用一个新选项 * -n &lt;node_IP&gt;* 来指定扫描程序节点的 IP 地址。多个扫描程序节点 IP 以逗号分隔。</block>
-  <block id="64f62489b0c5353ad69536217d61477c" category="paragraph">例如，此命令会添加 3 个扫描程序节点： `sudo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -cm-host &lt;cm_host&gt; * -n &lt;node_ip1&gt; ， &lt;node_ip2&gt; ， &lt;node_ip3&gt;* — proxy-proxy-host-proxy-port-&lt;proxy-proxy-user-proxy_password&gt;`</block>
   <block id="16169a6db19d22fec1bd9261b3bb4156" category="list-text">将 Data sense 安装程序文件（ * cc_onprem_installer_&lt;version&gt;.tar.gz* ）复制到主机（使用 `scp` 或其他方法）。</block>
   <block id="3f0a4de61ad13ce65d1a7332a726eb8d" category="list-text">粘贴并执行步骤 3 中复制的命令。</block>
   <block id="338bab1be2b874ad2e6906e8c71283d5" category="paragraph">Cloud Data sense 安装程序将完成软件包， Docker 的安装并注册安装。安装可能需要 10 到 20 分钟。</block>
@@ -2281,4 +2237,58 @@
   <block id="cc81b1698333ba727fd5bde305c3cf08" category="sidebar">Cloud Central 用例</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+  <block id="b6454bdfdfbaaf11e2ddfd3b5eda400e" category="paragraph">或者，如果您已为 Cloud Volumes ONTAP 取消分配了基于节点的许可证，而您不会使用该许可证，则可以将其转换为具有相同美元等价性和相同到期日期的云数据感知许可证。<block ref="c110e5a4a66d7429a8ced7dc2264a8f5" category="inline-link-rx"></block>。</block>
+  <block id="a5724465b3becc6d73277d9d1fa8d98d" category="inline-image-macro">显示如何激活 Data sense 的屏幕截图。</block>
+  <block id="ec434d60c8b1addc64afae6e9cabebbf" category="paragraph"><block ref="ec434d60c8b1addc64afae6e9cabebbf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="38aabb48c7b00e0c5ef0ec27ca5a850d" category="paragraph"><block ref="38aabb48c7b00e0c5ef0ec27ca5a850d" category="inline-link-rx"></block></block>
+  <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
+  <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
+  <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022 年 4 月 5 日</block>
+  <block id="41f52a9df0c19d41d935d656fb938433" category="section-title">Data sense 可以识别四种新类型的澳大利亚个人数据。</block>
+  <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看 Data sense 可以在您的数据中识别的所有类型的个人数据</block>
+  <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大利亚驾驶执照编号，澳大利亚医疗保健服务编号和澳大利亚护照编号的文件并对其进行分类。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
+  <block id="79a1cd072dfc91cd46891838564f2047" category="section-title">现在，全局 Active Directory 服务器可以是 LDAP 服务器。</block>
+  <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">与 Data sense 集成的全局 Active Directory 服务器现在可以是 LDAP 服务器，而不是以前支持的 DNS 服务器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
+  <block id="592c8c1b273df763193797348c862319" category="paragraph">现在，您可以将 SharePoint 联机帐户添加到 Data sense 中，以便扫描 SharePoint 站点中的文档和文件。<block ref="fb0503eda5504503140f919428a17c9c" category="inline-link-rx"></block>。</block>
+  <block id="660cff517370f72d72102d4ff2998c40" category="paragraph"><block ref="c0e6847180e8e936303f149ed2e169b8" category="inline-link-rx"></block>。</block>
+  <block id="0f774c5b2a7839e95c43788f441f3dd3" category="paragraph">Data sense 现在可以在文件中找到法语社会安全号码，法语 ID 和法语驱动程序许可证号码。<block ref="388ce18cfcb7cb3d159655ecca4c4330" category="inline-link-rx"></block>。</block>
+  <block id="129f0bf953b701155233395846412fc3" category="paragraph">除了您输入 Active Directory 凭据以使 Data sense 能够从某些数据源扫描 CIFS 卷之外，此新集成还为其他用户和系统提供了额外的集成。Data sense 将在所有集成的 Active Directory 中查找用户和权限详细信息。<block ref="158a238f28caf554b0fac060cc222c85" category="inline-link-rx"></block>。</block>
+  <block id="0a42fac75db1d1ad5a957d27f1b0093d" category="paragraph">Data sense 可以自动删除与策略中定义的查询匹配的文件。<block ref="fa669ca41a532c138aee3aeaad4c4f3f" category="inline-link-rx"></block>。</block>
+  <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> 现在支持 Cloud Data sense 。现在，除了使用 NetApp 的 BYOL 许可证之外，您还可以使用此按需购买（ PAYGO ）订阅从部署在 Google Cloud 存储上的 Cloud Volumes ONTAP 系统扫描数据。</block>
+  <block id="454fdd43498530d6ceef83652c11b91c" category="paragraph">现在，使用时支持扫描存储在 Azure Blob 上的数据<block ref="af0f5559fdeef481a290adb52cf012ec" category="inline-link-rx"></block>。请参见 <block ref="53ed5724ec3c5650162def279afa5e15" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="9ffceb20e382df6e4587add0d24af321" category="cell">澳大利亚 TFN （税务文件编号）</block>
+  <block id="e1ae59ed032376d2ab05147c6442f610" category="cell">澳大利亚驱动程序许可证编号</block>
+  <block id="67863eec6ed398cda366fe555c1746bd" category="cell">澳大利亚医疗保健计划编号</block>
+  <block id="bba082dd43baad5296b00863b2fd871e" category="cell">澳大利亚护照编号</block>
+  <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">如果您已将 AIP 标签与 Cloud Data sense 集成在一起，则可以为此文件分配一个标签，或者如果已存在另一个标签，则可以更改为其他标签。请参见 <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="d65636c48d5eaaa2a0f018e8b2c9b456" category="paragraph">您可以下载重复文件列表并将其发送给存储管理员，以便他们确定可以删除哪些文件（如果有）。您也可以 <block ref="e6aba68fcf17e4e39481e0dfc445e973" category="inline-link-macro-rx"></block> 如果您确信不需要特定版本的文件，请自行选择。</block>
+  <block id="b234f0588eeee2419f3feb6bc553a0f4" category="list-text">您需要激活 Cloud Sync 服务并至少配置一个数据代理，用于在源系统和目标系统之间传输文件。查看从开始的 Cloud Sync 要求 <block ref="9b05f1e30d7d93d40aa2e8405fae61e6" category="inline-link-macro-rx"></block>。</block>
+  <block id="66223991fcb4b86b580aedc49132a8de" category="list-text">您需要选择目标系统，然后选择（或创建）计划使用的数据代理。查看从开始的 Cloud Sync 要求 <block ref="9b05f1e30d7d93d40aa2e8405fae61e6" category="inline-link-macro-rx"></block>。</block>
+  <block id="c9711148e577d21dac573fe377ceadc1" category="paragraph">目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP ， AWS S3 或 OneDrive 和 SharePoint 帐户。</block>
+  <block id="c784be7cd9fc5595c7c63534bdda46c4" category="paragraph">Cloud Manager Connector 和 Data sense 都需要定期手动升级才能启用新功能。您可以在 Data sense UI 页面底部看到 Data sense 版本。检查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 以查看每个版本中的新功能以及是否需要这些功能。然后，您可以按照以下步骤进行操作 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
+  <block id="5a07c55d314714fa3a36d7f6231d91b2" category="paragraph">在安装 Data sense 之前，必须在主机上安装以下软件：</block>
+  <block id="44913217828f63e33072c448b10eb218" category="list-text">安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序：</block>
+  <block id="d34764ccb2a6879e5ef576e7ea2fb550" category="cell">或者，您也可以预先创建整个命令，并提供必要的主机参数： `sUdo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -manager-host &lt;cm_host&gt; -no-proxy -drestrsite`</block>
+  <block id="cfc66ec017142ce1f8420ffb8db2e3cd" category="list-text">如步骤 9 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序。</block>
+  <block id="5fa878295b23e50238df7f7395042d79" category="paragraph">例如，此命令会添加 3 个扫描程序节点： `sudo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -manager-host &lt;cm_host&gt; * -n &lt;node_ip1&gt; ， &lt;node_ip2&gt; ， &lt;node_ip3&gt;* —无代理站点`</block>
+  <block id="eb5d5731dad89c6e51beb903e93f42bf" category="paragraph">在配置页面中，您可以选择本地 <block ref="c23a74d01fbf5deb3a784c3ec1da6439" category="inline-link-macro-rx"></block> 和本地 <block ref="6d4571a63bcf6d226319383d2911863e" category="inline-link-macro-rx"></block> 要扫描的。</block>
+  <block id="314b7309bb9558a39ff073ff2bc91550" category="paragraph">在设置某些数据源（如下所示）时，您需要输入 Active Directory 凭据才能使 Data sense 扫描 CIFS 卷。此集成可为 Data sense 提供这些数据源中数据的文件所有者和权限详细信息。为这些数据源输入的 Active Directory 可能与您在此输入的全局 Active Directory 凭据不同。Data sense 将在所有集成的 Active Directory 中查找用户和权限详细信息。</block>
+  <block id="bd4500054328c8857edec5541ca08a4e" category="paragraph">此集成可在 Data sense 的以下位置提供追加信息 ：</block>
+  <block id="f0c4b852ec6811b9151a600864775755" category="paragraph">在部署 Data sense 并对数据源激活扫描之后，您可以将 Data sense 与 Active Directory 集成。可以使用 DNS 服务器 IP 地址或 LDAP 服务器 IP 地址访问 Active Directory 。</block>
+  <block id="7078363248b15fb54dcc0ed38080ad0d" category="list-text">DNS 服务器 IP 地址或多个 IP 地址</block>
+  <block id="e81c4e4f2b7b93b481e13a8553c2ae1b" category="paragraph">或</block>
+  <block id="f15fbb5b9a0ff61b7366b735c166da11" category="paragraph">LDAP 服务器 IP 地址或多个 IP 地址</block>
+  <block id="9d6a8e2c82c8a26e3cedb4b6d17fba76" category="list-text">用于访问服务器的用户名和密码</block>
+  <block id="2778c2bfe3f33a69fca329b57f1593af" category="list-text">在连接到 Active Directory 对话框中，输入 Active Directory 详细信息，然后单击 * 连接 * 。</block>
+  <block id="d612613d84fc2070d51661d666c6e11b" category="paragraph">如果需要，可以单击 * 添加 IP* 来添加多个 IP 地址。</block>
+  <block id="d685a618368fbb749c4b5bd0f35479c8" category="paragraph">如果要从可通过 Internet 访问的 S3 对象存储扫描数据，则可以 <block ref="c89857d519a71c77b0c6382714aad98b" category="inline-link-macro-rx"></block> 或 <block ref="9a8e8d98e74c934eab8d1ee3d4303b8b" category="inline-link-macro-rx"></block>。</block>
+  <block id="8ede1390d527867dcb9fc0e26ed8cac1" category="paragraph">如果要从安装在无法访问 Internet 的非公开站点中的 S3 对象存储扫描数据，则需要执行以下操作 <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。这还要求 Cloud Manager Connector 部署在同一内部位置。</block>
+  <block id="22f358540a8137fabaf166237bf90665" category="paragraph">搜索数据主体的全名或已知标识符，然后下载文件列表报告或 DSAL 报告。您可以搜索依据 <block ref="15f0bc476b1c646a9bfee9ca0397f926" category="inline-link-macro-rx"></block>。</block>
+  <block id="e71ab760e664227ced94c9da011b3457" category="paragraph">如果要扫描可通过 Internet 访问的非 NetApp NFS 或 CIFS 文件共享，则可以 <block ref="c89857d519a71c77b0c6382714aad98b" category="inline-link-macro-rx"></block> 或 <block ref="9a8e8d98e74c934eab8d1ee3d4303b8b" category="inline-link-macro-rx"></block>。</block>
+  <block id="0339e964c8772326609409661b7a85df" category="paragraph">如果要扫描的非 NetApp NFS 或 CIFS 文件共享安装在无法访问 Internet 的非公开站点中，则需要执行以下操作 <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。这还要求 Cloud Manager Connector 部署在同一内部位置。</block>
+  <block id="20239b9e1ff59549b2664ece6e8dde14" category="list-text">如果您使用的是代理，并且代理正在执行 TLS 截获，则需要了解 Data sense Linux 系统上用于存储 TLS CA 证书的路径。</block>
+  <block id="90a01f1462a77154d1dedbbcca2933fd" category="cell">或者，您也可以预先创建整个命令，并提供必要的主机和代理参数： `s` udo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -manager-host &lt;cm_host&gt; -proxy-host &lt;proxy_host&gt; -proxy-port &lt;proxy_port&gt; -proxy-user-proxy_name&gt; &lt;proxy_password&gt; -proxy_proxy_proxy_name&gt; -proxy_proxy_proxy_proxy_proxy_name&gt; -&lt;proxy_user&gt;</block>
+  <block id="0a6dc77d8aa2ba619cb18a788482f78a" category="list-text">_ca_ct_dir_ = 包含其他 TLS CA 证书包的 Data sense Linux 系统上的路径。仅当代理正在执行 TLS 截获时才需要。</block>
+  <block id="48e1e343989571ace6bf404a680635d8" category="list-text">如步骤 8 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序。</block>
+  <block id="6b356fe759d450cad6ec9f478a17a524" category="paragraph">例如，此命令会添加 3 个扫描程序节点： `s` udo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -manager-host &lt;cm_host&gt; * -n &lt;node_ip1&gt; ， &lt;node_ip2&gt; ， &lt;node_ip3&gt;* -host &lt;proxy-host-proxy-user-proxy-port-&lt;proxy-proxy_password&gt;</block>
 </blocks>

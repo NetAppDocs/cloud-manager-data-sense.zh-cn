@@ -53,8 +53,6 @@ link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"^] 如果尚未�
 
 只要实例具有 Internet 连接，就会自动升级到 Data sense 软件。
 
-数据感知也可以是 link:task-deploy-compliance-dark-site.html["部署在无法访问 Internet 的内部位置"^]。但是，要扫描 SharePoint 文件，您需要为一些选定端点提供 Internet 访问。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["请在此处查看所需端点的列表"]。
-
 
 
 == 正在添加 SharePoint 帐户

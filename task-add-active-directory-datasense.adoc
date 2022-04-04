@@ -15,9 +15,9 @@ summary: 您可以将全局 Active Directory 与 Cloud Data sense 集成在一�
 [role="lead"]
 您可以将全局 Active Directory 与 Cloud Data sense 集成在一起，以增强 Data sense 报告有关文件所有者以及哪些用户和组有权访问您的文件的结果。
 
-在设置某些数据源（如下所示）时，您需要输入 Active Directory 凭据才能使 Data sense 扫描 CIFS 卷。此集成可为 Data sense 提供这些数据源的文件所有者和权限详细信息。为这些数据源输入的 Active Directory 可能与您在此输入的全局 Active Directory 凭据不同。Data sense 将在所有集成的 Active Directory 中查找用户和权限详细信息。
+在设置某些数据源（如下所示）时，您需要输入 Active Directory 凭据才能使 Data sense 扫描 CIFS 卷。此集成可为 Data sense 提供这些数据源中数据的文件所有者和权限详细信息。为这些数据源输入的 Active Directory 可能与您在此输入的全局 Active Directory 凭据不同。Data sense 将在所有集成的 Active Directory 中查找用户和权限详细信息。
 
-这有助于在 Data sense 的以下位置：
+此集成可在 Data sense 的以下位置提供追加信息 ：
 
 * 您可以使用 " 文件所有者 " link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["筛选器"] 并在 " 调查 " 窗格中查看文件元数据的结果。此文件所有者不包含 SID （安全标识符），而是使用实际用户名进行填充。
 * 您可以看到 link:task-controlling-private-data.html#viewing-permissions-for-files["完整文件权限"] 单击 " 查看所有权限 " 按钮时对每个文件执行的操作。
@@ -46,7 +46,7 @@ Active Directory 与 Cloud Data sense 的集成可以识别以下数据源中的
 
 == 正在连接到 Active Directory 服务器
 
-在部署 Data sense 并对数据源激活扫描之后，您可以将 Data sense 与 Active Directory 集成。
+在部署 Data sense 并对数据源激活扫描之后，您可以将 Data sense 与 Active Directory 集成。可以使用 DNS 服务器 IP 地址或 LDAP 服务器 IP 地址访问 Active Directory 。
 
 Active Directory 凭据可以是只读凭据，但提供管理员凭据可确保 Data sense 可以读取任何需要提升权限的数据。这些凭据存储在 Cloud Data sense 实例上。
 
@@ -55,7 +55,13 @@ Active Directory 凭据可以是只读凭据，但提供管理员凭据可确保
 * 您必须具有 Active Directory 的信息：
 +
 ** DNS 服务器 IP 地址或多个 IP 地址
-** 服务器的用户名和密码
++
+或
+
++
+LDAP 服务器 IP 地址或多个 IP 地址
+
+** 用于访问服务器的用户名和密码
 ** 域名（ Active Directory 名称）
 ** 是否使用安全 LDAP （ LDAPS ）
 ** LDAP 服务器端口（对于 LDAP ，通常为 389 ；对于安全 LDAP ，通常为 636 ）
@@ -86,7 +92,10 @@ Active Directory 凭据可以是只读凭据，但提供管理员凭据可确保
 +
 image:screenshot_compliance_integrate_active_directory.png["一个屏幕截图，显示单击按钮将 Active Directory 服务器添加到 Cloud Data sense 中。"]
 
-. 在连接到 Active Directory 对话框中，输入 Active Directory 详细信息，然后单击 * 连接 * 。可以通过在条目之间添加逗号来添加多个 IP 地址。
+. 在连接到 Active Directory 对话框中，输入 Active Directory 详细信息，然后单击 * 连接 * 。
++
+如果需要，可以单击 * 添加 IP* 来添加多个 IP 地址。
+
 +
 image:screenshot_compliance_active_directory_dialog.png["用于定义要与 Data sense 集成的 Active Directory 的对话框的屏幕截图。"]
 

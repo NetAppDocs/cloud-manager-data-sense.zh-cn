@@ -29,9 +29,7 @@ summary: 完成一些步骤，在无法访问 Internet 的内部站点中的主�
 * 使用简单存储服务（ S3 ）协议的对象存储
 
 
-如果您需要非常安全的 Cloud Manager 安装，但也希望扫描 OneDrive 帐户或 SharePoint 帐户，则可以使用 Data sense 脱机安装程序并提供对一些选定端点的 Internet 访问。请参见 <<SharePoint and OneDrive special requirements,SharePoint 和 OneDrive 的特殊要求>> 了解详细信息。
-
-目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP 或 AWS S3 帐户。
+目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP ， AWS S3 或 OneDrive 和 SharePoint 帐户。
 
 
 
@@ -42,7 +40,7 @@ summary: 完成一些步骤，在无法访问 Internet 的内部站点中的主�
 * 管理 Microsoft Azure 信息保护（ AIP ）标签
 * 从 Cloud Manager 自动升级软件
 +
-Cloud Manager Connector 和 Data sense 都需要定期手动升级才能启用新功能。您可以在 Data sense UI 页面底部看到 Data sense 版本。检查 link:whats-new.html["《云数据感知发行说明》"] 可查看每个版本中的新功能以及软件更新包何时可用。然后，您可以按照以下步骤进行操作 <<Upgrade Data Sense software,升级 Data sense 软件>>。
+Cloud Manager Connector 和 Data sense 都需要定期手动升级才能启用新功能。您可以在 Data sense UI 页面底部看到 Data sense 版本。检查 link:whats-new.html["《云数据感知发行说明》"] 以查看每个版本中的新功能以及是否需要这些功能。然后，您可以按照以下步骤进行操作 <<Upgrade Data Sense software,升级 Data sense 软件>>。
 
 
 
@@ -124,24 +122,6 @@ Data sense 实例使用专用 IP 地址来确保索引数据不可供他人访�
 
 
 
-== SharePoint 和 OneDrive 的特殊要求
-
-如果 Cloud Manager 和 Data sense 部署在无法访问 Internet 的站点中，则可以通过为一些选定端点提供 Internet 访问来扫描 SharePoint 和 OneDrive 帐户中的文件。
-
-[cols="50,50"]
-|===
-| 端点 | 目的 
-
-
-| login.microsoft.com \graph.microsoft.com | 与 Microsoft 服务器通信以登录到选定的联机服务。 
-
-
-| https://cloudmanager.cloud.netapp.com | 与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。 
-|===
-只有在首次连接到这些外部服务期间，才需要访问 _cloudmanager.cloud.netapp.com_ 。
-
-
-
 == 部署 Data sense
 
 对于典型配置，您将在一个主机系统上安装该软件。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["请在此处查看这些步骤"]。
@@ -192,7 +172,7 @@ image:screenshot_cloud_compliance_deploy_darksite.png["选择按钮在内部部�
 ----
 tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ----
-. 安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令：
+. 安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序：
 +
 [cols="50a,50"]
 |===
@@ -203,9 +183,8 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 .. 粘贴您从第 7 步复制的信息： `sUdo ./install.sh -a <account_id> -c <agent_id> -t <token> -drestsite`
 .. 输入 Data sense 主机的 IP 地址或主机名，以便 Connector 实例可以访问它。
 .. 输入 Cloud Manager Connector 主机的 IP 地址或主机名，以便 Data sense 实例可以访问它。
-.. 根据提示输入代理详细信息。如果您的 Cloud Manager 已使用代理，则无需在此重新输入此信息，因为 Data sense 将自动使用 Cloud Manager 使用的代理。
 
-| 或者，您也可以事先创建整个命令并在第一个提示符处输入它： `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -cm-host <cm_host> -proxy-host <proxy_host> -proxy-port <proxy_port> -proxy-user-proxy-password> -proxy-proxy-proxy-proxy_name>` 
+| 或者，您也可以预先创建整个命令，并提供必要的主机参数： `sUdo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -manager-host <cm_host> -no-proxy -drestrsite` 
 |===
 +
 变量值：
@@ -216,11 +195,6 @@ tar -xzf cc_onprem_installer_1.10.0.tar.gz
 ** _token_ = JWT 用户令牌
 ** _ds_host_ = Data sense Linux 系统的 IP 地址或主机名。
 ** _cm_host_ = Cloud Manager Connector 系统的 IP 地址或主机名。
-** _proxy_host_ = 代理服务器的 IP 或主机名（如果主机位于代理服务器之后）。
-** _proxy_port_ = 用于连接到代理服务器的端口（默认值为 80 ）。
-** _proxy_scheme_= 连接方案： HTTPS 或 http （默认为 http ）。
-** _proxy_user_= 已通过身份验证的用户，用于连接到代理服务器（如果需要基本身份验证）。
-** _proxy_password_ = 指定用户名的密码。
 
 
 
@@ -275,12 +249,12 @@ Data sense 安装程序将安装软件包，注册安装并安装 Data sense 。
 
 .步骤
 . 按照中的步骤 1 至 8 进行操作 link:task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration["单主机安装"] 在管理器节点上。
-. 如步骤 9 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以在第一个提示符中输入完整命令。
+. 如步骤 9 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序。
 +
 除了可用于单主机安装的变量之外，还会使用一个新选项 * -n <node_IP>* 来指定扫描程序节点的 IP 地址。多个节点 IP 以逗号分隔。
 
 +
-例如，此命令会添加 3 个扫描程序节点： `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -cm-host <cm_host> * -n <node_ip1> ， <node_ip2> ， <node_ip3>* -proxy-proxy-host-proxy-port-<proxy-proxy-user-port-<proxy_password>`
+例如，此命令会添加 3 个扫描程序节点： `sudo ./install.sh -a <account_id> -c <agent_id> -t <token> -host <ds_host> -manager-host <cm_host> * -n <node_ip1> ， <node_ip2> ， <node_ip3>* —无代理站点`
 
 . 在管理器节点安装完成之前，将显示一个对话框，其中显示了扫描程序节点所需的安装命令。复制命令并将其保存在文本文件中。例如：
 +
@@ -300,7 +274,7 @@ Data sense 安装程序将安装软件包，注册安装并安装 Data sense 。
 
 Cloud Data sense 安装程序将完成软件包安装，并注册安装。安装可能需要 15 到 25 分钟。
 
-在配置页面中，您可以选择本地 link:task-getting-started-compliance.html["内部 ONTAP 集群"] 和 link:task-scanning-databases.html["数据库"] 要扫描的。
+在配置页面中，您可以选择本地 link:task-getting-started-compliance.html["内部 ONTAP 集群"] 和本地 link:task-scanning-databases.html["数据库"] 要扫描的。
 
 您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["为 Cloud Data sense 设置 BYOL 许可"] 目前的数字电子钱包页面。在数据量超过 1 TB 之前，不会向您收取任何费用。
 

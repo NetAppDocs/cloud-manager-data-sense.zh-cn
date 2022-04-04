@@ -115,17 +115,6 @@ NOTE: 如果您计划扫描 Azure NetApp Files 卷，则需要确保将部署在
 |===
 --
 确保 Cloud Manager 具有所需权限:: 确保 Cloud Manager 有权为 Cloud Data sense 实例部署资源并创建安全组。您可以在中找到最新的 Cloud Manager 权限 https://mysupport.netapp.com/site/info/cloud-manager-policies["NetApp 提供的策略"^]。
-+
---
-* 注： * 如果您使用 Cloud Manager 3.9.10 或更高版本在 GCP 中创建了 Connector ，则表示您已设置完毕。如果您使用早期版本创建了 Connector ，则需要将以下权限添加到与 Connector 关联的 GCP 服务帐户，以便将 Cloud Data sense 部署到 GCP 。
-
-[source, json]
-----
-compute.instances.addAccessConfig
-compute.subnetworks.use
-compute.subnetworks.useExternalIp
-----
---
 检查 vCPU 限制:: 确保云提供商的 vCPU 限制允许部署包含 16 个核心的实例。您需要验证运行 Cloud Manager 的区域中相关实例系列的 vCPU 限制。 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["请参见所需的实例类型"]。
 +
 --

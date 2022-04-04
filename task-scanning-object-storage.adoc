@@ -53,7 +53,9 @@ link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"^] 如果尚未�
 
 如果尚未部署实例，请部署 Cloud Data sense 。
 
-数据感知可以是 link:task-deploy-cloud-compliance.html["部署在云中"^] 或 link:task-deploy-compliance-onprem.html["位于可访问 Internet 的内部位置"^]。
+如果要从可通过 Internet 访问的 S3 对象存储扫描数据，则可以 link:task-deploy-cloud-compliance.html["在云中部署 Cloud Data sense"^] 或 link:task-deploy-compliance-onprem.html["在可访问 Internet 的内部位置部署 Data sense"^]。
+
+如果要从安装在无法访问 Internet 的非公开站点中的 S3 对象存储扫描数据，则需要执行以下操作 link:task-deploy-compliance-dark-site.html["在无法访问 Internet 的同一内部位置部署 Cloud Data sense"^]。这还要求 Cloud Manager Connector 部署在同一内部位置。
 
 只要实例具有 Internet 连接，就会自动升级到 Data sense 软件。
 

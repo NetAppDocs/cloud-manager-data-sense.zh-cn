@@ -133,7 +133,7 @@ image:screenshot_compliance_file_details.png["显示数据调查页面中文件�
 * 您可以删除此文件。请参见 link:task-managing-highlights.html#deleting-source-files["正在删除源文件"] 了解详细信息。
 * 您可以为文件分配特定状态。请参见 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["正在应用标记"] 了解详细信息。
 * 您可以将此文件分配给 Cloud Manager 用户，以负责对该文件执行任何后续操作。请参见 link:task-org-private-data.html#assigning-users-to-manage-certain-files["为文件分配用户"] 了解详细信息。
-* 如果您已将 AIP 标签与 Cloud Data sense 集成在一起，则可以为此文件分配一个标签，或者如果已存在另一个标签，则可以更改为其他标签。请参见 link:task-org-private-data.html#assigning-aip-labels-manually["手动分配 AIP 标签"^] 了解详细信息。
+* 如果您已将 AIP 标签与 Cloud Data sense 集成在一起，则可以为此文件分配一个标签，或者如果已存在另一个标签，则可以更改为其他标签。请参见 link:task-org-private-data.html#assigning-aip-labels-manually["手动分配 AIP 标签"] 了解详细信息。
 
 
 
@@ -154,7 +154,7 @@ image:screenshot_compliance_permissions.png["显示详细文件权限的屏幕�
 
 您可以查看存储系统中是否存储了重复的文件。如果您要确定可节省存储空间的区域，此功能非常有用。此外，确保具有特定权限或敏感信息的某些文件不会在存储系统中进行不必要的复制也会很有帮助。
 
-您可以下载重复文件列表并将其发送给存储管理员，以便他们确定可以删除哪些文件（如果有）。您也可以 link:task-managing-highlights.html#deleting-source-files["删除文件"^] 如果您确信不需要特定版本的文件，请自行选择。
+您可以下载重复文件列表并将其发送给存储管理员，以便他们确定可以删除哪些文件（如果有）。您也可以 link:task-managing-highlights.html#deleting-source-files["删除文件"] 如果您确信不需要特定版本的文件，请自行选择。
 
 
 

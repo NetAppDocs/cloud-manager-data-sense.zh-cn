@@ -242,7 +242,7 @@ Cloud Data sense 实例配置文件帐户现在可以访问其他 AWS 帐户。
 
 . 转到 * Amazon S3 Configuration* 页面，此时将显示新的 AWS 帐户。请注意， Cloud Data sense 可能需要几分钟时间来同步新帐户的工作环境并显示此信息。
 +
-image:screenshot_activate_and_select_buckets.png[""]
+image:screenshot_activate_and_select_buckets.png["显示如何激活 Data sense 的屏幕截图。"]
 
 . 单击 * 激活数据感知并选择分段 * ，然后选择要扫描的分段。
 
