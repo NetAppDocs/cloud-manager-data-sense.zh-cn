@@ -286,7 +286,7 @@ Cloud Data sense 安装程序将完成软件包安装，并注册安装。安装
 
 .开始之前
 * 数据感知软件一次可升级一个主要版本。例如，如果您安装了 1.9.x 版本，则只能升级到 1.10.x如果您有几个主要版本，则需要多次升级此软件。
-* 确认您的内部连接器软件已升级到最新可用版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrading-the-connector-on-prem-without-internet-access["请参见 Connector 升级步骤"^]。
+* 确认您的内部连接器软件已升级到最新可用版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["请参见 Connector 升级步骤"^]。
 
 
 .步骤

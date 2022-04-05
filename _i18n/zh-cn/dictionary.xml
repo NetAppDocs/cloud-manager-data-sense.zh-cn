@@ -100,12 +100,9 @@
   <block id="ec2fdf451a076c9a5261db42e270c873" category="paragraph"><block ref="ec2fdf451a076c9a5261db42e270c873" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0fcbb838b28fe6620124c2e3523d9aec" category="paragraph">请注意以下有关默认实例的信息：</block>
   <block id="80d772d8784b88bad9910cdc30032f74" category="inline-link-macro">m5.4xlarge 实例</block>
-  <block id="d0b7332fb2b9d1a1566947667e85f87a" category="list-text">在 AWS 中， Cloud Data sense 在上运行 <block ref="857f496d40c940038ea910668f73bd92" category="inline-link-macro-rx"></block> 使用 500 GB GP2 磁盘。操作系统映像为 Amazon Linux 2 （ Red Hat 7.3.1 ）。</block>
   <block id="7f434e51611909e5eb5af33f1a0f0292" category="paragraph">在 m5.4xlarge 不可用的区域中， Data sense 会在 m4.4xlarge 实例上运行。</block>
   <block id="d4167e5918d44a2511d9c29b74d9811f" category="inline-link-macro">标准的 D16s_v3 VM</block>
-  <block id="4b0ca891c27bda85a0a700467f3eb291" category="list-text">在 Azure 中， Cloud Data sense 在上运行 <block ref="58e0f4e7d5db4c1e88f8706f6eac3013" category="inline-link-macro-rx"></block> 使用 512 GB 磁盘。操作系统映像为 CentOS 7.8 。</block>
   <block id="f62345014eb3b94916730d5fa4eb623f" category="inline-link-macro">n2-standard-16 虚拟机</block>
-  <block id="faf52d85ee533113bb7ce1368ca80459" category="list-text">在 GCP 中， Cloud Data sense 在上运行 <block ref="f1e076f96c57b3cac033f200375e76f3" category="inline-link-macro-rx"></block> 使用 512 GB 标准持久性磁盘。操作系统映像为 CentOS 7.9 。</block>
   <block id="6c5ebc6dfed433f5cfd2cbc9f155a4d4" category="paragraph">在 n2-standard-16 不可用的区域中， Data sense 运行在 n2D-standard-16 或 n1-standard-16 VM 上。</block>
   <block id="3fad8aded3d84039416c1bf00afe09d2" category="list-text">每个连接器只部署一个数据感知实例。</block>
   <block id="96087d5776ba4bf8ffcadbc67f69905c" category="list-text">只要实例可以访问 Internet ，就会自动升级 Data sense 软件。</block>
@@ -196,7 +193,6 @@
   <block id="e84e463a5d50d51ba24671ea703ccd3a" category="list-text">具有 * 合规性查看器 * 角色的用户只能查看其有权访问的系统的合规性信息并生成报告。这些用户无法启用 / 禁用卷，分段或数据库架构的扫描。这些用户也无法复制，移动或删除文件。</block>
   <block id="7001fd90c77b65d22e1a21481db3ddca" category="inline-link">了解有关 Cloud Manager 角色的更多信息</block>
   <block id="2d4684d2aec68a0b0d987ac449846c38" category="inline-link">添加具有特定角色的用户</block>
-  <block id="ecf5d2b85aef681bae490794fba26c1d" category="paragraph"><block ref="066d72c458fd9d3478c3d6481ae1f63a" category="inline-link-rx"></block> 以及操作方法<block ref="19346f4bb440914931e4e2e3993b2cdc" category="inline-link-rx"></block>。</block>
   <block id="2aec26a935db620d45a2b36968d20c71" category="summary">完成几个步骤，使用 Cloud Data sense 扫描 SharePoint 帐户中的文件。</block>
   <block id="2ef77a3845de73c82db787233e991d0c" category="doc">扫描 SharePoint 帐户</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">快速入门</block>
@@ -513,7 +509,6 @@
   <block id="9728950e84ccd6542f6769c5939d2ca1" category="inline-image-macro">从 " 服务 " 面板启用 Cloud Data sense 服务的屏幕截图</block>
   <block id="72964bc33c91e31da04a6d4db666303d" category="paragraph"><block ref="72964bc33c91e31da04a6d4db666303d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a6100ac4fa5cb7bbb1c49e95165b96b2" category="inline-xref">所需权限</block>
-  <block id="49759721612016fc7ff10fae23a2ef91" category="list-text">出现提示时，将 IAM 角色分配给具有的 Cloud Data sense 实例 <block ref="82919c19497f3c3f743a1af90a83424d" category="inline-xref-macro-rx"></block>。</block>
   <block id="a14eadef9fed4334ae62e1b07a91b3d1" category="inline-image-macro">为 Cloud Data sense 输入 AWS IAM 角色的屏幕截图</block>
   <block id="17ca8b6da2574412974f28f85e8bc202" category="paragraph"><block ref="17ca8b6da2574412974f28f85e8bc202" category="inline-image-macro-rx" type="image"></block></block>
   <block id="909d8cdc7c100d1834d4de10094f43ca" category="list-text">单击 * 启用 * 。</block>
@@ -554,7 +549,6 @@
   <block id="cd7afa87e9e8523b4b9129d2a8cc9511" category="doc">开始使用适用于 Azure NetApp Files 的云数据感知</block>
   <block id="01535c40d93547d31c8b2009475a404e" category="paragraph">完成几个步骤，开始使用适用于 Azure NetApp Files 的云数据感知。</block>
   <block id="d607f9e6aaac708d38d597659d0724c2" category="inline-link">必须设置 Cloud Manager 才能发现配置</block>
-  <block id="9bc8c60e7f3f0df9b0162422d881c2f1" category="paragraph">扫描 Azure NetApp Files 卷之前，<block ref="4d0340f290034a21f4d812c5e82095d7" category="inline-link-rx"></block>。</block>
   <block id="8e6b2e179301ba8e4086645fd738ff9d" category="paragraph">单击 * 合规性 * ，选择 * 配置 * 选项卡，然后为特定工作环境中的卷激活合规性扫描。</block>
   <block id="f4ba7433beb86f84a14030cc66dde4a3" category="paragraph">启用 Cloud Data sense 后，请确保它可以访问所有卷。</block>
   <block id="584babae1f09a7e3114d20ba1edb8d20" category="list-text">云数据感知实例需要与每个 Azure NetApp Files 子网建立网络连接。</block>
@@ -568,7 +562,6 @@
   <block id="2e9f6b00a7a0f1c26bc47bb134eae6d9" category="section-title">正在发现要扫描的 Azure NetApp Files 系统</block>
   <block id="530f81326d5fcab4507cc0ed3e9f68be" category="paragraph">如果您要扫描的 Azure NetApp Files 系统尚未作为工作环境在 Cloud Manager 中，您可以此时将其添加到画布中。</block>
   <block id="d8ebd9fdfe93e9987d7e9211f2c75df2" category="inline-link">了解如何在 Cloud Manager 中发现 Azure NetApp Files 系统</block>
-  <block id="eac0cba2d45469011ba82c4236f5e47d" category="paragraph"><block ref="b2218c04a64dd1b44f364c0c1bf87d2d" category="inline-link-rx"></block>。</block>
   <block id="ce9519e259bd067380fa9c2f56c45243" category="paragraph">扫描 Azure NetApp Files 卷时，必须在云中部署数据感知，并且数据感知必须与要扫描的卷部署在同一区域。</block>
   <block id="2b37397498157ed616fd415901df0835" category="paragraph">* 注意： * 扫描 Azure NetApp Files 卷时，当前不支持在内部位置部署云数据感知。</block>
   <block id="f77e8a45486f483464f5f52dca10d70c" category="section-title">在您的工作环境中实现云数据感知</block>
@@ -630,7 +623,6 @@
   <block id="7ffe245546d3b7b3225d3db681da37ae" category="inline-link-macro">AWS 弹性网络接口（ ENI ）</block>
   <block id="360c11bcd9a9bfedb1aa5353935d21cd" category="paragraph">按照以下步骤快速入门，或者向下滚动以查看完整详细信息。</block>
   <block id="d0e7ae8581484b514e52b4bee068c4f2" category="inline-link">您必须具有配置了卷的 FSX 工作环境</block>
-  <block id="3894827bb26f487a20f94e2dc30a524f" category="paragraph">在扫描 ONTAP 卷的 FSX 之前，<block ref="4e0193706fbf8341d488aaec90d1333c" category="inline-link-rx"></block>。</block>
   <block id="e96ef91ae378f34374e3442da910bc6a" category="paragraph">单击 * 数据感知 * ，选择 * 配置 * 选项卡，然后为特定工作环境中的卷激活合规性扫描。</block>
   <block id="1740d0344a9decf8901a0c409491f527" category="list-text">云数据感知实例需要与 ONTAP 子网的每个 FSX 建立网络连接。</block>
   <block id="48f6fc291f98aa05d42d051f4c68b873" category="list-text">确保以下端口已对 Data sense 实例开放。</block>
@@ -639,7 +631,6 @@
   <block id="bdcd2e9d167fc54f49913257386095c4" category="section-title">正在发现要扫描的 FSX for ONTAP 文件系统</block>
   <block id="f7f860e98d745b71478891e167ef79d6" category="paragraph">如果您要扫描的适用于 ONTAP 的 FSX 文件系统尚未作为工作环境在 Cloud Manager 中，则可以此时将其添加到画布中。</block>
   <block id="2022a42fdc5a9b72d87c2b667be14012" category="inline-link">了解如何在 Cloud Manager 中发现或创建适用于 ONTAP 的 FSX 文件系统</block>
-  <block id="98ac2f9568b63fbebe64a3fe58a6b0a6" category="paragraph"><block ref="2e00e9f5a8098349b6ca11c65a31bba1" category="inline-link-rx"></block>。</block>
   <block id="b74c83b3d1021f67435c584267c41056" category="paragraph">您应将 Data sense 部署在与 Connector for AWS 和要扫描的 FSX 卷相同的 AWS 网络中。</block>
   <block id="e1069df757a31d652ec754c6cbb4304c" category="paragraph">* 注意： * 扫描 FSX 卷时，当前不支持在内部位置部署 Cloud Data sense 。</block>
   <block id="33502566bba570165badc9d5bf6fd90f" category="paragraph">您可以为 ONTAP 卷的 FSX 启用云数据感知。</block>
@@ -687,7 +678,6 @@
   <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link-macro">了解如何扫描 SharePoint 帐户</block>
   <block id="0016e2969988059d89617a5a19121b57" category="section-title">Data sense 可以将文件从数据源复制到目标位置，并同步这些文件。</block>
   <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link">NetApp Cloud Sync</block>
-  <block id="8430e6caa7f48c3b67a1d4bee15cdf08" category="paragraph">如果您要迁移数据，并且希望捕获最近对文件所做的任何更改，则此功能非常有用。此操作将使用<block ref="443242953ea2d033cafe32d6d6514a8c" category="inline-link-rx"></block> 用于将数据从源复制并同步到目标的功能。</block>
   <block id="48a274f4830d58bf94182b778830c862" category="inline-link-macro">请参见如何复制和同步文件</block>
   <block id="2344a9fc4e2f0117285de6fbb8ccfc92" category="section-title">为 DAR 报告提供了新的语言支持。</block>
   <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">现在，在搜索数据主体名称以创建数据主体访问请求（ Data Subject Access Request ， DSAar ）报告时，支持德语和西班牙语。本报告旨在帮助贵组织满足 GDPR 或类似数据隐私法律的要求。</block>
@@ -809,7 +799,6 @@
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">如果您需要 Cloud Data sense 识别其他私有数据类型，例如其他国家 / 地区 ID 号或医疗保健标识符，请根据您的请求向 ng-contact-data-sense@netapp.com 发送电子邮件。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">个人数据的类型</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">接近验证</block>
-  <block id="c7107bfe51c2322429b5249430df98f1" category="paragraph">文件中的个人数据可以是常规个人数据或国家标识符。第三列标识 Cloud Data sense 是否使用 <block ref="06ee0951f0f2416bdf90e29966eed53e" category="inline-link-macro-rx"></block> 以验证其对标识符的发现。</block>
   <block id="9ad88770f453f002d943e75f7bc6c007" category="paragraph">可以使用任何语言识别此类别中的项目。</block>
   <block id="8060d07e3adbf13c278991613997a8b6" category="inline-link-macro">使用 Data Fusion 添加个人数据标识符</block>
   <block id="6ea5e530965ed45d43a0385246e6a51b" category="paragraph">请注意，如果要扫描数据库服务器，您可以将这些数据添加到文件中的个人数据列表中。Data DataSIF_ 功能允许您通过选择数据库表中的列来选择 Fusion sense 在其扫描中查找的其他标识符。请参见 <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> 了解详细信息。</block>
@@ -998,7 +987,6 @@
   <block id="c50ed3e22a4bfeee9406b38e0c990d7d" category="list-text">在 Azure 中， Cloud Data sense 在具有 512 GB 磁盘的 Standard_d16s_v3 VM 上运行。</block>
   <block id="0dcadc6850a080e0aaf098b94efc849b" category="list-text">在 GCP 中， Cloud Data sense 在具有 512 GB 标准永久性磁盘的 n2-standard-16 VM 上运行。</block>
   <block id="316f1a7bec809a19ab21b47d40188af1" category="inline-link-macro">在内部部署 Cloud Data sense</block>
-  <block id="b65f64eadd9e7c0e8110a6ed35d757b9" category="paragraph">您可以在可通过网络或云访问 Internet 的 Linux 主机上安装 Data sense 软件。所有功能均相同，您可以继续通过 Cloud Manager 管理扫描配置和结果。请参见 <block ref="fb0cd096af939547f0757cf9efa79122" category="inline-link-macro-rx"></block> 了解系统要求和安装详细信息。</block>
   <block id="cefd0b228a5747e3f0cab5061078bb59" category="inline-link-macro">在无法访问 Internet 的内部站点中部署 Data sense</block>
   <block id="859d2ccf50c642ee73b6b7ed0293c06c" category="paragraph">此外，您还可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 适用于完全安全的站点。</block>
   <block id="7e3d41c2a56c6d626cd7bcbb65667f41" category="paragraph">请注意，您可以在 CPU 较少且 RAM 较少的系统上部署 Data sense ，但使用这些系统时会有一些限制。请参见 <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> 了解详细信息。</block>
@@ -1010,13 +998,10 @@
   <block id="f3af98e0d715f65a774e8b5ce1e41f08" category="paragraph">是的。Cloud Data sense 提供的信息可能与您组织中的其他利益相关方相关，因此我们可以帮助您生成报告以分享这些见解。</block>
   <block id="59c664c61ebab86476ef97b4388a4e15" category="paragraph">以下报告可用于 Data sense ：</block>
   <block id="1243186ecf08fa3beb624fdea23033c7" category="list-text">隐私风险评估报告</block>
-  <block id="3c3e878482ba36a48485862cdc493285" category="list-text">根据您的数据提供隐私洞察力并获得隐私风险得分。 <block ref="7f7a3d0f16b4b0301ae5584f195dfc08" category="inline-link-macro-rx"></block>。</block>
   <block id="3a3337f232548d40f54052862077499b" category="list-text">数据主体访问请求报告</block>
   <block id="eeec57ad13401b39337794c5e3d5ffa6" category="list-text">用于提取包含数据主体的特定名称或个人标识符相关信息的所有文件的报告。 <block ref="ce887aadf58ec6a0a140db57b924eac0" category="inline-link-macro-rx"></block>。</block>
   <block id="14167b2f4f95b7ebdb671b9dc719f2b4" category="list-text">PCI DSS 报告</block>
-  <block id="5718564eb09616d2a98dff7920da87f1" category="list-text">帮助您确定信用卡信息在整个文件中的分布情况。 <block ref="7f7a3d0f16b4b0301ae5584f195dfc08" category="inline-link-macro-rx"></block>。</block>
   <block id="0fbc5c9a0ab1eecf4064d4ae4ef04fe5" category="list-text">HIPAA 报告</block>
-  <block id="396ba88199463d6bb43b8d1e915b5780" category="list-text">帮助您确定运行状况信息在文件中的分布情况。 <block ref="7f7a3d0f16b4b0301ae5584f195dfc08" category="inline-link-macro-rx"></block>。</block>
   <block id="635c52fbdbf0d6a3157b2c713b42bb73" category="list-text">数据映射报告</block>
   <block id="1a33baaa8cfc7a132b1adf82bf7467e3" category="list-text">提供有关工作环境中文件大小和数量的信息。其中包括使用容量，数据期限，数据大小和文件类型。 <block ref="4e2147bce585eddc4aaf42309a51ae46" category="inline-link-macro-rx"></block>。</block>
   <block id="b36f22b2f3dccf0f8bda7f8488bb8823" category="list-text">报告特定信息类型</block>
@@ -1237,7 +1222,6 @@
   <block id="c53a1efde8ce6901614a5eb746fd4dc0" category="list-text">为策略命名，然后选择可由策略执行的其他操作：</block>
   <block id="f3102e7bc4ead5e39dec820b8144d2f9" category="list-text">输入唯一名称和问题描述。</block>
   <block id="69afb208b3f73c16d486210229cfd874" category="inline-link-macro">使用策略删除源文件</block>
-  <block id="d209439fac78c3bd370fcb9c5ff82506" category="list-text">或者，选中此框可自动删除与策略参数匹配的文件。了解更多信息 <block ref="afa0bdbe1a4a493af57fd87eeba2d98c" category="inline-link-macro-rx"></block>。</block>
   <block id="ed0c49068f9d7e929a30f26c6d8c4a8b" category="inline-link-macro">根据策略结果发送电子邮件警报</block>
   <block id="c7be5c7db4f54e5626cfe78583febbb1" category="list-text">或者，如果您希望向 Cloud Manager 用户发送通知电子邮件，请选中此框，然后选择发送电子邮件的间隔。了解更多信息 <block ref="aa3b63c453483f75d4311c7c0137128e" category="inline-link-macro-rx"></block>。</block>
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">AIP 标签</block>
@@ -1532,7 +1516,6 @@
   <block id="871c824f9ea91b20e876e2d652878ef1" category="paragraph">如果在源卷所在的工作环境中启用了 Data sense 后，最初选择了 * 映射所有卷 * 或 * 映射并分类所有卷 * ，则 Data sense 将自动扫描新克隆的卷。如果最初未使用上述任一选项，则如果要扫描此新卷，则需要执行以下操作 <block ref="b0c3d20fcc917b1060451bc04147a024" category="inline-link-macro-rx"></block>。</block>
   <block id="61d5073996ba69d9a5b4108c7295351d" category="section-title">将源文件复制并同步到目标系统</block>
   <block id="0d2f0ae9ce240a63bc35b3c547d00fb2" category="inline-link">Cloud Sync 支持的目标位置</block>
-  <block id="a1487996ec20a1ae4130cc24210fd4f7" category="paragraph">您可以将 Data sense 正在扫描的源文件从任何受支持的非结构化数据源复制到特定目标位置的目录 <block ref="a54ed7c9f4b25f05cd2f690b5223f798" category="inline-link-rx"></block>）。初始复制后，文件中更改的任何数据将根据您配置的计划进行同步。</block>
   <block id="8b943d5fdad51949a65da83d15de41c9" category="paragraph">这对于将数据从一个源系统迁移到另一个源系统的情况非常有用。此操作将使用<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> 用于将数据从源复制并同步到目标的功能。</block>
   <block id="59a46e0ea7e3441d068ab93e14650d6e" category="admonition">您不能复制和同步数据库， OneDrive 帐户或 SharePoint 帐户中的文件。</block>
   <block id="fa00f0feeabd281b23e8571faacaf649" category="list-text">要复制和同步文件，您必须具有帐户管理员或工作空间管理员角色。</block>
@@ -1748,7 +1731,6 @@
   <block id="c840103d2ed2c5f7278ba8cf28f45f9a" category="paragraph">由于 Data sense 软件会定期更新新功能，因此您应按照例行程序定期检查新版本，以确保您使用的是最新的软件和功能。您需要手动升级 Data sense 软件，因为没有 Internet 连接，无法自动执行升级。</block>
   <block id="fa37bb19179b71af06bce755af1b96d1" category="list-text">数据感知软件一次可升级一个主要版本。例如，如果您安装了 1.9.x 版本，则只能升级到 1.10.x如果您有几个主要版本，则需要多次升级此软件。</block>
   <block id="6ecb62a68c1483e5e7f2d6eb6088821e" category="inline-link">请参见 Connector 升级步骤</block>
-  <block id="33932597ddce1b5de5eaed473c624d8a" category="list-text">确认您的内部连接器软件已升级到最新可用版本。<block ref="34ed6c84dce4811fd1d84e1d45dcc3e5" category="inline-link-rx"></block>。</block>
   <block id="f3f3a447ad50dc92c9c962b1bd43a5df" category="list-text">将软件包复制到非公开站点中安装了 Data sense 的 Linux 主机。</block>
   <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">解压缩主机上的软件包，例如：</block>
   <block id="cdc2b03f6ffa90a892ff07e03233975d" category="paragraph">此操作将提取升级脚本 * 启动 _didssite_upgrade.sh* 以及任何所需的第三方软件。</block>
@@ -1775,7 +1757,6 @@
   <block id="af3ebdfa0de82f4ebf264444127ceba9" category="list-text">* 重复文件 * —在要扫描的数据源的其他位置复制的文件。 <block ref="aed0fa6f561bb8f0cefd5cb21d93e1cf" category="inline-link-macro-rx"></block>。</block>
   <block id="2b4d8a4ffe486173d89394fc3d6ccdb3" category="section-title">结果数量最多的策略</block>
   <block id="a7a23c7ed8e3b4d314ee2c49d88b93c6" category="paragraph">在 _Policy_ 区域中单击策略的名称，以在调查页面中显示结果。单击 * 查看全部 * 可查看所有可用策略的列表。</block>
-  <block id="3a3ac99db59f7f02e327a61da26f0836" category="paragraph">单击 <block ref="ad4e8796ce6294cda73275b22433ca2b" category="inline-link-macro-rx"></block> 了解有关策略的更多信息。</block>
   <block id="b70528883a2d1dce278c3b16e0f8c608" category="section-title">数据概述</block>
   <block id="0a9145dde57003fa4c977f908ffbd528" category="paragraph">简要概述正在扫描的所有数据。单击按钮可下载完整的数据映射报告，其中包括所有工作环境和数据源的使用容量，数据期限，数据大小和文件类型。请参见 <block ref="5efa252e20225abbecfacf56f2ab906a" category="inline-link-macro-rx"></block> 了解完整的详细信息。</block>
   <block id="5054e48efbd7d7a23b39d5c48f13943f" category="section-title">按数据敏感度列出的前几个数据存储库</block>
@@ -1799,7 +1780,6 @@
   <block id="adb18f5fb34b742716a832a865f1d8e2" category="section-title">最明确的数据分类</block>
   <block id="65da47b6ef0adda3d4c4ed54dfde4494" category="inline-link-macro">文件类型</block>
   <block id="02ac28e6aac96ae29edd75daf4e929ad" category="inline-link-macro">AIP 标签</block>
-  <block id="33c36f3f987073d2e11470a933352fca" category="paragraph">_Classification_area 提供了一个标识最多的列表 <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>， <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>，和 <block ref="c72f9147a1c5a2e6a1c06be7af3fe539" category="inline-link-macro-rx"></block> 扫描的数据。</block>
   <block id="439fa70484344162e488c2f6e8d7f52c" category="paragraph">类别可以通过向您显示所拥有的信息类型来帮助您了解数据的变化。例如， " 恢复 " 或 " 员工合同 " 等类别可以包含敏感数据。调查结果时，您可能会发现员工合同存储在不安全的位置。然后，您可以更正此问题描述。</block>
   <block id="659056cf2678e420a1509bbcc731edcf" category="paragraph">请参见 <block ref="21094466ac939ca1953a7d6cc6a49a1d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="cb45e879b815142e4e2cd0d22e5c6dd9" category="paragraph">查看文件类型有助于控制敏感数据，因为您可能会发现某些文件类型存储不正确。</block>
@@ -2262,8 +2242,6 @@
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">澳大利亚护照编号</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">如果您已将 AIP 标签与 Cloud Data sense 集成在一起，则可以为此文件分配一个标签，或者如果已存在另一个标签，则可以更改为其他标签。请参见 <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="d65636c48d5eaaa2a0f018e8b2c9b456" category="paragraph">您可以下载重复文件列表并将其发送给存储管理员，以便他们确定可以删除哪些文件（如果有）。您也可以 <block ref="e6aba68fcf17e4e39481e0dfc445e973" category="inline-link-macro-rx"></block> 如果您确信不需要特定版本的文件，请自行选择。</block>
-  <block id="b234f0588eeee2419f3feb6bc553a0f4" category="list-text">您需要激活 Cloud Sync 服务并至少配置一个数据代理，用于在源系统和目标系统之间传输文件。查看从开始的 Cloud Sync 要求 <block ref="9b05f1e30d7d93d40aa2e8405fae61e6" category="inline-link-macro-rx"></block>。</block>
-  <block id="66223991fcb4b86b580aedc49132a8de" category="list-text">您需要选择目标系统，然后选择（或创建）计划使用的数据代理。查看从开始的 Cloud Sync 要求 <block ref="9b05f1e30d7d93d40aa2e8405fae61e6" category="inline-link-macro-rx"></block>。</block>
   <block id="c9711148e577d21dac573fe377ceadc1" category="paragraph">目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP ， AWS S3 或 OneDrive 和 SharePoint 帐户。</block>
   <block id="c784be7cd9fc5595c7c63534bdda46c4" category="paragraph">Cloud Manager Connector 和 Data sense 都需要定期手动升级才能启用新功能。您可以在 Data sense UI 页面底部看到 Data sense 版本。检查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 以查看每个版本中的新功能以及是否需要这些功能。然后，您可以按照以下步骤进行操作 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="5a07c55d314714fa3a36d7f6231d91b2" category="paragraph">在安装 Data sense 之前，必须在主机上安装以下软件：</block>
@@ -2291,4 +2269,27 @@
   <block id="0a6dc77d8aa2ba619cb18a788482f78a" category="list-text">_ca_ct_dir_ = 包含其他 TLS CA 证书包的 Data sense Linux 系统上的路径。仅当代理正在执行 TLS 截获时才需要。</block>
   <block id="48e1e343989571ace6bf404a680635d8" category="list-text">如步骤 8 所示，在安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序。</block>
   <block id="6b356fe759d450cad6ec9f478a17a524" category="paragraph">例如，此命令会添加 3 个扫描程序节点： `s` udo ./install.sh -a &lt;account_id&gt; -c &lt;agent_id&gt; -t &lt;token&gt; -host &lt;ds_host&gt; -manager-host &lt;cm_host&gt; * -n &lt;node_ip1&gt; ， &lt;node_ip2&gt; ， &lt;node_ip3&gt;* -host &lt;proxy-host-proxy-user-proxy-port-&lt;proxy-proxy_password&gt;</block>
+  <block id="8622d1cd96d6ec0930cec4d27426b259" category="list-text">在 AWS 中， Cloud Data sense 在上运行 <block ref="862a215d1ef85127ef00037fb3b30ed4" category="inline-link-macro-rx"></block> 使用 500 GB GP2 磁盘。操作系统映像为 Amazon Linux 2 （ Red Hat 7.3.1 ）。</block>
+  <block id="8031d67afa3b05713e70ceb139df71f1" category="list-text">在 Azure 中， Cloud Data sense 在上运行 <block ref="258fa0e906df18ccf945022280cc0721" category="inline-link-macro-rx"></block> 使用 512 GB 磁盘。操作系统映像为 CentOS 7.8 。</block>
+  <block id="3cdcaf097c9b8ea42f0deb57a3418969" category="list-text">在 GCP 中， Cloud Data sense 在上运行 <block ref="a90d99a5d867795ab41880f273d24bc2" category="inline-link-macro-rx"></block> 使用 512 GB 标准持久性磁盘。操作系统映像为 CentOS 7.9 。</block>
+  <block id="ae7855bd2b684616d5a335e76d4c7a52" category="paragraph"><block ref="066d72c458fd9d3478c3d6481ae1f63a" category="inline-link-rx"></block> 以及操作方法<block ref="3a3e2df7b0eee6c6295e44064611bba2" category="inline-link-rx"></block>。</block>
+  <block id="74e5e01600beec43894e96e22ac9f5eb" category="list-text">出现提示时，将 IAM 角色分配给具有的 Cloud Data sense 实例 <block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
+  <block id="80fad04c772c7886f247261a7f3b0b9d" category="paragraph">扫描 Azure NetApp Files 卷之前，<block ref="ee91d9235d9df90afdbc72611f257591" category="inline-link-rx"></block>。</block>
+  <block id="d3b14e96d547f4080c13aedeed574a3c" category="paragraph"><block ref="d17ff08160e60a4685cc3798682e05d4" category="inline-link-rx"></block>。</block>
+  <block id="b7f2b0e45c51391324aebf221531b036" category="paragraph">在扫描 ONTAP 卷的 FSX 之前，<block ref="68e9cbaf33b2641a589dc87867e4bfec" category="inline-link-rx"></block>。</block>
+  <block id="9c45693a901d2c7711d6d2732c0b2043" category="paragraph"><block ref="84bbc470556e48f1d54b5a12390987e2" category="inline-link-rx"></block>。</block>
+  <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">如果您要迁移数据，并且希望捕获最近对文件所做的任何更改，则此功能非常有用。此操作将使用<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> 用于将数据从源复制并同步到目标的功能。</block>
+  <block id="f380f59dbabc3f03bd073f2248216ea2" category="paragraph">文件中的个人数据可以是常规个人数据或国家标识符。第三列标识 Cloud Data sense 是否使用 <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 以验证其对标识符的发现。</block>
+  <block id="66b2fe919777c8106abe9e4f030123fd" category="paragraph">您可以在可通过网络或云访问 Internet 的 Linux 主机上安装 Data sense 软件。所有功能均相同，您可以继续通过 Cloud Manager 管理扫描配置和结果。请参见 <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> 了解系统要求和安装详细信息。</block>
+  <block id="bbd1b36ab0dbd0c17e60ec752bb02a55" category="paragraph"><block ref="b1e4fd148d344599f4a25922d8155dd9" category="inline-link-macro-rx"></block>。</block>
+  <block id="91aef07a29d8068140e7dca06bec6d9d" category="list-text">根据您的数据提供隐私洞察力并获得隐私风险得分。 <block ref="890a798f73fe571345d1ff7c58a08844" category="inline-link-macro-rx"></block>。</block>
+  <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">帮助您确定信用卡信息在整个文件中的分布情况。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
+  <block id="be27a8dc9dfba1897217ecee5823bd4e" category="list-text">帮助您确定运行状况信息在文件中的分布情况。 <block ref="1ce675538fc85bf3b1ef6fa4ab26346c" category="inline-link-macro-rx"></block>。</block>
+  <block id="e6d68873555c37c43798e1e7f7b8513e" category="list-text">或者，选中此框可自动删除与策略参数匹配的文件。了解更多信息 <block ref="30e6ed97d290e57f0e75d9e6322eb503" category="inline-link-macro-rx"></block>。</block>
+  <block id="58293f799492274c3df075305508ade4" category="paragraph">您可以将 Data sense 正在扫描的源文件从任何受支持的非结构化数据源复制到特定目标位置的目录 <block ref="ebb58758e77d05976efcc1ccd5134262" category="inline-link-rx"></block>）。初始复制后，文件中更改的任何数据将根据您配置的计划进行同步。</block>
+  <block id="77129c83b2501b2eb47ff0a1fa67f801" category="list-text">您需要激活 Cloud Sync 服务并至少配置一个数据代理，用于在源系统和目标系统之间传输文件。查看从开始的 Cloud Sync 要求 <block ref="b962387ad67b92b5132f148579512908" category="inline-link-macro-rx"></block>。</block>
+  <block id="82ad1ea6a2070297147f61890ad6c8ae" category="list-text">您需要选择目标系统，然后选择（或创建）计划使用的数据代理。查看从开始的 Cloud Sync 要求 <block ref="5abefb1df304535da49e476c753377a4" category="inline-link-macro-rx"></block>。</block>
+  <block id="1512503c318779a183367c2326a24f21" category="list-text">确认您的内部连接器软件已升级到最新可用版本。<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>。</block>
+  <block id="f49cd49d999d1390260fa896a1a3ceec" category="paragraph">单击 <block ref="4860dd37562d5a245a69a17be60d42e2" category="inline-link-macro-rx"></block> 了解有关策略的更多信息。</block>
+  <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">_Classification_area 提供了一个标识最多的列表 <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>， <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>，和 <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> 扫描的数据。</block>
 </blocks>

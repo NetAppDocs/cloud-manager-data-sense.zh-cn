@@ -73,7 +73,7 @@ Data sense 现在可以读取 OneDrive 帐户和 SharePoint 帐户中正在扫�
 
 === Data sense 可以将文件从数据源复制到目标位置，并同步这些文件。
 
-如果您要迁移数据，并且希望捕获最近对文件所做的任何更改，则此功能非常有用。此操作将使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept_cloud_sync.html["NetApp Cloud Sync"^] 用于将数据从源复制并同步到目标的功能。
+如果您要迁移数据，并且希望捕获最近对文件所做的任何更改，则此功能非常有用。此操作将使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync"^] 用于将数据从源复制并同步到目标的功能。
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system["请参见如何复制和同步文件"]。
 

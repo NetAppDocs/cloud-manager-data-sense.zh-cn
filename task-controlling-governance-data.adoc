@@ -52,7 +52,7 @@ image:screenshot_compliance_governance_dashboard.png["Cloud Data sense Governanc
 
 在 _Policy_ 区域中单击策略的名称，以在调查页面中显示结果。单击 * 查看全部 * 可查看所有可用策略的列表。
 
-单击 link:task-managing-highlights.html#controlling-your-data-using-policies["此处"^] 了解有关策略的更多信息。
+单击 link:task-org-private-data.html#controlling-your-data-using-policies["此处"] 了解有关策略的更多信息。
 
 
 
@@ -105,7 +105,7 @@ _Open Permissions_area 显示正在扫描的所有文件中存在的每种类型
 
 === 最明确的数据分类
 
-_Classification_area 提供了一个标识最多的列表 link:task-controlling-private-data.html#viewing-files-by-categories["类别"^]， link:task-controlling-private-data.html#viewing-files-by-file-types["文件类型"^]，和 link:task-managing-highlights.html#categorizing-your-data-using-aip-labels["AIP 标签"^] 扫描的数据。
+_Classification_area 提供了一个标识最多的列表 link:task-controlling-private-data.html#viewing-files-by-categories["类别"^]， link:task-controlling-private-data.html#viewing-files-by-file-types["文件类型"^]，和 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP 标签"^] 扫描的数据。
 
 
 

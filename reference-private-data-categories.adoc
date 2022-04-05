@@ -22,7 +22,7 @@ TIP: 如果您需要 Cloud Data sense 识别其他私有数据类型，例如其
 
 == 个人数据的类型
 
-文件中的个人数据可以是常规个人数据或国家标识符。第三列标识 Cloud Data sense 是否使用 link:task-controlling-private-data.html#personal-data["接近验证"^] 以验证其对标识符的发现。
+文件中的个人数据可以是常规个人数据或国家标识符。第三列标识 Cloud Data sense 是否使用 link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["接近验证"^] 以验证其对标识符的发现。
 
 可以使用任何语言识别此类别中的项目。
 

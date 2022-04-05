@@ -142,7 +142,7 @@ image:screenshot_compliance_clone_files_dialog.png["显示复制文件对话框�
 
 === 将源文件复制并同步到目标系统
 
-您可以将 Data sense 正在扫描的源文件从任何受支持的非结构化数据源复制到特定目标位置的目录 (https://docs.netapp.com/us-en/cloud-manager-sync/reference-sync-requirements.html#supported-sync-relationships["Cloud Sync 支持的目标位置"^]）。初始复制后，文件中更改的任何数据将根据您配置的计划进行同步。
+您可以将 Data sense 正在扫描的源文件从任何受支持的非结构化数据源复制到特定目标位置的目录 (https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["Cloud Sync 支持的目标位置"^]）。初始复制后，文件中更改的任何数据将根据您配置的计划进行同步。
 
 这对于将数据从一个源系统迁移到另一个源系统的情况非常有用。此操作将使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync"^] 用于将数据从源复制并同步到目标的功能。
 
@@ -153,7 +153,7 @@ TIP: 您不能复制和同步数据库， OneDrive 帐户或 SharePoint 帐户�
 * 要复制和同步文件，您必须具有帐户管理员或工作空间管理员角色。
 * 所有选定文件都必须来自同一源存储库（ ONTAP 卷， S3 存储分段， NFS 或 CIFS 共享等）。
 * 一次最多可以复制 200 ， 000 个文件。
-* 您需要激活 Cloud Sync 服务并至少配置一个数据代理，用于在源系统和目标系统之间传输文件。查看从开始的 Cloud Sync 要求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-sync-quick-start.html["快速启动问题描述"^]。
+* 您需要激活 Cloud Sync 服务并至少配置一个数据代理，用于在源系统和目标系统之间传输文件。查看从开始的 Cloud Sync 要求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["快速启动问题描述"^]。
 +
 请注意， Cloud Sync 服务会为您的同步关系单独收取服务费用，如果您在云中部署数据代理，则会产生资源费用。
 
@@ -182,7 +182,7 @@ Cloud Sync UI 将在 Cloud Manager 中打开。
 +
 系统将提示您定义同步关系。源系统会根据您在 Data sense 中选择的存储库和文件预先填充。
 
-. 您需要选择目标系统，然后选择（或创建）计划使用的数据代理。查看从开始的 Cloud Sync 要求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-sync-quick-start.html["快速启动问题描述"^]。
+. 您需要选择目标系统，然后选择（或创建）计划使用的数据代理。查看从开始的 Cloud Sync 要求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html.html["快速启动问题描述"^]。
 
 
 这些文件将复制到目标系统，并根据您定义的计划进行同步。如果选择一次性同步，则文件只会复制和同步一次。如果选择定期同步，则会根据计划同步文件。请注意，如果源系统添加的新文件与您使用筛选器创建的查询匹配，这些 _new_ 文件将复制到目标并在将来进行同步。

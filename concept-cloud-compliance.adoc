@@ -106,12 +106,12 @@ image:diagram_cloud_compliance_instance.png["显示云提供商中运行的 Clou
 
 请注意以下有关默认实例的信息：
 
-* 在 AWS 中， Cloud Data sense 在上运行 link:https://aws.amazon.com/ec2/instance-types/m5/["m5.4xlarge 实例"] 使用 500 GB GP2 磁盘。操作系统映像为 Amazon Linux 2 （ Red Hat 7.3.1 ）。
+* 在 AWS 中， Cloud Data sense 在上运行 link:https://aws.amazon.com/ec2/instance-types/m5/["m5.4xlarge 实例"^] 使用 500 GB GP2 磁盘。操作系统映像为 Amazon Linux 2 （ Red Hat 7.3.1 ）。
 +
 在 m5.4xlarge 不可用的区域中， Data sense 会在 m4.4xlarge 实例上运行。
 
-* 在 Azure 中， Cloud Data sense 在上运行 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["标准的 D16s_v3 VM"] 使用 512 GB 磁盘。操作系统映像为 CentOS 7.8 。
-* 在 GCP 中， Cloud Data sense 在上运行 link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["n2-standard-16 虚拟机"] 使用 512 GB 标准持久性磁盘。操作系统映像为 CentOS 7.9 。
+* 在 Azure 中， Cloud Data sense 在上运行 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["标准的 D16s_v3 VM"^] 使用 512 GB 磁盘。操作系统映像为 CentOS 7.8 。
+* 在 GCP 中， Cloud Data sense 在上运行 link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["n2-standard-16 虚拟机"^] 使用 512 GB 标准持久性磁盘。操作系统映像为 CentOS 7.9 。
 +
 在 n2-standard-16 不可用的区域中， Data sense 运行在 n2D-standard-16 或 n1-standard-16 VM 上。
 
@@ -256,4 +256,4 @@ Cloud Manager 将云数据感知实例部署到一个安全组中，该安全组
 * 具有 * 合规性查看器 * 角色的用户只能查看其有权访问的系统的合规性信息并生成报告。这些用户无法启用 / 禁用卷，分段或数据库架构的扫描。这些用户也无法复制，移动或删除文件。
 
 
-https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["了解有关 Cloud Manager 角色的更多信息"^] 以及操作方法 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-cloud-central-accounts.html#adding-users["添加具有特定角色的用户"^]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-user-roles.html["了解有关 Cloud Manager 角色的更多信息"^] 以及操作方法 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-netapp-accounts.html#adding-users["添加具有特定角色的用户"^]。

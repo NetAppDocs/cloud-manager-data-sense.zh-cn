@@ -22,7 +22,7 @@ summary: 完成几个步骤，开始使用适用于 Azure NetApp Files 的云数
 按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
 
 [role="quick-margin-para"]
-扫描 Azure NetApp Files 卷之前， https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["必须设置 Cloud Manager 才能发现配置"^]。
+扫描 Azure NetApp Files 卷之前， https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["必须设置 Cloud Manager 才能发现配置"^]。
 
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["在 Cloud Manager 中部署 Cloud Data sense"^] 如果尚未部署实例。
@@ -56,7 +56,7 @@ link:task-deploy-cloud-compliance.html["在 Cloud Manager 中部署 Cloud Data s
 
 如果您要扫描的 Azure NetApp Files 系统尚未作为工作环境在 Cloud Manager 中，您可以此时将其添加到画布中。
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html["了解如何在 Cloud Manager 中发现 Azure NetApp Files 系统"^]。
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["了解如何在 Cloud Manager 中发现 Azure NetApp Files 系统"^]。
 
 
 

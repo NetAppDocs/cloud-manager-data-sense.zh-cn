@@ -116,7 +116,7 @@ image:screenshot_s3_we.gif["Amazon S3 工作环境图标的屏幕截图"]
 +
 image:screenshot_s3_enable_compliance.gif["从 \" 服务 \" 面板启用 Cloud Data sense 服务的屏幕截图"]
 
-. 出现提示时，将 IAM 角色分配给具有的 Cloud Data sense 实例 <<Requirements specific to S3,所需权限>>。
+. 出现提示时，将 IAM 角色分配给具有的 Cloud Data sense 实例 <<Reviewing S3 prerequisites,所需权限>>。
 +
 image:screenshot_s3_compliance_iam_role.gif["为 Cloud Data sense 输入 AWS IAM 角色的屏幕截图"]
 

@@ -39,7 +39,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 弹性�
 按照以下步骤快速入门，或者向下滚动以查看完整详细信息。
 
 [role="quick-margin-para"]
-在扫描 ONTAP 卷的 FSX 之前， https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/concept-fsx-aws.html["您必须具有配置了卷的 FSX 工作环境"^]。
+在扫描 ONTAP 卷的 FSX 之前， https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["您必须具有配置了卷的 FSX 工作环境"^]。
 
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["在 Cloud Manager 中部署 Cloud Data sense"^] 如果尚未部署实例。
@@ -70,7 +70,7 @@ link:task-deploy-cloud-compliance.html["在 Cloud Manager 中部署 Cloud Data s
 
 如果您要扫描的适用于 ONTAP 的 FSX 文件系统尚未作为工作环境在 Cloud Manager 中，则可以此时将其添加到画布中。
 
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/task-creating-fsx-working-environment.html["了解如何在 Cloud Manager 中发现或创建适用于 ONTAP 的 FSX 文件系统"^]。
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["了解如何在 Cloud Manager 中发现或创建适用于 ONTAP 的 FSX 文件系统"^]。
 
 
 
