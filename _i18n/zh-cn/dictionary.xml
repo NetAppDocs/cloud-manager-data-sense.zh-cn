@@ -665,134 +665,88 @@
   <block id="9ef6e09ad71e21ce8a2bf770f33d9a48" category="summary">了解 Cloud Data sense 中的新增功能。</block>
   <block id="5eb06296e8f3d6ac67a2567f14c49b55" category="doc">Cloud Data sense 的新增功能</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
-  <block id="443b6a9fca7102daed9087112c3dc457" category="section-title">新筛选器可显示特定用户或组具有读取或写入权限的文件。</block>
   <block id="fe920a28be2287e9ad7ef2d02458c36f" category="paragraph">添加了一个名为 " 用户 / 组权限 " 的新筛选器，您可以列出特定用户或组具有读取和 / 或写入权限的文件。您可以指定用户名或组名称，也可以指定部分名称。此功能适用于 Cloud Volumes ONTAP ，内部 ONTAP ， Azure NetApp Files ，适用于 ONTAP 的 Amazon FSx 和文件共享上的卷。</block>
-  <block id="42b370a91c3c2a615e9d4ebc5cbf6884" category="section-title">Data sense 可以确定 SharePoint 和 OneDrive 帐户中文件的权限。</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data sense 现在可以读取 OneDrive 帐户和 SharePoint 帐户中正在扫描的文件的权限。此信息显示在 " 调查 " 窗格中的文件详细信息以及 " 监管信息板 " 中的 " 打开权限 " 区域中。</block>
-  <block id="0d42bc37b53fea02c9e72ed699e7bb18" category="section-title">Data sense 还可以识别另外两种类型的个人数据。</block>
   <block id="d431283363f0e868742391138a4ffbd0" category="list-text">法语 INSEE — INSEE 代码是法国国家统计和经济研究所（ INSEE ）用来标识各种实体的数字代码。</block>
   <block id="7457180e95a424d146842587474ec483" category="list-text">密码—此信息通过查找字母数字字符串旁边的 "password" 一词的组合来使用接近验证来标识。找到的项目数将在合规性信息板的 " 个人结果 " 下列出。您可以使用筛选器 * 个人数据 &gt; 密码 * 在调查窗格中搜索包含密码的文件。</block>
-  <block id="425adda56e394de12209334423b302c9" category="section-title">此版本已停止使用 Cloud Data sense 扫描 Cloud Backup 文件的测试版功能。</block>
   <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022 年 2 月 9 日</block>
-  <block id="c6455eb299528a8932b8dab6eab3db21" category="section-title">增加了对扫描 Microsoft SharePoint 联机帐户的支持。</block>
   <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link-macro">了解如何扫描 SharePoint 帐户</block>
-  <block id="0016e2969988059d89617a5a19121b57" category="section-title">Data sense 可以将文件从数据源复制到目标位置，并同步这些文件。</block>
   <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link">NetApp Cloud Sync</block>
   <block id="48a274f4830d58bf94182b778830c862" category="inline-link-macro">请参见如何复制和同步文件</block>
-  <block id="2344a9fc4e2f0117285de6fbb8ccfc92" category="section-title">为 DAR 报告提供了新的语言支持。</block>
   <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">现在，在搜索数据主体名称以创建数据主体访问请求（ Data Subject Access Request ， DSAar ）报告时，支持德语和西班牙语。本报告旨在帮助贵组织满足 GDPR 或类似数据隐私法律的要求。</block>
-  <block id="f1bd07460557f3bfd41cfe4955c30e27" category="section-title">Data sense 可识别另外三种类型的个人数据。</block>
   <block id="da848e916ac29d03235a007036cf77ca" category="inline-link-macro">查看 Data sense 在扫描中标识的所有个人数据类型的列表</block>
-  <block id="adadebc06cff6c0ac4463e1ff0c359f3" category="section-title">已更改安全组端口，以便与连接器进行数据感知通信。</block>
   <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector 的安全组将使用端口 443 而非端口 80 来处理传入和传出 Data sense 实例的入站和出站流量，以提高安全性。此时，这两个端口都保持打开状态，因此您不应看到任何问题，但您应在任何早期的 Connector 部署中更新安全组，因为端口 80 将在未来版本中弃用。</block>
   <block id="586301717819197e24001cac47efdaaa" category="section-title">2022 年 1 月 2 日</block>
-  <block id="99b8b3c5a2dd0ee3c962eb7d9f6ba79b" category="section-title">能够集成全局 Active Directory 以确定文件所有者和权限。</block>
   <block id="e4a822ae3bd5d19b76fea8306ce5774c" category="paragraph">现在，您可以将全局 Active Directory 与 Cloud Data sense 集成在一起，以增强 Data sense 报告的有关文件所有者以及哪些用户和组有权访问您的文件的结果。</block>
   <block id="f8add8b46019d8016befb6aebc941e84" category="inline-link-macro">请参见如何设置全局 Active Directory</block>
-  <block id="aaa8cfc760432289a7a79ef5e2443065" category="section-title">现在，可以使用数据感知 " 策略 " 删除文件。</block>
   <block id="4fdca8fbbd2a76d7345e79fb0e7fd3fc" category="inline-link-macro">请参见如何创建自定义策略</block>
   <block id="096a1667ae412a6b3dd6d7318a0fb8d4" category="section-title">2021 年 12 月 16 日</block>
-  <block id="de70d65908dbf00b3db904233205b2eb" category="section-title">数据感知功能可以扫描非公开站点中的数据。</block>
-  <block id="9cf152a5e0126404c2835d3823d404fa" category="paragraph">Cloud Manager 和 Cloud Data sense 均可部署在无法访问 Internet 的内部站点中。现在，您的安全站点可以使用 Cloud Manager 管理内部 ONTAP 集群，在集群之间复制数据，以及使用 Cloud Data sense 扫描这些集群中的数据。</block>
   <block id="1eee0717fa00b6d32dfb2ab489f54964" category="inline-link-macro">了解如何在无法访问 Internet 的站点中部署 Cloud Data sense</block>
   <block id="b8039ded95757c80005c804fabc145a1" category="paragraph"><block ref="79863890a17e4bdd9593d37ca0d14fc0" category="inline-link-macro-rx"></block>。</block>
   <block id="f61163b681442ac500a8018c87241770" category="section-title">2021 年 11 月 28 日</block>
-  <block id="2a4905f244d5a39d380455eb8bdea5bf" category="section-title">数据感知可用于从 ONTAP 系统克隆卷。</block>
   <block id="0e65b1a6d06c19deb46ff998c80de0a5" category="paragraph">您可以使用 Data sense 克隆 ONTAP 卷，但在新克隆的卷中只包含源卷中的选定文件。如果您要迁移数据并希望排除某些文件，或者要创建卷的副本以供测试，则此功能非常有用。</block>
   <block id="e0dab5e04e9cb55716e589595b1e6b4b" category="inline-link-macro">请参见如何克隆卷</block>
   <block id="9d321eefe3fb98368019ac183d4f559f" category="paragraph"><block ref="99c1ffe6c02d2af43316b015cbc9c8a2" category="inline-link-macro-rx"></block>。</block>
-  <block id="a9760d7195cde848a43dcf9f49ae5a3d" category="section-title">现在， Cloud Manager 的 GCP Marketplace 订阅支持 Cloud Data sense 。</block>
   <block id="4932ec0144d6d1640460f5cfee326e0f" category="inline-link-macro">Cloud Manager 的 GCP Marketplace 订阅</block>
-  <block id="d5b817fd2402b13ecd711e18cd96c889" category="section-title">能够查看长期运行的合规性操作的状态。</block>
   <block id="c066aa13effff0bea79252a20699074b" category="paragraph">从调查结果窗格对多个文件运行操作时，例如删除 50 个文件，此过程可能需要一些时间。现在，您可以监控这些异步操作的状态，以便了解它何时应用于所有文件。</block>
   <block id="7fc4a6242ce76e0415a989d1dbc8b9d4" category="inline-link-macro">了解如何查看持续合规操作的状态</block>
   <block id="0a8b229d21efe889c341133fa43bc3f7" category="paragraph"><block ref="b64e3c30f28dd83a2184563dc44ee1de" category="inline-link-macro-rx"></block>。</block>
   <block id="6241446e1383ab0c8cc0cebdfbb90484" category="inline-link-macro">查看 Data sense 在扫描中发现的所有个人数据类型的列表</block>
   <block id="2164b22cc8c41bee72c53771bd025c07" category="paragraph">Data sense 现在可以在文件中找到个人数据类型 " 英国护照 " 和 " 国家卫生服务（ NHS ）编号 " 。 <block ref="ce74ef267e6a0fa015475f7a67f6924a" category="inline-link-macro-rx"></block>。</block>
-  <block id="6befd2c8e71418a3ca013ef46c44772c" category="section-title">新的筛选器可显示属于特定工作环境类型的文件。</block>
   <block id="9a67fa9362671e5cfd7881e63183490e" category="paragraph">在 " 数据调查 " 页面中筛选数据时，为 " 工作环境类型 " 添加了一个新的筛选器。这样，您可以筛选 Cloud Volumes ONTAP 系统，适用于 ONTAP 系统的 FSX ，内部 ONTAP 系统等的结果。</block>
-  <block id="d8e0e204ff2077fca1d230cb9a8e0ccf" category="section-title">2021 年 11 月 7 日</block>
-  <block id="2b53d7d9fa1c2a4e657db77147cf5b6d" category="section-title">现在，您可以选择对工作环境中的各个卷进行映射或分类。</block>
   <block id="8226af020361fe3987ed52162cbc4d06" category="paragraph">过去，您可以映射所有卷，也可以映射并分类每个工作环境中的所有卷。现在，您可以选择映射 _or_ 映射各个卷并对其进行分类。此选项适用于 Cloud Volumes ONTAP 卷， ANF 卷，内部 ONTAP 卷以及 ONTAP 卷的 FSX 。</block>
-  <block id="32714cb970be008eead50cd62f2c7ecc" category="section-title">数据感知可以将文件从数据源复制到目标 NFS 共享。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多信息。</block>
   <block id="489bbace9696e34940e2b4012383115f" category="paragraph">您可以将 Data sense 正在扫描的任何源文件复制到目标 NFS 共享。如果要为某些数据创建副本并将其移动到其他 NFS 位置，此功能将非常有用。 <block ref="d05c5872a8ecb6f8190249ddc8786d34" category="inline-link-macro-rx"></block>。</block>
-  <block id="555e44c526ee18afef10a2a1e5ff1ad6" category="section-title">可以扫描 ONTAP 文件系统的 FSX 上的数据保护卷。</block>
   <block id="d80d3c7ebf333488ef4d2c74d7fde58e" category="paragraph">现在，您可以在 ONTAP 文件系统的 FSX 上扫描数据保护卷。 <block ref="12146991433bc5a213bcb83d563990f4" category="inline-link-macro-rx"></block>。</block>
-  <block id="b015890a088e8ef072d94f1448fd8542" category="section-title">新的筛选器可按 Data sense 首次发现文件时的日期范围显示文件。</block>
   <block id="e02ef706eaed7e8a20115407bffb0216" category="paragraph">通过 " 调查 " 页面中的一个名为 " 发现时间 " 的新筛选器，您可以按 Data sense 首次发现文件时的日期范围查看文件。发现的时间也已添加到 " 文件详细信息 " 页面以及以 CSV 格式为文件输出的报告中。</block>
   <block id="0b43e955bb49e08923e9b43ee20ef2b3" category="section-title">SOC 2 类型 2 认证</block>
   <block id="bda633aa50f099014aa085ad93af9cff" category="paragraph">一家独立的认证公有 会计师事务所和服务审计师对云数据感知进行了检查，并确认它已根据适用的信任服务标准获得 SOC 2 类型 2 报告。</block>
   <block id="582a36961cbdd6ca90f6672041cdab83" category="inline-link">查看 NetApp 的 SOC 2 报告</block>
   <block id="f982fa3c6fb84f7cccc6a84a6ffc9a1d" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block>。</block>
-  <block id="1d9b19895587e0b25381eb63ed0a09b9" category="section-title">2021 年 10 月 4 日</block>
-  <block id="db1f9cd9b64a98ecf4a7da5631c676fe" category="section-title">支持 NetApp 的 BYOL 许可。</block>
   <block id="c513c649fe64ed52674dbb18376d71fa" category="paragraph">除了通过云提供商市场许可 Data sense 之外，现在您还可以从 NetApp 购买自带许可证（ BYOL ），该许可证可用于所有工作环境和 Cloud Manager 帐户中的数据源。</block>
   <block id="00beacb1f1189c9f01dd562d2e17ba8f" category="inline-link-macro">了解有关全新 Cloud Data sense BYOL 许可证的更多信息</block>
   <block id="9091d7d6e522e57e8207ba8ce0760373" category="paragraph"><block ref="acbd27f5f515b9d59280399ad7e728ba" category="inline-link-macro-rx"></block>。</block>
-  <block id="7db06ba5dc017862a1f854386676dc22" category="section-title">支持 Google Cloud Platform 。</block>
   <block id="defb90791cab3206e78b5423ed2c8b26" category="paragraph">现在， Cloud Data sense 可以扫描部署在 GCP 上的 Cloud Volumes ONTAP 系统中的数据。数据感知必须部署在 GCP 上，而连接器必须部署在 GCP 或内部环境中。与 Connector 关联的 GCP 服务帐户需要最新权限才能将 Cloud Data sense 部署到 GCP 。</block>
-  <block id="a6ab9789f1da02ca410374cab3bfac30" category="section-title">可以在 ONTAP 文件系统的 FSX 上扫描 CIFS 卷。</block>
   <block id="4ad745dcbae16cc9cbfa352d10dee9d2" category="inline-link-macro">请参见如何扫描 Amazon FSX 中的 ONTAP 卷</block>
   <block id="a840a5a79ff17611f610aea797443528" category="paragraph">现在， Data sense 可以从 ONTAP 系统的 FSX 扫描 CIFS 卷。 <block ref="0eeca2862916d1603da10da4ea8f7a8e" category="inline-link-macro-rx"></block>。</block>
-  <block id="3b7a1a77cdd08778e0827fbf312442b7" category="section-title">2021 年 9 月 2 日</block>
-  <block id="3f4287bce14225399672e0de4347c702" category="section-title">可以在 ONTAP 文件系统的 FSX 上扫描 NFS 卷。</block>
   <block id="f0e03aeff7590515947d417df3c44149" category="inline-link-macro">请参见如何为适用于 ONTAP 的 FSX 系统配置扫描</block>
   <block id="d3a24d1f0136676bd5e6c7dfdd76a1f3" category="paragraph">增加了对在适用于 ONTAP 系统的 Amazon FSX 上扫描 NFS 卷上数据的支持。 <block ref="78789fe6f73d50e026d33dc711bd85c0" category="inline-link-macro-rx"></block>。</block>
-  <block id="0846489e3c907f729db5452c0887d873" category="section-title">数据感知 " 状态 " 条目已更改为 " 标记 " 条目。</block>
   <block id="3dcb86dca720d483150e850e6939f919" category="inline-link-macro">了解有关文件级标记的更多信息</block>
   <block id="396db0ecff0e339a92f9b3a2af31d263" category="paragraph">使用 Data sense 向文件添加 " 状态 " 信息的功能已将术语更改为 " 标记 " 。这些标记是文件级标记，请勿与可应用于卷， EC2 实例，虚拟机等的资源级标记相混淆 <block ref="fae0dc82413cbf28598c32b2f2b30fe3" category="inline-link-macro-rx"></block>。</block>
-  <block id="feaee5d58494deaebb1ce5a1c3fce93b" category="section-title">2021 年 8 月 1 日</block>
-  <block id="60a596f8cf86535b77cc5f5078e4f0bd" category="section-title">一次可管理多个文件的文件设置。</block>
   <block id="911d437fe43df208c05b7bd0a3a5fd36" category="paragraph">在早期版本的 Cloud Data sense 中，您可以一次对一个文件执行以下操作：添加状态标记，分配用户和添加 AIP 标签。现在，您可以从 " 数据调查 " 页面中选择多个文件，并对多个文件执行其中每个操作。</block>
-  <block id="4c808fe73f7fecbc9ade315103130f0d" category="section-title">" 监管 " 信息板可显示数据的创建时间或上次访问时间。</block>
   <block id="81fa8b9a7e51e3b6727474568dca14d0" category="paragraph">在 " 监管 " 信息板中查看 " 数据期限 " 图时，除了根据上次修改时间查看数据之外，现在您还可以按数据创建时间或上次访问时间（读取时）查看数据。此信息也会在数据映射报告中提供。</block>
-  <block id="990718526c14f7e97571ddb65632b4c8" category="section-title">扫描大型配置时，可以使用多个主机提高处理能力。</block>
   <block id="5b36750f739fc1c783153e7581ff604f" category="paragraph">在内部部署 Data sense 时，如果您计划扫描包含 PB 数据的配置，现在可以在其他内部主机上安装扫描软件。在扫描非常大的配置时，这些额外的 _scanner nodes_ 可提高处理能力。</block>
   <block id="cec6006ebbef58d19ece0bccf55641bd" category="inline-link-macro">在多个主机上部署 Data sense 软件</block>
   <block id="65fa82fb8a157d27290b37d014a1e038" category="paragraph">请参见操作说明 <block ref="fcd2ff9a961d403217fed261cd527026" category="inline-link-macro-rx"></block>。</block>
   <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
-  <block id="94da2a895b7e100e53ac7ebaa05de322" category="section-title">数据感知可以将文件从数据源移动到目标 NFS 共享。</block>
   <block id="f30ef67a4274772079ff06a86e3a74e2" category="inline-link-macro">将 Data sense 正在扫描的任何源文件移动到任何 NFS 共享</block>
   <block id="c1f264653480074b4ff5c33f6da78cca" category="paragraph">通过一项新功能，您可以实现 <block ref="cc908d8cc2317a532e385546a3f8e196" category="inline-link-macro-rx"></block>。这样，您可以将敏感或与安全相关的文件移动到特定区域，以便进行更多分析。</block>
-  <block id="193e6f6228e2bb47b7d6fdea7a0a40ad" category="section-title">能够快速对数据进行分类，而不是执行完整的分类扫描。</block>
   <block id="ed4bdff0b14403bf62e234ebd3b70386" category="inline-link-macro">查看数据映射报告</block>
   <block id="8b1cff14f17bbdf3a25104f916729ebc" category="paragraph">现在，您可以选择快速将数据映射到类别中，而不是执行完整的分类扫描。这样，您就可以了 <block ref="6b081f418bc21ae87c3e1758cd454263" category="inline-link-macro-rx"></block> 从 " 监管信息板 " 中查看您的数据概览，了解您不需要对某些数据源运行完整扫描的情况。</block>
-  <block id="c76a2171c6f8d4aa9c171bb6d7f01352" category="section-title">能够将文件分配给 Cloud Manager 用户。</block>
   <block id="91905b6c0e5bd3b31a5a9faff7fc5218" category="inline-link-macro">将文件分配给特定 Cloud Manager 用户</block>
   <block id="ebc240befa04f487177655f353d72802" category="paragraph">现在可以了 <block ref="60706a069633267dd80739a874a1ee5a" category="inline-link-macro-rx"></block> 这样，该人员就可以负责对文件执行任何后续操作。此功能可与现有功能结合使用，以便向文件添加自定义标记。</block>
   <block id="596f96f82c371a240d0be177aa3f1ee0" category="paragraph">通过 " 调查 " 页面中的新筛选器，您还可以轻松查看 " 已分配给 " 字段中具有相同人员的所有文件。</block>
-  <block id="da632fd37857cea05b8c4b8e0e575166" category="section-title">能够使用较小的 Cloud Data sense 实例。</block>
   <block id="cf3f2cc15d62c716232f57e1283f8347" category="inline-link-macro">请先了解这些限制</block>
   <block id="60ee57016f16f38febc0431619eaa4bb" category="paragraph">一些扫描要求较低的用户要求能够使用较小的 Cloud Data sense 实例。现在可以了。因此，使用这些较小实例时存在一些限制 <block ref="2721bef887c25ebcb5745416e289e70e" category="inline-link-macro-rx"></block>。</block>
-  <block id="f485ba9213c23f6d6e7ad0ce11d8e5f6" category="section-title">能够执行慢速扫描。</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">了解如何操作</block>
   <block id="5eea29ff6cc3dad991a8789d591533a9" category="paragraph">数据扫描对存储系统和数据的影响可以忽略不计。但是，如果您担心即使影响很小，也可以将 Data sense 配置为立即执行 " 缓慢 " 扫描。 <block ref="be5ca65137ce848c8d09c371939d6748" category="inline-link-macro-rx"></block>。</block>
-  <block id="2d52b2f359085302215b82c3ef4febc5" category="section-title">数据感知可跟踪上次访问文件的时间。</block>
   <block id="34549c51a038d2c00ade5270b233fb1c" category="paragraph">上次访问时间值已添加到 " 文件详细信息 " 页面以及以 CSV 格式输出的报告中，以便您可以查看用户上次访问文件的时间。</block>
   <block id="945fb8f32f58d1cc36cb9f1e9e4c6fe5" category="section-title">2021 年 6 月 7 日</block>
   <block id="6561d0dbae2df54bbe8349c518489172" category="section-title">Cloud Compliance 已重命名为 Cloud Data sense 。</block>
   <block id="d3c761a2e0f04b6d5a3de0a1d64ba674" category="paragraph">自此版本起， Cloud Compliance 已重命名为 * 云数据感知 * 。由于该产品中包含了所有新的监管功能和其他功能，因此合规性名称并不能推广所有功能。</block>
-  <block id="83b79ba53f12d1ae6ec7195ada46f459" category="section-title">" 监管信息板 " 提供了新的 " 完整数据映射 " 报告。</block>
   <block id="b1c097baa7655613db39bdfee4aa9834" category="paragraph">" 监管信息板 " 提供了一份全新的 _Full Data Mapping_ 报告，用于概述企业数据源中存储的数据，以帮助您确定迁移，备份，安全性和合规性流程。</block>
   <block id="e4769dc6302d1988b2db369ee09d08df" category="inline-link-macro">请单击此处</block>
   <block id="e49617bb2d098bc9411a20ab9cc7800e" category="paragraph">此报告提供了概述页面，其中汇总了您的所有工作环境和数据源，然后提供了每个工作环境的细分信息。 <block ref="69c5d3a80c29cb6ecc9dff8619a99bf7" category="inline-link-macro-rx"></block> 有关详细信息：</block>
-  <block id="8e51837e62ce5b71ea5c42d92ce157f8" category="section-title">在 " 调查 " 页面中添加了新筛选器，用于查看所有重复的文件。</block>
   <block id="7a75a1cb539ce717ffb70a6f45b1183c" category="inline-link-macro">请参见如何查看所有重复的文件</block>
   <block id="49088960be4d8db4c1a11ba7678fee3f" category="paragraph">通过 " 数据调查 " 页面中的新筛选器，您可以查看在存储系统中复制的所有文件的列表。这有助于确定可以节省存储空间的区域，或者确定具有特定权限或不希望在存储中复制的敏感信息的文件。 <block ref="9b932b7183a8b1eae080a32497be2440" category="inline-link-macro-rx"></block>。</block>
-  <block id="dfb260333575c59337c69ab7c25980f6" category="section-title">Data sense 可以为组织的文件添加自定义标记。</block>
   <block id="3bef072dfa864da4aa8559c03c7d0ca8" category="inline-link-macro">了解如何在文件中应用和查看标记</block>
   <block id="cf5c65a6d69d1529a0f0cd6dd86b5edb" category="paragraph">您可以向 Data sense 正在扫描的文件添加自定义标记。此标记与添加 AIP 标签的方式不同。Cloud Manager 用户只能看到此标记，因此您可以指示文件是否需要删除或出于某种原因进行检查。 <block ref="7a35795d2be1b40763c1be0abb286f6d" category="inline-link-macro-rx"></block>。</block>
   <block id="6e30bf5f27ef24f35407940f36e6664a" category="paragraph">通过 " 调查 " 页面中的新筛选器，您可以轻松查看已分配标记的所有文件。</block>
-  <block id="659cff608fd2170e403a7ffa61589550" category="section-title">可以扫描 .dcm 和 .Dicom 文件。</block>
   <block id="34872f144eacfe5c837131480f6e243a" category="paragraph">Cloud Data sense 可以在两种其他类型的文件中扫描个人身份信息（ Personal identifiable Information ， Pii ）： .dcm 和 .Dicom 。</block>
-  <block id="3347ae4bd01a51cf2550da4ee4945f11" category="section-title">Data sense 现在可跟踪文件的其他属性。</block>
   <block id="fc15edce938be94b7835bbbb16d686b4" category="paragraph">已将 " 文件大小 " ， " 创建日期 " 和 " 上次修改日期 " 值添加到以 CSV 格式输出的报告中。创建日期也是一个新筛选器，可用于缩小调查页面搜索结果的范围。</block>
   <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">2021 年 5 月 5 日</block>
-  <block id="e04501bf2142c7fbcbe675ce8d61226d" category="section-title">能够扫描存储在 Azure Blob 上的数据。</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">扫描使用 S3 协议的对象存储</block>
   <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link">MinIO 服务</block>
-  <block id="0e7f3bd52176e33fdeec7f114366de00" category="section-title">其他类型的个人数据可通过 Data sense 来识别。</block>
   <block id="2195e52cb889f9b1ac4706eeeea03f1d" category="paragraph">Cloud Data sense 现在可以在文件中找到奥地利的 SSN 。</block>
   <block id="59690da7c148890212e0b4711de94b97" category="summary">Cloud Data sense 可以在卷， Amazon S3 存储分段，数据库， OneDrive 文件夹和 SharePoint 帐户中识别多种类型的私有数据。请参见以下类别。</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">私有数据的类别</block>
@@ -1618,7 +1572,6 @@
   <block id="3c6a08ac87f0c74657dbe6a08d65a90c" category="section-title">安装 Cloud Manager Connector</block>
   <block id="0b15d216816045a641af8ad6ef57304d" category="paragraph">如果您尚未在脱机内部站点上安装 Cloud Manager Connector ，<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 在脱机站点的 Linux 主机上。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">准备 Linux 主机系统</block>
-  <block id="df5748fad9ff6f2a543703b454542c39" category="paragraph">数据感知软件必须在满足特定操作系统要求， RAM 要求，软件要求等要求的主机上运行。</block>
   <block id="0bd5d4f7389518a30e9e80093dacb333" category="list-text">操作系统： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版</block>
   <block id="46123563d68443141506bf3d78c3f494" category="list-text">可以使用版本 7.8 ，但 Linux 内核版本必须为 4.14 或更高版本</block>
   <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">操作系统必须能够安装 Docker 引擎（例如，根据需要禁用 _firewalld_ 服务）</block>
@@ -2224,10 +2177,8 @@
   <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
   <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022 年 4 月 5 日</block>
-  <block id="41f52a9df0c19d41d935d656fb938433" category="section-title">Data sense 可以识别四种新类型的澳大利亚个人数据。</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看 Data sense 可以在您的数据中识别的所有类型的个人数据</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大利亚驾驶执照编号，澳大利亚医疗保健服务编号和澳大利亚护照编号的文件并对其进行分类。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
-  <block id="79a1cd072dfc91cd46891838564f2047" category="section-title">现在，全局 Active Directory 服务器可以是 LDAP 服务器。</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">与 Data sense 集成的全局 Active Directory 服务器现在可以是 LDAP 服务器，而不是以前支持的 DNS 服务器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="592c8c1b273df763193797348c862319" category="paragraph">现在，您可以将 SharePoint 联机帐户添加到 Data sense 中，以便扫描 SharePoint 站点中的文档和文件。<block ref="fb0503eda5504503140f919428a17c9c" category="inline-link-rx"></block>。</block>
   <block id="660cff517370f72d72102d4ff2998c40" category="paragraph"><block ref="c0e6847180e8e936303f149ed2e169b8" category="inline-link-rx"></block>。</block>
@@ -2292,4 +2243,54 @@
   <block id="1512503c318779a183367c2326a24f21" category="list-text">确认您的内部连接器软件已升级到最新可用版本。<block ref="ce22b55d293a0e07097135e6515924b6" category="inline-link-rx"></block>。</block>
   <block id="f49cd49d999d1390260fa896a1a3ceec" category="paragraph">单击 <block ref="4860dd37562d5a245a69a17be60d42e2" category="inline-link-macro-rx"></block> 了解有关策略的更多信息。</block>
   <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">_Classification_area 提供了一个标识最多的列表 <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>， <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>，和 <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> 扫描的数据。</block>
+  <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">Data sense 可以识别四种新类型的澳大利亚个人数据</block>
+  <block id="0387123627dfe002c7435c0101983f19" category="section-title">现在，全局 Active Directory 服务器可以是 LDAP 服务器</block>
+  <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新筛选器可显示特定用户或组具有读取或写入权限的文件</block>
+  <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">Data sense 可以确定 SharePoint 和 OneDrive 帐户中文件的权限</block>
+  <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">Data sense 还可以识别另外两种类型的个人数据</block>
+  <block id="536f48524e36a16593703c5d8d108b79" category="section-title">此版本已停止使用 Cloud Data sense 扫描 Cloud Backup 文件的测试版功能</block>
+  <block id="5b7066a8679e57ba1c6e16c4237fb674" category="section-title">增加了对扫描 Microsoft SharePoint 联机帐户的支持</block>
+  <block id="b8977b26a070b5eca7e5cfd90f128004" category="section-title">Data sense 可以将文件从数据源复制到目标位置，并同步这些文件</block>
+  <block id="622db54d0a7d9c01c841d932e3988937" category="section-title">为 DAR 报告提供了新的语言支持</block>
+  <block id="8cdccfd2e3c1390208fa5892348c4108" category="section-title">Data sense 可识别另外三种类型的个人数据</block>
+  <block id="2da79a92d5bb1f1f77ab993c07c12703" category="section-title">已更改安全组端口，以便与连接器进行数据感知通信</block>
+  <block id="39ad63f56fe19489716d253d535f6033" category="section-title">能够集成全局 Active Directory 以确定文件所有者和权限</block>
+  <block id="ed02f2ad98646d05140c6f62857791cb" category="section-title">现在，可以使用数据感知 " 策略 " 删除文件</block>
+  <block id="4fda7be69eb097891068c14360cba258" category="section-title">数据感知功能可以扫描非公开站点中的数据</block>
+  <block id="3c6e7a50358ad493c1281cc6aa27309a" category="paragraph">Cloud Manager （ Connector ）和 Cloud Data sense 均可部署在无法访问 Internet 的内部站点中。现在，您的安全站点可以使用 Cloud Manager 管理内部 ONTAP 集群，在集群之间复制数据，以及使用 Cloud Data sense 扫描这些集群中的数据。</block>
+  <block id="6d732051b4ee221c3896e5943078d7c4" category="section-title">数据感知可用于从 ONTAP 系统克隆卷</block>
+  <block id="aa316c658b08b1eec45b0e73dc9d8e96" category="section-title">现在， Cloud Manager 的 GCP Marketplace 订阅支持 Cloud Data sense</block>
+  <block id="49b8c4f61544245ecf36672ba0113068" category="section-title">能够查看长期运行的合规性操作的状态</block>
+  <block id="89372f2a277a8453dc542e88ba9ef4f0" category="section-title">新的筛选器可显示属于特定工作环境类型的文件</block>
+  <block id="e370b3500d8b67f884ff10af2cab702c" category="section-title">2021 年 11 月 7 日</block>
+  <block id="e48cb5e3594830a9679d2e76261df2e8" category="section-title">现在，您可以选择对工作环境中的各个卷进行映射或分类</block>
+  <block id="ce8e3fe1aae847699e405f937430c727" category="section-title">数据感知可以将文件从数据源复制到目标 NFS 共享</block>
+  <block id="459fecfdaf1e78b26ef269df213bc81a" category="section-title">可以扫描 ONTAP 文件系统的 FSX 上的数据保护卷</block>
+  <block id="60465eb8970b5bad23ff0f639954b0ae" category="section-title">新的筛选器可按 Data sense 首次发现文件时的日期范围显示文件</block>
+  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021 年 10 月 4 日</block>
+  <block id="7175abddc94aae9f582ff187e073eac7" category="section-title">支持 NetApp 的 BYOL 许可</block>
+  <block id="7e6a902227a5aff46cb434910e5c292f" category="section-title">支持 Google Cloud Platform</block>
+  <block id="5b5f95cb16cc6baa317f2459854a87af" category="section-title">可以在 ONTAP 文件系统的 FSX 上扫描 CIFS 卷</block>
+  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021 年 9 月 2 日</block>
+  <block id="e55ec0c0e7df55e996e766cf1ddfcd6c" category="section-title">可以在 ONTAP 文件系统的 FSX 上扫描 NFS 卷</block>
+  <block id="ed336c97bd7749d0b604d710a3169440" category="section-title">数据感知 " 状态 " 条目已更改为 " 标记 " 条目</block>
+  <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021 年 8 月 1 日</block>
+  <block id="b2a24b78c7ab82f495008fb584802b8e" category="section-title">一次可管理多个文件的文件设置</block>
+  <block id="a0c71efbfb9cd276842249b759494dca" category="section-title">" 监管 " 信息板可显示数据的创建时间或上次访问时间</block>
+  <block id="715df5847e32201de12278bd599a747f" category="section-title">扫描大型配置时，可以使用多个主机提高处理能力</block>
+  <block id="0b8379ea047ac207c395c8a9c6709526" category="section-title">数据感知可以将文件从数据源移动到目标 NFS 共享</block>
+  <block id="002a13154f4ce5f6f1ca6b053cd26c76" category="section-title">能够快速对数据进行分类，而不是执行完整的分类扫描</block>
+  <block id="d80b36ddfa007c5b8414c96e0ae118d9" category="section-title">能够将文件分配给 Cloud Manager 用户</block>
+  <block id="bddd2179a36dc08b8bb7be3660c8fed4" category="section-title">能够使用较小的 Cloud Data sense 实例</block>
+  <block id="a37544bc609cd0b6c2d725d27d13ab21" category="section-title">能够执行慢速扫描</block>
+  <block id="f1c9a9425a145e1b1614fa251d393989" category="section-title">数据感知可跟踪上次访问文件的时间</block>
+  <block id="763a569da43c025c1d54060a2ef2efbe" category="section-title">" 监管信息板 " 提供了新的 " 完整数据映射 " 报告</block>
+  <block id="08684668c10e9c17789be7934ef88e51" category="section-title">在 " 调查 " 页面中添加了新筛选器，用于查看所有重复的文件</block>
+  <block id="8152326061d8b3d329ba2607a09b0fa1" category="section-title">Data sense 可以为组织的文件添加自定义标记</block>
+  <block id="c832a419d50a23d5a24e8b88cb7b1f44" category="section-title">可以扫描 .dcm 和 .Dicom 文件</block>
+  <block id="831cb0c03277fa9f02db351f7b681988" category="section-title">Data sense 现在可跟踪文件的其他属性</block>
+  <block id="a201b1b21bb34cfc3cf0328307173ba5" category="section-title">能够扫描存储在 Azure Blob 上的数据</block>
+  <block id="a991dfa1931f18e122d99da7c642e9fe" category="section-title">其他类型的个人数据可通过 Data sense 来识别</block>
+  <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">数据感知软件必须在满足特定操作系统要求， RAM 要求，软件要求等要求的主机上运行。与其他应用程序共享的主机不支持数据感知 - 此主机必须是专用主机。</block>
+  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上 5 GiB</block>
 </blocks>
