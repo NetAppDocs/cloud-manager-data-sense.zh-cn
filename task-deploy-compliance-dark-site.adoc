@@ -300,6 +300,15 @@ Cloud Data sense 安装程序将完成软件包安装，并注册安装。安装
 tar -xvf DataSense-offline-bundle-v1.10.0.tar.gz
 ----
 +
+此操作将提取安装文件 * cc_onprem_installer_< 版本 >.tar.gz* 。
+
+. 解压缩主机上的安装文件，例如：
++
+[source, cli]
+----
+tar -xzf cc_onprem_installer_1.10.0.tar.gz
+----
++
 此操作将提取升级脚本 * 启动 _didssite_upgrade.sh* 以及任何所需的第三方软件。
 
 . 在主机上运行升级脚本，例如：

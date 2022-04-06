@@ -155,8 +155,6 @@ image:screenshot_services_license_expire_cc2.png["在 \" 数字电子钱包 \" �
 +
 在您为许可证付费并将其注册到 NetApp 支持站点后， Cloud Manager 会自动在数字电子邮件中更新许可证，并且数据服务许可证页面将在 5 到 10 分钟内反映此更改。
 
-
-
 . 如果 Cloud Manager 无法自动更新许可证（例如，安装在非公开站点时），则需要手动上传许可证文件。
 +
 .. 您可以 <<Obtain your Cloud Data Sense license file,从 NetApp 支持站点获取许可证文件>>。
@@ -170,3 +168,25 @@ image:screenshot_services_license_update.png["选择特定服务的更新许可�
 
 
 Cloud Manager 会更新许可证，以便 Cloud Data sense 服务继续保持活动状态。
+
+
+
+=== BYOL 许可证注意事项
+
+使用 Cloud Data sense BYOL 许可证时，如果要扫描的所有数据的大小接近容量限制或接近许可证到期日期， Cloud Manager 将在用户界面中显示警告。您会收到以下警告：
+
+* 扫描的数据量达到许可容量的 80% 时，再次达到限制时
+* 许可证到期前 30 天，许可证到期后再次
+
+
+如果您看到这些警告，请使用 Cloud Manager 界面右下角的聊天图标续订许可证。
+
+许可证过期后，可能会发生以下两种情况：
+
+* 如果您正在使用的帐户已订阅 Marketplace ，则 Data sense 将继续运行，但您将过渡到 PAYGO 许可模式。扫描的数据量会向您收取费用。
+* 如果您正在使用的帐户没有 Marketplace 订阅，则 Data sense 将继续运行，但您仍会看到警告。
+
+
+续订 BYOL 订阅后， Cloud Manager 会自动更新许可证。如果 Cloud Manager 无法通过安全 Internet 连接访问此许可证文件（例如，安装在非公开站点时），您可以自行获取此文件并手动将其上传到 Cloud Manager 。有关说明，请参见 <<Update a Cloud Data Sense BYOL license,如何更新 Cloud Data sense 许可证>>。
+
+已转移到 PAYGO 许可证的系统将自动返回到 BYOL 许可证。如果系统在未获得许可证的情况下运行，则会停止显示警告，并因许可证过期期间发生的活动而收取费用。

@@ -2293,4 +2293,16 @@
   <block id="a991dfa1931f18e122d99da7c642e9fe" category="section-title">其他类型的个人数据可通过 Data sense 来识别</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">数据感知软件必须在满足特定操作系统要求， RAM 要求，软件要求等要求的主机上运行。与其他应用程序共享的主机不支持数据感知 - 此主机必须是专用主机。</block>
   <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上 5 GiB</block>
+  <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL 许可证注意事项</block>
+  <block id="ea788b146da4003e2a945bfac897d653" category="paragraph">使用 Cloud Data sense BYOL 许可证时，如果要扫描的所有数据的大小接近容量限制或接近许可证到期日期， Cloud Manager 将在用户界面中显示警告。您会收到以下警告：</block>
+  <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">扫描的数据量达到许可容量的 80% 时，再次达到限制时</block>
+  <block id="d8ea74d0bc0e6f3c5be22312a953d7fb" category="list-text">许可证到期前 30 天，许可证到期后再次</block>
+  <block id="e8c240ac70f9e6acaa6b979acb3be469" category="paragraph">如果您看到这些警告，请使用 Cloud Manager 界面右下角的聊天图标续订许可证。</block>
+  <block id="788e4ff805005ba0a3c88a392b87f9a6" category="paragraph">许可证过期后，可能会发生以下两种情况：</block>
+  <block id="4682818c4f814fd62499f53422b70f33" category="list-text">如果您正在使用的帐户已订阅 Marketplace ，则 Data sense 将继续运行，但您将过渡到 PAYGO 许可模式。扫描的数据量会向您收取费用。</block>
+  <block id="2ed7f1db5e75685e121a0c29a15e4247" category="list-text">如果您正在使用的帐户没有 Marketplace 订阅，则 Data sense 将继续运行，但您仍会看到警告。</block>
+  <block id="c438a45ba498e9cee6eb5d6bb573e3dc" category="inline-xref">如何更新 Cloud Data sense 许可证</block>
+  <block id="dcbd0c81108f8a84d6e28aa71bb57afa" category="paragraph">续订 BYOL 订阅后， Cloud Manager 会自动更新许可证。如果 Cloud Manager 无法通过安全 Internet 连接访问此许可证文件（例如，安装在非公开站点时），您可以自行获取此文件并手动将其上传到 Cloud Manager 。有关说明，请参见 <block ref="1f87c6b55e7e67883f99839aa3c20209" category="inline-xref-macro-rx"></block>。</block>
+  <block id="9d21e20ef25e8b74361e9e64a818de8b" category="paragraph">已转移到 PAYGO 许可证的系统将自动返回到 BYOL 许可证。如果系统在未获得许可证的情况下运行，则会停止显示警告，并因许可证过期期间发生的活动而收取费用。</block>
+  <block id="6724e02efab0bd3c780354de786a5a3f" category="paragraph">此操作将提取安装文件 * cc_onprem_installer_&lt; 版本 &gt;.tar.gz* 。</block>
 </blocks>
