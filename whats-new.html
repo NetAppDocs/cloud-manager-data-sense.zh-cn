@@ -45,31 +45,61 @@
   <link rel="stylesheet" href='/zh-cn/cloud-manager-data-sense/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/zh-cn/cloud-manager-data-sense/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/cloud-manager-data-sense/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-data-sense/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/cloud-manager-data-sense/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/zh-cn/cloud-manager-data-sense/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/zh-cn/cloud-manager-data-sense/css/tabbed-blocks.css" type="text/css">
-  <link rel='stylesheet' href='/zh-cn/cloud-manager-data-sense/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-data-sense/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
-  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/zh-cn/cloud-manager-data-sense/css/product-family.css' type="text/css">
-  <script src='/zh-cn/cloud-manager-data-sense/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/cloud-manager-data-sense/js/na-search.js'></script><script src='/zh-cn/cloud-manager-data-sense/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/cloud-manager-data-sense/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/cloud-manager-data-sense/css/prism-netapp.css' type='text/css'>
 
 
   <script src='/zh-cn/cloud-manager-data-sense/js/na-utility.js'></script>
   <script src='/zh-cn/cloud-manager-data-sense/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/zh-cn/cloud-manager-data-sense/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/zh-cn/cloud-manager-data-sense/js/toc.js'></script>
@@ -122,16 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/zh-cn/cloud-manager-data-sense/js/version-dropdown.js'></script>
+  <script src='/zh-cn/cloud-manager-data-sense/js/custom-dropdown.js'></script>
   <script src='/zh-cn/cloud-manager-data-sense/js/FileSaver.min.js'></script>
   <script src='/zh-cn/cloud-manager-data-sense/js/jszip-utils.min.js'></script>
   <script src='/zh-cn/cloud-manager-data-sense/js/jszip.min.js'></script>
@@ -139,20 +161,15 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
   
   <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-data-sense/issues/new?body=Page%3A%20[Cloud Data sense 的新增功能](https://docs.netapp.com/zh-cn/cloud-manager-data-sense/whats-new.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-data-sense/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-data-sense/blob/main/whats-new.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-data-sense/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-data-sense/images/article-sm.svg" class="github-icon" />提供者指南</a>
-    </div>
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-data-sense/issues/new?body=Page%3A%20[Cloud Data sense 的新增功能](https://docs.netapp.com/zh-cn/cloud-manager-data-sense/whats-new.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-data-sense/images/discuss-sm.svg" class="github-icon" />请求文档变更</a><a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-data-sense/blob/main/whats-new.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-data-sense/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-data-sense/images/article-sm.svg" class="github-icon" />提供者指南</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">在此页面上</div>
@@ -162,6 +179,7 @@
       </nav>
     </div>
   </div>
+  
   
   <!-- Start top_hat -->
   <div class="n-top-hat">
@@ -245,7 +263,8 @@
           data-did-you-mean="搜索 {suggestion}。" 
           data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
           data-results-found="找到 {hitCount} 个结果"  
-          data-sk-es-pf-indexes=""></div>
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
             <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
               <title>search</title>
@@ -334,6 +353,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/zh-cn/cloud-manager-data-sense/pdfs/fullsite-sidebar/Cloud_Data_sense_文档.pdf" >
           <img src="/zh-cn/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
 
@@ -355,6 +377,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-data-sense/pdfs/sidebar/入门.pdf" 
@@ -370,6 +395,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-data-sense/pdfs/sidebar/部署_Cloud_Data_sense.pdf" 
@@ -398,6 +426,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-data-sense/pdfs/sidebar/激活对数据源的扫描.pdf" 
@@ -453,6 +484,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-data-sense/pdfs/sidebar/使用_Cloud_Data_sense.pdf" 
@@ -493,6 +527,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/cloud-manager-data-sense/pdfs/sidebar/知识和支持.pdf" 
@@ -643,6 +680,7 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
@@ -695,7 +733,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-04 20:33:48 +0000">04/04/2022</time>
+    <time datetime="2022-04-06 12:45:07 +0000">04/06/2022</time>
     
   
 
@@ -713,13 +751,13 @@
 <h2 id="2022-年-4-月-5-日">2022 年 4 月 5 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="data-sense-可以识别四种新类型的澳大利亚个人数据">Data sense 可以识别四种新类型的澳大利亚个人数据。</h3>
+<h3 id="data-sense-可以识别四种新类型的澳大利亚个人数据">Data sense 可以识别四种新类型的澳大利亚个人数据</h3>
 <div class="paragraph">
 <p>Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大利亚驾驶执照编号，澳大利亚医疗保健服务编号和澳大利亚护照编号的文件并对其进行分类。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data">"查看 Data sense 可以在您的数据中识别的所有类型的个人数据"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="现在全局-active-directory-服务器可以是-ldap-服务器">现在，全局 Active Directory 服务器可以是 LDAP 服务器。</h3>
+<h3 id="现在全局-active-directory-服务器可以是-ldap-服务器">现在，全局 Active Directory 服务器可以是 LDAP 服务器</h3>
 <div class="paragraph">
 <p>与 Data sense 集成的全局 Active Directory 服务器现在可以是 LDAP 服务器，而不是以前支持的 DNS 服务器。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-add-active-directory-datasense.html">"有关详细信息，请访问此处"</a>。</p>
 </div>
@@ -730,19 +768,19 @@
 <h2 id="2022-年-3-月-15-日">2022 年 3 月 15 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="新筛选器可显示特定用户或组具有读取或写入权限的文件">新筛选器可显示特定用户或组具有读取或写入权限的文件。</h3>
+<h3 id="新筛选器可显示特定用户或组具有读取或写入权限的文件">新筛选器可显示特定用户或组具有读取或写入权限的文件</h3>
 <div class="paragraph">
 <p>添加了一个名为 " 用户 / 组权限 " 的新筛选器，您可以列出特定用户或组具有读取和 / 或写入权限的文件。您可以指定用户名或组名称，也可以指定部分名称。此功能适用于 Cloud Volumes ONTAP ，内部 ONTAP ， Azure NetApp Files ，适用于 ONTAP 的 Amazon FSx 和文件共享上的卷。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-sense-可以确定-sharepoint-和-onedrive-帐户中文件的权限">Data sense 可以确定 SharePoint 和 OneDrive 帐户中文件的权限。</h3>
+<h3 id="data-sense-可以确定-sharepoint-和-onedrive-帐户中文件的权限">Data sense 可以确定 SharePoint 和 OneDrive 帐户中文件的权限</h3>
 <div class="paragraph">
 <p>Data sense 现在可以读取 OneDrive 帐户和 SharePoint 帐户中正在扫描的文件的权限。此信息显示在 " 调查 " 窗格中的文件详细信息以及 " 监管信息板 " 中的 " 打开权限 " 区域中。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-sense-还可以识别另外两种类型的个人数据">Data sense 还可以识别另外两种类型的个人数据。</h3>
+<h3 id="data-sense-还可以识别另外两种类型的个人数据">Data sense 还可以识别另外两种类型的个人数据</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -755,7 +793,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="此版本已停止使用-cloud-data-sense-扫描-cloud-backup-文件的测试版功能">此版本已停止使用 Cloud Data sense 扫描 Cloud Backup 文件的测试版功能。</h3>
+<h3 id="此版本已停止使用-cloud-data-sense-扫描-cloud-backup-文件的测试版功能">此版本已停止使用 Cloud Data sense 扫描 Cloud Backup 文件的测试版功能</h3>
 
 </div>
 </div>
@@ -764,34 +802,34 @@
 <h2 id="2022-年-2-月-9-日">2022 年 2 月 9 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="增加了对扫描-microsoft-sharepoint-联机帐户的支持">增加了对扫描 Microsoft SharePoint 联机帐户的支持。</h3>
+<h3 id="增加了对扫描-microsoft-sharepoint-联机帐户的支持">增加了对扫描 Microsoft SharePoint 联机帐户的支持</h3>
 <div class="paragraph">
 <p>现在，您可以将 SharePoint 联机帐户添加到 Data sense 中，以便扫描 SharePoint 站点中的文档和文件。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html">"了解如何扫描 SharePoint 帐户"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-sense-可以将文件从数据源复制到目标位置并同步这些文件">Data sense 可以将文件从数据源复制到目标位置，并同步这些文件。</h3>
+<h3 id="data-sense-可以将文件从数据源复制到目标位置并同步这些文件">Data sense 可以将文件从数据源复制到目标位置，并同步这些文件</h3>
 <div class="paragraph">
-<p>如果您要迁移数据，并且希望捕获最近对文件所做的任何更改，则此功能非常有用。此操作将使用 <a href="https://docs.netapp.com/us-en/cloud-manager-sync/concept_cloud_sync.html" target="_blank" rel="noopener">"NetApp Cloud Sync"</a> 用于将数据从源复制并同步到目标的功能。</p>
+<p>如果您要迁移数据，并且希望捕获最近对文件所做的任何更改，则此功能非常有用。此操作将使用 <a href="https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html" target="_blank" rel="noopener">"NetApp Cloud Sync"</a> 用于将数据从源复制并同步到目标的功能。</p>
 </div>
 <div class="paragraph">
 <p><a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#copying-and-synchronizing-source-files-to-a-target-system">"请参见如何复制和同步文件"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="为-dar-报告提供了新的语言支持">为 DAR 报告提供了新的语言支持。</h3>
+<h3 id="为-dar-报告提供了新的语言支持">为 DAR 报告提供了新的语言支持</h3>
 <div class="paragraph">
 <p>现在，在搜索数据主体名称以创建数据主体访问请求（ Data Subject Access Request ， DSAar ）报告时，支持德语和西班牙语。本报告旨在帮助贵组织满足 GDPR 或类似数据隐私法律的要求。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-sense-可识别另外三种类型的个人数据">Data sense 可识别另外三种类型的个人数据。</h3>
+<h3 id="data-sense-可识别另外三种类型的个人数据">Data sense 可识别另外三种类型的个人数据</h3>
 <div class="paragraph">
 <p>Data sense 现在可以在文件中找到法语社会安全号码，法语 ID 和法语驱动程序许可证号码。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data">"查看 Data sense 在扫描中标识的所有个人数据类型的列表"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="已更改安全组端口以便与连接器进行数据感知通信">已更改安全组端口，以便与连接器进行数据感知通信。</h3>
+<h3 id="已更改安全组端口以便与连接器进行数据感知通信">已更改安全组端口，以便与连接器进行数据感知通信</h3>
 <div class="paragraph">
 <p>Cloud Manager Connector 的安全组将使用端口 443 而非端口 80 来处理传入和传出 Data sense 实例的入站和出站流量，以提高安全性。此时，这两个端口都保持打开状态，因此您不应看到任何问题，但您应在任何早期的 Connector 部署中更新安全组，因为端口 80 将在未来版本中弃用。</p>
 </div>
@@ -802,7 +840,7 @@
 <h2 id="2022-年-1-月-2-日">2022 年 1 月 2 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="能够集成全局-active-directory-以确定文件所有者和权限">能够集成全局 Active Directory 以确定文件所有者和权限。</h3>
+<h3 id="能够集成全局-active-directory-以确定文件所有者和权限">能够集成全局 Active Directory 以确定文件所有者和权限</h3>
 <div class="paragraph">
 <p>现在，您可以将全局 Active Directory 与 Cloud Data sense 集成在一起，以增强 Data sense 报告的有关文件所有者以及哪些用户和组有权访问您的文件的结果。</p>
 </div>
@@ -811,7 +849,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="现在可以使用数据感知-策略-删除文件">现在，可以使用数据感知 " 策略 " 删除文件。</h3>
+<h3 id="现在可以使用数据感知-策略-删除文件">现在，可以使用数据感知 " 策略 " 删除文件</h3>
 <div class="paragraph">
 <p>Data sense 可以自动删除与策略中定义的查询匹配的文件。 <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#deleting-source-files-automatically-using-policies">"请参见如何创建自定义策略"</a>。</p>
 </div>
@@ -822,9 +860,9 @@
 <h2 id="2021-年-12-月-16-日">2021 年 12 月 16 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="数据感知功能可以扫描非公开站点中的数据">数据感知功能可以扫描非公开站点中的数据。</h3>
+<h3 id="数据感知功能可以扫描非公开站点中的数据">数据感知功能可以扫描非公开站点中的数据</h3>
 <div class="paragraph">
-<p>Cloud Manager 和 Cloud Data sense 均可部署在无法访问 Internet 的内部站点中。现在，您的安全站点可以使用 Cloud Manager 管理内部 ONTAP 集群，在集群之间复制数据，以及使用 Cloud Data sense 扫描这些集群中的数据。</p>
+<p>Cloud Manager （ Connector ）和 Cloud Data sense 均可部署在无法访问 Internet 的内部站点中。现在，您的安全站点可以使用 Cloud Manager 管理内部 ONTAP 集群，在集群之间复制数据，以及使用 Cloud Data sense 扫描这些集群中的数据。</p>
 </div>
 <div class="paragraph">
 <p><a href="task-deploy-compliance-dark-site.html" target="_blank" rel="noopener">"了解如何在无法访问 Internet 的站点中部署 Cloud Data sense"</a>。</p>
@@ -836,7 +874,7 @@
 <h2 id="2021-年-11-月-28-日">2021 年 11 月 28 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="数据感知可用于从-ontap-系统克隆卷">数据感知可用于从 ONTAP 系统克隆卷。</h3>
+<h3 id="数据感知可用于从-ontap-系统克隆卷">数据感知可用于从 ONTAP 系统克隆卷</h3>
 <div class="paragraph">
 <p>您可以使用 Data sense 克隆 ONTAP 卷，但在新克隆的卷中只包含源卷中的选定文件。如果您要迁移数据并希望排除某些文件，或者要创建卷的副本以供测试，则此功能非常有用。</p>
 </div>
@@ -845,13 +883,13 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="现在-cloud-manager-的-gcp-marketplace-订阅支持-cloud-data-sense">现在， Cloud Manager 的 GCP Marketplace 订阅支持 Cloud Data sense 。</h3>
+<h3 id="现在-cloud-manager-的-gcp-marketplace-订阅支持-cloud-data-sense">现在， Cloud Manager 的 GCP Marketplace 订阅支持 Cloud Data sense</h3>
 <div class="paragraph">
 <p>。 <a href="https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&amp;rif_reserved" target="_blank" rel="noopener">"Cloud Manager 的 GCP Marketplace 订阅"</a> 现在支持 Cloud Data sense 。现在，除了使用 NetApp 的 BYOL 许可证之外，您还可以使用此按需购买（ PAYGO ）订阅从部署在 Google Cloud 存储上的 Cloud Volumes ONTAP 系统扫描数据。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="能够查看长期运行的合规性操作的状态">能够查看长期运行的合规性操作的状态。</h3>
+<h3 id="能够查看长期运行的合规性操作的状态">能够查看长期运行的合规性操作的状态</h3>
 <div class="paragraph">
 <p>从调查结果窗格对多个文件运行操作时，例如删除 50 个文件，此过程可能需要一些时间。现在，您可以监控这些异步操作的状态，以便了解它何时应用于所有文件。</p>
 </div>
@@ -860,13 +898,13 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-sense-还可以识别另外两种类型的个人数据-2">Data sense 还可以识别另外两种类型的个人数据。</h3>
+<h3 id="data-sense-还可以识别另外两种类型的个人数据-2">Data sense 还可以识别另外两种类型的个人数据</h3>
 <div class="paragraph">
 <p>Data sense 现在可以在文件中找到个人数据类型 " 英国护照 " 和 " 国家卫生服务（ NHS ）编号 " 。 <a href="reference-private-data-categories.html#types-of-personal-data">"查看 Data sense 在扫描中发现的所有个人数据类型的列表"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="新的筛选器可显示属于特定工作环境类型的文件">新的筛选器可显示属于特定工作环境类型的文件。</h3>
+<h3 id="新的筛选器可显示属于特定工作环境类型的文件">新的筛选器可显示属于特定工作环境类型的文件</h3>
 <div class="paragraph">
 <p>在 " 数据调查 " 页面中筛选数据时，为 " 工作环境类型 " 添加了一个新的筛选器。这样，您可以筛选 Cloud Volumes ONTAP 系统，适用于 ONTAP 系统的 FSX ，内部 ONTAP 系统等的结果。</p>
 </div>
@@ -877,25 +915,25 @@
 <h2 id="2021-年-11-月-7-日">2021 年 11 月 7 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="现在您可以选择对工作环境中的各个卷进行映射或分类">现在，您可以选择对工作环境中的各个卷进行映射或分类。</h3>
+<h3 id="现在您可以选择对工作环境中的各个卷进行映射或分类">现在，您可以选择对工作环境中的各个卷进行映射或分类</h3>
 <div class="paragraph">
 <p>过去，您可以映射所有卷，也可以映射并分类每个工作环境中的所有卷。现在，您可以选择映射 <em>or</em> 映射各个卷并对其进行分类。此选项适用于 Cloud Volumes ONTAP 卷， ANF 卷，内部 ONTAP 卷以及 ONTAP 卷的 FSX 。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="数据感知可以将文件从数据源复制到目标-nfs-共享">数据感知可以将文件从数据源复制到目标 NFS 共享。</h3>
+<h3 id="数据感知可以将文件从数据源复制到目标-nfs-共享">数据感知可以将文件从数据源复制到目标 NFS 共享</h3>
 <div class="paragraph">
 <p>您可以将 Data sense 正在扫描的任何源文件复制到目标 NFS 共享。如果要为某些数据创建副本并将其移动到其他 NFS 位置，此功能将非常有用。 <a href="task-managing-highlights.html#copying-source-files-to-an-nfs-share">"了解更多信息。"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="可以扫描-ontap-文件系统的-fsx-上的数据保护卷">可以扫描 ONTAP 文件系统的 FSX 上的数据保护卷。</h3>
+<h3 id="可以扫描-ontap-文件系统的-fsx-上的数据保护卷">可以扫描 ONTAP 文件系统的 FSX 上的数据保护卷</h3>
 <div class="paragraph">
 <p>现在，您可以在 ONTAP 文件系统的 FSX 上扫描数据保护卷。 <a href="task-scanning-fsx.html#scanning-data-protection-volumes">"了解更多信息。"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="新的筛选器可按-data-sense-首次发现文件时的日期范围显示文件">新的筛选器可按 Data sense 首次发现文件时的日期范围显示文件。</h3>
+<h3 id="新的筛选器可按-data-sense-首次发现文件时的日期范围显示文件">新的筛选器可按 Data sense 首次发现文件时的日期范围显示文件</h3>
 <div class="paragraph">
 <p>通过 " 调查 " 页面中的一个名为 " 发现时间 " 的新筛选器，您可以按 Data sense 首次发现文件时的日期范围查看文件。发现的时间也已添加到 " 文件详细信息 " 页面以及以 CSV 格式为文件输出的报告中。</p>
 </div>
@@ -915,7 +953,7 @@
 <h2 id="2021-年-10-月-4-日">2021 年 10 月 4 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="支持-netapp-的-byol-许可">支持 NetApp 的 BYOL 许可。</h3>
+<h3 id="支持-netapp-的-byol-许可">支持 NetApp 的 BYOL 许可</h3>
 <div class="paragraph">
 <p>除了通过云提供商市场许可 Data sense 之外，现在您还可以从 NetApp 购买自带许可证（ BYOL ），该许可证可用于所有工作环境和 Cloud Manager 帐户中的数据源。</p>
 </div>
@@ -924,13 +962,13 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="支持-google-cloud-platform">支持 Google Cloud Platform 。</h3>
+<h3 id="支持-google-cloud-platform">支持 Google Cloud Platform</h3>
 <div class="paragraph">
 <p>现在， Cloud Data sense 可以扫描部署在 GCP 上的 Cloud Volumes ONTAP 系统中的数据。数据感知必须部署在 GCP 上，而连接器必须部署在 GCP 或内部环境中。与 Connector 关联的 GCP 服务帐户需要最新权限才能将 Cloud Data sense 部署到 GCP 。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="可以在-ontap-文件系统的-fsx-上扫描-cifs-卷">可以在 ONTAP 文件系统的 FSX 上扫描 CIFS 卷。</h3>
+<h3 id="可以在-ontap-文件系统的-fsx-上扫描-cifs-卷">可以在 ONTAP 文件系统的 FSX 上扫描 CIFS 卷</h3>
 <div class="paragraph">
 <p>现在， Data sense 可以从 ONTAP 系统的 FSX 扫描 CIFS 卷。 <a href="task-scanning-fsx.html">"请参见如何扫描 Amazon FSX 中的 ONTAP 卷"</a>。</p>
 </div>
@@ -941,13 +979,13 @@
 <h2 id="2021-年-9-月-2-日">2021 年 9 月 2 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="可以在-ontap-文件系统的-fsx-上扫描-nfs-卷">可以在 ONTAP 文件系统的 FSX 上扫描 NFS 卷。</h3>
+<h3 id="可以在-ontap-文件系统的-fsx-上扫描-nfs-卷">可以在 ONTAP 文件系统的 FSX 上扫描 NFS 卷</h3>
 <div class="paragraph">
 <p>增加了对在适用于 ONTAP 系统的 Amazon FSX 上扫描 NFS 卷上数据的支持。 <a href="task-scanning-fsx.html">"请参见如何为适用于 ONTAP 的 FSX 系统配置扫描"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="数据感知-状态-条目已更改为-标记-条目">数据感知 " 状态 " 条目已更改为 " 标记 " 条目。</h3>
+<h3 id="数据感知-状态-条目已更改为-标记-条目">数据感知 " 状态 " 条目已更改为 " 标记 " 条目</h3>
 <div class="paragraph">
 <p>使用 Data sense 向文件添加 " 状态 " 信息的功能已将术语更改为 " 标记 " 。这些标记是文件级标记，请勿与可应用于卷， EC2 实例，虚拟机等的资源级标记相混淆 <a href="task-org-private-data.html#applying-tags-to-manage-your-scanned-files">"了解有关文件级标记的更多信息"</a>。</p>
 </div>
@@ -958,19 +996,19 @@
 <h2 id="2021-年-8-月-1-日">2021 年 8 月 1 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="一次可管理多个文件的文件设置">一次可管理多个文件的文件设置。</h3>
+<h3 id="一次可管理多个文件的文件设置">一次可管理多个文件的文件设置</h3>
 <div class="paragraph">
 <p>在早期版本的 Cloud Data sense 中，您可以一次对一个文件执行以下操作：添加状态标记，分配用户和添加 AIP 标签。现在，您可以从 " 数据调查 " 页面中选择多个文件，并对多个文件执行其中每个操作。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="监管-信息板可显示数据的创建时间或上次访问时间">" 监管 " 信息板可显示数据的创建时间或上次访问时间。</h3>
+<h3 id="监管-信息板可显示数据的创建时间或上次访问时间">" 监管 " 信息板可显示数据的创建时间或上次访问时间</h3>
 <div class="paragraph">
 <p>在 " 监管 " 信息板中查看 " 数据期限 " 图时，除了根据上次修改时间查看数据之外，现在您还可以按数据创建时间或上次访问时间（读取时）查看数据。此信息也会在数据映射报告中提供。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="扫描大型配置时可以使用多个主机提高处理能力">扫描大型配置时，可以使用多个主机提高处理能力。</h3>
+<h3 id="扫描大型配置时可以使用多个主机提高处理能力">扫描大型配置时，可以使用多个主机提高处理能力</h3>
 <div class="paragraph">
 <p>在内部部署 Data sense 时，如果您计划扫描包含 PB 数据的配置，现在可以在其他内部主机上安装扫描软件。在扫描非常大的配置时，这些额外的 <em>scanner nodes</em> 可提高处理能力。</p>
 </div>
@@ -984,19 +1022,19 @@
 <h2 id="2021-年-7-月-7-日">2021 年 7 月 7 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="数据感知可以将文件从数据源移动到目标-nfs-共享">数据感知可以将文件从数据源移动到目标 NFS 共享。</h3>
+<h3 id="数据感知可以将文件从数据源移动到目标-nfs-共享">数据感知可以将文件从数据源移动到目标 NFS 共享</h3>
 <div class="paragraph">
 <p>通过一项新功能，您可以实现 <a href="task-managing-highlights.html#moving-source-files-to-an-nfs-share">"将 Data sense 正在扫描的任何源文件移动到任何 NFS 共享"</a>。这样，您可以将敏感或与安全相关的文件移动到特定区域，以便进行更多分析。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="能够快速对数据进行分类而不是执行完整的分类扫描">能够快速对数据进行分类，而不是执行完整的分类扫描。</h3>
+<h3 id="能够快速对数据进行分类而不是执行完整的分类扫描">能够快速对数据进行分类，而不是执行完整的分类扫描</h3>
 <div class="paragraph">
 <p>现在，您可以选择快速将数据映射到类别中，而不是执行完整的分类扫描。这样，您就可以了 <a href="task-generating-compliance-reports.html#data-mapping-report">"查看数据映射报告"</a> 从 " 监管信息板 " 中查看您的数据概览，了解您不需要对某些数据源运行完整扫描的情况。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="能够将文件分配给-cloud-manager-用户">能够将文件分配给 Cloud Manager 用户。</h3>
+<h3 id="能够将文件分配给-cloud-manager-用户">能够将文件分配给 Cloud Manager 用户</h3>
 <div class="paragraph">
 <p>现在可以了 <a href="task-org-private-data.html#assigning-users-to-manage-certain-files">"将文件分配给特定 Cloud Manager 用户"</a> 这样，该人员就可以负责对文件执行任何后续操作。此功能可与现有功能结合使用，以便向文件添加自定义标记。</p>
 </div>
@@ -1005,19 +1043,19 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="能够使用较小的-cloud-data-sense-实例">能够使用较小的 Cloud Data sense 实例。</h3>
+<h3 id="能够使用较小的-cloud-data-sense-实例">能够使用较小的 Cloud Data sense 实例</h3>
 <div class="paragraph">
 <p>一些扫描要求较低的用户要求能够使用较小的 Cloud Data sense 实例。现在可以了。因此，使用这些较小实例时存在一些限制 <a href="concept-cloud-compliance.html#using-a-smaller-instance-type">"请先了解这些限制"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="能够执行慢速扫描">能够执行慢速扫描。</h3>
+<h3 id="能够执行慢速扫描">能够执行慢速扫描</h3>
 <div class="paragraph">
 <p>数据扫描对存储系统和数据的影响可以忽略不计。但是，如果您担心即使影响很小，也可以将 Data sense 配置为立即执行 " 缓慢 " 扫描。 <a href="task-managing-compliance.html#reducing-the-data-sense-scan-speed">"了解如何操作"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="数据感知可跟踪上次访问文件的时间">数据感知可跟踪上次访问文件的时间。</h3>
+<h3 id="数据感知可跟踪上次访问文件的时间">数据感知可跟踪上次访问文件的时间</h3>
 <div class="paragraph">
 <p>上次访问时间值已添加到 " 文件详细信息 " 页面以及以 CSV 格式输出的报告中，以便您可以查看用户上次访问文件的时间。</p>
 </div>
@@ -1034,7 +1072,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="监管信息板-提供了新的-完整数据映射-报告">" 监管信息板 " 提供了新的 " 完整数据映射 " 报告。</h3>
+<h3 id="监管信息板-提供了新的-完整数据映射-报告">" 监管信息板 " 提供了新的 " 完整数据映射 " 报告</h3>
 <div class="paragraph">
 <p>" 监管信息板 " 提供了一份全新的 <em>Full Data Mapping</em> 报告，用于概述企业数据源中存储的数据，以帮助您确定迁移，备份，安全性和合规性流程。</p>
 </div>
@@ -1043,13 +1081,13 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="在-调查-页面中添加了新筛选器用于查看所有重复的文件">在 " 调查 " 页面中添加了新筛选器，用于查看所有重复的文件。</h3>
+<h3 id="在-调查-页面中添加了新筛选器用于查看所有重复的文件">在 " 调查 " 页面中添加了新筛选器，用于查看所有重复的文件</h3>
 <div class="paragraph">
 <p>通过 " 数据调查 " 页面中的新筛选器，您可以查看在存储系统中复制的所有文件的列表。这有助于确定可以节省存储空间的区域，或者确定具有特定权限或不希望在存储中复制的敏感信息的文件。 <a href="task-controlling-private-data.html#viewing-all-duplicated-files">"请参见如何查看所有重复的文件"</a>。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-sense-可以为组织的文件添加自定义标记">Data sense 可以为组织的文件添加自定义标记。</h3>
+<h3 id="data-sense-可以为组织的文件添加自定义标记">Data sense 可以为组织的文件添加自定义标记</h3>
 <div class="paragraph">
 <p>您可以向 Data sense 正在扫描的文件添加自定义标记。此标记与添加 AIP 标签的方式不同。Cloud Manager 用户只能看到此标记，因此您可以指示文件是否需要删除或出于某种原因进行检查。 <a href="task-org-private-data.html#applying-tags-to-manage-your-scanned-files">"了解如何在文件中应用和查看标记"</a>。</p>
 </div>
@@ -1058,13 +1096,13 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="可以扫描-dcm-和-dicom-文件">可以扫描 .dcm 和 .Dicom 文件。</h3>
+<h3 id="可以扫描-dcm-和-dicom-文件">可以扫描 .dcm 和 .Dicom 文件</h3>
 <div class="paragraph">
 <p>Cloud Data sense 可以在两种其他类型的文件中扫描个人身份信息（ Personal identifiable Information ， Pii ）： .dcm 和 .Dicom 。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="data-sense-现在可跟踪文件的其他属性">Data sense 现在可跟踪文件的其他属性。</h3>
+<h3 id="data-sense-现在可跟踪文件的其他属性">Data sense 现在可跟踪文件的其他属性</h3>
 <div class="paragraph">
 <p>已将 " 文件大小 " ， " 创建日期 " 和 " 上次修改日期 " 值添加到以 CSV 格式输出的报告中。创建日期也是一个新筛选器，可用于缩小调查页面搜索结果的范围。</p>
 </div>
@@ -1075,13 +1113,13 @@
 <h2 id="2021-年-5-月-5-日">2021 年 5 月 5 日</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="能够扫描存储在-azure-blob-上的数据">能够扫描存储在 Azure Blob 上的数据。</h3>
+<h3 id="能够扫描存储在-azure-blob-上的数据">能够扫描存储在 Azure Blob 上的数据</h3>
 <div class="paragraph">
 <p>现在，使用时支持扫描存储在 Azure Blob 上的数据 <a href="https://min.io/" target="_blank" rel="noopener">"MinIO 服务"</a>。请参见 <a href="task-scanning-object-storage.html">"扫描使用 S3 协议的对象存储"</a> 了解详细信息。</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="其他类型的个人数据可通过-data-sense-来识别">其他类型的个人数据可通过 Data sense 来识别。</h3>
+<h3 id="其他类型的个人数据可通过-data-sense-来识别">其他类型的个人数据可通过 Data sense 来识别</h3>
 <div class="paragraph">
 <p>Cloud Data sense 现在可以在文件中找到奥地利的 SSN 。</p>
 </div>
@@ -1101,98 +1139,122 @@
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
-  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">条款和条件</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">想就我们的网站提供反馈?</span>
+              <a target="_self" href="javascript:netapp_mailto()">请告诉我们</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-cn/announcements/">通知</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
       </div><!-- Elasticsearch JS -->
