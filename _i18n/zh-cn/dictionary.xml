@@ -1322,7 +1322,6 @@
   <block id="b478c70cc88f62deb519e4d41609fff2" category="paragraph">要查看重复文件的列表及其所在位置，请单击 * 查看详细信息 * 。在下一页中，单击 * 查看重复项 * 以查看调查页面中的文件。</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">显示如何查看重复文件所在位置的屏幕截图。</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f35afb3f187c9f321d2f0cf0cfce5233" category="admonition">您可以使用此页面中提供的 " 文件哈希 " 值并直接在 " 调查 " 页面中输入此值，以便随时搜索特定的重复文件，或者在策略中使用此值。</block>
   <block id="c03eb1ff575a67ef8cf7b0cbe6f24dad" category="section-title">查看特定工作环境的信息板数据</block>
   <block id="17a399056a9dd9191155fe5c7a7dd3a2" category="paragraph">您可以筛选 Cloud Data sense 信息板的内容，以查看所有工作环境和数据库的合规性数据，或者仅查看特定工作环境的合规性数据。</block>
   <block id="47b574d50f0f0cc7ac6ae3ba6d39951f" category="inline-image-macro">显示如何筛选特定工作环境的调查结果的屏幕截图。</block>
@@ -2305,4 +2304,6 @@
   <block id="dcbd0c81108f8a84d6e28aa71bb57afa" category="paragraph">续订 BYOL 订阅后， Cloud Manager 会自动更新许可证。如果 Cloud Manager 无法通过安全 Internet 连接访问此许可证文件（例如，安装在非公开站点时），您可以自行获取此文件并手动将其上传到 Cloud Manager 。有关说明，请参见 <block ref="1f87c6b55e7e67883f99839aa3c20209" category="inline-xref-macro-rx"></block>。</block>
   <block id="9d21e20ef25e8b74361e9e64a818de8b" category="paragraph">已转移到 PAYGO 许可证的系统将自动返回到 BYOL 许可证。如果系统在未获得许可证的情况下运行，则会停止显示警告，并因许可证过期期间发生的活动而收取费用。</block>
   <block id="6724e02efab0bd3c780354de786a5a3f" category="paragraph">此操作将提取安装文件 * cc_onprem_installer_&lt; 版本 &gt;.tar.gz* 。</block>
+  <block id="06087ea3885ed7ac53f2f14132359adc" category="paragraph">Data sense 使用哈希技术来确定重复文件。如果任何文件与另一个文件具有相同的哈希代码，我们可以 100% 确保这些文件完全重复，即使文件名不同也是如此。</block>
+  <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">您可以随时使用此页面中提供的 " 文件哈希 " 值并直接在 " 调查 " 页面中输入此值以搜索特定的重复文件，也可以在策略中使用此值。</block>
 </blocks>
