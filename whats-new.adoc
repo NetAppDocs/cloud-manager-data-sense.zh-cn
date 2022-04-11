@@ -57,6 +57,12 @@ Data sense 现在可以读取 OneDrive 帐户和 SharePoint 帐户中正在扫�
 
 
 
+=== 支持在非公开站点中部署时扫描 OneDrive 和 SharePoint 数据
+
+如果您已在无法访问 Internet 的内部站点中的主机上部署 Cloud Data sense ，则现在可以从 OneDrive 帐户或 SharePoint 帐户扫描本地数据。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["您需要允许访问以下端点。"]
+
+
+
 === 此版本已停止使用 Cloud Data sense 扫描 Cloud Backup 文件的测试版功能
 
 

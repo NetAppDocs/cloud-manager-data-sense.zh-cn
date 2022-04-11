@@ -2192,7 +2192,6 @@
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">澳大利亚护照编号</block>
   <block id="17dca5bf3d125aa4d0f3309727923bc6" category="list-text">如果您已将 AIP 标签与 Cloud Data sense 集成在一起，则可以为此文件分配一个标签，或者如果已存在另一个标签，则可以更改为其他标签。请参见 <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="d65636c48d5eaaa2a0f018e8b2c9b456" category="paragraph">您可以下载重复文件列表并将其发送给存储管理员，以便他们确定可以删除哪些文件（如果有）。您也可以 <block ref="e6aba68fcf17e4e39481e0dfc445e973" category="inline-link-macro-rx"></block> 如果您确信不需要特定版本的文件，请自行选择。</block>
-  <block id="c9711148e577d21dac573fe377ceadc1" category="paragraph">目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP ， AWS S3 或 OneDrive 和 SharePoint 帐户。</block>
   <block id="c784be7cd9fc5595c7c63534bdda46c4" category="paragraph">Cloud Manager Connector 和 Data sense 都需要定期手动升级才能启用新功能。您可以在 Data sense UI 页面底部看到 Data sense 版本。检查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 以查看每个版本中的新功能以及是否需要这些功能。然后，您可以按照以下步骤进行操作 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="5a07c55d314714fa3a36d7f6231d91b2" category="paragraph">在安装 Data sense 之前，必须在主机上安装以下软件：</block>
   <block id="44913217828f63e33072c448b10eb218" category="list-text">安装程序提示时，您可以在一系列提示中输入所需值，也可以将所需参数作为命令行参数提供给安装程序：</block>
@@ -2306,4 +2305,22 @@
   <block id="6724e02efab0bd3c780354de786a5a3f" category="paragraph">此操作将提取安装文件 * cc_onprem_installer_&lt; 版本 &gt;.tar.gz* 。</block>
   <block id="06087ea3885ed7ac53f2f14132359adc" category="paragraph">Data sense 使用哈希技术来确定重复文件。如果任何文件与另一个文件具有相同的哈希代码，我们可以 100% 确保这些文件完全重复，即使文件名不同也是如此。</block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">您可以随时使用此页面中提供的 " 文件哈希 " 值并直接在 " 调查 " 页面中输入此值以搜索特定的重复文件，也可以在策略中使用此值。</block>
+  <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">支持在非公开站点中部署时扫描 OneDrive 和 SharePoint 数据</block>
+  <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">您需要允许访问以下端点。</block>
+  <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">如果您已在无法访问 Internet 的内部站点中的主机上部署 Cloud Data sense ，则现在可以从 OneDrive 帐户或 SharePoint 帐户扫描本地数据。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
+  <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint 和 OneDrive 的特殊要求</block>
+  <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">如果您需要非常安全的 Cloud Manager 安装，但也希望从 OneDrive 帐户或 SharePoint 帐户扫描本地数据，则可以使用 Data sense 脱机安装程序并提供对一些选定端点的 Internet 访问。请参见 <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> 了解详细信息。</block>
+  <block id="79e0848d1bc2a8a6b4a0f1371a93e4b3" category="paragraph">目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP 或 AWS S3 帐户。</block>
+  <block id="83925eb41f224ab078a6ede41fce2ce8" category="list-text">在某些关键策略返回结果时向 Cloud Manager 用户发送电子邮件警报</block>
+  <block id="65097bbc12ec4bd1b84a583f86720dbc" category="list-text">为不同用户设置 Cloud Manager 角色（例如，帐户管理员或合规性查看器）</block>
+  <block id="03ab5a445b96670c4d6471f1e0ae786c" category="list-text">使用 Cloud Sync 复制和同步源文件</block>
+  <block id="21d99d41f7aa56147e5b8e2f64a15458" category="list-text">接收用户反馈</block>
+  <block id="d988b54f3b64e974362e6cbf74785f60" category="paragraph">如果 Cloud Manager 和 Data sense 部署在无法访问 Internet 的站点中，则可以通过为一些选定端点提供 Internet 访问来扫描 SharePoint 和 OneDrive 帐户中的本地文件。</block>
+  <block id="ca31f5af8410452f51d81153fffb5c54" category="cell">login.microsoft.com \graph.microsoft.com</block>
+  <block id="bea203a1b40a7cbfe57a7032625d4eed" category="cell">与 Microsoft 服务器通信以登录到选定的联机服务。</block>
+  <block id="665921fa8f2b4f0c994ec8d226f8544f" category="paragraph">只有在首次连接到这些外部服务期间，才需要访问 _cloudmanager.cloud.netapp.com_ 。</block>
+  <block id="1b602d3afff4393bd19938efb7312da3" category="inline-link-macro">部署在无法访问 Internet 的内部位置</block>
+  <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">请在此处查看所需端点的列表</block>
+  <block id="99428c3925d465acb3903496e22efe4c" category="paragraph">数据感知也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。但是，要扫描本地 SharePoint 文件，您需要为一些选定端点提供 Internet 访问。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">数据感知也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。但是，要扫描本地 OneDrive 文件，您需要为一些选定端点提供 Internet 访问。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
 </blocks>

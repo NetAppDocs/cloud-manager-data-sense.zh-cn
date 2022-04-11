@@ -29,7 +29,9 @@ summary: 完成一些步骤，在无法访问 Internet 的内部站点中的主�
 * 使用简单存储服务（ S3 ）协议的对象存储
 
 
-目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP ， AWS S3 或 OneDrive 和 SharePoint 帐户。
+如果您需要非常安全的 Cloud Manager 安装，但也希望从 OneDrive 帐户或 SharePoint 帐户扫描本地数据，则可以使用 Data sense 脱机安装程序并提供对一些选定端点的 Internet 访问。请参见 <<SharePoint and OneDrive special requirements,SharePoint 和 OneDrive 的特殊要求>> 了解详细信息。
+
+目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP 或 AWS S3 帐户。
 
 
 
@@ -38,6 +40,10 @@ summary: 完成一些步骤，在无法访问 Internet 的内部站点中的主�
 大多数 Data sense 功能都适用于部署在无法访问 Internet 的站点上的情况。但是，不支持某些需要访问 Internet 的功能，例如：
 
 * 管理 Microsoft Azure 信息保护（ AIP ）标签
+* 在某些关键策略返回结果时向 Cloud Manager 用户发送电子邮件警报
+* 为不同用户设置 Cloud Manager 角色（例如，帐户管理员或合规性查看器）
+* 使用 Cloud Sync 复制和同步源文件
+* 接收用户反馈
 * 从 Cloud Manager 自动升级软件
 +
 Cloud Manager Connector 和 Data sense 都需要定期手动升级才能启用新功能。您可以在 Data sense UI 页面底部看到 Data sense 版本。检查 link:whats-new.html["《云数据感知发行说明》"] 以查看每个版本中的新功能以及是否需要这些功能。然后，您可以按照以下步骤进行操作 <<Upgrade Data Sense software,升级 Data sense 软件>>。
@@ -120,6 +126,24 @@ Cloud Manager 中 Cloud Data 感知扫描的前 1 TB 数据是免费的。要在
 Data sense 实例使用专用 IP 地址来确保索引数据不可供他人访问。因此，用于访问 Cloud Manager 的 Web 浏览器必须连接到该专用 IP 地址。此连接可以来自与 Data sense 实例位于同一网络中的主机。
 
 
+
+
+
+== SharePoint 和 OneDrive 的特殊要求
+
+如果 Cloud Manager 和 Data sense 部署在无法访问 Internet 的站点中，则可以通过为一些选定端点提供 Internet 访问来扫描 SharePoint 和 OneDrive 帐户中的本地文件。
+
+[cols="50,50"]
+|===
+| 端点 | 目的 
+
+
+| login.microsoft.com \graph.microsoft.com | 与 Microsoft 服务器通信以登录到选定的联机服务。 
+
+
+| https://cloudmanager.cloud.netapp.com | 与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。 
+|===
+只有在首次连接到这些外部服务期间，才需要访问 _cloudmanager.cloud.netapp.com_ 。
 
 
 
