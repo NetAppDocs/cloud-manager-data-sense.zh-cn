@@ -695,7 +695,7 @@
         </li>
         
         <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com/zh-cn/cloud/">云文档</a>
+          <a href="https://docs.netapp.com/us-en/cloud/">云文档</a>
         </li>
         
 
@@ -733,7 +733,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-06 14:31:18 +0000">04/06/2022</time>
+    <time datetime="2022-04-11 14:46:42 +0000">04/11/2022</time>
     
   
 
@@ -773,7 +773,10 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP ， AWS S3 或 OneDrive 和 SharePoint 帐户。</p>
+<p>如果您需要非常安全的 Cloud Manager 安装，但也希望从 OneDrive 帐户或 SharePoint 帐户扫描本地数据，则可以使用 Data sense 脱机安装程序并提供对一些选定端点的 Internet 访问。请参见 <a href="#SharePoint and OneDrive special requirements">SharePoint 和 OneDrive 的特殊要求</a> 了解详细信息。</p>
+</div>
+<div class="paragraph">
+<p>目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP 或 AWS S3 帐户。</p>
 </div>
 </div>
 </div>
@@ -787,6 +790,18 @@
 <ul>
 <li>
 <p>管理 Microsoft Azure 信息保护（ AIP ）标签</p>
+</li>
+<li>
+<p>在某些关键策略返回结果时向 Cloud Manager 用户发送电子邮件警报</p>
+</li>
+<li>
+<p>为不同用户设置 Cloud Manager 角色（例如，帐户管理员或合规性查看器）</p>
+</li>
+<li>
+<p>使用 Cloud Sync 复制和同步源文件</p>
+</li>
+<li>
+<p>接收用户反馈</p>
 </li>
 <li>
 <p>从 Cloud Manager 自动升级软件</p>
@@ -919,6 +934,39 @@
 </div>
 </li>
 </ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="sharepoint-和-onedrive-的特殊要求">SharePoint 和 OneDrive 的特殊要求</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>如果 Cloud Manager 和 Data sense 部署在无法访问 Internet 的站点中，则可以通过为一些选定端点提供 Internet 访问来扫描 SharePoint 和 OneDrive 帐户中的本地文件。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">端点</th>
+<th class="tableblock halign-left valign-top">目的</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">login.microsoft.com \graph.microsoft.com</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">与 Microsoft 服务器通信以登录到选定的联机服务。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://cloudmanager.cloud.netapp.com" class="bare">https://cloudmanager.cloud.netapp.com</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">与 Cloud Manager 服务进行通信，其中包括 NetApp 帐户。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>只有在首次连接到这些外部服务期间，才需要访问 <em>cloudmanager.cloud.netapp.com</em> 。</p>
 </div>
 </div>
 </div>
