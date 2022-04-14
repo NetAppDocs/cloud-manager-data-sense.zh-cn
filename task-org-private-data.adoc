@@ -6,6 +6,7 @@ summary: Cloud Data sense 为您提供了多种管理和组织私有数据的方
 ---
 = 组织私有数据
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 如果需要，您可以阻止 Cloud Data sense 扫描一个或多个�
 ---
 = 从 Cloud Data sense 中删除数据源
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

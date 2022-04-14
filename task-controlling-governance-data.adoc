@@ -6,6 +6,7 @@ summary: 控制与组织存储资源上的数据相关的成本。Cloud Data sen
 ---
 = 查看有关存储在组织中的数据的监管详细信息
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

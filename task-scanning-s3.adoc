@@ -6,6 +6,7 @@ summary: Cloud Data sense 可以扫描 Amazon S3 存储分段，以确定 S3 对
 ---
 = Amazon S3 云数据感知入门
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

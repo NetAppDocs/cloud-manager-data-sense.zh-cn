@@ -6,6 +6,7 @@ summary: 完成几个步骤，在云中部署 Cloud Data sense 。
 ---
 = 在云中部署 Cloud Data sense
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

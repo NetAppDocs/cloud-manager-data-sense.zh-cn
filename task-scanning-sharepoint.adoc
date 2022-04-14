@@ -6,6 +6,7 @@ summary: 完成几个步骤，使用 Cloud Data sense 扫描 SharePoint 帐户�
 ---
 = 扫描 SharePoint 帐户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

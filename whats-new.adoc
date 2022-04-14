@@ -6,6 +6,7 @@ summary: 了解 Cloud Data sense 中的新增功能。
 ---
 = Cloud Data sense 的新增功能
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

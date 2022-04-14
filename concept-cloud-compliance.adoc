@@ -6,6 +6,7 @@ summary: Cloud Data sense 是 Cloud Manager 的一项数据管理服务，可对
 ---
 = 了解 Cloud Data sense
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -86,7 +87,7 @@ link:task-licensing-datasense.html["了解如何获得 Cloud Data sense 的许�
 
 === 数据传输成本
 
-数据传输成本取决于您的设置。如果云数据感知实例和数据源位于同一可用性区域和区域，则不会产生数据传输成本。但是，如果数据源（例如 Cloud Volumes ONTAP 集群或 S3 存储分段）位于 _Different_ 可用性区域或区域，则云提供商会向您收取数据传输成本。有关详细信息，请参见以下链接：
+数据传输成本取决于您的设置。如果云数据感知实例和数据源位于同一可用性区域和区域，则不会产生数据传输成本。但是，如果数据源（例如 Cloud Volumes ONTAP 系统或 S3 存储分段）位于 _Different_ 可用性区域或区域，则云提供商会向您收取数据传输成本。有关详细信息，请参见以下链接：
 
 * https://aws.amazon.com/ec2/pricing/on-demand/["AWS ： Amazon EC2 定价"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ：带宽定价详细信息"^]

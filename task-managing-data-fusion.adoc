@@ -6,6 +6,7 @@ summary: '我们称之为 "Data Fusion " 的功能允许您扫描组织的数据
 ---
 = 使用 Data Fusion 添加个人数据标识符
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

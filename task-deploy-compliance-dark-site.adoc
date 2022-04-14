@@ -6,6 +6,7 @@ summary: 完成一些步骤，在无法访问 Internet 的内部站点中的主�
 ---
 = 在内部部署 Cloud Data sense ，而无需访问 Internet
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

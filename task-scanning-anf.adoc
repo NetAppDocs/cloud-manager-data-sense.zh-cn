@@ -6,6 +6,7 @@ summary: 完成几个步骤，开始使用适用于 Azure NetApp Files 的云数
 ---
 = 开始使用适用于 Azure NetApp Files 的云数据感知
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

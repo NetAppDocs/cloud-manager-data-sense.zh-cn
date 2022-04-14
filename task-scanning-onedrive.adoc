@@ -6,6 +6,7 @@ summary: 完成几个步骤，使用 Cloud Data sense 扫描用户的 OneDrive �
 ---
 = 正在扫描 OneDrive 帐户
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 完成几个步骤，直接使用 Cloud Data sense 扫描非 NetApp NFS
 ---
 = 正在扫描文件共享
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

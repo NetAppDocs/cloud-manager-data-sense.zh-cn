@@ -6,6 +6,7 @@ summary: 完成以下几个步骤，在您的网络或云中可访问 Internet �
 ---
 = 在可访问 Internet 的 Linux 主机上部署 Cloud Data sense
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

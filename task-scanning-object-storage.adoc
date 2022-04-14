@@ -6,6 +6,7 @@ summary: 完成几个步骤，直接使用 Cloud Data sense 扫描对象存储�
 ---
 = 扫描使用 S3 协议的对象存储
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

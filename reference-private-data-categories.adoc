@@ -6,6 +6,7 @@ summary: Cloud Data sense 可以在卷， Amazon S3 存储分段，数据库， 
 ---
 = 私有数据的类别
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

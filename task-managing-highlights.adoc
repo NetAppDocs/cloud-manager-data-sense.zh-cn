@@ -6,6 +6,7 @@ summary: Cloud Data sense 为您提供了多种管理私有数据的方法。某
 ---
 = 管理私有数据
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

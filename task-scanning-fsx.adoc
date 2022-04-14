@@ -6,6 +6,7 @@ summary: 请完成几个步骤，开始使用 Cloud Data sense 扫描 Amazon FSX
 ---
 = 开始使用适用于 Amazon FSX for ONTAP 的 Cloud Data sense
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -7,6 +7,7 @@ summary: Cloud Data sense 是一种数据管理服务，可对数据源进行扫
 ---
 = Cloud Data sense 文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
