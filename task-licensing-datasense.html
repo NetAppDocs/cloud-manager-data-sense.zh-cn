@@ -733,7 +733,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-06 14:31:18 +0000">04/06/2022</time>
+    <time datetime="2022-04-14 13:32:40 +0000">04/14/2022</time>
     
   
 
@@ -949,13 +949,13 @@ Your browser does not support the video tag.
 <p><span class="image"><img src="./media/screenshot_services_license_expire_cc1.png" alt="在 Cloud Data sense 页面中显示即将到期许可证的屏幕截图。"></span></p>
 </div>
 <div class="paragraph">
-<p>此状态也会显示在 " 数字电子钱包 " 页面中。</p>
+<p>此状态也会显示在数字电子钱包中。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_services_license_expire_cc2.png" alt="在 &quot; 数字电子钱包 &quot; 页面中显示即将到期许可证的屏幕截图。"></span></p>
 </div>
 <div class="paragraph">
-<p>您可以在 Cloud Data sense 许可证到期之前对其进行更新，以便扫描数据的能力不会中断。</p>
+<p>您可以在 Cloud Data sense 许可证到期之前对其进行更新，以便访问扫描数据的能力不会中断。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步骤</div>
@@ -994,7 +994,7 @@ Your browser does not support the video tag.
 <div class="sect2">
 <h3 id="byol-许可证注意事项">BYOL 许可证注意事项</h3>
 <div class="paragraph">
-<p>使用 Cloud Data sense BYOL 许可证时，如果要扫描的所有数据的大小接近容量限制或接近许可证到期日期， Cloud Manager 将在用户界面中显示警告。您会收到以下警告：</p>
+<p>使用 Cloud Data sense BYOL 许可证时，当您正在扫描的所有数据的大小接近容量限制或接近许可证到期日期时， Cloud Manager 会在 Data sense UI 和 Digital Wallet UI 中显示警告。您会收到以下警告：</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1010,23 +1010,22 @@ Your browser does not support the video tag.
 <p>如果您看到这些警告，请使用 Cloud Manager 界面右下角的聊天图标续订许可证。</p>
 </div>
 <div class="paragraph">
-<p>许可证过期后，可能会发生以下两种情况：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>如果您正在使用的帐户已订阅 Marketplace ，则 Data sense 将继续运行，但您将过渡到 PAYGO 许可模式。扫描的数据量会向您收取费用。</p>
-</li>
-<li>
-<p>如果您正在使用的帐户没有 Marketplace 订阅，则 Data sense 将继续运行，但您仍会看到警告。</p>
-</li>
-</ul>
+<p>如果许可证到期， Data sense 将继续运行，但会阻止对信息板的访问，因此您无法查看有关任何已扫描数据的信息。如果您希望减少要扫描的卷数量，从而可能使容量使用量低于许可证限制，则只能使用 <em>Configuration</em> 页面。</p>
 </div>
 <div class="paragraph">
-<p>续订 BYOL 订阅后， Cloud Manager 会自动更新许可证。如果 Cloud Manager 无法通过安全 Internet 连接访问此许可证文件（例如，安装在非公开站点时），您可以自行获取此文件并手动将其上传到 Cloud Manager 。有关说明，请参见 <a href="#Update a Cloud Data Sense BYOL license">如何更新 Cloud Data sense 许可证</a>。</p>
+<p>续订 BYOL 许可证后， Cloud Manager 会自动更新 Digital Wallet 中的许可证，并提供对所有信息板的完全访问权限。如果 Cloud Manager 无法通过安全 Internet 连接访问此许可证文件（例如，安装在非公开站点时），您可以自行获取此文件并手动将其上传到 Cloud Manager 。有关说明，请参见 <a href="#Update a Cloud Data Sense BYOL license">如何更新 Cloud Data sense 许可证</a>。</p>
 </div>
-<div class="paragraph">
-<p>已转移到 PAYGO 许可证的系统将自动返回到 BYOL 许可证。如果系统在未获得许可证的情况下运行，则会停止显示警告，并因许可证过期期间发生的活动而收取费用。</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-data-sense/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+如果您正在使用的帐户同时具有 BYOL 许可证和 PAYGO 订阅，则在 BYOL 许可证到期后， Data sense <em>will not</em> 将转移到 PAYGO 订阅。您必须续订 BYOL 许可证。
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
