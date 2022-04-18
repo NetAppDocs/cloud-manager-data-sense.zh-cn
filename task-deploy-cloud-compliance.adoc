@@ -130,10 +130,12 @@ NOTE: 如果您计划扫描 Azure NetApp Files 卷，则需要确保将部署在
 
 
 --
-确保 Cloud Manager Connector 可以访问 Cloud Data sense:: 确保 Connector 与 Cloud Data sense 实例之间的连接。Connector 的安全组必须允许通过端口 443 与 Data sense 实例之间的入站和出站流量。通过此连接，可以部署 Data sense 实例，并可在合规性和监管选项卡中查看信息。
+确保 Cloud Manager Connector 可以访问 Cloud Data sense:: 确保 Connector 与 Cloud Data sense 实例之间的连接。Connector 的安全组必须允许通过端口 443 与 Data sense 实例之间的入站和出站流量。通过此连接，可以部署 Data sense 实例，并可在合规性和监管选项卡中查看信息。AWS 和 Azure 中的政府区域支持云数据感知。
 +
 --
-AWS 和 Azure 中的政府区域支持云数据感知。AWS 和 AWS GovCloud 部署还需要其他入站和出站规则。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-aws["AWS 中连接器的规则"^] 了解详细信息。
+AWS 和 AWS GovCloud 部署还需要其他入站和出站规则。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-aws["AWS 中连接器的规则"^] 了解详细信息。
+
+Azure 和 Azure 政府部署还需要其他入站和出站规则。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-azure["Azure 中连接器的规则"^] 了解详细信息。
 
 --
 确保您可以保持 Cloud Data sense 正常运行:: 云数据感知实例需要保持运行状态才能持续扫描数据。

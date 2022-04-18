@@ -1824,9 +1824,7 @@
   <block id="679c6b026096af4912243f7d0fe0c56a" category="inline-link">Google Cloud 文档：资源配额</block>
   <block id="e0c1891bead6f9e2f86ecf6043345b62" category="list-text"><block ref="e0c1891bead6f9e2f86ecf6043345b62" category="inline-link-rx"></block></block>
   <block id="d7a48de9510bd2b767d3d5fc0a2c7716" category="list-text">确保 Cloud Manager Connector 可以访问 Cloud Data sense</block>
-  <block id="7a1ca71e0bd803afb25df05b1d1dd052" category="list-text">确保 Connector 与 Cloud Data sense 实例之间的连接。Connector 的安全组必须允许通过端口 443 与 Data sense 实例之间的入站和出站流量。通过此连接，可以部署 Data sense 实例，并可在合规性和监管选项卡中查看信息。</block>
   <block id="fd1958e5e74317f89c6c16bbca7d1446" category="inline-link">AWS 中连接器的规则</block>
-  <block id="bb607285829b82b3d72af8d273125f48" category="paragraph">AWS 和 Azure 中的政府区域支持云数据感知。AWS 和 AWS GovCloud 部署还需要其他入站和出站规则。请参见<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="71a1162233b51bce893571d72cd943d1" category="list-text">确保您可以保持 Cloud Data sense 正常运行</block>
   <block id="8412fae8dddba4e0747379264d31e177" category="list-text">云数据感知实例需要保持运行状态才能持续扫描数据。</block>
   <block id="ed5df84ba8d573f10f9a94f52964d60b" category="list-text">确保 Web 浏览器连接到 Cloud Data sense</block>
@@ -2367,4 +2365,8 @@
   <block id="bece28b158ab337d9ed24b00d7d02cc7" category="list-text">单击 * 致电我们 * 可查找 NetApp 技术支持的电话号码。</block>
   <block id="efe81cff8e6f47ec59ef94167b76bf5a" category="list-text">单击 * 打开问题描述 * ，选择一个选项，然后单击 * 发送 * 。</block>
   <block id="cbb1040836732e478409dacf7e45171a" category="paragraph">NetApp 代表将审核您的案例，并尽快与您联系。</block>
+  <block id="eee50fc2c4ac06219bb486e05b8250f7" category="list-text">确保 Connector 与 Cloud Data sense 实例之间的连接。Connector 的安全组必须允许通过端口 443 与 Data sense 实例之间的入站和出站流量。通过此连接，可以部署 Data sense 实例，并可在合规性和监管选项卡中查看信息。AWS 和 Azure 中的政府区域支持云数据感知。</block>
+  <block id="0b3c77caf569c338dc81a3ae8eb753d5" category="paragraph">AWS 和 AWS GovCloud 部署还需要其他入站和出站规则。请参见<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> 了解详细信息。</block>
+  <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure 中连接器的规则</block>
+  <block id="e271f92bb6a2f886e00883b1a5f3fe51" category="paragraph">Azure 和 Azure 政府部署还需要其他入站和出站规则。请参见<block ref="c90240cb0e2cbfac2997cad831e58ce0" category="inline-link-rx"></block> 了解详细信息。</block>
 </blocks>
