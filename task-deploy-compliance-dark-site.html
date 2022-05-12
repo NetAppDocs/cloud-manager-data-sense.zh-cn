@@ -459,6 +459,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 帐户
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint 帐户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google Drive帐户
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-file-shares.html">
         文件共享
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:32:40 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:13:47 +0000">05/12/2022</time>
     
   
 
@@ -778,7 +782,7 @@
 <p>如果您需要非常安全的 Cloud Manager 安装，但也希望从 OneDrive 帐户或 SharePoint 帐户扫描本地数据，则可以使用 Data sense 脱机安装程序并提供对一些选定端点的 Internet 访问。请参见 <a href="#SharePoint and OneDrive special requirements">SharePoint 和 OneDrive 的特殊要求</a> 了解详细信息。</p>
 </div>
 <div class="paragraph">
-<p>目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP 或 AWS S3 帐户。</p>
+<p>当前不支持在非公开站点中部署Data sense时扫描Cloud Volumes ONTAP 、Azure NetApp Files 、FSX for ONTAP 、AWS S3或Google Drive帐户。</p>
 </div>
 </div>
 </div>
@@ -855,9 +859,6 @@
 <p>操作系统： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版</p>
 <div class="ulist">
 <ul>
-<li>
-<p>可以使用版本 7.8 ，但 Linux 内核版本必须为 4.14 或更高版本</p>
-</li>
 <li>
 <p>操作系统必须能够安装 Docker 引擎（例如，根据需要禁用 <em>firewalld</em> 服务）</p>
 </li>

@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Data sense 是 Cloud Manager 的一项数据管理服务，可对企业内部和云数据源和工作环境进行扫描，以映射和分类数据并识别私有信息。这有助于降低安全性和合规性风险，降低存储成本，并有助于您的数据迁移项目。">
-  <meta name="keywords" content=" artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, on-prem ontap, file shares, object storage, aip labels, governance, data sense"><!-- Icons -->
+  <meta name="keywords" content=" artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, google drive, on-prem ontap, file shares, object storage, aip labels, governance, data sense"><!-- Icons -->
   <link rel="icon" href="/zh-cn/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -459,6 +459,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 帐户
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint 帐户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google Drive帐户
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-file-shares.html">
         文件共享
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:32:40 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:13:47 +0000">05/12/2022</time>
     
   
 
@@ -848,6 +852,9 @@
 <li>
 <p>SharePoint 帐户</p>
 </li>
+<li>
+<p>Google Drive帐户</p>
+</li>
 </ul>
 </div>
 <div class="paragraph">
@@ -870,7 +877,7 @@
 <p>要在云中安装 Cloud Data sense ，需要部署云实例，这会导致部署该实例的云提供商收取费用。请参见 <a href="#The Cloud Data Sense instance">为每个云提供商部署的实例类型</a>。如果您在内部系统上安装 Data sense ，则无需任何成本。</p>
 </li>
 <li>
-<p>Cloud Data sense 要求您已部署 Connector 。在许多情况下，由于您在 Cloud Manager 中使用的其他存储和服务，您已经有了 Connector 。Connector 实例会从部署该实例的云提供商处收取费用。请参见 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html" target="_blank" rel="noopener">"为每个云提供商部署的实例类型"</a>。如果在内部部署系统上安装 Connector ，则不需要任何成本。</p>
+<p>Cloud Data sense要求您已部署Cloud Manager Connector。在许多情况下，由于您在 Cloud Manager 中使用的其他存储和服务，您已经有了 Connector 。Connector 实例会从部署该实例的云提供商处收取费用。请参见 <a href="https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html" target="_blank" rel="noopener">"为每个云提供商部署的实例类型"</a>。如果在内部部署系统上安装 Connector ，则不需要任何成本。</p>
 </li>
 </ul>
 </div>
@@ -1052,7 +1059,7 @@
 <p>您可以通过 Cloud Data sense 对选定工作环境和数据源运行常规 " 映射 " 扫描。映射仅提供数据的概览，而 " 分类 " 则提供数据的深度扫描。由于无法访问文件以查看数据源中的数据，因此可以非常快速地对数据源进行映射。</p>
 </div>
 <div class="paragraph">
-<p>许多用户喜欢此功能，因为他们希望快速扫描数据以确定需要更多研究的数据源，然后只能对这些数据源或卷启用分类扫描。</p>
+<p>许多用户喜欢此功能、因为他们希望快速扫描其数据以确定需要更多研究的数据源、然后只能对所需的数据源或卷启用分类扫描。</p>
 </div>
 <div class="paragraph">
 <p>下表显示了一些差异：</p>

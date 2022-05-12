@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Data sense 提供报告，您可以使用这些报告更好地了解组织的数据隐私计划的状态。">
-  <meta name="keywords" content=" report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa"><!-- Icons -->
+  <meta name="keywords" content=" report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file"><!-- Icons -->
   <link rel="icon" href="/zh-cn/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 帐户
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint 帐户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google Drive帐户
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-file-shares.html">
         文件共享
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:32:40 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:13:47 +0000">05/12/2022</time>
     
   
 
@@ -748,7 +752,7 @@
 <p>Cloud Data sense 提供报告，您可以使用这些报告更好地了解组织的数据隐私计划的状态。</p>
 </div>
 <div class="paragraph">
-<p>默认情况下， Cloud Data sense 信息板会显示所有工作环境和数据库的合规性和监管数据。如果要查看仅包含某些工作环境的数据的报告， <a href="#Selecting the working environments for reports">选择这些工作环境</a>。</p>
+<p>默认情况下、Cloud Data sense信息板会显示所有工作环境、数据库和数据源的合规性和监管数据。如果要查看仅包含某些工作环境的数据的报告， <a href="#Selecting the working environments for reports">选择这些工作环境</a>。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -757,19 +761,16 @@
 <img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="注">
 </td>
 <td class="content">
-只有在选择对数据源执行完整分类扫描后，才可以使用本节中所述的报告。已执行仅映射扫描的数据源只能生成数据映射报告。
-</td>
-</tr>
-</table>
+<div class="ulist">
+<ul>
+<li>
+<p>只有在选择对数据源执行完整分类扫描后，才可以使用本节中所述的报告。已执行仅映射扫描的数据源只能生成数据映射报告。</p>
+</li>
+<li>
+<p>NetApp 无法保证 Cloud Data sense 识别的个人数据和敏感个人数据的 100% 准确性。您应始终通过查看数据来验证此信息。</p>
+</li>
+</ul>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloud-manager-data-sense/images/note.svg" alt="注">
-</td>
-<td class="content">
-NetApp 无法保证 Cloud Data sense 识别的个人数据和敏感个人数据的 100% 准确性。您应始终通过查看数据来验证此信息。
 </td>
 </tr>
 </table>
@@ -1085,6 +1086,126 @@ NetApp 无法保证 Cloud Data sense 识别的个人数据和敏感个人数据�
 </div>
 <div class="paragraph">
 <p>Cloud Data sense 可生成 PDF 报告，您可以根据需要查看该报告并将其发送给其他组。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="数据调查报告">数据调查报告</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>数据调查报告是数据调查页面内容的下载。 <a href="task-controlling-private-data.html#filtering-data-in-the-data-investigation-page">"了解有关数据调查页面的更多信息"</a>。</p>
+</div>
+<div class="paragraph">
+<p>您可以将报告保存在本地计算机上为.CSV文件；该文件最多可包含5、000行数据。如果Data sense正在扫描数据库表(结构化数据)和文件(非结构化数据)、则最多可以下载两个.CSV报告。</p>
+</div>
+<div class="sect2">
+<h3 id="生成数据调查报告">生成数据调查报告</h3>
+<div class="olist arabic">
+<div class="title">步骤</div>
+<ol class="arabic">
+<li>
+<p>在数据调查页面中、单击 <span class="image"><img src="./media/button_download.png" alt="下载按钮"></span> 按钮。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>此时将显示一条消息、指出正在下载此报告。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="每个数据调查报告中包含的内容">每个数据调查报告中包含的内容</h3>
+<div class="paragraph">
+<p>*非结构化文件数据报告*包含有关文件的以下信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>文件名</p>
+</li>
+<li>
+<p>位置类型</p>
+</li>
+<li>
+<p>Working environment name</p>
+</li>
+<li>
+<p>存储库（例如，卷，存储分段，共享）</p>
+</li>
+<li>
+<p>Working environment type</p>
+</li>
+<li>
+<p>文件路径</p>
+</li>
+<li>
+<p>文件类型</p>
+</li>
+<li>
+<p>文件大小</p>
+</li>
+<li>
+<p>创建时间</p>
+</li>
+<li>
+<p>上次修改时间</p>
+</li>
+<li>
+<p>上次访问</p>
+</li>
+<li>
+<p>文件所有者</p>
+</li>
+<li>
+<p>类别</p>
+</li>
+<li>
+<p>个人信息</p>
+</li>
+<li>
+<p>敏感的个人信息</p>
+</li>
+<li>
+<p>删除检测日期</p>
+<div class="paragraph">
+<p>删除检测日期用于标识文件被删除或移动的日期。这样，您就可以确定何时移动了敏感文件。已删除的文件不属于信息板或 " 调查 " 页面上显示的文件编号。这些文件仅显示在 CSV 报告中。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*结构化数据报告*包含有关数据库表的以下信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>数据库表名称</p>
+</li>
+<li>
+<p>位置类型</p>
+</li>
+<li>
+<p>Working environment name</p>
+</li>
+<li>
+<p>存储库（例如模式）</p>
+</li>
+<li>
+<p>列计数</p>
+</li>
+<li>
+<p>行数</p>
+</li>
+<li>
+<p>个人信息</p>
+</li>
+<li>
+<p>敏感的个人信息</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*注：*有关文件夹的信息当前在报告中不可用。</p>
 </div>
 </div>
 </div>

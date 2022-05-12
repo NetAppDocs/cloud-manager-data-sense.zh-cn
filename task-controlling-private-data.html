@@ -17,7 +17,7 @@
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="通过查看有关组织中个人数据和敏感个人数据的详细信息来控制您的私有数据。您还可以通过查看数据中的 Cloud Data 感知的类别和文件类型来获得可见性。">
-  <meta name="keywords" content=" personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, highlights, policies"><!-- Icons -->
+  <meta name="keywords" content=" personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies"><!-- Icons -->
   <link rel="icon" href="/zh-cn/cloud-manager-data-sense/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/cloud-manager-data-sense/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -450,6 +450,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -630,6 +632,8 @@
         OneDrive 帐户
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-sharepoint.html">
         SharePoint 帐户
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-google-drive.html">
+        Google Drive帐户
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-file-shares.html">
         文件共享
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-scanning-object-storage.html">
@@ -735,7 +739,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-14 13:32:40 +0000">04/14/2022</time>
+    <time datetime="2022-05-12 13:13:47 +0000">05/12/2022</time>
     
   
 
@@ -806,7 +810,7 @@
 <li>
 <p>通过搜索，排序，展开特定文件的详细信息，单击 * 调查结果 * 以查看屏蔽信息或下载文件列表来调查数据。</p>
 <div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_compliance_investigation_page.gif" alt="单击调查结果后的详细信息屏幕截图。"></span></p>
+<p><span class="image"><img src="./media/screenshot_compliance_investigation_page.png" alt="单击调查结果后的详细信息屏幕截图。"></span></p>
 </div>
 </li>
 </ol>
@@ -976,13 +980,16 @@
 <p>要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于 CIFS 共享， SharePoint 和 OneDrive 中的文件。</p>
 </div>
 <div class="paragraph">
+<p>请注意，如果您看到的是 SID （安全标识符），而不是用户和组名称，则应将 Active Directory 集成到 Data sense 中。 <a href="task-add-active-directory-datasense.html">"了解如何执行此操作"</a>。</p>
+</div>
+<div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_permissions.png" alt="显示详细文件权限的屏幕截图。"></span></p>
 </div>
 <div class="paragraph">
 <p>您可以单击某个用户或组的名称，此时将在 " 用户 / 组权限 " 筛选器中显示 " 调查 " 页面，并显示该用户或组的名称，以便您可以查看该用户或组有权访问的所有文件。</p>
 </div>
 <div class="paragraph">
-<p>请注意，如果您看到的是 SID （安全标识符），而不是用户和组名称，则应将 Active Directory 集成到 Data sense 中。 <a href="task-add-active-directory-datasense.html">"了解如何执行此操作"</a>。</p>
+<p>此外、您还可以单击 <span class="image"><img src="./media/button_down_caret.png" alt="注意"></span> 查看属于该组的用户列表。</p>
 </div>
 </div>
 </div>
@@ -1059,7 +1066,10 @@
 <h2 id="筛选-数据调查-页面中的数据">筛选 " 数据调查 " 页面中的数据</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>您可以筛选调查页面的内容，以便仅显示要查看的结果。如果要在对内容进行优化后将 CSV 版本的内容另存为报告，请单击 <span class="image"><img src="./media/button_download.png" alt="下载按钮"></span> 按钮。</p>
+<p>您可以筛选调查页面的内容，以便仅显示要查看的结果。这是一项功能非常强大的功能、因为在对数据进行细化后、您可以使用页面顶部的按钮栏执行各种操作、包括复制文件、移动文件、向文件添加标记或AIP标签等。</p>
+</div>
+<div class="paragraph">
+<p>如果要在优化页面内容后将其作为报告下载、请单击 <span class="image"><img src="./media/button_download.png" alt="下载按钮"></span> 用于保存.CSV文件的按钮。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_compliance_investigation_filtered.png" alt="在调查页面中细化结果时可用筛选器的屏幕截图。"></span></p>
@@ -1067,7 +1077,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p>通过顶级选项卡，您可以查看文件（非结构化数据）或数据库（结构化数据）中的数据。</p>
+<p>通过顶层选项卡、您可以查看文件(非结构化数据)、目录(非结构化数据)或数据库(结构化数据)中的数据。</p>
 </li>
 <li>
 <p>通过每列顶部的控件，您可以按数字或字母顺序对结果进行排序。</p>
@@ -1088,7 +1098,7 @@
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">策略</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">选择一个或多个策略。开始 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"此处"</a> 可查看现有策略列表并创建您自己的策略。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择一个或多个策略。开始 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"此处"</a> 可查看现有策略列表并创建您自己的自定义策略。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">打开权限</p></td>
@@ -1096,7 +1106,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">用户 / 组权限</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">输入用户名，组名称或部分名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择一个或多个用户名和/或组名称、或者输入部分名称</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">文件所有者</p></td>
@@ -1104,11 +1114,11 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Label</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">选择 AIP 标签</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择 &#8230;&#8203; <a href="task-org-private-data.html#categorizing-your-data-using-aip-labels">"AIP 标签"</a> 分配给文件的</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">工作环境类型</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">选择工作环境的类型。请注意， OneDrive 和 SharePoint 归类为 " 云应用程序 " 。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择工作环境的类型。OneDrive、SharePoint和Google Drive归类为"云应用程序"。</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">工作环境名称</p></td>
@@ -1141,6 +1151,10 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">数据主题</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">输入数据主体的全名或已知标识符</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">目录类型</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择目录类型："共享"或"文件夹"</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">文件类型</p></td>
@@ -1176,7 +1190,7 @@
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tags</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">选择一个或多个标记</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择 &#8230;&#8203; <a href="task-org-private-data.html#applying-tags-to-manage-your-scanned-files">"一个或多个标记"</a> 分配给文件的</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">已分配给</p></td>
@@ -1184,105 +1198,6 @@
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p>" 筛选器 " 窗格顶部的 <em>Policies</em> 筛选器列出了自定义筛选器，这些筛选器提供了常见请求的筛选器组合；例如保存的数据库查询或收藏夹列表。开始 <a href="task-org-private-data.html#controlling-your-data-using-policies" target="_blank" rel="noopener">"此处"</a> 查看预定义策略列表以及如何创建自己的自定义策略。</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="每个文件列表报告中包含的内容-csv-文件">每个文件列表报告中包含的内容（ CSV 文件）</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>在每个调查页面中，您可以单击 <span class="image"><img src="./media/button_download.png" alt="下载按钮"></span> 用于下载包含已标识文件详细信息的文件列表（ CSV 格式）的按钮。如果 Data sense 同时扫描结构化数据（数据库表）和非结构化数据（文件），则下载的 ZIP 文件中包含两个报告。</p>
-</div>
-<div class="paragraph">
-<p>如果结果超过 10 ， 000 个，则列表中仅显示排名前 10 ， 000 位的结果。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>非结构化数据报告 * 包含以下信息：</p>
-</li>
-<li>
-<p>文件名</p>
-</li>
-<li>
-<p>位置类型</p>
-</li>
-<li>
-<p>Working environment name</p>
-</li>
-<li>
-<p>存储库（例如，卷，存储分段，共享）</p>
-</li>
-<li>
-<p>Working environment type</p>
-</li>
-<li>
-<p>文件路径</p>
-</li>
-<li>
-<p>文件类型</p>
-</li>
-<li>
-<p>文件大小</p>
-</li>
-<li>
-<p>创建时间</p>
-</li>
-<li>
-<p>上次修改时间</p>
-</li>
-<li>
-<p>上次访问</p>
-</li>
-<li>
-<p>文件所有者</p>
-</li>
-<li>
-<p>类别</p>
-</li>
-<li>
-<p>个人信息</p>
-</li>
-<li>
-<p>敏感的个人信息</p>
-</li>
-<li>
-<p>删除检测日期</p>
-<div class="paragraph">
-<p>删除检测日期用于标识文件被删除或移动的日期。这样，您就可以确定何时移动了敏感文件。已删除的文件不属于信息板或 " 调查 " 页面上显示的文件编号。这些文件仅显示在 CSV 报告中。</p>
-</div>
-</li>
-<li>
-<p>结构化数据报告 * 包含以下信息：</p>
-</li>
-<li>
-<p>数据库表名称</p>
-</li>
-<li>
-<p>位置类型</p>
-</li>
-<li>
-<p>Working environment name</p>
-</li>
-<li>
-<p>存储库（例如模式）</p>
-</li>
-<li>
-<p>列计数</p>
-</li>
-<li>
-<p>行数</p>
-</li>
-<li>
-<p>个人信息</p>
-</li>
-<li>
-<p>敏感的个人信息</p>
 </li>
 </ul>
 </div>
