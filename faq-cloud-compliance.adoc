@@ -18,26 +18,33 @@ summary: 如果您只是在寻找一个问题的快速答案，此常见问题�
 
 
 
-== 什么是云数据的意义？
+== 云数据感知服务
 
-Cloud Data sense 是一款云产品，它利用人工智能（ AI ）驱动的技术帮助企业了解数据环境并识别存储系统中的敏感数据。这些系统可以是 Azure NetApp Files 配置，适用于 ONTAP 的 Amazon FSx ， Cloud Volumes ONTAP 系统（托管在 AWS ， Azure 或 GCP 中）， Amazon S3 存储分段，内部 ONTAP 系统， 非 NetApp 文件共享，通用 S3 对象存储，数据库， OneDrive 帐户和 SharePoint 帐户。
+以下问题概括说明了云数据的意义。
+
+
+
+=== 什么是云数据的意义？
+
+Cloud Data sense是一款云产品、它使用人工智能(AI)驱动的技术帮助您了解数据环境并识别存储系统中的敏感数据。这些系统可以是您添加到Cloud Manager Canvas中的工作环境、也可以是Data sense可以通过网络访问的多种类型的数据源。 <<What sources of data can be scanned with Data Sense,请参见下面的完整列表>>。
 
 Cloud Data sense 提供了预定义的参数（例如敏感信息类型和类别），用于满足有关数据隐私和敏感度的新数据合规性法规，例如 GDPR ， CCPA ， HIPAA 等。
 
 
 
-== 为什么要使用 Cloud Data sense ？
+=== 为什么要使用 Cloud Data sense ？
 
 Cloud Data sense 可以为您提供数据，帮助您：
 
 * 遵守数据合规性和隐私法规。
+* 将数据从传统系统迁移到云。
 * 遵守数据保留策略。
 * 根据 GDPR ， CCPA ， HIPAA 和其他数据隐私法规的要求，根据数据主题轻松查找和报告特定数据。
 
 
 
 
-== Cloud Data sense 的常见用例有哪些？
+=== Cloud Data sense 的常见用例有哪些？
 
 * 识别个人身份信息（ PiII ）。
 * 根据 GDPR 和 CCPA 隐私法规的要求确定广泛的敏感信息。
@@ -48,64 +55,15 @@ https://cloud.netapp.com/cloud-compliance["详细了解 Cloud Data sense 的用�
 
 
 
-== 可以使用 Cloud Data sense 扫描哪些类型的数据？
+=== 云数据感知的工作原理是什么？
 
-云数据感知支持通过 NFS 和 CIFS 协议扫描非结构化数据，这些协议由 Cloud Volumes ONTAP ， Azure NetApp Files ， Amazon FSx for ONTAP ，内部 ONTAP 系统以及非 NetApp 文件共享管理。Data sense 支持 NFS 3.x ， 4.0 和 4.1 以及 CIFS 1.x ， 2.0 ， 2.1 和 3.0 版。
-
-Data sense 还可以扫描存储在 Amazon S3 存储分段和通用 S3 对象存储中的数据。
-
-此外， Data sense 还可以扫描位于任何位置的数据库以及 OneDrive 和 SharePoint 帐户中的用户文件。
-
-link:concept-cloud-compliance.html#how-scans-work["了解扫描的工作原理"^]。
-
-
-
-== 支持哪些云提供商？
-
-Cloud Data sense 作为 Cloud Manager 的一部分运行，并支持 AWS ， Azure 和 GCP 。这样，您的组织就可以在不同的云提供商之间实现统一的隐私可见性。
-
-
-
-== 如何访问 Cloud Data sense ？
-
-Cloud Data sense 通过 Cloud Manager 进行操作和管理。您可以从 Cloud Manager 中的 * 数据感知 * 选项卡访问数据感知功能。
-
-
-
-== 云数据感知的工作原理是什么？
-
-Cloud Data sense 可在 Cloud Manager 系统和存储系统的同时部署另一层人工智能。然后，它会扫描卷，分段，数据库和 OneDrive 帐户上的数据，并为找到的数据洞察力编制索引。
+Cloud Data sense 可在 Cloud Manager 系统和存储系统的同时部署另一层人工智能。然后、它会扫描卷、分段、数据库和其他存储帐户上的数据、并为找到的数据洞察力编制索引。与通常围绕正则表达式和模式匹配构建的替代解决方案相比、Data sense可以利用人工智能和自然语言处理。Cloud Data sense利用AI提供对数据的上下文了解、以实现准确的检测和分类。它由AI驱动、因为它专为现代数据类型和规模而设计。它还了解数据环境、以便提供强大、准确的发现和分类。
 
 link:concept-cloud-compliance.html["详细了解 Cloud Data sense 的工作原理"^]。
 
 
 
-== 云数据的成本有多高？
-
-使用 Cloud Data sense 的成本取决于您要扫描的数据量。Data sense 在 Cloud Manager 工作空间中扫描的前 1 TB 数据是免费的。要在这之后继续扫描数据，需要订阅 AWS ， Azure 或 GCP Marketplace 或 NetApp 提供的 BYOL 许可证。请参见 https://cloud.netapp.com/netapp-cloud-data-sense#Pricing["定价"^] 了解详细信息。
-
-
-
-== 云数据感知需要哪种类型的实例或虚拟机？
-
-时间 link:task-deploy-cloud-compliance.html["部署在云中"]：
-
-* 在 AWS 中， Cloud Data sense 在具有 500 GB GP2 磁盘的 m5.4xlarge 实例上运行。
-* 在 Azure 中， Cloud Data sense 在具有 512 GB 磁盘的 Standard_d16s_v3 VM 上运行。
-* 在 GCP 中， Cloud Data sense 在具有 512 GB 标准永久性磁盘的 n2-standard-16 VM 上运行。
-
-
-您可以在可通过网络或云访问 Internet 的 Linux 主机上安装 Data sense 软件。所有功能均相同，您可以继续通过 Cloud Manager 管理扫描配置和结果。请参见 link:task-deploy-compliance-onprem.html["在内部部署 Cloud Data sense"] 了解系统要求和安装详细信息。
-
-此外，您还可以 link:task-deploy-compliance-dark-site.html["在无法访问 Internet 的内部站点中部署 Data sense"] 适用于完全安全的站点。
-
-请注意，您可以在 CPU 较少且 RAM 较少的系统上部署 Data sense ，但使用这些系统时会有一些限制。请参见 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用较小的实例类型"] 了解详细信息。
-
-link:concept-cloud-compliance.html["详细了解 Cloud Data sense 的工作原理"^]。
-
-
-
-== Cloud Data sense 扫描我的数据的频率如何？
+=== Cloud Data sense 扫描我的数据的频率如何？
 
 数据经常发生变化，因此 Cloud Data sense 可以持续扫描数据，而不会对数据造成影响。虽然数据的初始扫描可能需要较长时间，但后续扫描只会扫描增量更改，从而缩短系统扫描时间。
 
@@ -115,11 +73,21 @@ link:concept-cloud-compliance.html#how-scans-work["了解扫描的工作原理"]
 
 
 
-== Cloud Data sense 是否提供报告？
+=== Cloud Data sense支持哪些部署模式？
 
-是的。Cloud Data sense 提供的信息可能与您组织中的其他利益相关方相关，因此我们可以帮助您生成报告以分享这些见解。
+Cloud Data sense通常使用SaaS模式进行部署、在这种模式中、服务通过Cloud Manager界面启用。Cloud Data sense可以部署在几乎任何位置的系统上进行扫描和报告、包括内部环境、云和混合环境。对于安全安装、Cloud Manager和Cloud Data sense可以部署在"非公开站点"模式中、该模式作为软件包安装在内部、不需要外部网络连接。
 
-以下报告可用于 Data sense ：
+
+
+=== 是否有人可以访问在我的浏览器和Data sense之间发送的私有数据？
+
+否在浏览器和Data sense实例之间发送的私有数据通过端到端加密得到保护、这意味着NetApp和第三方无法读取。除非您请求并批准访问、否则Data sense不会与NetApp共享任何数据或结果。
+
+
+
+=== Cloud Data sense 是否提供报告？
+
+是的。Cloud Data sense 提供的信息可能与您组织中的其他利益相关方相关，因此我们可以帮助您生成报告以分享这些见解。以下报告可用于 Data sense ：
 
 隐私风险评估报告:: 根据您的数据提供隐私洞察力并获得隐私风险得分。 link:task-generating-compliance-reports.html#privacy-risk-assessment-report["了解更多信息。"^]。
 数据主体访问请求报告:: 用于提取包含数据主体的特定名称或个人标识符相关信息的所有文件的报告。 link:task-responding-to-dsar.html["了解更多信息。"^]。
@@ -131,7 +99,7 @@ HIPAA 报告:: 帮助您确定运行状况信息在文件中的分布情况。 l
 
 
 
-== 扫描性能是否有所不同？
+=== 扫描性能是否有所不同？
 
 扫描性能可能因网络带宽和环境中的平均文件大小而异。它还可能取决于主机系统（在云端或内部）的大小特征。请参见 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["云数据感知实例"] 和 link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"] 有关详细信息 ...
 
@@ -139,26 +107,18 @@ HIPAA 报告:: 帮助您确定运行状况信息在文件中的分布情况。 l
 
 
 
-== 支持哪些文件类型？
+=== 如何启用 Cloud Data sense ？
 
-Cloud Data sense 会扫描所有文件以获取类别和元数据洞察力，并在信息板的文件类型部分显示所有文件类型。
-
-当 Data sense 检测到个人身份信息（ Pii ）或执行 DSAL 搜索时，仅支持以下文件格式： .CSV ， .dcm ， .DICOM、 .DOC ， .docx ， .json ， .PDF ， .PPTX ， .RTV ， .TXT ， .XLS 和 .XLSX 。
-
-
-
-== 如何启用 Cloud Data sense ？
-
-首先，您需要在 Cloud Manager 中部署 Cloud Data sense 实例。实例运行后，您可以从 * 数据感知 * 选项卡或通过选择特定的工作环境在现有工作环境和数据库上启用此服务。
+首先，您需要在 Cloud Manager 中部署 Cloud Data sense 实例。实例运行后、您可以从*数据感知*选项卡或通过选择特定的工作环境在现有工作环境、数据库和其他数据源上启用此服务。
 
 link:task-getting-started-compliance.html["了解如何开始使用"^]。
 
 
-NOTE: 激活 Cloud Data sense 可立即执行初始扫描。扫描结果会在之后不久显示。
+NOTE: 在数据源上激活Cloud Data sense会立即执行初始扫描。扫描结果会在之后不久显示。
 
 
 
-== 如何禁用 Cloud Data sense ？
+=== 如何禁用 Cloud Data sense ？
 
 您可以从 " 数据感知配置 " 页面禁用 Cloud Data sense 扫描单个工作环境，数据库，文件共享组， OneDrive 帐户或 SharePoint 帐户。
 
@@ -169,7 +129,7 @@ NOTE: 要完全删除 Cloud Data sense 实例，您可以从云提供商的门�
 
 
 
-== 如果在 ONTAP 卷上启用了数据分层，会发生什么情况？
+=== 如果在 ONTAP 卷上启用了数据分层，会发生什么情况？
 
 您可能希望在将冷数据分层到对象存储的 ONTAP 系统上启用云数据感知。如果启用了数据分层，则 Data sense 会扫描所有数据—磁盘上的数据以及分层到对象存储的冷数据。
 
@@ -177,13 +137,7 @@ NOTE: 要完全删除 Cloud Data sense 实例，您可以从云提供商的门�
 
 
 
-== 是否可以使用云数据感知扫描内部 ONTAP 存储？
-
-是的。只要您在 Cloud Manager 中发现内部 ONTAP 集群是一个工作环境，就可以扫描卷数据。
-
-
-
-== Cloud Data sense 能否向我的组织发送通知？
+=== Cloud Data sense 能否向我的组织发送通知？
 
 是的。通过与策略功能结合使用，您可以在策略返回结果时向 Cloud Manager 用户发送电子邮件警报（每日，每周或每月），以便您可以收到保护数据的通知。了解更多信息 link:task-org-private-data.html#controlling-your-data-using-policies["策略"^]。
 
@@ -191,7 +145,7 @@ NOTE: 要完全删除 Cloud Data sense 实例，您可以从云提供商的门�
 
 
 
-== 我是否可以根据组织的需求自定义服务？
+=== 我是否可以根据组织的需求自定义服务？
 
 Cloud Data sense 提供对数据的即装即用洞察力。您可以根据组织的需求提取和利用这些洞察信息。
 
@@ -201,7 +155,7 @@ link:task-managing-data-fusion.html#creating-custom-personal-data-identifiers-fr
 
 
 
-== Cloud Data sense 是否可以与我的文件中嵌入的 AIP 标签配合使用？
+=== Cloud Data sense 是否可以与我的文件中嵌入的 AIP 标签配合使用？
 
 是的。如果您已订阅，则可以管理 Cloud Data sense 正在扫描的文件中的 AIP 标签 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure 信息保护（ AIP ）"^]。您可以查看已分配给文件的标签，向文件添加标签以及更改现有标签。
 
@@ -209,10 +163,186 @@ link:task-org-private-data.html#categorizing-your-data-using-aip-labels["了解�
 
 
 
-== 是否可以将云数据感知信息限制为特定用户？
+=== 是否可以将云数据感知信息限制为特定用户？
 
 是的， Cloud Data sense 已与 Cloud Manager 完全集成。Cloud Manager 用户只能根据其工作空间权限查看其有资格查看的工作环境的信息。
 
 此外，如果您希望允许某些用户只查看数据感知扫描结果而不能管理数据感知设置，则可以为这些用户分配 _Cloud Compliance Viewer_ 角色。
 
 link:concept-cloud-compliance.html#user-access-to-compliance-information["了解更多信息。"^]。
+
+
+
+=== 支持哪些云提供商？
+
+Cloud Data sense 作为 Cloud Manager 的一部分运行，并支持 AWS ， Azure 和 GCP 。这样，您的组织就可以在不同的云提供商之间实现统一的隐私可见性。
+
+
+
+== 源系统的类型和数据类型
+
+以下问题与可扫描的存储类型以及所扫描的数据类型有关。
+
+
+
+=== 可以使用Data sense扫描哪些数据源？
+
+Cloud Data sense可以扫描您添加到Cloud Manager Canvas的工作环境中的数据、以及Data sense可以通过网络访问的多种类型的数据源中的数据。
+
+* 工作环境： *
+
+* Cloud Volumes ONTAP （部署在 AWS ， Azure 或 GCP 中）
+* 内部 ONTAP 集群
+* Azure NetApp Files
+* 适用于 ONTAP 的 Amazon FSX
+* Amazon S3
+
+
+* 数据源： *
+
+* 非 NetApp 文件共享
+* 对象存储（使用 S3 协议）
+* 数据库(Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server)
+* OneDrive 帐户
+* SharePoint 帐户
+* Google Drive帐户
+
+
+Data sense 支持 NFS 3.x ， 4.0 和 4.1 以及 CIFS 1.x ， 2.0 ， 2.1 和 3.0 版。
+
+
+
+=== 如果在无法访问Internet的站点上安装Data sense、可以扫描哪些数据源？
+
+数据感知只能扫描内部站点本地数据源中的数据。此时、Data sense可以扫描"非公开"站点中的以下本地数据源：
+
+* 内部部署 ONTAP 系统
+* 数据库架构
+* 非 NetApp NFS 或 CIFS 文件共享
+* 使用简单存储服务（ S3 ）协议的对象存储
+
+
+
+
+=== 支持哪些文件类型？
+
+Cloud Data sense会扫描所有文件以获取类别和元数据洞察力、并在信息板的文件类型部分显示所有文件类型。
+
+当Data sense检测到个人可识别信息(PiD)或执行DSAL搜索时、仅支持以下文件格式：
+
+`+.CSV、.dcm、.Dicom、.DOC、.docx、 .json、.PDF、.PPTX、.RTV、.TXT、 .XLS、.XLSX、文档、工作表和幻灯片+`
+
+
+
+=== Cloud Data可以捕获哪些类型的数据和元数据？
+
+您可以通过Cloud Data sense对数据源运行常规"映射"扫描或完整的"分类"扫描。映射仅提供数据的概览，而 " 分类 " 则提供数据的深度扫描。由于无法访问文件以查看数据源中的数据，因此可以非常快速地对数据源进行映射。
+
+* 数据映射扫描。
++
+Data sense仅扫描元数据。这对于整体数据管理和监管、快速的项目范围界定、非常大的资产和优先级排序非常有用。数据映射基于元数据、被视为*快速*扫描。
+
++
+快速扫描后、您可以生成数据映射报告。本报告概述了存储在企业数据源中的数据、可帮助您确定资源利用率、迁移、备份、安全性和合规性流程。
+
+* 数据分类(深度)扫描。
++
+在整个客户环境中使用标准协议和只读权限进行数据感知扫描。系统会打开并扫描选定文件、以查看与业务相关的敏感数据、私有信息以及与勒索软件相关的问题。
+
++
+完整扫描后、您可以对数据应用许多其他数据感知功能、例如在"数据调查"页面中查看和细化数据、搜索文件中的名称、复制、移动和删除源文件等。
+
+
+
+
+
+== 许可证和成本
+
+以下问题与使用Cloud Data sense的许可和成本有关。
+
+
+
+=== 云数据的成本有多高？
+
+使用 Cloud Data sense 的成本取决于您要扫描的数据量。Data sense 在 Cloud Manager 工作空间中扫描的前 1 TB 数据是免费的。达到此限制后、您需要执行以下操作之一才能继续扫描超过1 TB的数据：
+
+* 您的云提供商或订阅Cloud Manager Marketplace列表
+* NetApp自带许可证(BYOL)
+
+
+请参见 https://cloud.netapp.com/netapp-cloud-data-sense#Pricing["定价"^] 了解详细信息。
+
+
+
+=== 如果我已达到BYOL容量限制、会发生什么情况？
+
+如果达到BYOL容量限制、则Data sense会继续运行、但会阻止对信息板的访问、因此您无法查看有关任何已扫描数据的信息。如果您希望减少要扫描的卷数量、从而可能使容量使用量低于许可证限制、则只能使用配置页面。您必须续订BYOL许可证才能重新获得对Data sense的完全访问权限。
+
+
+
+== 连接器部署
+
+以下问题与Cloud Manager Connector相关。
+
+
+
+=== 什么是连接器？
+
+Connector是在您的云帐户或内部环境中的计算实例上运行的软件、可使Cloud Manager安全地管理云资源。您必须部署Connector才能使用Cloud Data sense。
+
+
+
+=== 连接器需要安装在何处？
+
+* 在 AWS 中的 Cloud Volumes ONTAP ，适用于 ONTAP 的 Amazon FSx 或 AWS S3 存储分段中扫描数据时，您可以使用 AWS 中的连接器。
+* 在 Azure 或 Azure NetApp Files 中的 Cloud Volumes ONTAP 中扫描数据时，您可以使用 Azure 中的连接器。
+* 在 GCP 的 Cloud Volumes ONTAP 中扫描数据时，您可以在 GCP 中使用连接器。
+* 在扫描内部ONTAP 系统、非NetApp文件共享、通用S3对象存储、数据库、OneDrive文件夹、SharePoint帐户和Google Drive帐户中的数据时、您可以在任何这些云位置使用连接器。
+
+
+因此、如果您在其中许多位置都有数据、则可能需要使用 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多个连接器"]。
+
+
+
+=== 是否可以在自己的主机上部署此连接器？
+
+是的。您可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在内部部署 Connector"^] 在网络或云中的 Linux 主机上。如果您计划在内部部署Data sense、则可能还需要在内部安装Connector；但这并不是必需的。
+
+
+
+=== 没有Internet访问的安全站点如何？
+
+是的、也支持这种做法。您可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["在无法访问Internet的内部Linux主机上部署Connector"]。然后、您可以发现内部ONTAP 集群和其他本地数据源、并使用Data sense扫描数据。
+
+
+
+== 数据感知部署
+
+以下问题与单独的数据感知实例相关。
+
+
+
+=== 云数据感知需要哪种类型的实例或虚拟机？
+
+时间 link:task-deploy-cloud-compliance.html["部署在云中"]：
+
+* 在 AWS 中， Cloud Data sense 在具有 500 GB GP2 磁盘的 m5.4xlarge 实例上运行。
+* 在 Azure 中， Cloud Data sense 在具有 512 GB 磁盘的 Standard_d16s_v3 VM 上运行。
+* 在 GCP 中， Cloud Data sense 在具有 512 GB 标准永久性磁盘的 n2-standard-16 VM 上运行。
+
+
+请注意，您可以在 CPU 较少且 RAM 较少的系统上部署 Data sense ，但使用这些系统时会有一些限制。请参见 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用较小的实例类型"] 了解详细信息。
+
+link:concept-cloud-compliance.html["详细了解 Cloud Data sense 的工作原理"^]。
+
+
+
+=== 是否可以在自己的主机上部署Data sense？
+
+是的。您可以在可通过网络或云访问 Internet 的 Linux 主机上安装 Data sense 软件。所有功能均相同，您可以继续通过 Cloud Manager 管理扫描配置和结果。请参见 link:task-deploy-compliance-onprem.html["在内部部署 Cloud Data sense"] 了解系统要求和安装详细信息。
+
+
+
+=== 没有Internet访问的安全站点如何？
+
+是的、也支持这种做法。您可以 link:task-deploy-compliance-dark-site.html["在无法访问 Internet 的内部站点中部署 Data sense"] 适用于完全安全的站点。

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-private-data-categories.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, categories, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, sex, criminal, compliance, privacy, 
-summary: Cloud Data sense 可以在卷， Amazon S3 存储分段，数据库， OneDrive 文件夹和 SharePoint 帐户中识别多种类型的私有数据。请参见以下类别。 
+summary: Cloud Data sense可以在您的卷、Amazon S3存储分段、数据库、OneDrive文件夹、SharePoint帐户中识别多种类型的私有数据。 和Google Drive帐户。 
 ---
 = 私有数据的类别
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data sense 可以在卷， Amazon S3 存储分段，数据库， 
 
 
 [role="lead"]
-Cloud Data sense 可以在卷， Amazon S3 存储分段，数据库， OneDrive 文件夹和 SharePoint 帐户中识别多种类型的私有数据。请参见以下类别。
+Cloud Data sense可以在您的卷、Amazon S3存储分段、数据库、OneDrive文件夹、SharePoint帐户中识别多种类型的私有数据。 和Google Drive帐户。请参见以下类别。
 
 
 TIP: 如果您需要 Cloud Data sense 识别其他私有数据类型，例如其他国家 / 地区 ID 号或医疗保健标识符，请根据您的请求向 ng-contact-data-sense@netapp.com 发送电子邮件。
@@ -299,7 +299,7 @@ Cloud Data sense 会扫描所有文件以获取类别和元数据洞察力，并
 
 但是，当 Data sense 检测到个人可识别信息（ PiD ）或执行 DSAL 搜索时，仅支持以下文件格式：
 
-` +.CSV ， .dcm ， .Dicom ， .DOC ， .docx ， .json ， .PDF ， .PPTX ， .RTV ， .TXT ， .XLS 和 .XLSX.+`
+`+.CSV、.dcm、.Dicom、.DOC、.docx、 .json、.PDF、.PPTX、.RTV、.TXT、 .XLS、.XLSX、文档、工作表和幻灯片+`
 
 
 

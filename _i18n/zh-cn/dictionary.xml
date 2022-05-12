@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
-  <block id="b9d7f2c52667928f57e7870c3d7dfcff" category="summary">如果需要，您可以阻止 Cloud Data sense 扫描一个或多个工作环境，数据库，文件共享组， OneDrive 帐户或 SharePoint 帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。</block>
   <block id="f1e1cd7c712964c306723b5d8a7b0615" category="doc">从 Cloud Data sense 中删除数据源</block>
   <block id="8f34757b26c51100dd5a08a099969517" category="section-title">为工作环境停用合规性扫描</block>
   <block id="10ddf41b6229b35fd788349ce9ca2dc2" category="paragraph">停用扫描时， Cloud Data sense 不再扫描工作环境中的数据，而是从 Data sense 实例中删除索引合规性洞察（不会删除工作环境中的数据）。</block>
@@ -14,10 +13,7 @@
   <block id="c129bc0408ce8224fad586d944537ce4" category="list-text">从 _Configuration_ 页面中，单击 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按钮，然后单击 * 删除数据库服务器 * 。</block>
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">扫描配置页面中的删除数据库服务器按钮的屏幕截图。</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2a1159b67ca1645cb2ca1e5ed40754d0" category="section-title">从 Cloud Data sense 中删除 OneDrive 或 SharePoint 帐户</block>
-  <block id="684b435f7254b27e6af61d13cecb0736" category="paragraph">如果您不想再从某个 OneDrive 帐户或特定 SharePoint 帐户扫描用户文件，则可以从 Cloud Data sense 界面删除此帐户并停止所有扫描。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
-  <block id="f87a3387188c705cce37b4f9a29c7a9f" category="list-text">从 _Configuration_ 页面中，单击 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按钮，然后单击 * 删除 OneDrive 帐户 * 或 * 删除 SharePoint 帐户 * 。</block>
   <block id="9a7ec6e6b57682d3f33ce7ea4bef0f5a" category="inline-image-macro">扫描配置页面中的删除 OneDrive 按钮的屏幕截图。</block>
   <block id="1bd56f7fb7715259e9afebe5fa03e87f" category="paragraph"><block ref="1bd56f7fb7715259e9afebe5fa03e87f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94c6852fcc39c16d9167a10bb916b459" category="list-text">单击确认对话框中的 * 删除帐户 * 。</block>
@@ -83,7 +79,6 @@
   <block id="73e82d6326f541ace82886b5c0cd44eb" category="inline-xref">为每个云提供商部署的实例类型</block>
   <block id="92e07e6381d83aef31f2714b015ef6df" category="list-text">要在云中安装 Cloud Data sense ，需要部署云实例，这会导致部署该实例的云提供商收取费用。请参见 <block ref="ff92646c6b674f4f14795f72b3d7a155" category="inline-xref-macro-rx"></block>。如果您在内部系统上安装 Data sense ，则无需任何成本。</block>
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">为每个云提供商部署的实例类型</block>
-  <block id="452acc708bda26e157f53750f7abfdf4" category="list-text">Cloud Data sense 要求您已部署 Connector 。在许多情况下，由于您在 Cloud Manager 中使用的其他存储和服务，您已经有了 Connector 。Connector 实例会从部署该实例的云提供商处收取费用。请参见<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。如果在内部部署系统上安装 Connector ，则不需要任何成本。</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">数据传输成本</block>
   <block id="9dfcb55e7b0aaa04660a96ede4a3458f" category="inline-link">AWS ： Amazon EC2 定价</block>
   <block id="865fef30627e082f6460395b15ac714b" category="list-text"><block ref="865fef30627e082f6460395b15ac714b" category="inline-link-rx"></block></block>
@@ -138,7 +133,6 @@
   <block id="3a7d96d307a8facb682992a53315a953" category="paragraph">您可以在卷级别，存储分段级别，数据库架构级别， OneDrive 用户级别和 SharePoint 站点级别启用和禁用扫描。</block>
   <block id="07319052a199a3efec9e35f531ee2368" category="section-title">映射扫描与分类扫描有何区别</block>
   <block id="983e489afa45ba4e28274c8e167697df" category="paragraph">您可以通过 Cloud Data sense 对选定工作环境和数据源运行常规 " 映射 " 扫描。映射仅提供数据的概览，而 " 分类 " 则提供数据的深度扫描。由于无法访问文件以查看数据源中的数据，因此可以非常快速地对数据源进行映射。</block>
-  <block id="061b37bde927a0263d25cb3af54f51f6" category="paragraph">许多用户喜欢此功能，因为他们希望快速扫描数据以确定需要更多研究的数据源，然后只能对这些数据源或卷启用分类扫描。</block>
   <block id="a6555d8888ac95f7925f179ea7e8d4a8" category="paragraph">下表显示了一些差异：</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">功能</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="cell">分类</block>
@@ -333,7 +327,6 @@
   <block id="00c8262a1f25b11a02833b07a8236234" category="summary">Cloud Data sense 提供报告，您可以使用这些报告更好地了解组织的数据隐私计划的状态。</block>
   <block id="59da637a5daa4fdc3901cb939fca6c7e" category="doc">查看合规性报告</block>
   <block id="012baeb8540b8dedd6d71e5dd0f531d0" category="inline-xref">选择这些工作环境</block>
-  <block id="e5e9c2aa07bcb333c74a2cbbebc5e1bf" category="paragraph">默认情况下， Cloud Data sense 信息板会显示所有工作环境和数据库的合规性和监管数据。如果要查看仅包含某些工作环境的数据的报告， <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>。</block>
   <block id="16a978df0c48afdfbda069f5d1b195fc" category="admonition">只有在选择对数据源执行完整分类扫描后，才可以使用本节中所述的报告。已执行仅映射扫描的数据源只能生成数据映射报告。</block>
   <block id="aa9a765405eb0c3365783f2b0b90debd" category="admonition">NetApp 无法保证 Cloud Data sense 识别的个人数据和敏感个人数据的 100% 准确性。您应始终通过查看数据来验证此信息。</block>
   <block id="216b4fc24b6fa4197a8fc2d1066a4de4" category="section-title">隐私风险评估报告</block>
@@ -440,8 +433,6 @@
   <block id="6a0c37bc5c98bec1f8cf3b1552d3d9fe" category="paragraph">从 OneDrive 帐户中添加要扫描的用户列表，然后选择扫描类型。一次最多可以添加 100 个用户。</block>
   <block id="338e56fa931ac748f865fb417e3f80cf" category="section-title">查看 OneDrive 要求</block>
   <block id="d61cbf246bbdb9203d808a976fe515dc" category="paragraph">在启用 Cloud Data sense 之前，请查看以下前提条件以确保您的配置受支持。</block>
-  <block id="6401be6f38d9325e9401705ef39197e8" category="list-text">您必须拥有 OneDrive for Business 帐户的管理员登录凭据，该帐户可提供对所有用户文件的读取访问权限。</block>
-  <block id="316ac43c3476515e2672d78b5f7e054e" category="list-text">您需要列出要扫描其 OneDrive 文件夹的所有用户的电子邮件地址，并以行分隔。</block>
   <block id="ff916f8aafd3dd060eaa015e5b21c9c7" category="section-title">正在添加 OneDrive 帐户</block>
   <block id="7a461f87d3978d33f6acd8b612c58b19" category="paragraph">添加用户文件所在的 OneDrive 帐户。</block>
   <block id="bef19ab5e14392fb5d2ee72ab0458c4b" category="list-text">在工作环境配置页面中，单击 * 添加数据源 * &gt; * 添加 OneDrive 帐户 * 。</block>
@@ -662,7 +653,6 @@
   <block id="9ef6e09ad71e21ce8a2bf770f33d9a48" category="summary">了解 Cloud Data sense 中的新增功能。</block>
   <block id="5eb06296e8f3d6ac67a2567f14c49b55" category="doc">Cloud Data sense 的新增功能</block>
   <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
-  <block id="fe920a28be2287e9ad7ef2d02458c36f" category="paragraph">添加了一个名为 " 用户 / 组权限 " 的新筛选器，您可以列出特定用户或组具有读取和 / 或写入权限的文件。您可以指定用户名或组名称，也可以指定部分名称。此功能适用于 Cloud Volumes ONTAP ，内部 ONTAP ， Azure NetApp Files ，适用于 ONTAP 的 Amazon FSx 和文件共享上的卷。</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data sense 现在可以读取 OneDrive 帐户和 SharePoint 帐户中正在扫描的文件的权限。此信息显示在 " 调查 " 窗格中的文件详细信息以及 " 监管信息板 " 中的 " 打开权限 " 区域中。</block>
   <block id="d431283363f0e868742391138a4ffbd0" category="list-text">法语 INSEE — INSEE 代码是法国国家统计和经济研究所（ INSEE ）用来标识各种实体的数字代码。</block>
   <block id="7457180e95a424d146842587474ec483" category="list-text">密码—此信息通过查找字母数字字符串旁边的 "password" 一词的组合来使用接近验证来标识。找到的项目数将在合规性信息板的 " 个人结果 " 下列出。您可以使用筛选器 * 个人数据 &gt; 密码 * 在调查窗格中搜索包含密码的文件。</block>
@@ -745,7 +735,6 @@
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">扫描使用 S3 协议的对象存储</block>
   <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link">MinIO 服务</block>
   <block id="2195e52cb889f9b1ac4706eeeea03f1d" category="paragraph">Cloud Data sense 现在可以在文件中找到奥地利的 SSN 。</block>
-  <block id="59690da7c148890212e0b4711de94b97" category="summary">Cloud Data sense 可以在卷， Amazon S3 存储分段，数据库， OneDrive 文件夹和 SharePoint 帐户中识别多种类型的私有数据。请参见以下类别。</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">私有数据的类别</block>
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">如果您需要 Cloud Data sense 识别其他私有数据类型，例如其他国家 / 地区 ID 号或医疗保健标识符，请根据您的请求向 ng-contact-data-sense@netapp.com 发送电子邮件。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">个人数据的类型</block>
@@ -883,7 +872,6 @@
   <block id="ba2688508d4961c3340fa3a979e0a164" category="section-title">文件类型</block>
   <block id="a6d39edac7ad8808a1149d2de26446f1" category="paragraph">Cloud Data sense 会扫描所有文件以获取类别和元数据洞察力，并在信息板的文件类型部分显示所有文件类型。</block>
   <block id="855ab7337551d041e32c86c7471a82ca" category="paragraph">但是，当 Data sense 检测到个人可识别信息（ PiD ）或执行 DSAL 搜索时，仅支持以下文件格式：</block>
-  <block id="161eee98e9862ba9c60339f657e01941" category="paragraph">` +.CSV ， .dcm ， .Dicom ， .DOC ， .docx ， .json ， .PDF ， .PPTX ， .RTV ， .TXT ， .XLS 和 .XLSX.+`</block>
   <block id="80890af19007fc709ba59342ca8b0385" category="section-title">发现的信息准确性</block>
   <block id="66cbc8e381ee6ef1aaa69ea500386a6b" category="paragraph">根据我们的测试，下表显示了 Data sense 所发现的信息的准确性。我们将其细分为 _precis度 _ 和 _recall_ ：</block>
   <block id="be5edab59de4ea30531374e506b03822" category="list-text">精确度</block>
@@ -903,7 +891,6 @@
   <block id="a0d932b5085e493a71dbcdcc11a705b4" category="summary">如果您只是在寻找一个问题的快速答案，此常见问题解答将会有所帮助。</block>
   <block id="eab720ff04548794ffc2cbbd9f06daf4" category="doc">有关 Cloud Data sense 的常见问题</block>
   <block id="64a21279fa6b558777872e8b5865a2ab" category="section-title">什么是云数据的意义？</block>
-  <block id="78cd4073686a357a1a0009c73f9c928f" category="paragraph">Cloud Data sense 是一款云产品，它利用人工智能（ AI ）驱动的技术帮助企业了解数据环境并识别存储系统中的敏感数据。这些系统可以是 Azure NetApp Files 配置，适用于 ONTAP 的 Amazon FSx ， Cloud Volumes ONTAP 系统（托管在 AWS ， Azure 或 GCP 中）， Amazon S3 存储分段，内部 ONTAP 系统， 非 NetApp 文件共享，通用 S3 对象存储，数据库， OneDrive 帐户和 SharePoint 帐户。</block>
   <block id="71f9b1308ab675e9dd6df174e1a60f18" category="paragraph">Cloud Data sense 提供了预定义的参数（例如敏感信息类型和类别），用于满足有关数据隐私和敏感度的新数据合规性法规，例如 GDPR ， CCPA ， HIPAA 等。</block>
   <block id="d6a75f271c34ca45be980272b9847d51" category="section-title">为什么要使用 Cloud Data sense ？</block>
   <block id="f8ae17057d50237f6762d4039f49a6e3" category="paragraph">Cloud Data sense 可以为您提供数据，帮助您：</block>
@@ -916,22 +903,13 @@
   <block id="75561c13a7f1550c1d376b995ed2e83f" category="list-text">遵守新的和即将出台的数据隐私法规。</block>
   <block id="f352cd4e6c6b4737822722679f9fb9eb" category="inline-link">详细了解 Cloud Data sense 的用例</block>
   <block id="d824a36535436f47cdb45562372579a9" category="paragraph"><block ref="a3797b949ad4ca122a2891cd0995ed6e" category="inline-link-rx"></block>。</block>
-  <block id="bf3527d322233a78048212ed974c2a90" category="section-title">可以使用 Cloud Data sense 扫描哪些类型的数据？</block>
-  <block id="444099feeb332311f4c8a8a6f54a5d2b" category="paragraph">云数据感知支持通过 NFS 和 CIFS 协议扫描非结构化数据，这些协议由 Cloud Volumes ONTAP ， Azure NetApp Files ， Amazon FSx for ONTAP ，内部 ONTAP 系统以及非 NetApp 文件共享管理。Data sense 支持 NFS 3.x ， 4.0 和 4.1 以及 CIFS 1.x ， 2.0 ， 2.1 和 3.0 版。</block>
-  <block id="e5eab1ca43d62b305089ca2cba946ffe" category="paragraph">Data sense 还可以扫描存储在 Amazon S3 存储分段和通用 S3 对象存储中的数据。</block>
-  <block id="e754ec91642ab661318605944bba61da" category="paragraph">此外， Data sense 还可以扫描位于任何位置的数据库以及 OneDrive 和 SharePoint 帐户中的用户文件。</block>
   <block id="cb1df3001d7e0d737bf8af8bf621fee0" category="inline-link-macro">了解扫描的工作原理</block>
-  <block id="d4eeb3467c18664e9f2f1757aa90f43f" category="paragraph"><block ref="19d4d0096ea9aedeade81d64b9d08457" category="inline-link-macro-rx"></block>。</block>
   <block id="37f3de5c9ae041a1644d4b78c54dcf40" category="section-title">支持哪些云提供商？</block>
   <block id="3244b6ac61b9c2142eb1bf1aac45735f" category="paragraph">Cloud Data sense 作为 Cloud Manager 的一部分运行，并支持 AWS ， Azure 和 GCP 。这样，您的组织就可以在不同的云提供商之间实现统一的隐私可见性。</block>
-  <block id="fd73cf01f5ade494e6d01c222c55793d" category="section-title">如何访问 Cloud Data sense ？</block>
-  <block id="2b58b3b62ad70f13cc43625e6ea919ba" category="paragraph">Cloud Data sense 通过 Cloud Manager 进行操作和管理。您可以从 Cloud Manager 中的 * 数据感知 * 选项卡访问数据感知功能。</block>
   <block id="0139d044fd0b961e3b07aa66f52b5e57" category="section-title">云数据感知的工作原理是什么？</block>
-  <block id="a792efa7fa28f8e416e2d3d8ef1471d6" category="paragraph">Cloud Data sense 可在 Cloud Manager 系统和存储系统的同时部署另一层人工智能。然后，它会扫描卷，分段，数据库和 OneDrive 帐户上的数据，并为找到的数据洞察力编制索引。</block>
   <block id="197b9359d5eb91a4bad52b6e13342baf" category="inline-link-macro">详细了解 Cloud Data sense 的工作原理</block>
   <block id="428c1d3f0ce473e653a96441ff156c7f" category="paragraph"><block ref="6aa08568cbc533e43d34ee014a159a69" category="inline-link-macro-rx"></block>。</block>
   <block id="507eddf0133d6696604714a129b07a0a" category="section-title">云数据的成本有多高？</block>
-  <block id="f57b7b015c57f640c21f8b45d58eb9c8" category="paragraph">使用 Cloud Data sense 的成本取决于您要扫描的数据量。Data sense 在 Cloud Manager 工作空间中扫描的前 1 TB 数据是免费的。要在这之后继续扫描数据，需要订阅 AWS ， Azure 或 GCP Marketplace 或 NetApp 提供的 BYOL 许可证。请参见<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="96e962ef0775cfff1c6fd6a71c485c8e" category="section-title">云数据感知需要哪种类型的实例或虚拟机？</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">时间 <block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block>：</block>
   <block id="ef56cc072a6aac56c9a359e54f9bf51e" category="list-text">在 AWS 中， Cloud Data sense 在具有 500 GB GP2 磁盘的 m5.4xlarge 实例上运行。</block>
@@ -939,15 +917,12 @@
   <block id="0dcadc6850a080e0aaf098b94efc849b" category="list-text">在 GCP 中， Cloud Data sense 在具有 512 GB 标准永久性磁盘的 n2-standard-16 VM 上运行。</block>
   <block id="316f1a7bec809a19ab21b47d40188af1" category="inline-link-macro">在内部部署 Cloud Data sense</block>
   <block id="cefd0b228a5747e3f0cab5061078bb59" category="inline-link-macro">在无法访问 Internet 的内部站点中部署 Data sense</block>
-  <block id="859d2ccf50c642ee73b6b7ed0293c06c" category="paragraph">此外，您还可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 适用于完全安全的站点。</block>
   <block id="7e3d41c2a56c6d626cd7bcbb65667f41" category="paragraph">请注意，您可以在 CPU 较少且 RAM 较少的系统上部署 Data sense ，但使用这些系统时会有一些限制。请参见 <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="9504bf4697695cdeb232f8ceb18c09c6" category="section-title">Cloud Data sense 扫描我的数据的频率如何？</block>
   <block id="681be99f122d2951a2c8370626fa6637" category="paragraph">数据经常发生变化，因此 Cloud Data sense 可以持续扫描数据，而不会对数据造成影响。虽然数据的初始扫描可能需要较长时间，但后续扫描只会扫描增量更改，从而缩短系统扫描时间。</block>
   <block id="a577dc74a01118296df38bec260c945a" category="inline-link-macro">请参见如何降低扫描速度</block>
   <block id="48e4169c479861f2d03d44869de5a342" category="paragraph">数据扫描对存储系统和数据的影响可以忽略不计。但是，如果您担心即使影响很小，也可以将 Data sense 配置为执行 " 缓慢 " 扫描。 <block ref="5557fc40765f42f5191ab2e5a0e219b3" category="inline-link-macro-rx"></block>。</block>
   <block id="c28a9031bf06c99071258d18b345a7d4" category="section-title">Cloud Data sense 是否提供报告？</block>
-  <block id="f3af98e0d715f65a774e8b5ce1e41f08" category="paragraph">是的。Cloud Data sense 提供的信息可能与您组织中的其他利益相关方相关，因此我们可以帮助您生成报告以分享这些见解。</block>
-  <block id="59c664c61ebab86476ef97b4388a4e15" category="paragraph">以下报告可用于 Data sense ：</block>
   <block id="1243186ecf08fa3beb624fdea23033c7" category="list-text">隐私风险评估报告</block>
   <block id="3a3337f232548d40f54052862077499b" category="list-text">数据主体访问请求报告</block>
   <block id="eeec57ad13401b39337794c5e3d5ffa6" category="list-text">用于提取包含数据主体的特定名称或个人标识符相关信息的所有文件的报告。 <block ref="ce887aadf58ec6a0a140db57b924eac0" category="inline-link-macro-rx"></block>。</block>
@@ -963,12 +938,9 @@
   <block id="8c1896ebd0bea05ef3c8e18467a9ca07" category="inline-link-macro">查看映射扫描与分类扫描之间的区别。</block>
   <block id="fa07ec52541c98901015394277e86a73" category="paragraph">在首次添加新数据源时，您还可以选择仅执行 " 映射 " 扫描，而不是执行完整的 " 分类 " 扫描。由于无法访问文件以查看数据源中的数据，因此可以非常快速地对数据源进行映射。 <block ref="7dda8a42e8b908f8c520b46d25b02f04" category="inline-link-macro-rx"></block></block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">支持哪些文件类型？</block>
-  <block id="ba85068bc4ee4bbb36417fb582bc90f4" category="paragraph">当 Data sense 检测到个人身份信息（ Pii ）或执行 DSAL 搜索时，仅支持以下文件格式： .CSV ， .dcm ， .DICOM、 .DOC ， .docx ， .json ， .PDF ， .PPTX ， .RTV ， .TXT ， .XLS 和 .XLSX 。</block>
   <block id="a3b503a46334e3fb2ab7ae78049e483b" category="section-title">如何启用 Cloud Data sense ？</block>
-  <block id="87da9ab19a5ad3680d2f0b950ff98123" category="paragraph">首先，您需要在 Cloud Manager 中部署 Cloud Data sense 实例。实例运行后，您可以从 * 数据感知 * 选项卡或通过选择特定的工作环境在现有工作环境和数据库上启用此服务。</block>
   <block id="7d782479a41a3941b57cc7c2b60d318a" category="inline-link-macro">了解如何开始使用</block>
   <block id="4971e76b33cd221cbe44ae11708dcf1a" category="paragraph"><block ref="63c04392b8948e626a251971bdfb13c0" category="inline-link-macro-rx"></block>。</block>
-  <block id="56cccd0fb390060a75639f67b90006aa" category="admonition">激活 Cloud Data sense 可立即执行初始扫描。扫描结果会在之后不久显示。</block>
   <block id="a6c3d6913f02e92798d0e42e2ff92b62" category="section-title">如何禁用 Cloud Data sense ？</block>
   <block id="4c0a2c9670f1474a8413f5c72bb8acfc" category="paragraph">您可以从 " 数据感知配置 " 页面禁用 Cloud Data sense 扫描单个工作环境，数据库，文件共享组， OneDrive 帐户或 SharePoint 帐户。</block>
   <block id="7a833d41d59abd430a8a21760722d14a" category="paragraph"><block ref="57d1ac548ab885ff197c8b0634f5bdfc" category="inline-link-macro-rx"></block>。</block>
@@ -976,8 +948,6 @@
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">如果在 ONTAP 卷上启用了数据分层，会发生什么情况？</block>
   <block id="2de4e78513aa5bfeb890fe4ddc3ec775" category="paragraph">您可能希望在将冷数据分层到对象存储的 ONTAP 系统上启用云数据感知。如果启用了数据分层，则 Data sense 会扫描所有数据—磁盘上的数据以及分层到对象存储的冷数据。</block>
   <block id="7245782d4f1eb0db394d9f1f8ae02b2c" category="paragraph">合规性扫描不会加热冷数据，它会保持冷数据并分层到对象存储。</block>
-  <block id="62d5057db793bb8f5e79fc52d6bf1900" category="section-title">是否可以使用云数据感知扫描内部 ONTAP 存储？</block>
-  <block id="7beb9e9f8f168f5ef88971dd5be87973" category="paragraph">是的。只要您在 Cloud Manager 中发现内部 ONTAP 集群是一个工作环境，就可以扫描卷数据。</block>
   <block id="a7865b20d9097d32d555ae9b2251ef31" category="section-title">Cloud Data sense 能否向我的组织发送通知？</block>
   <block id="a1f9ef921821eddddbc2db0a418bf2f3" category="paragraph">是的。通过与策略功能结合使用，您可以在策略返回结果时向 Cloud Manager 用户发送电子邮件警报（每日，每周或每月），以便您可以收到保护数据的通知。了解更多信息 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>。</block>
   <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">您还可以从 " 监管 " 页面和 " 调查 " 页面下载状态报告，并在组织内部共享这些报告。</block>
@@ -1017,7 +987,6 @@
   <block id="2b275eaee13cb00a92bf6cca3d87498e" category="section-title">使用 AIP 标签对数据进行分类</block>
   <block id="297d1b6c4f0dca560e7de55a7695e6b4" category="paragraph">如果您已订阅，则可以管理 Cloud Data sense 正在扫描的文件中的 AIP 标签 <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。AIP 允许您通过将标签应用于内容来对文档和文件进行分类和保护。使用 Data sense ，您可以查看已分配给文件的标签，向文件添加标签以及在标签已存在时更改标签。</block>
   <block id="2473b4a68e8fb944fa5afe552e508d00" category="paragraph">Cloud Data sense 支持以下文件类型中的 AIP 标签： .DOC ， .docx ， .PDF ， .PPTX ， .XLS ， .XLSX 。</block>
-  <block id="94e370427e602a43807ec3f64f30ed98" category="list-text">您当前无法更改大于 30 MB 的文件中的标签。对于 OneDrive 和 SharePoint 帐户，最大文件大小为 4 MB 。</block>
   <block id="80b4732b42c9c04d16bcddade3a9f773" category="list-text">如果某个文件的标签不再存在于 AIP 中，则 Cloud Data sense 会将其视为一个无标签的文件。</block>
   <block id="96f521b8aea6752795f47a3b35a11055" category="list-text">如果您已将 Data sense 实例部署在无法访问 Internet 的内部位置（也称为非公开站点），则 AIP 标签功能将不可用。</block>
   <block id="96238d4f93a120c69c563c428e826a69" category="section-title">在工作空间中集成 AIP 标签</block>
@@ -1256,7 +1225,6 @@
   <block id="a08520118359e571f24b420e7729b107" category="paragraph"><block ref="a08520118359e571f24b420e7729b107" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bec06ffefcc7ab6b7882b310c3c7790a" category="list-text">通过搜索，排序，展开特定文件的详细信息，单击 * 调查结果 * 以查看屏蔽信息或下载文件列表来调查数据。</block>
   <block id="7cdf7364a52ab6af797f1b1dcae76247" category="inline-image-macro">单击调查结果后的详细信息屏幕截图。</block>
-  <block id="f15ac2c837cbe49b31996c52ce5c37a0" category="paragraph"><block ref="f15ac2c837cbe49b31996c52ce5c37a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="14e7cee2f25241a9d6084f5ac31f54b0" category="section-title">查看包含敏感个人数据的文件</block>
   <block id="8677494d8f5c3e6a2c69e93e5254639f" category="inline-link">《一般数据保护条例》第 9 条和第 10 条</block>
   <block id="9c0bd6a9f0ddda0f88659e943db1d4cd" category="paragraph">Cloud Data sense 可自动识别隐私法规所定义的特殊类型的敏感个人信息<block ref="413dcff8641b851bffd5ca7e45c359a4" category="inline-link-rx"></block>。例如，有关个人健康，种族或性取向的信息。 <block ref="6507e706b290d038d0deb8cb0d263511" category="inline-link-macro-rx"></block>。</block>
@@ -1324,26 +1292,20 @@
   <block id="47b574d50f0f0cc7ac6ae3ba6d39951f" category="inline-image-macro">显示如何筛选特定工作环境的调查结果的屏幕截图。</block>
   <block id="7675f7474f9e9ad03c6a7bb35d2d9fad" category="paragraph"><block ref="7675f7474f9e9ad03c6a7bb35d2d9fad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0c99fdc0d05bf34d6834c6ef3cd92bb3" category="inline-image-macro">下载按钮</block>
-  <block id="e84736b559c4ef7f3b483914bae557de" category="paragraph">您可以筛选调查页面的内容，以便仅显示要查看的结果。如果要在对内容进行优化后将 CSV 版本的内容另存为报告，请单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">在调查页面中细化结果时可用筛选器的屏幕截图。</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="74993bbafe4b984432b5e67863ee7f44" category="list-text">通过顶级选项卡，您可以查看文件（非结构化数据）或数据库（结构化数据）中的数据。</block>
   <block id="812ce4d3a07734d12cdaa3ed2010e22f" category="list-text">通过每列顶部的控件，您可以按数字或字母顺序对结果进行排序。</block>
   <block id="5818e7b5278ce95470fc0dac0a45bdab" category="list-text">您可以通过左窗格筛选器从以下属性中进行选择来细化结果：</block>
   <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">筛选器</block>
   <block id="3ec365dd533ddb7ef3d1c111186ce872" category="cell">详细信息</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">此处</block>
-  <block id="7adb9b231b12815dedfc107fcb40b5c0" category="cell">选择一个或多个策略。开始 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看现有策略列表并创建您自己的策略。</block>
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">打开权限</block>
   <block id="2aff327e20fff98134c5877bf3331ccd" category="cell">选择权限类型</block>
   <block id="11103ebc3d212c95261e2603bcb74624" category="cell">用户 / 组权限</block>
-  <block id="f9a449cccae7f4d38f9fc63747b1825c" category="cell">输入用户名，组名称或部分名称</block>
   <block id="7593aaae27016a1a6e673834742f688c" category="cell">文件所有者</block>
   <block id="041e6d70f8356e275da0ead58dccdf88" category="cell">输入文件所有者名称</block>
   <block id="b021df6aac4654c454f46c77646e745f" category="cell">Label</block>
-  <block id="bc73c235250705df5ea511cf347930d9" category="cell">选择 AIP 标签</block>
   <block id="d9104233b7c0bd37d4c7d710debdd552" category="cell">工作环境类型</block>
-  <block id="0714c3638ff113c3bead5ccfc27618c6" category="cell">选择工作环境的类型。请注意， OneDrive 和 SharePoint 归类为 " 云应用程序 " 。</block>
   <block id="424c7d928317581f5f55ac74c144b45a" category="cell">工作环境名称</block>
   <block id="e9a13f10d7b028f52966f59cde41518f" category="cell">选择特定的工作环境</block>
   <block id="5da8b466834d55ddcdf18f51655016b9" category="cell">存储库</block>
@@ -1379,14 +1341,8 @@
   <block id="ee3ae9516151c6012c7652565dfd0088" category="cell">选择是否在存储库中复制文件</block>
   <block id="116279f96a5a5a07b36a9ed5e3b30ae8" category="cell">文件哈希</block>
   <block id="eb173689f884b625c2ebc512044eaa1f" category="cell">输入文件的哈希以查找特定文件，即使名称不同也是如此</block>
-  <block id="d05d49a7556b8fdfb215a2510d35768b" category="cell">选择一个或多个标记</block>
   <block id="0056a7841e032922f086add6ff46bdf7" category="cell">已分配给</block>
   <block id="91b1c67fd436922743b5db9b97cac01a" category="cell">选择将文件分配到的人员的姓名</block>
-  <block id="8686a90c9592c1b4cd699631b64bc27d" category="list-text">" 筛选器 " 窗格顶部的 _Policies_ 筛选器列出了自定义筛选器，这些筛选器提供了常见请求的筛选器组合；例如保存的数据库查询或收藏夹列表。开始 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 查看预定义策略列表以及如何创建自己的自定义策略。</block>
-  <block id="b6b354a759e6ea4d86bdf3ac9228dc29" category="section-title">每个文件列表报告中包含的内容（ CSV 文件）</block>
-  <block id="d4858e45de10e73646f9756a49830578" category="paragraph">在每个调查页面中，您可以单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 用于下载包含已标识文件详细信息的文件列表（ CSV 格式）的按钮。如果 Data sense 同时扫描结构化数据（数据库表）和非结构化数据（文件），则下载的 ZIP 文件中包含两个报告。</block>
-  <block id="c609c6add6a1a754e843133f9f7268b4" category="paragraph">如果结果超过 10 ， 000 个，则列表中仅显示排名前 10 ， 000 位的结果。</block>
-  <block id="1a1a3b68acbf686586fd8c4d47f4f62f" category="paragraph">* 非结构化数据报告 * 包含以下信息：</block>
   <block id="34082694d21dbdcfc31e6e32d9fb2b9f" category="list-text">文件名</block>
   <block id="8c16f0464e311229da94de789324309e" category="list-text">位置类型</block>
   <block id="e39236d23fb63bab78a9ca2abc0cc5e9" category="list-text">Working environment name</block>
@@ -1403,7 +1359,6 @@
   <block id="e434b22cf42d4154041547acb051334e" category="list-text">敏感的个人信息</block>
   <block id="a73443e5b5980c135e04b4b123ccd99f" category="list-text">删除检测日期</block>
   <block id="e81282c4a2e1620d17b120b1420664da" category="paragraph">删除检测日期用于标识文件被删除或移动的日期。这样，您就可以确定何时移动了敏感文件。已删除的文件不属于信息板或 " 调查 " 页面上显示的文件编号。这些文件仅显示在 CSV 报告中。</block>
-  <block id="2fbc3b8876555d0879990e55a37ce09c" category="paragraph">* 结构化数据报告 * 包含以下信息：</block>
   <block id="613fa33e083d96576cb50cbe059fc43e" category="list-text">数据库表名称</block>
   <block id="24588d9873aeb10a7d918f9f39a921ad" category="list-text">存储库（例如模式）</block>
   <block id="ab8a843d390e68d7263eb4d3758cbb94" category="list-text">列计数</block>
@@ -1470,7 +1425,6 @@
   <block id="59a46e0ea7e3441d068ab93e14650d6e" category="admonition">您不能复制和同步数据库， OneDrive 帐户或 SharePoint 帐户中的文件。</block>
   <block id="fa00f0feeabd281b23e8571faacaf649" category="list-text">要复制和同步文件，您必须具有帐户管理员或工作空间管理员角色。</block>
   <block id="2e5ce55dec2ff1c76b2eb8662089db85" category="list-text">所有选定文件都必须来自同一源存储库（ ONTAP 卷， S3 存储分段， NFS 或 CIFS 共享等）。</block>
-  <block id="7b3543922066dce10c949a9abf066434" category="list-text">一次最多可以复制 200 ， 000 个文件。</block>
   <block id="5698905e8d060e455d19636040ff425c" category="inline-link-macro">快速启动问题描述</block>
   <block id="627bf959aabe96a1a08aad7eaf1ab97a" category="paragraph">请注意， Cloud Sync 服务会为您的同步关系单独收取服务费用，如果您在云中部署数据代理，则会产生资源费用。</block>
   <block id="ff0485cd041399c074cb840a8d93eafb" category="list-text">在数据调查窗格中，选择一个 * 工作环境 * 和一个 * 存储库 * 来创建筛选器，以确保所有文件都来自同一个存储库。</block>
@@ -1569,7 +1523,6 @@
   <block id="0b15d216816045a641af8ad6ef57304d" category="paragraph">如果您尚未在脱机内部站点上安装 Cloud Manager Connector ，<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 在脱机站点的 Linux 主机上。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">准备 Linux 主机系统</block>
   <block id="0bd5d4f7389518a30e9e80093dacb333" category="list-text">操作系统： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版</block>
-  <block id="46123563d68443141506bf3d78c3f494" category="list-text">可以使用版本 7.8 ，但 Linux 内核版本必须为 4.14 或更高版本</block>
   <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">操作系统必须能够安装 Docker 引擎（例如，根据需要禁用 _firewalld_ 服务）</block>
   <block id="e73aeaebf87fd2ee4bfa7ec0d8dd7e26" category="list-text">磁盘： SSD ， 500 GiB 可在 / ，或上使用</block>
   <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">/opt 上提供 100 GiB</block>
@@ -1787,7 +1740,6 @@
   <block id="bd36c37245d1af16de2a713e0208a229" category="list-text">在 AWS 中的 Cloud Volumes ONTAP ，适用于 ONTAP 的 Amazon FSx 或 AWS S3 存储分段中扫描数据时，您可以使用 AWS 中的连接器。</block>
   <block id="f19eaef4d9d109ffcf1717f49dd5d48b" category="list-text">在 Azure 或 Azure NetApp Files 中的 Cloud Volumes ONTAP 中扫描数据时，您可以使用 Azure 中的连接器。</block>
   <block id="51604d985a41a8e2115db8de3eb4b40f" category="list-text">在 GCP 的 Cloud Volumes ONTAP 中扫描数据时，您可以在 GCP 中使用连接器。</block>
-  <block id="54de3b41ee409b9df73f596156a37b7e" category="paragraph">使用上述任一 Cloud Connector 时，可以扫描内部 ONTAP 系统，非 NetApp 文件共享，通用 S3 对象存储，数据库， OneDrive 文件夹和 SharePoint 帐户。</block>
   <block id="7ccfda55457e583d1d8c584d8a9ed7f6" category="paragraph">请注意，您也可以<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在网络或云中的 Linux 主机上。某些计划在内部安装 Data sense 的用户也可以选择在内部安装 Connector 。</block>
   <block id="267b476717c1665614f57e91725c67ff" category="inline-link">多个连接器</block>
   <block id="8e952431e2e27533e34593f63c959513" category="paragraph">如您所见，在某些情况下可能需要使用<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
@@ -1886,7 +1838,6 @@
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">适用于 ONTAP 的 FSX</block>
   <block id="e43e62e4bd2ef2b0d4d1e421a22a0be2" category="list-text">非 NetApp CIFS 文件共享（不适用于 NFS 文件共享）</block>
-  <block id="b73af05fa76cf73f03025fa51eb8655a" category="paragraph">不支持从使用简单存储服务（ Simple Storage Service ， S3 ）协议的数据库架构， OneDrive 帐户， SharePoint 帐户， Amazon S3 帐户或对象存储中识别用户和权限信息。</block>
   <block id="cd77c160f6007bd570b07762f3b9388f" category="section-title">正在连接到 Active Directory 服务器</block>
   <block id="fb4850605d162a3c4b4728471f852d3a" category="paragraph">Active Directory 凭据可以是只读凭据，但提供管理员凭据可确保 Data sense 可以读取任何需要提升权限的数据。这些凭据存储在 Cloud Data sense 实例上。</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">您必须已为公司中的用户设置 Active Directory 。</block>
@@ -2070,7 +2021,6 @@
   <block id="c77d213688bea929060b009132bd92bb" category="paragraph">从 NetApp 支持站点下载 Cloud Data sense 软件，并将安装程序文件复制到您计划使用的 Linux 主机。然后启动安装向导并按照提示部署 Data sense 实例。</block>
   <block id="acea4bac0de5cdb68692b9a3de1cdb56" category="paragraph">Cloud Manager 中 Cloud Data 感知扫描的前 1 TB 数据是免费的。要在这之后继续扫描数据，需要订阅云提供商 Marketplace 或获得 NetApp 的 BYOL 许可证。</block>
   <block id="da7bf2e7dc8499e5ac0775b3710a0ae4" category="list-text">在 GCP 的 Cloud Volumes ONTAP 中扫描数据时，您可以在 GCP 中使用连接器。</block>
-  <block id="b4cf84575c9343350447cd475e3708be" category="paragraph">内部 ONTAP 系统，非 NetApp 文件共享，通用 S3 对象存储，数据库， OneDrive 文件夹和 SharePoint 帐户均可使用这些 Cloud Connector 中的任何一种进行扫描。</block>
   <block id="6eca1a824e059bf4f2eb266bd39b58c5" category="list-text">操作系统必须能够安装 Docker 引擎（例如，根据需要禁用 _firewalld_ 服务）</block>
   <block id="99d2310654d20771b9bddf3c5bbb5573" category="list-text">Red Hat Enterprise Linux 系统必须在 Red Hat 订购管理中注册。如果未注册，则系统无法在安装期间访问存储库以更新所需的第三方软件。</block>
   <block id="5225652eff69d3e0f7880ed73e7fa226" category="list-text">主机上必须安装以下软件。如果此主机上尚不存在此软件，则安装程序将为您安装此软件：</block>
@@ -2141,7 +2091,6 @@
   <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">Azure NetApp Files 卷</block>
   <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">适用于 ONTAP 卷的 Amazon FSX</block>
   <block id="1dc03133d25c1924f8604133a6fa7f0a" category="sidebar">通用 S3 存储分段</block>
-  <block id="68fb1cee0137c1f6fc37e8a457f262f5" category="sidebar">管理私有数据</block>
   <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="sidebar">使用 AIP 标签对数据进行分类</block>
   <block id="40af1406afc061038f5851961a636714" category="sidebar">发现不合规数据时创建电子邮件警报</block>
   <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">添加您自己的自定义个人数据标识符</block>
@@ -2170,11 +2119,6 @@
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看 Data sense 可以在您的数据中识别的所有类型的个人数据</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大利亚驾驶执照编号，澳大利亚医疗保健服务编号和澳大利亚护照编号的文件并对其进行分类。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">与 Data sense 集成的全局 Active Directory 服务器现在可以是 LDAP 服务器，而不是以前支持的 DNS 服务器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
-  <block id="592c8c1b273df763193797348c862319" category="paragraph">现在，您可以将 SharePoint 联机帐户添加到 Data sense 中，以便扫描 SharePoint 站点中的文档和文件。<block ref="fb0503eda5504503140f919428a17c9c" category="inline-link-rx"></block>。</block>
-  <block id="660cff517370f72d72102d4ff2998c40" category="paragraph"><block ref="c0e6847180e8e936303f149ed2e169b8" category="inline-link-rx"></block>。</block>
-  <block id="0f774c5b2a7839e95c43788f441f3dd3" category="paragraph">Data sense 现在可以在文件中找到法语社会安全号码，法语 ID 和法语驱动程序许可证号码。<block ref="388ce18cfcb7cb3d159655ecca4c4330" category="inline-link-rx"></block>。</block>
-  <block id="129f0bf953b701155233395846412fc3" category="paragraph">除了您输入 Active Directory 凭据以使 Data sense 能够从某些数据源扫描 CIFS 卷之外，此新集成还为其他用户和系统提供了额外的集成。Data sense 将在所有集成的 Active Directory 中查找用户和权限详细信息。<block ref="158a238f28caf554b0fac060cc222c85" category="inline-link-rx"></block>。</block>
-  <block id="0a42fac75db1d1ad5a957d27f1b0093d" category="paragraph">Data sense 可以自动删除与策略中定义的查询匹配的文件。<block ref="fa669ca41a532c138aee3aeaad4c4f3f" category="inline-link-rx"></block>。</block>
   <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> 现在支持 Cloud Data sense 。现在，除了使用 NetApp 的 BYOL 许可证之外，您还可以使用此按需购买（ PAYGO ）订阅从部署在 Google Cloud 存储上的 Cloud Volumes ONTAP 系统扫描数据。</block>
   <block id="454fdd43498530d6ceef83652c11b91c" category="paragraph">现在，使用时支持扫描存储在 Azure Blob 上的数据<block ref="af0f5559fdeef481a290adb52cf012ec" category="inline-link-rx"></block>。请参见 <block ref="53ed5724ec3c5650162def279afa5e15" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">澳大利亚 TFN （税务文件编号）</block>
@@ -2220,7 +2164,6 @@
   <block id="9c45693a901d2c7711d6d2732c0b2043" category="paragraph"><block ref="84bbc470556e48f1d54b5a12390987e2" category="inline-link-rx"></block>。</block>
   <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">如果您要迁移数据，并且希望捕获最近对文件所做的任何更改，则此功能非常有用。此操作将使用<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> 用于将数据从源复制并同步到目标的功能。</block>
   <block id="f380f59dbabc3f03bd073f2248216ea2" category="paragraph">文件中的个人数据可以是常规个人数据或国家标识符。第三列标识 Cloud Data sense 是否使用 <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 以验证其对标识符的发现。</block>
-  <block id="66b2fe919777c8106abe9e4f030123fd" category="paragraph">您可以在可通过网络或云访问 Internet 的 Linux 主机上安装 Data sense 软件。所有功能均相同，您可以继续通过 Cloud Manager 管理扫描配置和结果。请参见 <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> 了解系统要求和安装详细信息。</block>
   <block id="bbd1b36ab0dbd0c17e60ec752bb02a55" category="paragraph"><block ref="b1e4fd148d344599f4a25922d8155dd9" category="inline-link-macro-rx"></block>。</block>
   <block id="91aef07a29d8068140e7dca06bec6d9d" category="list-text">根据您的数据提供隐私洞察力并获得隐私风险得分。 <block ref="890a798f73fe571345d1ff7c58a08844" category="inline-link-macro-rx"></block>。</block>
   <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">帮助您确定信用卡信息在整个文件中的分布情况。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
@@ -2295,7 +2238,6 @@
   <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">如果您已在无法访问 Internet 的内部站点中的主机上部署 Cloud Data sense ，则现在可以从 OneDrive 帐户或 SharePoint 帐户扫描本地数据。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
   <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint 和 OneDrive 的特殊要求</block>
   <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">如果您需要非常安全的 Cloud Manager 安装，但也希望从 OneDrive 帐户或 SharePoint 帐户扫描本地数据，则可以使用 Data sense 脱机安装程序并提供对一些选定端点的 Internet 访问。请参见 <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> 了解详细信息。</block>
-  <block id="79e0848d1bc2a8a6b4a0f1371a93e4b3" category="paragraph">目前不支持扫描 Cloud Volumes ONTAP ， Azure NetApp Files ， FSX for ONTAP 或 AWS S3 帐户。</block>
   <block id="83925eb41f224ab078a6ede41fce2ce8" category="list-text">在某些关键策略返回结果时向 Cloud Manager 用户发送电子邮件警报</block>
   <block id="65097bbc12ec4bd1b84a583f86720dbc" category="list-text">为不同用户设置 Cloud Manager 角色（例如，帐户管理员或合规性查看器）</block>
   <block id="03ab5a445b96670c4d6471f1e0ae786c" category="list-text">使用 Cloud Sync 复制和同步源文件</block>
@@ -2369,4 +2311,164 @@
   <block id="0b3c77caf569c338dc81a3ae8eb753d5" category="paragraph">AWS 和 AWS GovCloud 部署还需要其他入站和出站规则。请参见<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> 了解详细信息。</block>
   <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure 中连接器的规则</block>
   <block id="e271f92bb6a2f886e00883b1a5f3fe51" category="paragraph">Azure 和 Azure 政府部署还需要其他入站和出站规则。请参见<block ref="c90240cb0e2cbfac2997cad831e58ce0" category="inline-link-rx"></block> 了解详细信息。</block>
+  <block id="c6bcf4a88b4c531d404128df1f1ad3a8" category="list-text">Google Drive帐户</block>
+  <block id="c09551e40902e02251ee901bd86a597a" category="list-text">Cloud Data sense要求您已部署Cloud Manager Connector。在许多情况下，由于您在 Cloud Manager 中使用的其他存储和服务，您已经有了 Connector 。Connector 实例会从部署该实例的云提供商处收取费用。请参见<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。如果在内部部署系统上安装 Connector ，则不需要任何成本。</block>
+  <block id="dc3d679737d761f6e72564d962617ffa" category="paragraph">许多用户喜欢此功能、因为他们希望快速扫描其数据以确定需要更多研究的数据源、然后只能对所需的数据源或卷启用分类扫描。</block>
+  <block id="16e954ea4b2a186e8af05353fc80e766" category="section-title">云数据感知服务</block>
+  <block id="a2f50def832b70c62c50463d59218053" category="paragraph">以下问题概括说明了云数据的意义。</block>
+  <block id="a29f21b4143f28dd101eaaa1fe82fd69" category="inline-xref">请参见下面的完整列表</block>
+  <block id="c7cb2708717b7d786836e068c85a1040" category="paragraph">Cloud Data sense是一款云产品、它使用人工智能(AI)驱动的技术帮助您了解数据环境并识别存储系统中的敏感数据。这些系统可以是您添加到Cloud Manager Canvas中的工作环境、也可以是Data sense可以通过网络访问的多种类型的数据源。 <block ref="baabd945a4a07a6a42dc21a2d03105c4" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ddc3aba4eccf7778417b3605919f552e" category="list-text">将数据从传统系统迁移到云。</block>
+  <block id="929a567aeb50b6bfed31d080645db9d2" category="paragraph">Cloud Data sense 可在 Cloud Manager 系统和存储系统的同时部署另一层人工智能。然后、它会扫描卷、分段、数据库和其他存储帐户上的数据、并为找到的数据洞察力编制索引。与通常围绕正则表达式和模式匹配构建的替代解决方案相比、Data sense可以利用人工智能和自然语言处理。Cloud Data sense利用AI提供对数据的上下文了解、以实现准确的检测和分类。它由AI驱动、因为它专为现代数据类型和规模而设计。它还了解数据环境、以便提供强大、准确的发现和分类。</block>
+  <block id="d7f674bb407247f888d30ade7b86a73a" category="section-title">Cloud Data sense支持哪些部署模式？</block>
+  <block id="bf804f144530d65026fe3d0982584bc2" category="paragraph">Cloud Data sense通常使用SaaS模式进行部署、在这种模式中、服务通过Cloud Manager界面启用。Cloud Data sense可以部署在几乎任何位置的系统上进行扫描和报告、包括内部环境、云和混合环境。对于安全安装、Cloud Manager和Cloud Data sense可以部署在"非公开站点"模式中、该模式作为软件包安装在内部、不需要外部网络连接。</block>
+  <block id="c0f907bdf9a6cc93e97081efb1ad0ba0" category="section-title">是否有人可以访问在我的浏览器和Data sense之间发送的私有数据？</block>
+  <block id="90ecb8f144bb75027d2645db76b9c80e" category="paragraph">否在浏览器和Data sense实例之间发送的私有数据通过端到端加密得到保护、这意味着NetApp和第三方无法读取。除非您请求并批准访问、否则Data sense不会与NetApp共享任何数据或结果。</block>
+  <block id="9184420bd7268b81521fe2c0fb829c50" category="paragraph">是的。Cloud Data sense 提供的信息可能与您组织中的其他利益相关方相关，因此我们可以帮助您生成报告以分享这些见解。以下报告可用于 Data sense ：</block>
+  <block id="a39a4df8314a27ad3dd4677975511322" category="paragraph">首先，您需要在 Cloud Manager 中部署 Cloud Data sense 实例。实例运行后、您可以从*数据感知*选项卡或通过选择特定的工作环境在现有工作环境、数据库和其他数据源上启用此服务。</block>
+  <block id="d998d7b40ffedd2d0b6c4e2cd0e738fb" category="admonition">在数据源上激活Cloud Data sense会立即执行初始扫描。扫描结果会在之后不久显示。</block>
+  <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">源系统的类型和数据类型</block>
+  <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">以下问题与可扫描的存储类型以及所扫描的数据类型有关。</block>
+  <block id="53603d1a728f100ed9ec53da6f3de981" category="section-title">可以使用Data sense扫描哪些数据源？</block>
+  <block id="08ece2b3a533d5b9f3fb6a576d49dcd8" category="paragraph">Cloud Data sense可以扫描您添加到Cloud Manager Canvas的工作环境中的数据、以及Data sense可以通过网络访问的多种类型的数据源中的数据。</block>
+  <block id="bdcce4158cfc2b8c6a2ccd87f6c5170b" category="list-text">数据库(Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server)</block>
+  <block id="3ea2a425923f5c3bd5e4de2e3212bca6" category="section-title">如果在无法访问Internet的站点上安装Data sense、可以扫描哪些数据源？</block>
+  <block id="d6340d13b9b8fa586b95920b3d4151c7" category="paragraph">数据感知只能扫描内部站点本地数据源中的数据。此时、Data sense可以扫描"非公开"站点中的以下本地数据源：</block>
+  <block id="5d2a6ac41e016a1ed1f3c36703a62b05" category="paragraph">Cloud Data sense会扫描所有文件以获取类别和元数据洞察力、并在信息板的文件类型部分显示所有文件类型。</block>
+  <block id="0d983a3293d47707e149486248cfeb13" category="paragraph">当Data sense检测到个人可识别信息(PiD)或执行DSAL搜索时、仅支持以下文件格式：</block>
+  <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph">`+.CSV、.dcm、.Dicom、.DOC、.docx、 .json、.PDF、.PPTX、.RTV、.TXT、 .XLS、.XLSX、文档、工作表和幻灯片+`</block>
+  <block id="a4b574ec2aae043304e74de4dda53997" category="section-title">Cloud Data可以捕获哪些类型的数据和元数据？</block>
+  <block id="8c7161d49db0382c6961b311eef905a5" category="paragraph">您可以通过Cloud Data sense对数据源运行常规"映射"扫描或完整的"分类"扫描。映射仅提供数据的概览，而 " 分类 " 则提供数据的深度扫描。由于无法访问文件以查看数据源中的数据，因此可以非常快速地对数据源进行映射。</block>
+  <block id="720afdfb61af450cb24ecd2ff70d9559" category="list-text">数据映射扫描。</block>
+  <block id="f115a278ea0212572398753377dc2287" category="paragraph">Data sense仅扫描元数据。这对于整体数据管理和监管、快速的项目范围界定、非常大的资产和优先级排序非常有用。数据映射基于元数据、被视为*快速*扫描。</block>
+  <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">快速扫描后、您可以生成数据映射报告。本报告概述了存储在企业数据源中的数据、可帮助您确定资源利用率、迁移、备份、安全性和合规性流程。</block>
+  <block id="201f7350fba7bb40edd7973d2df21f7d" category="list-text">数据分类(深度)扫描。</block>
+  <block id="c9e62ad150311eaae555d82e1b8e2076" category="paragraph">在整个客户环境中使用标准协议和只读权限进行数据感知扫描。系统会打开并扫描选定文件、以查看与业务相关的敏感数据、私有信息以及与勒索软件相关的问题。</block>
+  <block id="e6955249e6953613536ae08a88475a81" category="paragraph">完整扫描后、您可以对数据应用许多其他数据感知功能、例如在"数据调查"页面中查看和细化数据、搜索文件中的名称、复制、移动和删除源文件等。</block>
+  <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">许可证和成本</block>
+  <block id="efd4a405d0fc94dd44dd46314145b533" category="paragraph">以下问题与使用Cloud Data sense的许可和成本有关。</block>
+  <block id="40b83084f1cee71ca9bea0f92f648ca3" category="paragraph">使用 Cloud Data sense 的成本取决于您要扫描的数据量。Data sense 在 Cloud Manager 工作空间中扫描的前 1 TB 数据是免费的。达到此限制后、您需要执行以下操作之一才能继续扫描超过1 TB的数据：</block>
+  <block id="d28d4f6cb9334067ba763d5205ef3408" category="list-text">您的云提供商或订阅Cloud Manager Marketplace列表</block>
+  <block id="4aaa082eb5a6a6d38594fed7ac9dfc5c" category="list-text">NetApp自带许可证(BYOL)</block>
+  <block id="d593d438e7fbece83184e3d6d94b77d8" category="paragraph">请参见<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> 了解详细信息。</block>
+  <block id="df633ebdc2836fc65b2b5c8df3071fad" category="section-title">如果我已达到BYOL容量限制、会发生什么情况？</block>
+  <block id="58455ce9c1fb7906220e35f5849d83c1" category="paragraph">如果达到BYOL容量限制、则Data sense会继续运行、但会阻止对信息板的访问、因此您无法查看有关任何已扫描数据的信息。如果您希望减少要扫描的卷数量、从而可能使容量使用量低于许可证限制、则只能使用配置页面。您必须续订BYOL许可证才能重新获得对Data sense的完全访问权限。</block>
+  <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">连接器部署</block>
+  <block id="0c5d4e7461b4c75d3988c9aa8d81ab4f" category="paragraph">以下问题与Cloud Manager Connector相关。</block>
+  <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">什么是连接器？</block>
+  <block id="99231b2fc9795c596b5574283dc8bb5c" category="paragraph">Connector是在您的云帐户或内部环境中的计算实例上运行的软件、可使Cloud Manager安全地管理云资源。您必须部署Connector才能使用Cloud Data sense。</block>
+  <block id="417cf0f3678f81efde443c4a85c2acb8" category="section-title">连接器需要安装在何处？</block>
+  <block id="f4fb039a49b8c7eb94cbf1c2e74a625f" category="list-text">在扫描内部ONTAP 系统、非NetApp文件共享、通用S3对象存储、数据库、OneDrive文件夹、SharePoint帐户和Google Drive帐户中的数据时、您可以在任何这些云位置使用连接器。</block>
+  <block id="47b38df4edf7a31520897ce7498de0a0" category="paragraph">因此、如果您在其中许多位置都有数据、则可能需要使用<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
+  <block id="0908d2929b9ac231d6e9a69ca517b2e3" category="section-title">是否可以在自己的主机上部署此连接器？</block>
+  <block id="45c9d2d43a741ab63e518aa05e11fa70" category="paragraph">是的。您可以<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在网络或云中的 Linux 主机上。如果您计划在内部部署Data sense、则可能还需要在内部安装Connector；但这并不是必需的。</block>
+  <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">没有Internet访问的安全站点如何？</block>
+  <block id="7521d190d3b7edc316bb592221196fcf" category="inline-link">在无法访问Internet的内部Linux主机上部署Connector</block>
+  <block id="7b0dda74db6ec7e3e5eb3ca096c115c2" category="paragraph">是的、也支持这种做法。您可以<block ref="4fae73c4748f58a56669baba6ceab594" category="inline-link-rx"></block>。然后、您可以发现内部ONTAP 集群和其他本地数据源、并使用Data sense扫描数据。</block>
+  <block id="20ddf180d77766369cf9eb26a7165489" category="section-title">数据感知部署</block>
+  <block id="5bab44a31f81eef054e5895c9d068607" category="paragraph">以下问题与单独的数据感知实例相关。</block>
+  <block id="794e12ef176fc9da8e4f9c105c9930df" category="section-title">是否可以在自己的主机上部署Data sense？</block>
+  <block id="3e9b0b67019f2d0b48a4828209573441" category="paragraph">是的。您可以在可通过网络或云访问 Internet 的 Linux 主机上安装 Data sense 软件。所有功能均相同，您可以继续通过 Cloud Manager 管理扫描配置和结果。请参见 <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> 了解系统要求和安装详细信息。</block>
+  <block id="64f5cbf64bda7d75632e3c56632689f8" category="paragraph">是的、也支持这种做法。您可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 适用于完全安全的站点。</block>
+  <block id="24ef8c726486795460d31edd12ab8ed9" category="paragraph">默认情况下、Cloud Data sense信息板会显示所有工作环境、数据库和数据源的合规性和监管数据。如果要查看仅包含某些工作环境的数据的报告， <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">数据调查报告</block>
+  <block id="f6ba29512f0eaabde0c49365c8ab9bd2" category="inline-link-macro">了解有关数据调查页面的更多信息</block>
+  <block id="517748e2f135f076ee74e5741d804b66" category="paragraph">数据调查报告是数据调查页面内容的下载。 <block ref="777485da66bf4538c99c96042630b627" category="inline-link-macro-rx"></block>。</block>
+  <block id="b5d621c6c64f465c6c100d14976a8e1e" category="paragraph">您可以将报告保存在本地计算机上为.CSV文件；该文件最多可包含5、000行数据。如果Data sense正在扫描数据库表(结构化数据)和文件(非结构化数据)、则最多可以下载两个.CSV报告。</block>
+  <block id="44ef9b305f89e2a0007a9f26dc30474e" category="section-title">生成数据调查报告</block>
+  <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">在数据调查页面中、单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
+  <block id="8d31baf0bada1d29024ba5af3df0159a" category="paragraph">此时将显示一条消息、指出正在下载此报告。</block>
+  <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">每个数据调查报告中包含的内容</block>
+  <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">*非结构化文件数据报告*包含有关文件的以下信息：</block>
+  <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">*结构化数据报告*包含有关数据库表的以下信息：</block>
+  <block id="f84071b5266f40a8c168762081f3a7eb" category="paragraph">*注：*有关文件夹的信息当前在报告中不可用。</block>
+  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
+  <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">增加了对扫描Google Drive帐户中数据的支持</block>
+  <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">了解如何扫描Google Drive帐户</block>
+  <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">现在、您可以将Google Drive帐户添加到Data sense中、以便扫描这些Google Drive帐户中的文档和文件。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
+  <block id="1c569820a2d89c87007e78d8b99f545d" category="inline-link">现有文件类型</block>
+  <block id="d166e1f4f240d3915c676102b853aab5" category="paragraph">除了文档、工作表和幻灯片之外、Data sense还可以识别以下Google文件类型中的个人身份信息(Personal Identifiable Information、PiII)<block ref="c10736ee2c8542c954ba18655a2447a7" category="inline-link-rx"></block>。</block>
+  <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">已将目录级别视图添加到数据调查页面</block>
+  <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">了解如何为扫描的数据选择目录视图</block>
+  <block id="a5d473c55c66a556abf96b71579ff1bf" category="paragraph">除了查看和筛选所有文件和数据库中的数据之外、现在您还可以在"数据调查"页面中根据文件夹和共享中的所有数据查看和筛选数据。现在、您可以在目录级别管理数据。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
+  <block id="fc923fa1acb929379421a26667fff392" category="section-title">展开组以显示有权访问文件的用户/成员</block>
+  <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">了解如何查看对文件具有读取和/或写入权限的用户和组</block>
+  <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">现在、您可以在Data sense权限功能中查看有权访问文件的用户和组列表。可以展开每个组以显示组中的用户列表。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
+  <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">数据调查页面添加了两个新的筛选器</block>
+  <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">通过"目录类型"筛选器、您可以细化数据以仅查看文件夹或共享。结果将显示在新的*目录*选项卡中。</block>
+  <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">通过"用户/组权限"筛选器、您可以列出特定用户或组具有读取和/或写入权限的文件、文件夹和共享。您可以选择多个用户和/或组名称-或输入部分名称。电话</block>
+  <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">查看可用于调查数据的所有筛选器的列表</block>
+  <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
+  <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">添加了一个名为 " 用户 / 组权限 " 的新筛选器，您可以列出特定用户或组具有读取和 / 或写入权限的文件。您可以选择一个或多个用户和/或组名称-或输入部分名称。此功能适用于 Cloud Volumes ONTAP ，内部 ONTAP ， Azure NetApp Files ，适用于 ONTAP 的 Amazon FSx 和文件共享上的卷。</block>
+  <block id="659d1ffa40af561d84c53558562c1ec0" category="paragraph">现在，您可以将 SharePoint 联机帐户添加到 Data sense 中，以便扫描 SharePoint 站点中的文档和文件。 <block ref="7eefe10c1c468dca4cd0e6b3eed1adc0" category="inline-link-macro-rx"></block>。</block>
+  <block id="77a75568e8846a1bf685d1ee50c690cf" category="paragraph"><block ref="6cdda3320a1281c9d4957b83cba366de" category="inline-link-macro-rx"></block>。</block>
+  <block id="d55b3233b82d41486408c8252b8ebafb" category="paragraph">Data sense 现在可以在文件中找到法语社会安全号码，法语 ID 和法语驱动程序许可证号码。 <block ref="685a6d4b5536628189414cd84011e60e" category="inline-link-macro-rx"></block>。</block>
+  <block id="eed42314c8425f21a986d3b70cb05658" category="paragraph">除了您输入 Active Directory 凭据以使 Data sense 能够从某些数据源扫描 CIFS 卷之外，此新集成还为其他用户和系统提供了额外的集成。Data sense 将在所有集成的 Active Directory 中查找用户和权限详细信息。 <block ref="64cba81c60533194508987e16994b8d7" category="inline-link-macro-rx"></block>。</block>
+  <block id="aa46c786779de0fbd3280d592901e64f" category="paragraph">Data sense 可以自动删除与策略中定义的查询匹配的文件。 <block ref="68f7176f15fa3737e845d858e7820489" category="inline-link-macro-rx"></block>。</block>
+  <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">从Data sense中删除整个SharePoint帐户</block>
+  <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">请注意，您可以 <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> 如果您不想再扫描SharePoint帐户中的任何用户数据。</block>
+  <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您当前无法更改大于 30 MB 的文件中的标签。对于OneDrive、SharePoint和Google Drive帐户、最大文件大小为4 MB。</block>
+  <block id="ccff7c05ce1ff2ff0bafe406c61338f6" category="paragraph"><block ref="ccff7c05ce1ff2ff0bafe406c61338f6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="27aec93c5860a4d3afd02f9391f5d2fb" category="paragraph">此外、您还可以单击 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 查看属于该组的用户列表。</block>
+  <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以筛选调查页面的内容，以便仅显示要查看的结果。这是一项功能非常强大的功能、因为在对数据进行细化后、您可以使用页面顶部的按钮栏执行各种操作、包括复制文件、移动文件、向文件添加标记或AIP标签等。</block>
+  <block id="1fab049254ef848d8968883ce41a2b77" category="paragraph">如果要在优化页面内容后将其作为报告下载、请单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 用于保存.CSV文件的按钮。</block>
+  <block id="96b029b0702cef79f31ac1b4c933b4aa" category="list-text">通过顶层选项卡、您可以查看文件(非结构化数据)、目录(非结构化数据)或数据库(结构化数据)中的数据。</block>
+  <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">选择一个或多个策略。开始 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看现有策略列表并创建您自己的自定义策略。</block>
+  <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">选择一个或多个用户名和/或组名称、或者输入部分名称</block>
+  <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">选择 ... <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 分配给文件的</block>
+  <block id="910acb975ea7aecd9808b83a0cb3e7eb" category="cell">选择工作环境的类型。OneDrive、SharePoint和Google Drive归类为"云应用程序"。</block>
+  <block id="c3a9830be43f6515257f3979e66816fd" category="cell">目录类型</block>
+  <block id="9091f9c1f743dae16df2f0455ff3be56" category="cell">选择目录类型："共享"或"文件夹"</block>
+  <block id="f8a85ed4966ec4306b4e58f3bd439410" category="inline-link-macro">一个或多个标记</block>
+  <block id="2ee519be0f1e6f6176e28f4d0dc72a02" category="cell">选择 ... <block ref="d459f7b3039eb26458088e9c5f84d9e6" category="inline-link-macro-rx"></block> 分配给文件的</block>
+  <block id="ce2e33acff157139d73902f7ac835d64" category="summary">请完成几个步骤、开始使用Cloud Data sense扫描Google Drive帐户中的用户文件。</block>
+  <block id="7516ed4bcabc82b8b67177aff48fb5b0" category="doc">扫描Google Drive帐户</block>
+  <block id="df1a99e8a5c605960dde068efb83d492" category="paragraph">确保您拥有登录到Google Drive帐户所需的管理员凭据。</block>
+  <block id="50dd69878a50e70f6bb6373a9455f375" category="paragraph">使用管理员用户凭据登录到要访问的Google Drive帐户、以便将其添加为新的数据源。</block>
+  <block id="89cbb1641d10ee36768bbc7c8550c80e" category="paragraph">选择要对用户文件执行的扫描类型；映射或映射和分类。</block>
+  <block id="f182163b3c8517a6b2c89393d611b9c7" category="section-title">查看Google Drive要求</block>
+  <block id="583b2e69e538cb6ec3d52256a2a1d68c" category="paragraph">请查看以下前提条件、以确保您已准备好在Google Drive帐户上启用Cloud Data sense。</block>
+  <block id="9754d2a3b65dd0a94f6afdf2886da746" category="list-text">您必须拥有Google Drive帐户的管理员登录凭据、该帐户可提供对用户文件的读取访问权限</block>
+  <block id="64a474279b0cea9f7d694f643cf24619" category="section-title">当前限制</block>
+  <block id="f1ad1986e292e89eed7397b2f9c4deb6" category="paragraph">Google Drive文件当前不支持以下Data sense功能：</block>
+  <block id="6f160c921b781e470120401e467b3f23" category="list-text">在"数据调查"页面中查看文件时、按钮栏中的操作未处于活动状态。您不能复制、移动、删除等任何文件。</block>
+  <block id="b02253f9f4afea389fd44267fbb346ef" category="list-text">无法在Google Drive中的文件中标识权限、因此调查页面中不会显示任何权限信息。</block>
+  <block id="d8c999fced9dd06cb3a7dd1ce8fde9ba" category="section-title">正在添加Google Drive帐户</block>
+  <block id="40fd3e316325ce10b9d94e4ee27e6cda" category="paragraph">添加用户文件所在的Google Drive帐户。</block>
+  <block id="57732082df4aef62ed29defc2be4d0b6" category="list-text">在工作环境配置页面中、单击*添加数据源*&gt;*添加Google Drive帐户*。</block>
+  <block id="a06a12818860c5a02fc6cda08aebdef0" category="inline-image-macro">扫描配置页面的屏幕截图、您可以在其中单击添加Google Drive按钮。</block>
+  <block id="62eceb063c8e8fa286bd62cfff1eaf9e" category="paragraph"><block ref="62eceb063c8e8fa286bd62cfff1eaf9e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="41afcc0fca08d9d2c28748fc229f8f3d" category="list-text">在添加Google Drive帐户对话框中、单击*登录到Google Drive*。</block>
+  <block id="56022f71b96722f998fe80c000c22d53" category="list-text">在显示的Google页面中、选择Google Drive帐户并输入所需的管理员用户和密码、然后单击*接受*以允许Cloud Data sense从此帐户读取数据。</block>
+  <block id="b409ed344f8e93255d57fc76a98be428" category="paragraph">Google Drive帐户将添加到工作环境列表中。</block>
+  <block id="c814529a7363747226b548d419cbf345" category="section-title">选择扫描用户数据的类型</block>
+  <block id="da41c773de3c79cd8895af4c1aa8a60d" category="paragraph">选择Cloud Data sense将对用户数据执行的扫描类型。</block>
+  <block id="00d7735cfe1be11b0d6c0c162ce477f6" category="list-text">在_Configuration_页面中、单击Google Drive帐户的*配置*按钮。</block>
+  <block id="0dc1656c50d90854618395b6a5005845" category="inline-image-macro">配置页面的屏幕截图、您可以在其中选择配置按钮。</block>
+  <block id="9d94963dd1bda0d610b26873050a7b25" category="paragraph"><block ref="9d94963dd1bda0d610b26873050a7b25" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a546beb16c321b4c611cf0b9c297e9de" category="list-text">对Google Drive帐户中的文件启用仅映射扫描或映射和分类扫描。</block>
+  <block id="85bccfa752b05b9d9a207e10ae71c262" category="inline-image-macro">屏幕截图显示了如何选择Data sense将对Google Drive数据执行的扫描类型。</block>
+  <block id="70f5d64b57fcacd567844bffa2a38f18" category="paragraph"><block ref="70f5d64b57fcacd567844bffa2a38f18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f0ec15674b4552f07754843b033c4f0" category="paragraph">Cloud Data sense开始扫描您添加的Google Drive帐户中的文件、结果将显示在信息板和其他位置。</block>
+  <block id="3d61ecb24967db6bd93775c965d8571f" category="section-title">从合规性扫描中删除Google Drive帐户</block>
+  <block id="9a1e694b1bf5a642eacf71ea21eede63" category="inline-link-macro">从Data sense中删除Google Drive帐户</block>
+  <block id="e6fef5621a9e0deea941bde5d1ac51eb" category="paragraph">由于只有一个用户的Google Drive文件属于一个Google Drive帐户、因此、如果要停止扫描用户的Google Drive帐户中的文件、则应执行此操作 <block ref="50340a10fcfa586f2410201e1b5bd674" category="inline-link-macro-rx"></block>。</block>
+  <block id="c4022fe65a9bea007e119f4d38ca5b82" category="paragraph">不支持从数据库架构、OneDrive帐户、SharePoint帐户、Google Drive帐户、Amazon S3帐户、 或使用简单存储服务(S3)协议的对象存储。</block>
+  <block id="1b40edca75269e2cab8c610622d15344" category="summary">如果需要、您可以阻止Cloud Data sense扫描一个或多个工作环境、数据库、文件共享组、OneDrive帐户、Google Drive帐户、 或SharePoint帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。</block>
+  <block id="6bd1beae17e48797805a36af79f55549" category="section-title">从Cloud Data sense中删除OneDrive、SharePoint或Google Drive帐户</block>
+  <block id="1b0b7f0671ee5b3c52423f0719388b6e" category="paragraph">如果您不再需要从某个OneDrive帐户、特定SharePoint帐户或Google Drive帐户扫描用户文件、则可以从Cloud Data sense界面删除此帐户并停止所有扫描。</block>
+  <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">从 _Configuration_ 页面中，单击 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按钮、然后单击*删除OneDrive帐户*、*删除SharePoint帐户*或*删除Google Drive帐户*。</block>
+  <block id="9cb5e9a98a61d795839d8b1d8ba8bef7" category="list-text">您必须具有OneDrive for Business帐户的管理员登录凭据、该帐户可提供对用户文件的读取访问权限。</block>
+  <block id="eafb114471abfcc072e27d19a53393bf" category="list-text">您需要列出要扫描其OneDrive文件夹的所有用户的电子邮件地址、并以行分隔。</block>
+  <block id="ac08b5403a9f3f6f1bc720265a802bb3" category="inline-link-macro">从Data sense中删除整个OneDrive帐户</block>
+  <block id="af156dc3600ff1945f980accc524de2d" category="paragraph">请注意，您可以 <block ref="bf09e8e84132fcb4a54426c7be95b7c9" category="inline-link-macro-rx"></block> 如果您不想再扫描OneDrive帐户中的任何用户数据。</block>
+  <block id="37c9303e988a90a91e5799c6d881439b" category="paragraph">内部ONTAP 系统、非NetApp文件共享、通用S3对象存储、数据库、OneDrive文件夹、SharePoint帐户和Google Drive帐户均可使用这些Cloud Connector中的任何一种进行扫描。</block>
+  <block id="2cadc69c210f0e599ec0b30a0874e883" category="summary">Cloud Data sense可以在您的卷、Amazon S3存储分段、数据库、OneDrive文件夹、SharePoint帐户中识别多种类型的私有数据。 和Google Drive帐户。</block>
+  <block id="857f40e1f9389fce6087fb43466bb998" category="paragraph">Cloud Data sense可以在您的卷、Amazon S3存储分段、数据库、OneDrive文件夹、SharePoint帐户中识别多种类型的私有数据。 和Google Drive帐户。请参见以下类别。</block>
+  <block id="f0fa14b0913829093cd6b4aeaa24b34d" category="paragraph">当前不支持在非公开站点中部署Data sense时扫描Cloud Volumes ONTAP 、Azure NetApp Files 、FSX for ONTAP 、AWS S3或Google Drive帐户。</block>
+  <block id="68c4a78a67d74510c65b916751c96b07" category="list-text">目前、Google Drive帐户中的数据无法使用上述任何功能。</block>
+  <block id="9c471504c4f66f275b7d110c46622118" category="paragraph">使用上述任一Cloud Connector时、可以扫描内部ONTAP 系统、非NetApp文件共享、通用S3对象存储、数据库、OneDrive文件夹、SharePoint帐户和Google Drive帐户。</block>
+  <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">扫描您的工作环境</block>
+  <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">扫描其他数据源</block>
+  <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">筛选数据以查看特定文件</block>
 </blocks>

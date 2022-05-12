@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-google-drive.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, google drive, data sense 
+summary: 请完成几个步骤、开始使用Cloud Data sense扫描Google Drive帐户中的用户文件。 
+---
+= 扫描Google Drive帐户
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+请完成几个步骤、开始使用Cloud Data sense扫描Google Drive帐户中的用户文件。
+
+
+
+== 快速入门
+
+按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。
+
+[role="quick-margin-para"]
+确保您拥有登录到Google Drive帐户所需的管理员凭据。
+
+[role="quick-margin-para"]
+link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"^] 如果尚未部署实例。
+
+[role="quick-margin-para"]
+使用管理员用户凭据登录到要访问的Google Drive帐户、以便将其添加为新的数据源。
+
+[role="quick-margin-para"]
+选择要对用户文件执行的扫描类型；映射或映射和分类。
+
+
+
+== 查看Google Drive要求
+
+请查看以下前提条件、以确保您已准备好在Google Drive帐户上启用Cloud Data sense。
+
+* 您必须拥有Google Drive帐户的管理员登录凭据、该帐户可提供对用户文件的读取访问权限
+
+
+
+
+=== 当前限制
+
+Google Drive文件当前不支持以下Data sense功能：
+
+* 在"数据调查"页面中查看文件时、按钮栏中的操作未处于活动状态。您不能复制、移动、删除等任何文件。
+* 无法在Google Drive中的文件中标识权限、因此调查页面中不会显示任何权限信息。
+
+
+
+
+== 部署 Cloud Data sense
+
+如果尚未部署实例，请部署 Cloud Data sense 。
+
+数据感知可以是 link:task-deploy-cloud-compliance.html["部署在云中"^] 或 link:task-deploy-compliance-onprem.html["位于可访问 Internet 的内部位置"^]。
+
+只要实例具有 Internet 连接，就会自动升级到 Data sense 软件。
+
+
+
+== 正在添加Google Drive帐户
+
+添加用户文件所在的Google Drive帐户。
+
+.步骤
+. 在工作环境配置页面中、单击*添加数据源*>*添加Google Drive帐户*。
++
+image:screenshot_compliance_add_google_drive_button.png["扫描配置页面的屏幕截图、您可以在其中单击添加Google Drive按钮。"]
+
+. 在添加Google Drive帐户对话框中、单击*登录到Google Drive*。
+. 在显示的Google页面中、选择Google Drive帐户并输入所需的管理员用户和密码、然后单击*接受*以允许Cloud Data sense从此帐户读取数据。
+
+
+Google Drive帐户将添加到工作环境列表中。
+
+
+
+== 选择扫描用户数据的类型
+
+选择Cloud Data sense将对用户数据执行的扫描类型。
+
+.步骤
+. 在_Configuration_页面中、单击Google Drive帐户的*配置*按钮。
++
+image:screenshot_compliance_google_drive_add_sites.png["配置页面的屏幕截图、您可以在其中选择配置按钮。"]
+
+. 对Google Drive帐户中的文件启用仅映射扫描或映射和分类扫描。
++
+image:screenshot_compliance_google_drive_select_scan.png["屏幕截图显示了如何选择Data sense将对Google Drive数据执行的扫描类型。"]
+
++
+[cols="45,45"]
+|===
+| 收件人： | 执行以下操作： 
+
+
+| 对文件启用仅映射扫描 | 单击 * 映射 * 
+
+
+| 对文件启用完全扫描 | 单击 * 映射和分类 * 
+
+
+| 禁用文件扫描 | 单击 * 关闭 * 
+|===
+
+
+Cloud Data sense开始扫描您添加的Google Drive帐户中的文件、结果将显示在信息板和其他位置。
+
+
+
+== 从合规性扫描中删除Google Drive帐户
+
+由于只有一个用户的Google Drive文件属于一个Google Drive帐户、因此、如果要停止扫描用户的Google Drive帐户中的文件、则应执行此操作 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["从Data sense中删除Google Drive帐户"]。

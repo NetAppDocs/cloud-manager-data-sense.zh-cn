@@ -40,8 +40,8 @@ link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"^] 如果尚未�
 
 在启用 Cloud Data sense 之前，请查看以下前提条件以确保您的配置受支持。
 
-* 您必须拥有 OneDrive for Business 帐户的管理员登录凭据，该帐户可提供对所有用户文件的读取访问权限。
-* 您需要列出要扫描其 OneDrive 文件夹的所有用户的电子邮件地址，并以行分隔。
+* 您必须具有OneDrive for Business帐户的管理员登录凭据、该帐户可提供对用户文件的读取访问权限。
+* 您需要列出要扫描其OneDrive文件夹的所有用户的电子邮件地址、并以行分隔。
 
 
 
@@ -130,3 +130,5 @@ Cloud Data sense 开始扫描您添加的用户的文件，结果将显示在信
 如果用户离开公司或其电子邮件地址发生变化，您可以随时删除单个 OneDrive 用户的文件扫描功能。只需从配置页面中单击 * 删除 OneDrive 用户 * 即可。
 
 image:screenshot_compliance_onedrive_remove_user.png["显示如何从扫描单个用户的文件中删除该用户的屏幕截图。"]
+
+请注意，您可以 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["从Data sense中删除整个OneDrive帐户"] 如果您不想再扫描OneDrive帐户中的任何用户数据。

@@ -130,3 +130,5 @@ Cloud Data sense 开始扫描您添加的 SharePoint 站点中的文件，结果
 如果您将来删除某个 SharePoint 站点，或者决定不扫描 SharePoint 站点中的文件，则可以随时删除各个 SharePoint 站点，使其无法扫描其文件。只需从配置页面中单击 * 删除 SharePoint 站点 * 即可。
 
 image:screenshot_compliance_sharepoint_remove_site.png["显示如何从扫描单个 SharePoint 站点的文件中删除此站点的屏幕截图。"]
+
+请注意，您可以 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["从Data sense中删除整个SharePoint帐户"] 如果您不想再扫描SharePoint帐户中的任何用户数据。

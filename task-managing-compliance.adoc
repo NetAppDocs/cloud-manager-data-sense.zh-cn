@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-compliance.html 
 keywords: remove, delete, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, delete cloud compliance, terminate, deactivate, deactivating cloud compliance, data sense 
-summary: 如果需要，您可以阻止 Cloud Data sense 扫描一个或多个工作环境，数据库，文件共享组， OneDrive 帐户或 SharePoint 帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。 
+summary: 如果需要、您可以阻止Cloud Data sense扫描一个或多个工作环境、数据库、文件共享组、OneDrive帐户、Google Drive帐户、 或SharePoint帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。 
 ---
 = 从 Cloud Data sense 中删除数据源
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 如果需要，您可以阻止 Cloud Data sense 扫描一个或多个�
 
 
 [role="lead"]
-如果需要，您可以阻止 Cloud Data sense 扫描一个或多个工作环境，数据库，文件共享组， OneDrive 帐户或 SharePoint 帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。
+如果需要、您可以阻止Cloud Data sense扫描一个或多个工作环境、数据库、文件共享组、OneDrive帐户、Google Drive帐户、 或SharePoint帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。
 
 
 
@@ -43,12 +43,12 @@ image:screenshot_compliance_remove_db.png["扫描配置页面中的删除数据�
 
 
 
-== 从 Cloud Data sense 中删除 OneDrive 或 SharePoint 帐户
+== 从Cloud Data sense中删除OneDrive、SharePoint或Google Drive帐户
 
-如果您不想再从某个 OneDrive 帐户或特定 SharePoint 帐户扫描用户文件，则可以从 Cloud Data sense 界面删除此帐户并停止所有扫描。
+如果您不再需要从某个OneDrive帐户、特定SharePoint帐户或Google Drive帐户扫描用户文件、则可以从Cloud Data sense界面删除此帐户并停止所有扫描。
 
 .步骤
-. 从 _Configuration_ 页面中，单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮，然后单击 * 删除 OneDrive 帐户 * 或 * 删除 SharePoint 帐户 * 。
+. 从 _Configuration_ 页面中，单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮、然后单击*删除OneDrive帐户*、*删除SharePoint帐户*或*删除Google Drive帐户*。
 +
 image:screenshot_compliance_remove_onedrive.png["扫描配置页面中的删除 OneDrive 按钮的屏幕截图。"]
 

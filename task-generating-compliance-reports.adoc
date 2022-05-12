@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
-keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa 
+keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file 
 summary: Cloud Data sense 提供报告，您可以使用这些报告更好地了解组织的数据隐私计划的状态。 
 ---
 = 查看合规性报告
@@ -16,14 +16,15 @@ summary: Cloud Data sense 提供报告，您可以使用这些报告更好地了
 [role="lead"]
 Cloud Data sense 提供报告，您可以使用这些报告更好地了解组织的数据隐私计划的状态。
 
-默认情况下， Cloud Data sense 信息板会显示所有工作环境和数据库的合规性和监管数据。如果要查看仅包含某些工作环境的数据的报告， <<Selecting the working environments for reports,选择这些工作环境>>。
+默认情况下、Cloud Data sense信息板会显示所有工作环境、数据库和数据源的合规性和监管数据。如果要查看仅包含某些工作环境的数据的报告， <<Selecting the working environments for reports,选择这些工作环境>>。
+
+[NOTE]
+====
+* 只有在选择对数据源执行完整分类扫描后，才可以使用本节中所述的报告。已执行仅映射扫描的数据源只能生成数据映射报告。
+* NetApp 无法保证 Cloud Data sense 识别的个人数据和敏感个人数据的 100% 准确性。您应始终通过查看数据来验证此信息。
 
 
-NOTE: 只有在选择对数据源执行完整分类扫描后，才可以使用本节中所述的报告。已执行仅映射扫描的数据源只能生成数据映射报告。
-
-
-NOTE: NetApp 无法保证 Cloud Data sense 识别的个人数据和敏感个人数据的 100% 准确性。您应始终通过查看数据来验证此信息。
-
+====
 
 
 == 隐私风险评估报告
@@ -197,6 +198,65 @@ image:screenshot_compliance_data_mapping_report_button.png["监管信息板的�
 
 
 Cloud Data sense 可生成 PDF 报告，您可以根据需要查看该报告并将其发送给其他组。
+
+
+
+== 数据调查报告
+
+数据调查报告是数据调查页面内容的下载。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["了解有关数据调查页面的更多信息"]。
+
+您可以将报告保存在本地计算机上为.CSV文件；该文件最多可包含5、000行数据。如果Data sense正在扫描数据库表(结构化数据)和文件(非结构化数据)、则最多可以下载两个.CSV报告。
+
+
+
+=== 生成数据调查报告
+
+.步骤
+. 在数据调查页面中、单击 image:button_download.png["下载按钮"] 按钮。
+
+
+此时将显示一条消息、指出正在下载此报告。
+
+
+
+=== 每个数据调查报告中包含的内容
+
+*非结构化文件数据报告*包含有关文件的以下信息：
+
+* 文件名
+* 位置类型
+* Working environment name
+* 存储库（例如，卷，存储分段，共享）
+* Working environment type
+* 文件路径
+* 文件类型
+* 文件大小
+* 创建时间
+* 上次修改时间
+* 上次访问
+* 文件所有者
+* 类别
+* 个人信息
+* 敏感的个人信息
+* 删除检测日期
++
+删除检测日期用于标识文件被删除或移动的日期。这样，您就可以确定何时移动了敏感文件。已删除的文件不属于信息板或 " 调查 " 页面上显示的文件编号。这些文件仅显示在 CSV 报告中。
+
+
+
+*结构化数据报告*包含有关数据库表的以下信息：
+
+* 数据库表名称
+* 位置类型
+* Working environment name
+* 存储库（例如模式）
+* 列计数
+* 行数
+* 个人信息
+* 敏感的个人信息
+
+
+*注：*有关文件夹的信息当前在报告中不可用。
 
 
 

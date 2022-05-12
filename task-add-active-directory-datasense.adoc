@@ -41,7 +41,7 @@ Active Directory 与 Cloud Data sense 的集成可以识别以下数据源中的
 * 非 NetApp CIFS 文件共享（不适用于 NFS 文件共享）
 
 
-不支持从使用简单存储服务（ Simple Storage Service ， S3 ）协议的数据库架构， OneDrive 帐户， SharePoint 帐户， Amazon S3 帐户或对象存储中识别用户和权限信息。
+不支持从数据库架构、OneDrive帐户、SharePoint帐户、Google Drive帐户、Amazon S3帐户、 或使用简单存储服务(S3)协议的对象存储。
 
 
 

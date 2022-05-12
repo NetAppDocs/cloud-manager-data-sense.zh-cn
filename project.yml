@@ -44,6 +44,8 @@ sidebar:
         url: "/task-scanning-onedrive.html"
       - title: SharePoint 帐户
         url: "/task-scanning-sharepoint.html"
+      - title: Google Drive帐户
+        url: "/task-scanning-google-drive.html"
       - title: 文件共享
         url: "/task-scanning-file-shares.html"
       - title: 对象存储
@@ -100,7 +102,7 @@ homepage:
       url: task-add-active-directory-datasense.html
     - title: 设置许可
       url: task-licensing-datasense.html
-  - title: 激活对数据源的扫描
+  - title: 扫描您的工作环境
     links:
     - title: Cloud Volumes ONTAP 卷
       url: task-getting-started-compliance.html
@@ -112,6 +114,8 @@ homepage:
       url: task-scanning-fsx.html
     - title: Amazon S3 存储分段
       url: task-scanning-s3.html
+  - title: 扫描其他数据源
+    links:
     - title: 通用 S3 存储分段
       url: task-scanning-object-storage.html
     - title: 非 NetApp 文件共享
@@ -122,34 +126,40 @@ homepage:
       url: task-scanning-onedrive.html
     - title: SharePoint 帐户
       url: task-scanning-sharepoint.html
-  - title: 管理私有数据
+    - title: Google Drive帐户
+      url: task-scanning-google-drive.html
+  - title: 查看有关数据的详细信息
     links:
-    - title: 使用 AIP 标签对数据进行分类
-      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
-    - title: 发现不合规数据时创建电子邮件警报
-      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
-    - title: 添加您自己的自定义个人数据标识符
-      url: task-managing-data-fusion.html
+    - title: 查看包含私有信息的文件
+      url: task-controlling-private-data.html
+    - title: 查看存储中重复的文件
+      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
+    - title: 筛选数据以查看特定文件
+      url: task-controlling-private-data.html#filtering-data-in-the-data-investigation-page
+    - title: 创建策略以查看排名靠前的搜索
+      url: task-org-private-data.html#controlling-your-data-using-policies
+    - title: 生成合规性报告
+      url: task-generating-compliance-reports.html
+  - title: 组织您的私有数据
+    links:
     - title: 将标记和所有者应用于需要关注的文件
       url: task-org-private-data.html#applying-tags-to-manage-your-scanned-files
-    - title: 响应数据主体访问请求
-      url: task-responding-to-dsar.html
+    - title: 使用 AIP 标签对数据进行分类
+      url: task-org-private-data.html#categorizing-your-data-using-aip-labels
+    - title: 添加您自己的自定义个人数据标识符
+      url: task-managing-data-fusion.html
+  - title: 管理私有数据
+    links:
     - title: 复制源文件
       url: task-managing-highlights.html#copying-source-files
     - title: 移动源文件
       url: task-managing-highlights.html#moving-source-files-to-an-nfs-share
     - title: 删除源文件
       url: task-managing-highlights.html#deleting-source-files
-  - title: 查看有关数据的详细信息
-    links:
-    - title: 创建策略以查看排名靠前的搜索
-      url: task-org-private-data.html#controlling-your-data-using-policies
-    - title: 查看包含私有信息的文件
-      url: task-controlling-private-data.html
-    - title: 查看存储中重复的文件
-      url: task-controlling-private-data.html#checking-for-duplicate-files-in-your-storage-systems
-    - title: 生成合规性报告
-      url: task-generating-compliance-reports.html
+    - title: 发现不合规数据时创建电子邮件警报
+      url: task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found
+    - title: 响应数据主体访问请求
+      url: task-responding-to-dsar.html
   - title: 博客社区
     links:
     - title: NetApp 社区
