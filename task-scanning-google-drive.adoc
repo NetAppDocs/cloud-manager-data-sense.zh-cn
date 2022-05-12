@@ -67,7 +67,7 @@ Google Drive文件当前不支持以下Data sense功能：
 
 == 正在添加Google Drive帐户
 
-添加用户文件所在的Google Drive帐户。
+添加用户文件所在的Google Drive帐户。如果要扫描多个用户的文件、则需要对每个用户运行此步骤。
 
 .步骤
 . 在工作环境配置页面中、单击*添加数据源*>*添加Google Drive帐户*。

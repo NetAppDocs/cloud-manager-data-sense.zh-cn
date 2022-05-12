@@ -1300,7 +1300,6 @@
   <block id="3ec365dd533ddb7ef3d1c111186ce872" category="cell">详细信息</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">此处</block>
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">打开权限</block>
-  <block id="2aff327e20fff98134c5877bf3331ccd" category="cell">选择权限类型</block>
   <block id="11103ebc3d212c95261e2603bcb74624" category="cell">用户 / 组权限</block>
   <block id="7593aaae27016a1a6e673834742f688c" category="cell">文件所有者</block>
   <block id="041e6d70f8356e275da0ead58dccdf88" category="cell">输入文件所有者名称</block>
@@ -2390,7 +2389,6 @@
   <block id="d166e1f4f240d3915c676102b853aab5" category="paragraph">除了文档、工作表和幻灯片之外、Data sense还可以识别以下Google文件类型中的个人身份信息(Personal Identifiable Information、PiII)<block ref="c10736ee2c8542c954ba18655a2447a7" category="inline-link-rx"></block>。</block>
   <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">已将目录级别视图添加到数据调查页面</block>
   <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">了解如何为扫描的数据选择目录视图</block>
-  <block id="a5d473c55c66a556abf96b71579ff1bf" category="paragraph">除了查看和筛选所有文件和数据库中的数据之外、现在您还可以在"数据调查"页面中根据文件夹和共享中的所有数据查看和筛选数据。现在、您可以在目录级别管理数据。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
   <block id="fc923fa1acb929379421a26667fff392" category="section-title">展开组以显示有权访问文件的用户/成员</block>
   <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">了解如何查看对文件具有读取和/或写入权限的用户和组</block>
   <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">现在、您可以在Data sense权限功能中查看有权访问文件的用户和组列表。可以展开每个组以显示组中的用户列表。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
@@ -2412,7 +2410,6 @@
   <block id="27aec93c5860a4d3afd02f9391f5d2fb" category="paragraph">此外、您还可以单击 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 查看属于该组的用户列表。</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以筛选调查页面的内容，以便仅显示要查看的结果。这是一项功能非常强大的功能、因为在对数据进行细化后、您可以使用页面顶部的按钮栏执行各种操作、包括复制文件、移动文件、向文件添加标记或AIP标签等。</block>
   <block id="1fab049254ef848d8968883ce41a2b77" category="paragraph">如果要在优化页面内容后将其作为报告下载、请单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 用于保存.CSV文件的按钮。</block>
-  <block id="96b029b0702cef79f31ac1b4c933b4aa" category="list-text">通过顶层选项卡、您可以查看文件(非结构化数据)、目录(非结构化数据)或数据库(结构化数据)中的数据。</block>
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">选择一个或多个策略。开始 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看现有策略列表并创建您自己的自定义策略。</block>
   <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">选择一个或多个用户名和/或组名称、或者输入部分名称</block>
   <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">选择 ... <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 分配给文件的</block>
@@ -2434,7 +2431,6 @@
   <block id="6f160c921b781e470120401e467b3f23" category="list-text">在"数据调查"页面中查看文件时、按钮栏中的操作未处于活动状态。您不能复制、移动、删除等任何文件。</block>
   <block id="b02253f9f4afea389fd44267fbb346ef" category="list-text">无法在Google Drive中的文件中标识权限、因此调查页面中不会显示任何权限信息。</block>
   <block id="d8c999fced9dd06cb3a7dd1ce8fde9ba" category="section-title">正在添加Google Drive帐户</block>
-  <block id="40fd3e316325ce10b9d94e4ee27e6cda" category="paragraph">添加用户文件所在的Google Drive帐户。</block>
   <block id="57732082df4aef62ed29defc2be4d0b6" category="list-text">在工作环境配置页面中、单击*添加数据源*&gt;*添加Google Drive帐户*。</block>
   <block id="a06a12818860c5a02fc6cda08aebdef0" category="inline-image-macro">扫描配置页面的屏幕截图、您可以在其中单击添加Google Drive按钮。</block>
   <block id="62eceb063c8e8fa286bd62cfff1eaf9e" category="paragraph"><block ref="62eceb063c8e8fa286bd62cfff1eaf9e" category="inline-image-macro-rx" type="image"></block></block>
@@ -2471,4 +2467,9 @@
   <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">扫描您的工作环境</block>
   <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">扫描其他数据源</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">筛选数据以查看特定文件</block>
+  <block id="c7fd320d60c5b92b36ff4a806aef9121" category="paragraph">除了查看和筛选所有文件和数据库中的数据之外、现在您还可以在"数据调查"页面中根据文件夹和共享中的所有数据查看和筛选数据。将为扫描的CIFS和NFS共享以及OneDrive、SharePoint和Google Drive文件夹的目录编制索引。现在、您可以在目录级别查看权限并管理数据。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
+  <block id="bc80eb794f149fca6a16076a0e09247f" category="list-text">通过顶层选项卡、您可以查看文件(非结构化数据)、目录(文件夹和文件共享)或数据库(结构化数据)中的数据。</block>
+  <block id="234e430c736f07d10569c360fb740db6" category="cell">选择数据以及文件夹/共享中的权限类型</block>
+  <block id="24f81a8dd0e927be2bf9fb46e2588281" category="paragraph">请注意、"目录"级别当前不支持按钮栏和策略中提供的操作。</block>
+  <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">添加用户文件所在的Google Drive帐户。如果要扫描多个用户的文件、则需要对每个用户运行此步骤。</block>
 </blocks>

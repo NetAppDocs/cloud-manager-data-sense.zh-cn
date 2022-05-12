@@ -207,7 +207,7 @@ image:screenshot_cloud_compliance_filter.gif["显示如何筛选特定工作环�
 
 image:screenshot_compliance_investigation_filtered.png["在调查页面中细化结果时可用筛选器的屏幕截图。"]
 
-* 通过顶层选项卡、您可以查看文件(非结构化数据)、目录(非结构化数据)或数据库(结构化数据)中的数据。
+* 通过顶层选项卡、您可以查看文件(非结构化数据)、目录(文件夹和文件共享)或数据库(结构化数据)中的数据。
 * 通过每列顶部的控件，您可以按数字或字母顺序对结果进行排序。
 * 您可以通过左窗格筛选器从以下属性中进行选择来细化结果：
 +
@@ -219,7 +219,7 @@ image:screenshot_compliance_investigation_filtered.png["在调查页面中细化
 | 策略 | 选择一个或多个策略。开始 link:task-org-private-data.html#controlling-your-data-using-policies["此处"^] 可查看现有策略列表并创建您自己的自定义策略。 
 
 
-| 打开权限 | 选择权限类型 
+| 打开权限 | 选择数据以及文件夹/共享中的权限类型 
 
 
 | 用户 / 组权限 | 选择一个或多个用户名和/或组名称、或者输入部分名称 
@@ -291,3 +291,5 @@ image:screenshot_compliance_investigation_filtered.png["在调查页面中细化
 | 已分配给 | 选择将文件分配到的人员的姓名 
 |===
 
+
+请注意、"目录"级别当前不支持按钮栏和策略中提供的操作。
