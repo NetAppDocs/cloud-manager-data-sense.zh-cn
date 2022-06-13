@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-highlights.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-managing-highlights.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -360,8 +352,6 @@
         
         <a target="_blank" href="/zh-cn/cloud-manager-data-sense/pdfs/fullsite-sidebar/Cloud_Data_sense_文档.pdf" >
           <img src="/zh-cn/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
-
-
 
 
 
@@ -515,6 +505,39 @@
 
 
 
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-data-sense/pdfs/sidebar/管理云数据感知.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>
+            管理云数据感知
+          </a>
+          
+
+
+
+
+
+
+
+
+
 
 
 
@@ -594,10 +617,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有 Cloud Manager 文档
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-cn/cloud-manager-family/"><img src="/zh-cn/cloud-manager-data-sense/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/index.html">
         Cloud Data sense 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/whats-new.html">
         发行说明
@@ -655,16 +678,27 @@
         组织您的私有数据
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-managing-highlights.html">
         管理私有数据
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-managing-data-fusion.html">
-        添加自定义个人数据标识符
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-generating-compliance-reports.html">
         生成报告
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-responding-to-dsar.html">
         响应 DAR
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/reference-private-data-categories.html">
         私有数据的类别
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理云数据感知</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-managing-data-fusion.html">
+        添加自定义个人数据标识符
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-view-compliance-actions.html">
+        查看数据感知操作的状态
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-audit-data-sense-actions.html">
+        审核数据感知操作的历史记录
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-reduce-scan-speed.html">
+        降低数据感知扫描速度
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-managing-compliance.html">
         从 Data sense 中删除数据源
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-uninstall-data-sense.html">
+        卸载Data sense
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 知识和支持</div>
       </a>
@@ -743,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 13:13:47 +0000">05/12/2022</time>
+    <time datetime="2022-06-13 13:26:41 +0000">06/13/2022</time>
     
   
 
@@ -893,7 +927,7 @@
 </ol>
 </div>
 <div class="paragraph">
-<p>您可以在中查看复制操作的进度 <a href="#Viewing the status of your compliance actions">操作状态窗格</a>。</p>
+<p>您可以在中查看复制操作的进度 <a href="task-view-compliance-actions.html">"操作状态窗格"</a>。</p>
 </div>
 <div class="paragraph">
 <p>请注意，您也可以在查看文件的元数据详细信息时复制单个文件。只需单击 * 复制文件 * 。</p>
@@ -983,7 +1017,7 @@
 <p>新的克隆卷将在与源卷相同的聚合中创建。</p>
 </div>
 <div class="paragraph">
-<p>您可以在中查看克隆操作的进度 <a href="#Viewing the status of your compliance actions">操作状态窗格</a>。</p>
+<p>您可以在中查看克隆操作的进度 <a href="task-view-compliance-actions.html">"操作状态窗格"</a>。</p>
 </div>
 <div class="paragraph">
 <p>如果在源卷所在的工作环境中启用了 Data sense 后，最初选择了 * 映射所有卷 * 或 * 映射并分类所有卷 * ，则 Data sense 将自动扫描新克隆的卷。如果最初未使用上述任一选项，则如果要扫描此新卷，则需要执行以下操作 <a href="task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes">"手动对卷启用扫描"</a>。</p>
@@ -1226,7 +1260,7 @@
 </ol>
 </div>
 <div class="paragraph">
-<p>您可以在中查看删除操作的进度 <a href="#Viewing the status of your compliance actions">操作状态窗格</a>。</p>
+<p>您可以在中查看删除操作的进度 <a href="task-view-compliance-actions.html">"操作状态窗格"</a>。</p>
 </div>
 <div class="paragraph">
 <p>请注意，您也可以在查看文件的元数据详细信息时删除单个文件。只需单击 * 删除文件 * 。</p>
@@ -1289,58 +1323,8 @@
 <p>新策略将显示在策略选项卡中。与策略匹配的文件将在策略运行时每天删除一次。</p>
 </div>
 <div class="paragraph">
-<p>您可以在中查看已删除的文件列表 <a href="#Viewing the status of your compliance actions">操作状态窗格</a>。</p>
+<p>您可以在中查看已删除的文件列表 <a href="task-view-compliance-actions.html">"操作状态窗格"</a>。</p>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="查看合规性操作的状态">查看合规性操作的状态</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>从 " 调查结果 " 窗格对多个文件运行操作时，例如删除 100 个文件，此过程可能需要一些时间。您可以在 <em>Action Status</em> 窗格中监控这些异步操作的状态，以便了解它何时应用于所有文件。这样，您就可以查看已成功完成的操作，当前正在执行的操作以及失败的操作，以便诊断和修复任何问题。</p>
-</div>
-<div class="paragraph">
-<p>状态可以是：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>已完成</p>
-</li>
-<li>
-<p>正在进行中</p>
-</li>
-<li>
-<p>已排队</p>
-</li>
-<li>
-<p>已取消</p>
-</li>
-<li>
-<p>失败</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>请注意，您可以取消状态为 " 已排队 " 或 " 正在进行 " 的任何操作。</p>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>在 Data sense UI 的右下角，您可以看到 * 操作状态 * 按钮 <span class="image"><img src="./media/button_actions_status.png" alt=""></span>。</p>
-</li>
-<li>
-<p>单击此按钮，将列出最近 20 个操作。</p>
-<div class="paragraph">
-<p><span class="image"><img src="./media/screenshot_compliance_action_status.png" alt="一个屏幕截图，用于在配置页面中显示最近 20 个操作及其状态。"></span></p>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>您可以单击某个操作的名称以查看与该操作对应的详细信息。</p>
 </div>
 </div>
 </div>
@@ -1490,4 +1474,5 @@
     </script>
     <script src='/zh-cn/cloud-manager-data-sense/js/www-ntap.js'></script>
     <script src='/zh-cn/cloud-manager-data-sense/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/cloud-manager-data-sense/js/sidebar.js'></script>
   </body></html>

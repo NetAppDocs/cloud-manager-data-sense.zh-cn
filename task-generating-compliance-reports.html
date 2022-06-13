@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-data-sense/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-generating-compliance-reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-generating-compliance-reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/task-generating-compliance-reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-generating-compliance-reports.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/cloud-manager-data-sense/task-generating-compliance-reports.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloud-manager-data-sense/task-generating-compliance-reports.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloud-manager-data-sense/task-generating-compliance-reports.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloud-manager-data-sense/task-generating-compliance-reports.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -360,8 +352,6 @@
         
         <a target="_blank" href="/zh-cn/cloud-manager-data-sense/pdfs/fullsite-sidebar/Cloud_Data_sense_文档.pdf" >
           <img src="/zh-cn/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
-
-
 
 
 
@@ -499,8 +489,6 @@
 
 
 
-
-
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
   <a target="_blank" href="/zh-cn/cloud-manager-data-sense/pdfs/pages/task-generating-compliance-reports.pdf" >
     <img src="/zh-cn/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>
@@ -510,6 +498,41 @@
 
 </ul>
   
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-data-sense/pdfs/sidebar/管理云数据感知.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-data-sense/images/pdf.png" width="16" height="16"/>
+            管理云数据感知
+          </a>
+          
+
+
+
+
 
 
 
@@ -594,10 +617,10 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
-  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
-        所有 Cloud Manager 文档
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/index.html">
+</script><div class="prod-nav" id="product-nav">
+  <a target="_self" class="prod-fam-nav" href="https://docs.netapp.com/zh-cn/cloud-manager-family/"><img src="/zh-cn/cloud-manager-data-sense/images/left_arrow.png" alt=""><pre>All Cloud Manager documentation</pre></a>
+</div><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/index.html">
         Cloud Data sense 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/whats-new.html">
         发行说明
@@ -655,16 +678,27 @@
         组织您的私有数据
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-managing-highlights.html">
         管理私有数据
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-managing-data-fusion.html">
-        添加自定义个人数据标识符
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-generating-compliance-reports.html">
         生成报告
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-responding-to-dsar.html">
         响应 DAR
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/reference-private-data-categories.html">
         私有数据的类别
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 管理云数据感知</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-managing-data-fusion.html">
+        添加自定义个人数据标识符
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-view-compliance-actions.html">
+        查看数据感知操作的状态
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-audit-data-sense-actions.html">
+        审核数据感知操作的历史记录
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-reduce-scan-speed.html">
+        降低数据感知扫描速度
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-managing-compliance.html">
         从 Data sense 中删除数据源
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-data-sense/task-uninstall-data-sense.html">
+        卸载Data sense
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 知识和支持</div>
       </a>
@@ -743,7 +777,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-12 13:13:47 +0000">05/12/2022</time>
+    <time datetime="2022-06-13 13:26:41 +0000">06/13/2022</time>
     
   
 
@@ -1101,7 +1135,10 @@
 <p>数据调查报告是数据调查页面内容的下载。 <a href="task-controlling-private-data.html#filtering-data-in-the-data-investigation-page">"了解有关数据调查页面的更多信息"</a>。</p>
 </div>
 <div class="paragraph">
-<p>您可以将报告保存在本地计算机上为.CSV文件；该文件最多可包含5、000行数据。如果Data sense正在扫描数据库表(结构化数据)和文件(非结构化数据)、则最多可以下载两个.CSV报告。</p>
+<p>您可以将报告保存到本地计算机、作为.CSV文件(最多可包含5、000行数据)或导出到NFS共享的.json文件(最多可包含不限数量的行)。如果Data sense正在扫描文件(非结构化数据)、目录(文件夹和文件共享)或数据库(结构化数据)、则最多可以下载三个报告文件。</p>
+</div>
+<div class="paragraph">
+<p>导出到文件共享时、请确保Data sense具有正确的导出访问权限。</p>
 </div>
 <div class="sect2">
 <h3 id="生成数据调查报告">生成数据调查报告</h3>
@@ -1111,10 +1148,22 @@
 <li>
 <p>在数据调查页面中、单击 <span class="image"><img src="./media/button_download.png" alt="下载按钮"></span> 按钮。</p>
 </li>
+<li>
+<p>选择要下载.CSV报告还是.JSON数据报告、然后单击*下载报告*。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_compliance_investigation_report.png" alt="包含多个选项的Download调查报告页面的屏幕截图。"></span></p>
+</div>
+<div class="paragraph">
+<p>选择.json报告时、请以`&lt;host_name&gt;：/&lt;share_path&gt;`格式输入要下载报告的NFS共享的名称。</p>
+</div>
+</li>
 </ol>
 </div>
 <div class="paragraph">
-<p>此时将显示一条消息、指出正在下载此报告。</p>
+<p>此时将显示一条消息、指出正在下载报告。</p>
+</div>
+<div class="paragraph">
+<p>您可以在中查看JSON报告生成的进度 <a href="#Viewing the status of your compliance actions">操作状态窗格</a>。</p>
 </div>
 </div>
 <div class="sect2">
@@ -1178,6 +1227,46 @@
 </ul>
 </div>
 <div class="paragraph">
+<p>*非结构化目录数据报告*包含有关文件夹和文件共享的以下信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Working environment name</p>
+</li>
+<li>
+<p>存储库(例如、文件夹或文件共享)</p>
+</li>
+<li>
+<p>Working environment type</p>
+</li>
+<li>
+<p>文件路径(目录名称)</p>
+</li>
+<li>
+<p>文件所有者</p>
+</li>
+<li>
+<p>创建时间</p>
+</li>
+<li>
+<p>发现时间</p>
+</li>
+<li>
+<p>上次修改时间</p>
+</li>
+<li>
+<p>上次访问</p>
+</li>
+<li>
+<p>打开权限</p>
+</li>
+<li>
+<p>目录类型</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
 <p>*结构化数据报告*包含有关数据库表的以下信息：</p>
 </div>
 <div class="ulist">
@@ -1207,9 +1296,6 @@
 <p>敏感的个人信息</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>*注：*有关文件夹的信息当前在报告中不可用。</p>
 </div>
 </div>
 </div>
@@ -1382,4 +1468,5 @@
     </script>
     <script src='/zh-cn/cloud-manager-data-sense/js/www-ntap.js'></script>
     <script src='/zh-cn/cloud-manager-data-sense/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/cloud-manager-data-sense/js/sidebar.js'></script>
   </body></html>
