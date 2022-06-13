@@ -205,7 +205,9 @@ Cloud Data sense 可生成 PDF 报告，您可以根据需要查看该报告并�
 
 数据调查报告是数据调查页面内容的下载。 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["了解有关数据调查页面的更多信息"]。
 
-您可以将报告保存在本地计算机上为.CSV文件；该文件最多可包含5、000行数据。如果Data sense正在扫描数据库表(结构化数据)和文件(非结构化数据)、则最多可以下载两个.CSV报告。
+您可以将报告保存到本地计算机、作为.CSV文件(最多可包含5、000行数据)或导出到NFS共享的.json文件(最多可包含不限数量的行)。如果Data sense正在扫描文件(非结构化数据)、目录(文件夹和文件共享)或数据库(结构化数据)、则最多可以下载三个报告文件。
+
+导出到文件共享时、请确保Data sense具有正确的导出访问权限。
 
 
 
@@ -213,9 +215,18 @@ Cloud Data sense 可生成 PDF 报告，您可以根据需要查看该报告并�
 
 .步骤
 . 在数据调查页面中、单击 image:button_download.png["下载按钮"] 按钮。
+. 选择要下载.CSV报告还是.JSON数据报告、然后单击*下载报告*。
++
+image:screenshot_compliance_investigation_report.png["包含多个选项的Download调查报告页面的屏幕截图。"]
+
++
+选择.json报告时、请以`<host_name>：/<share_path>`格式输入要下载报告的NFS共享的名称。
 
 
-此时将显示一条消息、指出正在下载此报告。
+
+此时将显示一条消息、指出正在下载报告。
+
+您可以在中查看JSON报告生成的进度 <<Viewing the status of your compliance actions,操作状态窗格>>。
 
 
 
@@ -244,6 +255,21 @@ Cloud Data sense 可生成 PDF 报告，您可以根据需要查看该报告并�
 
 
 
+*非结构化目录数据报告*包含有关文件夹和文件共享的以下信息：
+
+* Working environment name
+* 存储库(例如、文件夹或文件共享)
+* Working environment type
+* 文件路径(目录名称)
+* 文件所有者
+* 创建时间
+* 发现时间
+* 上次修改时间
+* 上次访问
+* 打开权限
+* 目录类型
+
+
 *结构化数据报告*包含有关数据库表的以下信息：
 
 * 数据库表名称
@@ -255,8 +281,6 @@ Cloud Data sense 可生成 PDF 报告，您可以根据需要查看该报告并�
 * 个人信息
 * 敏感的个人信息
 
-
-*注：*有关文件夹的信息当前在报告中不可用。
 
 
 

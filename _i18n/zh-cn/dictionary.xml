@@ -24,7 +24,6 @@
   <block id="23785f6732c3c514916bbd8928a06972" category="paragraph"><block ref="23785f6732c3c514916bbd8928a06972" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4eeea4d2c00cd83e33db552c5d9445b2" category="list-text">单击确认对话框中的 * 删除共享组 * 。</block>
   <block id="ffd152fc5917f52ef3b83a2479d7e43a" category="section-title">降低数据感知扫描速度</block>
-  <block id="7a68da847fdc7dec71b9f001ce567774" category="paragraph">数据扫描对存储系统和数据的影响可以忽略不计。但是，如果您担心即使影响很小，也可以将 Data sense 配置为执行 " 缓慢 " 扫描。启用后，所有数据源都会使用慢速扫描—您不能为单个工作环境或数据源配置慢速扫描。</block>
   <block id="83e4655bb04cddd049332fa141876018" category="admonition">扫描数据库时，扫描速度不能降低。</block>
   <block id="534fda8c6840073b9aad1d6a07eb75ee" category="list-text">从 _Configuration_ 页面底部，向右移动滑块以激活慢速扫描。</block>
   <block id="9b896829aaf5dfc57d627f09890833f8" category="inline-image-macro">显示如何启用合规性扫描较慢的屏幕截图。</block>
@@ -32,9 +31,6 @@
   <block id="35f6be59ab1f3be265059cbd3545a2c5" category="paragraph">配置页面顶部指示已启用慢速扫描。</block>
   <block id="5b9fb0ae0b4de0994505f2df03117498" category="paragraph"><block ref="5b9fb0ae0b4de0994505f2df03117498" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8afeb311b4ff23155bae9b80ec79273f" category="list-text">您可以通过单击此消息中的 * 禁用 * 来禁用慢速扫描。</block>
-  <block id="5ee0f63f04b6fd8ec079b0d478106fe2" category="section-title">正在删除 Cloud Data sense 实例</block>
-  <block id="602c0f168f5130e35b0d30a889274cc5" category="paragraph">如果您不想再使用 Data sense ，可以删除 Cloud Data sense 实例。删除此实例还会删除索引数据所在的关联磁盘。</block>
-  <block id="a427a619de4af09b97757f735c05ecd9" category="list-text">转到云提供商的控制台并删除 Cloud Data sense 实例。</block>
   <block id="005b996ef864c5e5d692c055b435643b" category="paragraph">此实例名为 _CloudCompliance_ ，并与生成的哈希（ UUID ）串联在一起。例如： _CloudCompliance" — 16bb6564-38AD-4080-9a92 — 36f5fd2f71c7_</block>
   <block id="78c9db74003389abce5c88a2d5a79350" category="summary">Cloud Data sense 是 Cloud Manager 的一项数据管理服务，可对企业内部和云数据源和工作环境进行扫描，以映射和分类数据并识别私有信息。这有助于降低安全性和合规性风险，降低存储成本，并有助于您的数据迁移项目。</block>
   <block id="8bfe6344cf4da234d6389ef571fd8648" category="doc">了解 Cloud Data sense</block>
@@ -731,10 +727,8 @@
   <block id="6e30bf5f27ef24f35407940f36e6664a" category="paragraph">通过 " 调查 " 页面中的新筛选器，您可以轻松查看已分配标记的所有文件。</block>
   <block id="34872f144eacfe5c837131480f6e243a" category="paragraph">Cloud Data sense 可以在两种其他类型的文件中扫描个人身份信息（ Personal identifiable Information ， Pii ）： .dcm 和 .Dicom 。</block>
   <block id="fc15edce938be94b7835bbbb16d686b4" category="paragraph">已将 " 文件大小 " ， " 创建日期 " 和 " 上次修改日期 " 值添加到以 CSV 格式输出的报告中。创建日期也是一个新筛选器，可用于缩小调查页面搜索结果的范围。</block>
-  <block id="5057fdb214d9f3773bc386ba2aa1fcb0" category="section-title">2021 年 5 月 5 日</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="inline-link-macro">扫描使用 S3 协议的对象存储</block>
   <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link">MinIO 服务</block>
-  <block id="2195e52cb889f9b1ac4706eeeea03f1d" category="paragraph">Cloud Data sense 现在可以在文件中找到奥地利的 SSN 。</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">私有数据的类别</block>
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">如果您需要 Cloud Data sense 识别其他私有数据类型，例如其他国家 / 地区 ID 号或医疗保健标识符，请根据您的请求向 ng-contact-data-sense@netapp.com 发送电子邮件。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">个人数据的类型</block>
@@ -1162,11 +1156,6 @@
   <block id="03edddfdd703f81e66c3ec945cdf1ae4" category="list-text">单击 * 保存策略 * ，策略问题描述中将显示发送电子邮件的间隔。</block>
   <block id="adae64945c95a64a4e7460741eaad566" category="paragraph">现在，如果策略中有任何结果，则会发送第一封电子邮件，但前提是任何文件符合策略标准。通知电子邮件不会发送任何个人信息。此电子邮件指示存在与策略条件匹配的文件，并提供指向策略结果的链接。</block>
   <block id="e3aca2a1f52769c86959db59de5c8e57" category="section-title">编辑策略</block>
-  <block id="748ced29e31022654db753839aedd2f2" category="paragraph">您可以根据策略类型修改策略的某些部分：</block>
-  <block id="b680e735a9062785f9b3ea50ac1112fb" category="list-text">自定义策略—您可以修改 _Name_ ， _AIP_ ，是否发送电子邮件通知以及是否添加问题描述标签。</block>
-  <block id="86eee73ea0e272c0cd3f90d8203c6a0d" category="list-text">预定义策略—您只能修改是否发送电子邮件通知以及是否添加了 AIP 标签。</block>
-  <block id="97ffdfbf5e9deac597be1e5d4153f954" category="admonition">如果需要更改自定义策略的筛选器参数，则需要使用所需参数创建一个新策略，然后删除旧策略。</block>
-  <block id="b2c89d2794787a68bd6e7c963e8c9025" category="paragraph">要修改策略，请单击 * 编辑 * 按钮，在 _Edit Policy_ 页面上输入所做的更改，然后单击 * 保存策略 * 。</block>
   <block id="8a5b49145936e154af1faea833484a85" category="section-title">正在删除策略</block>
   <block id="725f2bee980781415fd1a5062a4c3e0c" category="paragraph">如果您不再需要创建的任何自定义策略，则可以将其删除。您无法删除任何预定义策略。</block>
   <block id="4f414b6a5ed633d6213d3e02617aa919" category="paragraph">要删除策略，请单击 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按钮，单击 * 删除策略 * ，然后在确认对话框中再次单击 * 删除策略 * 。</block>
@@ -1270,10 +1259,8 @@
   <block id="826ff42fce3b59aaac99a39a16e48c77" category="inline-link-macro">为文件分配用户</block>
   <block id="7f3e4f2b8ecea86e2f1c636c83d0be8a" category="list-text">您可以将此文件分配给 Cloud Manager 用户，以负责对该文件执行任何后续操作。请参见 <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="3f35cf889c11310542bc8d10e634400d" category="section-title">查看文件的权限</block>
-  <block id="e3231cf2e2415bcd0249cbb511e9a32b" category="paragraph">要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于 CIFS 共享， SharePoint 和 OneDrive 中的文件。</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">显示详细文件权限的屏幕截图。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4347b685b5c16d885cd8c8be71e60ada" category="paragraph">您可以单击某个用户或组的名称，此时将在 " 用户 / 组权限 " 筛选器中显示 " 调查 " 页面，并显示该用户或组的名称，以便您可以查看该用户或组有权访问的所有文件。</block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">了解如何执行此操作</block>
   <block id="776e05731889ae28ba97961b420d577f" category="paragraph">请注意，如果您看到的是 SID （安全标识符），而不是用户和组名称，则应将 Active Directory 集成到 Data sense 中。 <block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>。</block>
   <block id="c928af120c06b9565d871ba33db1c7f5" category="section-title">检查存储系统中是否存在重复文件</block>
@@ -1393,7 +1380,6 @@
   <block id="51c2d4938751d6c3f51457f19cc10961" category="list-text">输入要复制所有选定文件的 NFS 共享的名称，格式为 ` &lt;host_name&gt; ： /&lt;share_path&gt;` ，然后单击 * 复制 * 。</block>
   <block id="99177e3b96a67622c04b51dfdd5fec8f" category="paragraph">此时将显示一个对话框，其中包含复制操作的状态。</block>
   <block id="cc75424be9093c04dbea9cfae5ba1d31" category="inline-xref">操作状态窗格</block>
-  <block id="d52fbf3ceb54a191d6979856ec4a2aab" category="paragraph">您可以在中查看复制操作的进度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="577f7e077dfc06e3803431bf95bd8d3b" category="paragraph">请注意，您也可以在查看文件的元数据详细信息时复制单个文件。只需单击 * 复制文件 * 。</block>
   <block id="0847b25e23803d73ff0a2e412a366eef" category="inline-image-macro">屏幕截图显示了从 " 数据调查 " 页面中某个文件的元数据详细信息中选择的复制文件按钮。</block>
   <block id="fb1ff7732bccd8da11bd09f898a27956" category="paragraph"><block ref="fb1ff7732bccd8da11bd09f898a27956" category="inline-image-macro-rx" type="image"></block></block>
@@ -1415,7 +1401,6 @@
   <block id="a35070ddc55ef50caa6aec72156a840e" category="list-text">输入新卷的名称，然后单击 * FlexClone * 。</block>
   <block id="34f7fc61a9c74f5c37e24b622428b631" category="paragraph">此时将显示一个对话框，其中包含克隆操作的状态。</block>
   <block id="2fe40b402eb4dc28515dfbbf411e5e9e" category="paragraph">新的克隆卷将在与源卷相同的聚合中创建。</block>
-  <block id="b87a1e127824b80403e07e9d8a5a84d8" category="paragraph">您可以在中查看克隆操作的进度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="d25aba80994e98cacd011b113628101b" category="inline-link-macro">手动对卷启用扫描</block>
   <block id="871c824f9ea91b20e876e2d652878ef1" category="paragraph">如果在源卷所在的工作环境中启用了 Data sense 后，最初选择了 * 映射所有卷 * 或 * 映射并分类所有卷 * ，则 Data sense 将自动扫描新克隆的卷。如果最初未使用上述任一选项，则如果要扫描此新卷，则需要执行以下操作 <block ref="b0c3d20fcc917b1060451bc04147a024" category="inline-link-macro-rx"></block>。</block>
   <block id="61d5073996ba69d9a5b4108c7295351d" category="section-title">将源文件复制并同步到目标系统</block>
@@ -1470,7 +1455,6 @@
   <block id="fa916febf7aa4a958c6501999c66524c" category="paragraph"><block ref="fa916febf7aa4a958c6501999c66524c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="174a6c8e755b5a7f6259938ded9d4651" category="list-text">在按钮栏中，单击 * 删除 * 。</block>
   <block id="1db5d13f843879dd255fa015b1199eb9" category="list-text">由于删除操作是永久性的，因此您必须在后续的 _Delete File_ 对话框中键入 "* 永久删除 * " ，然后单击 * 删除文件 * 。</block>
-  <block id="043c72eeeca657a7a4144bcc32c8b64d" category="paragraph">您可以在中查看删除操作的进度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="73b79920d299fa15b37932692eeed2d3" category="paragraph">请注意，您也可以在查看文件的元数据详细信息时删除单个文件。只需单击 * 删除文件 * 。</block>
   <block id="78933a7726c13f608f7d7da25c47d184" category="inline-image-macro">屏幕截图显示了从 " 数据调查 " 页面中的文件元数据详细信息中选择的删除文件按钮。</block>
   <block id="1ae48305acc0dd19cfd8f7461fcc887a" category="paragraph"><block ref="1ae48305acc0dd19cfd8f7461fcc887a" category="inline-image-macro-rx" type="image"></block></block>
@@ -1481,9 +1465,7 @@
   <block id="31d61da3269b125b8a056a011eb7348b" category="list-text">选中 " 自动删除与此策略匹配的文件 " 复选框，然后键入 * 永久删除 * 以确认您希望此策略永久删除文件。</block>
   <block id="b18b5ed7ee8041b5b3352b045b657ed7" category="paragraph"><block ref="b18b5ed7ee8041b5b3352b045b657ed7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b7f492f36c4defa8b0e4d929c63c51cc" category="paragraph">新策略将显示在策略选项卡中。与策略匹配的文件将在策略运行时每天删除一次。</block>
-  <block id="6c22d0031e430efa4ca5b58a96c9aaec" category="paragraph">您可以在中查看已删除的文件列表 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="43ed2558da29e111d7b394e516d927d4" category="section-title">查看合规性操作的状态</block>
-  <block id="a62dfb18de7f3ea157530c125ea78d5f" category="paragraph">从 " 调查结果 " 窗格对多个文件运行操作时，例如删除 100 个文件，此过程可能需要一些时间。您可以在 _Action Status_ 窗格中监控这些异步操作的状态，以便了解它何时应用于所有文件。这样，您就可以查看已成功完成的操作，当前正在执行的操作以及失败的操作，以便诊断和修复任何问题。</block>
   <block id="402bab7d605cd8ea629df214c4351f69" category="paragraph">状态可以是：</block>
   <block id="8f3d10eb21bd36347c258679eba9e92b" category="list-text">已完成</block>
   <block id="c9413dd7682a45da9ecc9efa8cea47d7" category="list-text">正在进行中</block>
@@ -1521,7 +1503,6 @@
   <block id="3c6a08ac87f0c74657dbe6a08d65a90c" category="section-title">安装 Cloud Manager Connector</block>
   <block id="0b15d216816045a641af8ad6ef57304d" category="paragraph">如果您尚未在脱机内部站点上安装 Cloud Manager Connector ，<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 在脱机站点的 Linux 主机上。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">准备 Linux 主机系统</block>
-  <block id="0bd5d4f7389518a30e9e80093dacb333" category="list-text">操作系统： Red Hat Enterprise Linux 或 CentOS 8.0 或 8.1 版</block>
   <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">操作系统必须能够安装 Docker 引擎（例如，根据需要禁用 _firewalld_ 服务）</block>
   <block id="e73aeaebf87fd2ee4bfa7ec0d8dd7e26" category="list-text">磁盘： SSD ， 500 GiB 可在 / ，或上使用</block>
   <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">/opt 上提供 100 GiB</block>
@@ -2057,7 +2038,6 @@
   <block id="338bab1be2b874ad2e6906e8c71283d5" category="paragraph">Cloud Data sense 安装程序将完成软件包， Docker 的安装并注册安装。安装可能需要 10 到 20 分钟。</block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
   <block id="1a3dd42e7f140871b4724418e36e52fb" category="sidebar">Cloud Data sense 文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
@@ -2119,7 +2099,6 @@
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大利亚驾驶执照编号，澳大利亚医疗保健服务编号和澳大利亚护照编号的文件并对其进行分类。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">与 Data sense 集成的全局 Active Directory 服务器现在可以是 LDAP 服务器，而不是以前支持的 DNS 服务器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> 现在支持 Cloud Data sense 。现在，除了使用 NetApp 的 BYOL 许可证之外，您还可以使用此按需购买（ PAYGO ）订阅从部署在 Google Cloud 存储上的 Cloud Volumes ONTAP 系统扫描数据。</block>
-  <block id="454fdd43498530d6ceef83652c11b91c" category="paragraph">现在，使用时支持扫描存储在 Azure Blob 上的数据<block ref="af0f5559fdeef481a290adb52cf012ec" category="inline-link-rx"></block>。请参见 <block ref="53ed5724ec3c5650162def279afa5e15" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">澳大利亚 TFN （税务文件编号）</block>
   <block id="e1ae59ed032376d2ab05147c6442f610" category="cell">澳大利亚驱动程序许可证编号</block>
   <block id="67863eec6ed398cda366fe555c1746bd" category="cell">澳大利亚医疗保健计划编号</block>
@@ -2220,8 +2199,6 @@
   <block id="8152326061d8b3d329ba2607a09b0fa1" category="section-title">Data sense 可以为组织的文件添加自定义标记</block>
   <block id="c832a419d50a23d5a24e8b88cb7b1f44" category="section-title">可以扫描 .dcm 和 .Dicom 文件</block>
   <block id="831cb0c03277fa9f02db351f7b681988" category="section-title">Data sense 现在可跟踪文件的其他属性</block>
-  <block id="a201b1b21bb34cfc3cf0328307173ba5" category="section-title">能够扫描存储在 Azure Blob 上的数据</block>
-  <block id="a991dfa1931f18e122d99da7c642e9fe" category="section-title">其他类型的个人数据可通过 Data sense 来识别</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">数据感知软件必须在满足特定操作系统要求， RAM 要求，软件要求等要求的主机上运行。与其他应用程序共享的主机不支持数据感知 - 此主机必须是专用主机。</block>
   <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">/tmp 上 5 GiB</block>
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL 许可证注意事项</block>
@@ -2234,7 +2211,6 @@
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">您可以随时使用此页面中提供的 " 文件哈希 " 值并直接在 " 调查 " 页面中输入此值以搜索特定的重复文件，也可以在策略中使用此值。</block>
   <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">支持在非公开站点中部署时扫描 OneDrive 和 SharePoint 数据</block>
   <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">您需要允许访问以下端点。</block>
-  <block id="db6cb8c8f4488e129ed6809bb11b1ac6" category="paragraph">如果您已在无法访问 Internet 的内部站点中的主机上部署 Cloud Data sense ，则现在可以从 OneDrive 帐户或 SharePoint 帐户扫描本地数据。<block ref="f6e82e062f347b1008c89c76ae485574" category="inline-link-rx"></block></block>
   <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint 和 OneDrive 的特殊要求</block>
   <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">如果您需要非常安全的 Cloud Manager 安装，但也希望从 OneDrive 帐户或 SharePoint 帐户扫描本地数据，则可以使用 Data sense 脱机安装程序并提供对一些选定端点的 Internet 访问。请参见 <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> 了解详细信息。</block>
   <block id="83925eb41f224ab078a6ede41fce2ce8" category="list-text">在某些关键策略返回结果时向 Cloud Manager 用户发送电子邮件警报</block>
@@ -2373,14 +2349,11 @@
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">数据调查报告</block>
   <block id="f6ba29512f0eaabde0c49365c8ab9bd2" category="inline-link-macro">了解有关数据调查页面的更多信息</block>
   <block id="517748e2f135f076ee74e5741d804b66" category="paragraph">数据调查报告是数据调查页面内容的下载。 <block ref="777485da66bf4538c99c96042630b627" category="inline-link-macro-rx"></block>。</block>
-  <block id="b5d621c6c64f465c6c100d14976a8e1e" category="paragraph">您可以将报告保存在本地计算机上为.CSV文件；该文件最多可包含5、000行数据。如果Data sense正在扫描数据库表(结构化数据)和文件(非结构化数据)、则最多可以下载两个.CSV报告。</block>
   <block id="44ef9b305f89e2a0007a9f26dc30474e" category="section-title">生成数据调查报告</block>
   <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">在数据调查页面中、单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
-  <block id="8d31baf0bada1d29024ba5af3df0159a" category="paragraph">此时将显示一条消息、指出正在下载此报告。</block>
   <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">每个数据调查报告中包含的内容</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">*非结构化文件数据报告*包含有关文件的以下信息：</block>
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">*结构化数据报告*包含有关数据库表的以下信息：</block>
-  <block id="f84071b5266f40a8c168762081f3a7eb" category="paragraph">*注：*有关文件夹的信息当前在报告中不可用。</block>
   <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
   <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">增加了对扫描Google Drive帐户中数据的支持</block>
   <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">了解如何扫描Google Drive帐户</block>
@@ -2407,9 +2380,7 @@
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">请注意，您可以 <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> 如果您不想再扫描SharePoint帐户中的任何用户数据。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您当前无法更改大于 30 MB 的文件中的标签。对于OneDrive、SharePoint和Google Drive帐户、最大文件大小为4 MB。</block>
   <block id="ccff7c05ce1ff2ff0bafe406c61338f6" category="paragraph"><block ref="ccff7c05ce1ff2ff0bafe406c61338f6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="27aec93c5860a4d3afd02f9391f5d2fb" category="paragraph">此外、您还可以单击 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 查看属于该组的用户列表。</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以筛选调查页面的内容，以便仅显示要查看的结果。这是一项功能非常强大的功能、因为在对数据进行细化后、您可以使用页面顶部的按钮栏执行各种操作、包括复制文件、移动文件、向文件添加标记或AIP标签等。</block>
-  <block id="1fab049254ef848d8968883ce41a2b77" category="paragraph">如果要在优化页面内容后将其作为报告下载、请单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 用于保存.CSV文件的按钮。</block>
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">选择一个或多个策略。开始 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看现有策略列表并创建您自己的自定义策略。</block>
   <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">选择一个或多个用户名和/或组名称、或者输入部分名称</block>
   <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">选择 ... <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 分配给文件的</block>
@@ -2450,7 +2421,6 @@
   <block id="9a1e694b1bf5a642eacf71ea21eede63" category="inline-link-macro">从Data sense中删除Google Drive帐户</block>
   <block id="e6fef5621a9e0deea941bde5d1ac51eb" category="paragraph">由于只有一个用户的Google Drive文件属于一个Google Drive帐户、因此、如果要停止扫描用户的Google Drive帐户中的文件、则应执行此操作 <block ref="50340a10fcfa586f2410201e1b5bd674" category="inline-link-macro-rx"></block>。</block>
   <block id="c4022fe65a9bea007e119f4d38ca5b82" category="paragraph">不支持从数据库架构、OneDrive帐户、SharePoint帐户、Google Drive帐户、Amazon S3帐户、 或使用简单存储服务(S3)协议的对象存储。</block>
-  <block id="1b40edca75269e2cab8c610622d15344" category="summary">如果需要、您可以阻止Cloud Data sense扫描一个或多个工作环境、数据库、文件共享组、OneDrive帐户、Google Drive帐户、 或SharePoint帐户。如果您不再希望在工作环境中使用 Data sense ，也可以删除 Cloud Data sense 实例。</block>
   <block id="6bd1beae17e48797805a36af79f55549" category="section-title">从Cloud Data sense中删除OneDrive、SharePoint或Google Drive帐户</block>
   <block id="1b0b7f0671ee5b3c52423f0719388b6e" category="paragraph">如果您不再需要从某个OneDrive帐户、特定SharePoint帐户或Google Drive帐户扫描用户文件、则可以从Cloud Data sense界面删除此帐户并停止所有扫描。</block>
   <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">从 _Configuration_ 页面中，单击 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按钮、然后单击*删除OneDrive帐户*、*删除SharePoint帐户*或*删除Google Drive帐户*。</block>
@@ -2472,4 +2442,114 @@
   <block id="234e430c736f07d10569c360fb740db6" category="cell">选择数据以及文件夹/共享中的权限类型</block>
   <block id="24f81a8dd0e927be2bf9fb46e2588281" category="paragraph">请注意、"目录"级别当前不支持按钮栏和策略中提供的操作。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">添加用户文件所在的Google Drive帐户。如果要扫描多个用户的文件、则需要对每个用户运行此步骤。</block>
+  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
+  <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">现在、您可以从数据调查页面下载结果、并将其作为.json报告</block>
+  <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">请参见如何从"数据调查"页面创建报告</block>
+  <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">在"数据调查"页面中筛选数据后、除了将数据保存到本地系统上的.CSV文件之外、您还可以将数据另存为可导出到NFS共享的.JSON文件中的报告。确保Data sense具有正确的导出访问权限。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
+  <block id="bef8207d9128cb7b1a5dc68939fc3d45" category="section-title">可以从Data sense UI卸载Data sense</block>
+  <block id="4aa7333b6753545c6a6c04dfb41b9866" category="paragraph">您可以卸载Data sense以从主机中永久删除软件、如果部署了云、则删除部署了Data sense的虚拟机/实例。删除此实例将永久删除Data sense已扫描的所有索引信息。<block ref="3da12a48df084f38bafa988bc8e77bd7" category="inline-link-rx"></block>。</block>
+  <block id="d96d07db10c050adfb5fed7e3d885b82" category="section-title">现在、可以使用审核日志记录来跟踪Data sense已执行操作的历史记录</block>
+  <block id="1ce49760bcdac502d41fb1e9e547086b" category="paragraph">审核日志可跟踪Data sense对所有工作环境中的文件以及Data sense正在扫描的数据源执行的管理活动。活动可以是由用户生成的(删除文件、创建策略等)、也可以是由策略生成的(自动向文件添加标签、自动删除文件等)。</block>
+  <block id="f5678b0269d5a9952a36966b56ab8f2e" category="inline-link">查看有关审核日志的更多详细信息</block>
+  <block id="d96e8ae6f880fe9b4d4de06b59a2128b" category="paragraph"><block ref="a09465601260c6db487e05cfd3d2ec87" category="inline-link-rx"></block>。</block>
+  <block id="a74d72e2c5ed113941ee600287aaa999" category="section-title">新的筛选器用于在"数据调查"页面中输入敏感标识符的数量</block>
+  <block id="3c5d93e6c38bd86146cef63658df62d2" category="paragraph">通过"标识符数量"筛选器、您可以列出具有一定数量的敏感标识符的文件、包括个人数据和敏感个人数据。您可以选择1-10或501到1000等范围、以便仅查看包含该数量的敏感标识符的文件。</block>
+  <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">现在、您可以编辑已创建的现有策略</block>
+  <block id="61e409921fe798c5667689af4656a112" category="inline-link">请参见如何编辑策略</block>
+  <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">如果您需要更改过去创建的自定义策略、现在可以编辑该策略、而不是创建新策略。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
+  <block id="1f50cc006f0a9aa5fa08f3f58b10bf1d" category="paragraph">如果您已在无法访问 Internet 的内部站点中的主机上部署 Cloud Data sense ，则现在可以从 OneDrive 帐户或 SharePoint 帐户扫描本地数据。 <block ref="8c0c83431a0c54e3e158fb0a6b366a6d" category="inline-link-macro-rx"></block></block>
+  <block id="a26fd963c8509a271edf19a08fc0d3ae" category="list-text">操作系统：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版</block>
+  <block id="fbbd4044d95d7d79fb98ebd8d7daf546" category="summary">如果需要、您可以阻止Cloud Data sense扫描一个或多个工作环境、数据库、文件共享组、OneDrive帐户、Google Drive帐户、 或SharePoint帐户。</block>
+  <block id="a80767bb4322f81d8b7bd0b15673f6ab" category="summary">您可以卸载Data sense软件以解决问题或从主机中永久删除该软件。删除此实例还会删除索引数据所在的关联磁盘—所有已扫描的数据感知信息都将被永久删除。</block>
+  <block id="9cd2794f7afcdacb42a1ab6334e60324" category="doc">卸载Cloud Data sense</block>
+  <block id="6775b9f23287b6402bc8411ab5b11d92" category="paragraph">您需要使用的步骤取决于您是在云中还是在内部主机上部署了Data sense。</block>
+  <block id="3325b8b31e1f0276d3f3c68710c053ca" category="section-title">从云部署中卸载Data sense</block>
+  <block id="117243dba6c9c06c6c248291c96b2528" category="paragraph">如果您不想再使用Data sense、可以从云提供商卸载并删除Cloud Data sense实例。</block>
+  <block id="b8e5adfb411b3f965688d14300f72fe8" category="list-text">在Data sense页面顶部、单击 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按钮、然后单击*卸载数据感知*。</block>
+  <block id="d05a8f1c218a9404fb6bc0b36df7780d" category="inline-image-macro">用于卸载Data sense软件的按钮的屏幕截图。</block>
+  <block id="a6baf0432e96f26b75d936e4d60a595e" category="paragraph"><block ref="a6baf0432e96f26b75d936e4d60a595e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b6d077046b2cf0c110fa9676e30656f1" category="list-text">在_卸 载数据感知对话框中、键入*卸载*确认要删除实例以及所有关联数据、然后单击*卸载*。</block>
+  <block id="8a129f2a844adcda53d83e0efbb2042c" category="paragraph">请注意、您也可以转到云提供商的控制台并从其中删除Cloud Data sense实例。此实例名为 _CloudCompliance_ ，并与生成的哈希（ UUID ）串联在一起。例如： _CloudCompliance" — 16bb6564-38AD-4080-9a92 — 36f5fd2f71c7_</block>
+  <block id="ab908ccd0c2e8ea5774ac96a839d9ca4" category="section-title">从内部部署卸载Data sense</block>
+  <block id="14d42ec9da514e9d5a8e667c07121542" category="paragraph">如果您不再需要使用Data sense、或者您的问题描述 需要重新安装、则可以从主机卸载Data sense。</block>
+  <block id="9fa93379f19a53edba45b6ad3485c2ec" category="list-text">在_卸 载数据感知对话框中、键入*卸载*确认要清除所有配置信息、然后单击*卸载*。</block>
+  <block id="f5778aefaac6fff25d1b42554bc3eb10" category="list-text">要从主机完成卸载、请在主机上运行卸载脚本、例如：</block>
+  <block id="7698c6686eb8c7fbf683f3a1e915967f" category="paragraph">要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于CIFS共享、SharePoint和OneDrive中的数据。</block>
+  <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">您可以单击 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 查看属于该组的用户列表。</block>
+  <block id="0e7d2f821010d49ba7fdedf5b66839be" category="paragraph">此外、您还可以单击用户或组的名称、此时将显示调查页面、并在"用户/组权限"筛选器中填充该用户或组的名称、以便您可以查看该用户或组有权访问的所有文件。</block>
+  <block id="0dde885c45d0ef5ba59d628be1651196" category="inline-link-macro">有关数据调查报告的详细信息、请访问此处</block>
+  <block id="d0db8780768b860617a4252d66600fdb" category="paragraph">如果要在优化页面内容后将其作为报告下载、请单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按钮。您可以将报告本地保存为.CSV文件(最多可包含5、000行数据)或导出到NFS共享的.json文件(最多可包含不限数量的行)。 <block ref="94b4ac215f06d804e337d419fce0c8e4" category="inline-link-macro-rx"></block>。</block>
+  <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">标识符数量</block>
+  <block id="5eea9611e0978b939581b9bb18ff1a29" category="cell">选择每个文件检测到的敏感标识符范围。包括个人数据和敏感个人数据。</block>
+  <block id="9774801e5b642078494706b6a4b33bd0" category="paragraph">您可以在中查看复制操作的进度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="a0f66640fa5131ddb32f4ddcbd1d9281" category="paragraph">您可以在中查看克隆操作的进度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="1fdb52ff740ba099a079361368705733" category="paragraph">您可以在中查看删除操作的进度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="91411654c19db8fe1770ccfce29af494" category="paragraph">您可以在中查看已删除的文件列表 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="ac8bfe24ca06e9a43f31e7975b6980a8" category="paragraph">您可以修改先前创建的现有策略的任何条件。如果要更改查询(使用筛选器定义的项)以添加或删除某些参数、则此功能尤其有用。</block>
+  <block id="06e09be9c5d10de07a221aa29c84e398" category="paragraph">请注意、对于预定义策略、您只能修改是否发送电子邮件通知以及是否添加AIP标签。不能更改任何其他值。</block>
+  <block id="a12113b6b49f31212d0614b3ea69ea2b" category="list-text">在策略列表页面中、单击要更改的策略的*编辑*。</block>
+  <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">显示如何对现有策略启动编辑的屏幕截图。</block>
+  <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9edd844856e16adcca10bdc9965cd880" category="list-text">如果您只想更改此页面上的项(名称、问题描述 、是否发送电子邮件通知以及是否添加了AIP标签)、请进行更改并单击*保存策略*。</block>
+  <block id="d0cb19a0fd724606f26b87b211d86b49" category="paragraph">如果要更改已保存查询的筛选器、请单击*编辑查询*。</block>
+  <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">在编辑策略页面上选择编辑查询按钮的屏幕截图。</block>
+  <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f83e3b5da3e9770bafefd94e5a39763" category="list-text">在定义该查询的调查页面中、通过添加、删除或自定义筛选器来编辑查询、然后单击*保存更改*。</block>
+  <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">显示如何通过更改筛选器设置来编辑查询的屏幕截图。</block>
+  <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">策略将立即更改。为该策略定义的用于发送电子邮件、添加AIP标签或删除文件的任何操作都将在下一个内部发生。</block>
+  <block id="f7ed3633a3e848b0d67caa9326d256b6" category="summary">Data sense会记录对Data sense正在扫描的所有工作环境和数据源中的文件执行的管理活动。您可以查看Data sense审核日志文件的内容、也可以下载这些内容、以查看发生了哪些文件更改以及何时发生更改。</block>
+  <block id="5de1b662853ab92b885225780d3125b7" category="doc">审核数据感知操作的历史记录</block>
+  <block id="f8563669b8d53fea23814d12a98674cd" category="paragraph">例如、您可以查看发出的请求、请求的时间以及详细信息、例如删除文件时的源位置或移动文件时的源和目标位置。</block>
+  <block id="f4d44f4e933c52507fc1f60eb487d44a" category="section-title">日志文件内容</block>
+  <block id="787cbeccb975d71260f61cb0fbe84553" category="paragraph">审核日志中的每一行都包含以下格式的信息：</block>
+  <block id="727fb114deba541b53a0b54311e03930" category="paragraph">`&lt;完整日期&gt;__状态&gt;__ datasens_audit_logger _&lt;模块&gt;_ 0 _从设备&lt;设备路径&gt;中删除文件&lt;完整文件路径&gt;-&lt;结果&gt;`</block>
+  <block id="5e6b85294dad6f04a041aa32199d996d" category="list-text">日期和时间—事件的完整时间戳</block>
+  <block id="79480e26f983c197c4338ae916966c93" category="list-text">status—信息、警告</block>
+  <block id="8c5560001ce7d874ad9b883caee72f9c" category="list-text">操作类型(删除、复制、移动、创建策略、更新策略、 下载JSON报告等)</block>
+  <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">文件名(如果操作与文件相关)</block>
+  <block id="b5afb88a144b5f1d8fef11e9d449b1ed" category="list-text">操作的详细信息—已执行的操作：取决于操作</block>
+  <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">Policy name</block>
+  <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">for move—源和目标</block>
+  <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">对于copy—源和目标</block>
+  <block id="9291a80cf17849a4539e082f526f27ad" category="list-text">标记—标记名称</block>
+  <block id="f23528dfcdf994100f2eae046bc926bb" category="list-text">用于assign to—用户名</block>
+  <block id="a9092ee7bb29e06d9e8627660b37d08b" category="list-text">电子邮件警报—电子邮件地址/帐户</block>
+  <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">例如、日志文件中的以下行显示复制操作成功、复制操作失败。</block>
+  <block id="4892afff6c12a31702739804f9402dd2" category="section-title">访问日志文件</block>
+  <block id="d59821cfb2e317baf0245fb19951e0ab" category="paragraph">审核日志位于Data sense计算机上的：`/opt/netapp/audit_logs/&lt;date&gt;/DataSION_audit_log_&lt;date&gt;_&lt;process_name&gt;.log`</block>
+  <block id="e5eca4fc7ad5570fad3191bed0884198" category="paragraph">对于内部部署、您可以直接导航到日志文件。</block>
+  <block id="98f328f96d0161df06aca21d942ebe0f" category="paragraph">在云中部署Data sense时、您可以通过SSH连接到Data sense实例。您可以通过输入用户和密码或使用在Cloud Manager Connector安装期间提供的SSH密钥通过SSH连接到系统。SSH命令为：</block>
+  <block id="68949c94f1832ab05cf85f6b69ec229e" category="list-text">= ssh身份验证密钥的位置</block>
+  <block id="6201afe97e09ec3e016aaa1892aba5f8" category="list-text">&lt;计算机用户&gt;：</block>
+  <block id="00652c6d951c09819e4a6a53b108211b" category="list-text">对于AWS =使用&lt;EC2-user&gt;</block>
+  <block id="cb993b12f83c5591a219738eee794717" category="list-text">对于Azure：使用为Cloud Manager实例创建的用户</block>
+  <block id="d2086bc9ec16fb03f22bf35d5eba0661" category="list-text">对于GCP：使用为Cloud Manager实例创建的用户</block>
+  <block id="e472530054de00e342edd7e4c55b3cbb" category="list-text">&lt;data sense IP&gt;=虚拟机实例的IP地址</block>
+  <block id="3ca10cbf1786d683696248daeef7a67c" category="inline-link">端口和安全组</block>
+  <block id="ee12d73176832fa8b8e8c95cacc10226" category="paragraph">请注意、您需要修改安全组入站规则才能访问系统。请参见<block ref="5475739789a5b3429571b56a0421c3e8" category="inline-link-rx"></block> 有关详细信息 ...</block>
+  <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">从 " 调查结果 " 窗格对多个文件运行操作时，例如删除 100 个文件，此过程可能需要一些时间。您可以在"操作状态"窗格中监控这些异步操作的状态、以便知道何时将其应用于所有文件。</block>
+  <block id="70669aa10fb7138a5de7f7526f548131" category="paragraph">从 " 调查结果 " 窗格对多个文件运行操作时，例如删除 100 个文件，此过程可能需要一些时间。您可以在 _Action Status_ 窗格中监控这些异步操作的状态，以便了解它何时应用于所有文件。</block>
+  <block id="a5129dfbdf0dc4588d520f42de3004dd" category="paragraph">这样，您就可以查看已成功完成的操作，当前正在执行的操作以及失败的操作，以便诊断和修复任何问题。</block>
+  <block id="0b11e28340112432b7a51a8bf0bb5fbf" category="paragraph">您可以将报告保存到本地计算机、作为.CSV文件(最多可包含5、000行数据)或导出到NFS共享的.json文件(最多可包含不限数量的行)。如果Data sense正在扫描文件(非结构化数据)、目录(文件夹和文件共享)或数据库(结构化数据)、则最多可以下载三个报告文件。</block>
+  <block id="1f48130430181607c67c25cf69b5768e" category="paragraph">导出到文件共享时、请确保Data sense具有正确的导出访问权限。</block>
+  <block id="038235769c3322b247e85f9bc8d7b5da" category="list-text">选择要下载.CSV报告还是.JSON数据报告、然后单击*下载报告*。</block>
+  <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">包含多个选项的Download调查报告页面的屏幕截图。</block>
+  <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="baa6537e5347accba4142c762df4cdf0" category="paragraph">选择.json报告时、请以`&lt;host_name&gt;：/&lt;share_path&gt;`格式输入要下载报告的NFS共享的名称。</block>
+  <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">此时将显示一条消息、指出正在下载报告。</block>
+  <block id="2bbb59657134248b81caacac241c5f02" category="paragraph">您可以在中查看JSON报告生成的进度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8cb8a6e0c4d4366f74cd4f0b6f61a0f6" category="paragraph">*非结构化目录数据报告*包含有关文件夹和文件共享的以下信息：</block>
+  <block id="76cbd87b5322b897c255d541785ad658" category="list-text">存储库(例如、文件夹或文件共享)</block>
+  <block id="45fe1c24aae6844389ce04f26df40a13" category="list-text">文件路径(目录名称)</block>
+  <block id="eed7cc7f64269eb19a98b58ae0d79b6f" category="list-text">发现时间</block>
+  <block id="e1b1adec6acf239fb7bfb9f392edd34d" category="list-text">打开权限</block>
+  <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="list-text">目录类型</block>
+  <block id="78e0e9962072075c2d4f339eb9afa286" category="summary">数据扫描对存储系统和数据的影响可以忽略不计。但是，如果您担心即使影响很小，也可以将 Data sense 配置为执行 " 缓慢 " 扫描。</block>
+  <block id="5108bf4a4931cd23ea67515ca4dda122" category="paragraph">启用后，所有数据源都会使用慢速扫描—您不能为单个工作环境或数据源配置慢速扫描。</block>
+  <block id="6e9e29956db54618d5e8ec6b0eff1198" category="sidebar">管理云数据感知</block>
+  <block id="de7c2221ebd4bb34920ea78443597b07" category="sidebar">查看数据感知操作的状态</block>
+  <block id="f97c31d47e6ac9d9ca09fb78ef2a60e9" category="sidebar">审核数据感知操作的历史记录</block>
+  <block id="92c1e8fd60a521cc7e363da6f67787e3" category="sidebar">降低数据感知扫描速度</block>
+  <block id="f6d825cab88ad7cdfab0c8987213dab8" category="sidebar">卸载Data sense</block>
 </blocks>

@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: task-view-compliance-actions.html 
+keywords: compliance, actions, view progress 
+summary: '从 " 调查结果 " 窗格对多个文件运行操作时，例如删除 100 个文件，此过程可能需要一些时间。您可以在"操作状态"窗格中监控这些异步操作的状态、以便知道何时将其应用于所有文件。' 
+---
+= 查看合规性操作的状态
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+从 " 调查结果 " 窗格对多个文件运行操作时，例如删除 100 个文件，此过程可能需要一些时间。您可以在 _Action Status_ 窗格中监控这些异步操作的状态，以便了解它何时应用于所有文件。
+
+这样，您就可以查看已成功完成的操作，当前正在执行的操作以及失败的操作，以便诊断和修复任何问题。
+
+状态可以是：
+
+* 已完成
+* 正在进行中
+* 已排队
+* 已取消
+* 失败
+
+
+请注意，您可以取消状态为 " 已排队 " 或 " 正在进行 " 的任何操作。
+
+.步骤
+. 在 Data sense UI 的右下角，您可以看到 * 操作状态 * 按钮 image:button_actions_status.png[""]。
+. 单击此按钮，将列出最近 20 个操作。
++
+image:screenshot_compliance_action_status.png["一个屏幕截图，用于在配置页面中显示最近 20 个操作及其状态。"]
+
+
+
+您可以单击某个操作的名称以查看与该操作对应的详细信息。

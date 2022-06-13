@@ -86,7 +86,7 @@ image:screenshot_compliance_copy_files_dialog.png["显示复制文件对话框�
 
 
 
-您可以在中查看复制操作的进度 <<Viewing the status of your compliance actions,操作状态窗格>>。
+您可以在中查看复制操作的进度 link:task-view-compliance-actions.html["操作状态窗格"]。
 
 请注意，您也可以在查看文件的元数据详细信息时复制单个文件。只需单击 * 复制文件 * 。
 
@@ -139,7 +139,7 @@ image:screenshot_compliance_clone_files_dialog.png["显示复制文件对话框�
 
 新的克隆卷将在与源卷相同的聚合中创建。
 
-您可以在中查看克隆操作的进度 <<Viewing the status of your compliance actions,操作状态窗格>>。
+您可以在中查看克隆操作的进度 link:task-view-compliance-actions.html["操作状态窗格"]。
 
 如果在源卷所在的工作环境中启用了 Data sense 后，最初选择了 * 映射所有卷 * 或 * 映射并分类所有卷 * ，则 Data sense 将自动扫描新克隆的卷。如果最初未使用上述任一选项，则如果要扫描此新卷，则需要执行以下操作 link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["手动对卷启用扫描"]。
 
@@ -273,7 +273,7 @@ image:screenshot_compliance_delete_multi_files.png["显示如何从数据调查�
 . 由于删除操作是永久性的，因此您必须在后续的 _Delete File_ 对话框中键入 "* 永久删除 * " ，然后单击 * 删除文件 * 。
 
 
-您可以在中查看删除操作的进度 <<Viewing the status of your compliance actions,操作状态窗格>>。
+您可以在中查看删除操作的进度 link:task-view-compliance-actions.html["操作状态窗格"]。
 
 请注意，您也可以在查看文件的元数据详细信息时删除单个文件。只需单击 * 删除文件 * 。
 
@@ -307,31 +307,4 @@ image:screenshot_compliance_delete_files_using_policies.png["显示如何配置�
 
 新策略将显示在策略选项卡中。与策略匹配的文件将在策略运行时每天删除一次。
 
-您可以在中查看已删除的文件列表 <<Viewing the status of your compliance actions,操作状态窗格>>。
-
-
-
-== 查看合规性操作的状态
-
-从 " 调查结果 " 窗格对多个文件运行操作时，例如删除 100 个文件，此过程可能需要一些时间。您可以在 _Action Status_ 窗格中监控这些异步操作的状态，以便了解它何时应用于所有文件。这样，您就可以查看已成功完成的操作，当前正在执行的操作以及失败的操作，以便诊断和修复任何问题。
-
-状态可以是：
-
-* 已完成
-* 正在进行中
-* 已排队
-* 已取消
-* 失败
-
-
-请注意，您可以取消状态为 " 已排队 " 或 " 正在进行 " 的任何操作。
-
-.步骤
-. 在 Data sense UI 的右下角，您可以看到 * 操作状态 * 按钮 image:button_actions_status.png[""]。
-. 单击此按钮，将列出最近 20 个操作。
-+
-image:screenshot_compliance_action_status.png["一个屏幕截图，用于在配置页面中显示最近 20 个操作及其状态。"]
-
-
-
-您可以单击某个操作的名称以查看与该操作对应的详细信息。
+您可以在中查看已删除的文件列表 link:task-view-compliance-actions.html["操作状态窗格"]。

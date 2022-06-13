@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall-data-sense.html 
+keywords: remove, delete, stop, stop scans, stop scanning, cloud data sense, delete cloud data sense, terminate, deactivate, data sense 
+summary: 您可以卸载Data sense软件以解决问题或从主机中永久删除该软件。删除此实例还会删除索引数据所在的关联磁盘—所有已扫描的数据感知信息都将被永久删除。 
+---
+= 卸载Cloud Data sense
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以卸载Data sense软件以解决问题或从主机中永久删除该软件。删除此实例还会删除索引数据所在的关联磁盘—所有已扫描的数据感知信息都将被永久删除。
+
+您需要使用的步骤取决于您是在云中还是在内部主机上部署了Data sense。
+
+
+
+== 从云部署中卸载Data sense
+
+如果您不想再使用Data sense、可以从云提供商卸载并删除Cloud Data sense实例。
+
+. 在Data sense页面顶部、单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮、然后单击*卸载数据感知*。
++
+image:screenshot_compliance_uninstall.png["用于卸载Data sense软件的按钮的屏幕截图。"]
+
+. 在_卸 载数据感知对话框中、键入*卸载*确认要删除实例以及所有关联数据、然后单击*卸载*。
+
+
+请注意、您也可以转到云提供商的控制台并从其中删除Cloud Data sense实例。此实例名为 _CloudCompliance_ ，并与生成的哈希（ UUID ）串联在一起。例如： _CloudCompliance" — 16bb6564-38AD-4080-9a92 — 36f5fd2f71c7_
+
+
+
+== 从内部部署卸载Data sense
+
+如果您不再需要使用Data sense、或者您的问题描述 需要重新安装、则可以从主机卸载Data sense。
+
+. 在Data sense页面顶部、单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮、然后单击*卸载数据感知*。
++
+image:screenshot_compliance_uninstall.png["用于卸载Data sense软件的按钮的屏幕截图。"]
+
+. 在_卸 载数据感知对话框中、键入*卸载*确认要清除所有配置信息、然后单击*卸载*。
+. 要从主机完成卸载、请在主机上运行卸载脚本、例如：
++
+[source, cli]
+----
+uninstall.sh
+----
+

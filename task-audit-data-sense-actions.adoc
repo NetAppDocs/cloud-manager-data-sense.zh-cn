@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: task-audit-data-sense-actions.html 
+keywords: compliance, actions, view progress 
+summary: Data sense会记录对Data sense正在扫描的所有工作环境和数据源中的文件执行的管理活动。您可以查看Data sense审核日志文件的内容、也可以下载这些内容、以查看发生了哪些文件更改以及何时发生更改。 
+---
+= 审核数据感知操作的历史记录
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data sense会记录对Data sense正在扫描的所有工作环境和数据源中的文件执行的管理活动。您可以查看Data sense审核日志文件的内容、也可以下载这些内容、以查看发生了哪些文件更改以及何时发生更改。
+
+例如、您可以查看发出的请求、请求的时间以及详细信息、例如删除文件时的源位置或移动文件时的源和目标位置。
+
+
+
+== 日志文件内容
+
+审核日志中的每一行都包含以下格式的信息：
+
+`<完整日期>__状态>__ datasens_audit_logger _<模块>_ 0 _从设备<设备路径>中删除文件<完整文件路径>-<结果>`
+
+* 日期和时间—事件的完整时间戳
+* status—信息、警告
+* 操作类型(删除、复制、移动、创建策略、更新策略、 下载JSON报告等)
+* 文件名(如果操作与文件相关)
+* 操作的详细信息—已执行的操作：取决于操作
++
+** Policy name
+** for move—源和目标
+** 对于copy—源和目标
+** 标记—标记名称
+** 用于assign to—用户名
+** 电子邮件警报—电子邮件地址/帐户
+
+
+
+
+例如、日志文件中的以下行显示复制操作成功、复制操作失败。
+
+....
+2022-06-06 15:23:08,910 | INFO | datasense_audit_logger | es_scanned_file | 237 | 49 | Copy file /idanCIFS_share/data/dop1/random_positives.tsv from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) – SUCCESS
+2022-06-06 15:23:08,968 | WARNING | datasense_audit_logger | es_scanned_file | 239 | 153 | Copy file /idanCIFS_share/data/compliance-netapp.tar.gz from device 172.31.133.183 (type: SMB_SHARE) to device 172.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+....
+
+
+== 访问日志文件
+
+审核日志位于Data sense计算机上的：`/opt/netapp/audit_logs/<date>/DataSION_audit_log_<date>_<process_name>.log`
+
+对于内部部署、您可以直接导航到日志文件。
+
+在云中部署Data sense时、您可以通过SSH连接到Data sense实例。您可以通过输入用户和密码或使用在Cloud Manager Connector安装期间提供的SSH密钥通过SSH连接到系统。SSH命令为：
+
+ ssh -i <path to the ssh key> <machine user>@<datasense ip>
+* = ssh身份验证密钥的位置
+* <计算机用户>：
++
+** 对于AWS =使用<EC2-user>
+** 对于Azure：使用为Cloud Manager实例创建的用户
+** 对于GCP：使用为Cloud Manager实例创建的用户
+
+
+* <data sense IP>=虚拟机实例的IP地址
+
+
+请注意、您需要修改安全组入站规则才能访问系统。请参见 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#ports-and-security-groups["端口和安全组"^] 有关详细信息 ...

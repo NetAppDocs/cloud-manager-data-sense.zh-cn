@@ -141,15 +141,15 @@ image:screenshot_compliance_file_details.png["显示数据调查页面中文件�
 
 == 查看文件的权限
 
-要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于 CIFS 共享， SharePoint 和 OneDrive 中的文件。
+要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于CIFS共享、SharePoint和OneDrive中的数据。
 
 请注意，如果您看到的是 SID （安全标识符），而不是用户和组名称，则应将 Active Directory 集成到 Data sense 中。 link:task-add-active-directory-datasense.html["了解如何执行此操作"]。
 
 image:screenshot_compliance_permissions.png["显示详细文件权限的屏幕截图。"]
 
-您可以单击某个用户或组的名称，此时将在 " 用户 / 组权限 " 筛选器中显示 " 调查 " 页面，并显示该用户或组的名称，以便您可以查看该用户或组有权访问的所有文件。
+您可以单击 image:button_down_caret.png["注意"] 查看属于该组的用户列表。
 
-此外、您还可以单击 image:button_down_caret.png["注意"] 查看属于该组的用户列表。
+此外、您还可以单击用户或组的名称、此时将显示调查页面、并在"用户/组权限"筛选器中填充该用户或组的名称、以便您可以查看该用户或组有权访问的所有文件。
 
 
 
@@ -203,7 +203,7 @@ image:screenshot_cloud_compliance_filter.gif["显示如何筛选特定工作环�
 
 您可以筛选调查页面的内容，以便仅显示要查看的结果。这是一项功能非常强大的功能、因为在对数据进行细化后、您可以使用页面顶部的按钮栏执行各种操作、包括复制文件、移动文件、向文件添加标记或AIP标签等。
 
-如果要在优化页面内容后将其作为报告下载、请单击 image:button_download.png["下载按钮"] 用于保存.CSV文件的按钮。
+如果要在优化页面内容后将其作为报告下载、请单击 image:button_download.png["下载按钮"] 按钮。您可以将报告本地保存为.CSV文件(最多可包含5、000行数据)或导出到NFS共享的.json文件(最多可包含不限数量的行)。 link:task-generating-compliance-reports.html#data-investigation-report["有关数据调查报告的详细信息、请访问此处"]。
 
 image:screenshot_compliance_investigation_filtered.png["在调查页面中细化结果时可用筛选器的屏幕截图。"]
 
@@ -247,6 +247,9 @@ image:screenshot_compliance_investigation_filtered.png["在调查页面中细化
 
 
 | 敏感度级别 | 选择敏感度级别 
+
+
+| 标识符数量 | 选择每个文件检测到的敏感标识符范围。包括个人数据和敏感个人数据。 
 
 
 | 个人数据 | 选择 link:reference-private-data-categories.html#types-of-personal-data["个人数据的类型"^] 

@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: task-reduce-scan-speed.html 
+keywords: slow scans, reduce speed 
+summary: '数据扫描对存储系统和数据的影响可以忽略不计。但是，如果您担心即使影响很小，也可以将 Data sense 配置为执行 " 缓慢 " 扫描。' 
+---
+= 降低数据感知扫描速度
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+数据扫描对存储系统和数据的影响可以忽略不计。但是，如果您担心即使影响很小，也可以将 Data sense 配置为执行 " 缓慢 " 扫描。
+
+启用后，所有数据源都会使用慢速扫描—您不能为单个工作环境或数据源配置慢速扫描。
+
+
+TIP: 扫描数据库时，扫描速度不能降低。
+
+.步骤
+. 从 _Configuration_ 页面底部，向右移动滑块以激活慢速扫描。
++
+image:screenshot_slow_scan_enable.png["显示如何启用合规性扫描较慢的屏幕截图。"]
+
++
+配置页面顶部指示已启用慢速扫描。
+
++
+image:screenshot_slow_scan_disable.png["显示如何启用合规性扫描较慢的屏幕截图。"]
+
+. 您可以通过单击此消息中的 * 禁用 * 来禁用慢速扫描。
+
