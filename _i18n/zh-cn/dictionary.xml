@@ -648,7 +648,6 @@
   <block id="21118277527dde4297826bff350dbf36" category="admonition">Active Directory 凭据仅在第一个 CIFS DP 卷的 Storage VM 中注册，因此将扫描该 SVM 上的所有 DP 卷。驻留在其他 SVM 上的任何卷都不会注册 Active Directory 凭据，因此不会扫描这些 DP 卷。</block>
   <block id="9ef6e09ad71e21ce8a2bf770f33d9a48" category="summary">了解 Cloud Data sense 中的新增功能。</block>
   <block id="5eb06296e8f3d6ac67a2567f14c49b55" category="doc">Cloud Data sense 的新增功能</block>
-  <block id="f670023c78e0e3dbeb691779659d5049" category="section-title">2022 年 3 月 15 日</block>
   <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data sense 现在可以读取 OneDrive 帐户和 SharePoint 帐户中正在扫描的文件的权限。此信息显示在 " 调查 " 窗格中的文件详细信息以及 " 监管信息板 " 中的 " 打开权限 " 区域中。</block>
   <block id="d431283363f0e868742391138a4ffbd0" category="list-text">法语 INSEE — INSEE 代码是法国国家统计和经济研究所（ INSEE ）用来标识各种实体的数字代码。</block>
   <block id="7457180e95a424d146842587474ec483" category="list-text">密码—此信息通过查找字母数字字符串旁边的 "password" 一词的组合来使用接近验证来标识。找到的项目数将在合规性信息板的 " 个人结果 " 下列出。您可以使用筛选器 * 个人数据 &gt; 密码 * 在调查窗格中搜索包含密码的文件。</block>
@@ -1611,7 +1610,6 @@
   <block id="83eda4419a75a1183b65be5e1e951635" category="paragraph">Cloud Data sense 安装程序将完成软件包安装，并注册安装。安装可能需要 15 到 25 分钟。</block>
   <block id="ec8f27d568c4acb2dfb698669f1f9bc0" category="section-title">升级 Data sense 软件</block>
   <block id="c840103d2ed2c5f7278ba8cf28f45f9a" category="paragraph">由于 Data sense 软件会定期更新新功能，因此您应按照例行程序定期检查新版本，以确保您使用的是最新的软件和功能。您需要手动升级 Data sense 软件，因为没有 Internet 连接，无法自动执行升级。</block>
-  <block id="fa37bb19179b71af06bce755af1b96d1" category="list-text">数据感知软件一次可升级一个主要版本。例如，如果您安装了 1.9.x 版本，则只能升级到 1.10.x如果您有几个主要版本，则需要多次升级此软件。</block>
   <block id="6ecb62a68c1483e5e7f2d6eb6088821e" category="inline-link">请参见 Connector 升级步骤</block>
   <block id="f3f3a447ad50dc92c9c962b1bd43a5df" category="list-text">将软件包复制到非公开站点中安装了 Data sense 的 Linux 主机。</block>
   <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">解压缩主机上的软件包，例如：</block>
@@ -2094,7 +2092,6 @@
   <block id="38aabb48c7b00e0c5ef0ec27ca5a850d" category="paragraph"><block ref="38aabb48c7b00e0c5ef0ec27ca5a850d" category="inline-link-rx"></block></block>
   <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
-  <block id="c76a3316ed2cb0284c0ef1b126e8b3ff" category="section-title">2022 年 4 月 5 日</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看 Data sense 可以在您的数据中识别的所有类型的个人数据</block>
   <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大利亚驾驶执照编号，澳大利亚医疗保健服务编号和澳大利亚护照编号的文件并对其进行分类。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">与 Data sense 集成的全局 Active Directory 服务器现在可以是 LDAP 服务器，而不是以前支持的 DNS 服务器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
@@ -2354,7 +2351,6 @@
   <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">每个数据调查报告中包含的内容</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">*非结构化文件数据报告*包含有关文件的以下信息：</block>
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">*结构化数据报告*包含有关数据库表的以下信息：</block>
-  <block id="7d6adafb3c8bb3861e1f6a4ca4b68455" category="section-title">2022年5月11日</block>
   <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">增加了对扫描Google Drive帐户中数据的支持</block>
   <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">了解如何扫描Google Drive帐户</block>
   <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">现在、您可以将Google Drive帐户添加到Data sense中、以便扫描这些Google Drive帐户中的文档和文件。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
@@ -2442,7 +2438,6 @@
   <block id="234e430c736f07d10569c360fb740db6" category="cell">选择数据以及文件夹/共享中的权限类型</block>
   <block id="24f81a8dd0e927be2bf9fb46e2588281" category="paragraph">请注意、"目录"级别当前不支持按钮栏和策略中提供的操作。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">添加用户文件所在的Google Drive帐户。如果要扫描多个用户的文件、则需要对每个用户运行此步骤。</block>
-  <block id="f8c7ea9d64a54c9a1eb4c1cbc5ef066e" category="section-title">2022年6月12日</block>
   <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">现在、您可以从数据调查页面下载结果、并将其作为.json报告</block>
   <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">请参见如何从"数据调查"页面创建报告</block>
   <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">在"数据调查"页面中筛选数据后、除了将数据保存到本地系统上的.CSV文件之外、您还可以将数据另存为可导出到NFS共享的.JSON文件中的报告。确保Data sense具有正确的导出访问权限。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
@@ -2552,4 +2547,9 @@
   <block id="f97c31d47e6ac9d9ca09fb78ef2a60e9" category="sidebar">审核数据感知操作的历史记录</block>
   <block id="92c1e8fd60a521cc7e363da6f67787e3" category="sidebar">降低数据感知扫描速度</block>
   <block id="f6d825cab88ad7cdfab0c8987213dab8" category="sidebar">卸载Data sense</block>
+  <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日(1.13.1版)</block>
+  <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日(1.12.1版)</block>
+  <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日(1.11.1版)</block>
+  <block id="2d2a847fccc748834cee74d3441a948b" category="section-title">2022年3月15日(1.10.0版)</block>
+  <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">数据感知软件一次可升级一个主要版本。例如、如果您安装了1.1.1.x版、则只能升级到1.12.x如果您有几个主要版本，则需要多次升级此软件。</block>
 </blocks>

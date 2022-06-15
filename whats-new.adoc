@@ -18,7 +18,7 @@ summary: 了解 Cloud Data sense 中的新增功能。
 
 
 
-== 2022年6月12日
+== 2022年6月12日(1.13.1版)
 
 
 
@@ -56,7 +56,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 
-== 2022年5月11日
+== 2022年5月11日(1.12.1版)
 
 
 
@@ -90,7 +90,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 
 
-== 2022 年 4 月 5 日
+== 2022年4月5日(1.11.1版)
 
 
 
@@ -106,7 +106,7 @@ Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大�
 
 
 
-== 2022 年 3 月 15 日
+== 2022年3月15日(1.10.0版)
 
 
 

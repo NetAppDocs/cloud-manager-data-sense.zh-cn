@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-highlights.html 
-keywords: compliance, privacy, filter data, delete files, move files, copy files, clone files, sync files, data sense 
+keywords: compliance, privacy, filter data, delete files, move files, copy files, clone files, sync files, data sense, migration 
 summary: Cloud Data sense 为您提供了多种管理私有数据的方法。某些功能使您可以更轻松地为迁移数据做准备，而其他功能则允许您对数据进行更改。 
 ---
 = 管理私有数据
