@@ -83,6 +83,7 @@ Cloud Manager 中 Cloud Data 感知扫描的前 1 TB 数据是免费的。要在
 
 * 操作系统：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版
 +
+** 可以使用7.8或7.9版、但Linux内核版本必须为4.14或更高版本
 ** 操作系统必须能够安装 Docker 引擎（例如，根据需要禁用 _firewalld_ 服务）
 
 

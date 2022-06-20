@@ -212,6 +212,16 @@ Data sense 支持 NFS 3.x ， 4.0 和 4.1 以及 CIFS 1.x ， 2.0 ， 2.1 和 3.
 
 
 
+=== 在政府区域部署时是否存在任何限制？
+
+如果在政府区域(AWS GovCloud、Azure Gov或Azure DoD)中部署了Connector、则支持Cloud Data sense。以这种方式部署时、Data sense具有以下限制：
+
+* 无法扫描OneDrive帐户、SharePoint帐户和Google Drive帐户。
+* 无法集成Microsoft Azure信息保护(AIP)标签功能。
+
+
+
+
 === 如果在无法访问Internet的站点上安装Data sense、可以扫描哪些数据源？
 
 数据感知只能扫描内部站点本地数据源中的数据。此时、Data sense可以扫描"非公开"站点中的以下本地数据源：

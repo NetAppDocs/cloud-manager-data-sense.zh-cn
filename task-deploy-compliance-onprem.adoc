@@ -54,6 +54,10 @@ Cloud Manager 中 Cloud Data 感知扫描的前 1 TB 数据是免费的。要在
 
 * 在 AWS 中的 Cloud Volumes ONTAP ，适用于 ONTAP 的 Amazon FSx 或 AWS S3 存储分段中扫描数据时，您可以使用 AWS 中的连接器。
 * 在 Azure 或 Azure NetApp Files 中的 Cloud Volumes ONTAP 中扫描数据时，您可以使用 Azure 中的连接器。
++
+** 对于Azure NetApp Files 、必须将其部署在与要扫描的卷相同的区域中。
+
+
 * 在 GCP 的 Cloud Volumes ONTAP 中扫描数据时，您可以在 GCP 中使用连接器。
 
 
@@ -64,9 +68,6 @@ Cloud Manager 中 Cloud Data 感知扫描的前 1 TB 数据是免费的。要在
 如您所见，在某些情况下可能需要使用 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多个连接器"]。
 
 
-NOTE: 如果您计划扫描 Azure NetApp Files 卷，则需要确保将部署在与要扫描的卷相同的区域。
-
-
 
 == 准备 Linux 主机系统
 
@@ -74,6 +75,7 @@ NOTE: 如果您计划扫描 Azure NetApp Files 卷，则需要确保将部署在
 
 * 操作系统：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版
 +
+** 可以使用7.8或7.9版、但Linux内核版本必须为4.14或更高版本
 ** 操作系统必须能够安装 Docker 引擎（例如，根据需要禁用 _firewalld_ 服务）
 
 

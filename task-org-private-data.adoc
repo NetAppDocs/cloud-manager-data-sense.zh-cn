@@ -63,7 +63,7 @@ Cloud Data sense 支持以下文件类型中的 AIP 标签： .DOC ， .docx ，
 ====
 * 您当前无法更改大于 30 MB 的文件中的标签。对于OneDrive、SharePoint和Google Drive帐户、最大文件大小为4 MB。
 * 如果某个文件的标签不再存在于 AIP 中，则 Cloud Data sense 会将其视为一个无标签的文件。
-* 如果您已将 Data sense 实例部署在无法访问 Internet 的内部位置（也称为非公开站点），则 AIP 标签功能将不可用。
+* 如果您已在政府区域或无法访问Internet的内部位置(也称为非公开站点)部署Data sense、则AIP标签功能将不可用。
 
 
 ====

@@ -981,7 +981,6 @@
   <block id="297d1b6c4f0dca560e7de55a7695e6b4" category="paragraph">如果您已订阅，则可以管理 Cloud Data sense 正在扫描的文件中的 AIP 标签 <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。AIP 允许您通过将标签应用于内容来对文档和文件进行分类和保护。使用 Data sense ，您可以查看已分配给文件的标签，向文件添加标签以及在标签已存在时更改标签。</block>
   <block id="2473b4a68e8fb944fa5afe552e508d00" category="paragraph">Cloud Data sense 支持以下文件类型中的 AIP 标签： .DOC ， .docx ， .PDF ， .PPTX ， .XLS ， .XLSX 。</block>
   <block id="80b4732b42c9c04d16bcddade3a9f773" category="list-text">如果某个文件的标签不再存在于 AIP 中，则 Cloud Data sense 会将其视为一个无标签的文件。</block>
-  <block id="96f521b8aea6752795f47a3b35a11055" category="list-text">如果您已将 Data sense 实例部署在无法访问 Internet 的内部位置（也称为非公开站点），则 AIP 标签功能将不可用。</block>
   <block id="96238d4f93a120c69c563c428e826a69" category="section-title">在工作空间中集成 AIP 标签</block>
   <block id="1cf1610064af8e4e2f1e19dd3c88e17e" category="inline-link-macro">工作环境和数据源</block>
   <block id="88ba72e4480ca144a6e0a862060d4009" category="paragraph">在管理 AIP 标签之前，您需要通过登录到现有 Azure 帐户将 AIP 标签功能集成到 Cloud Data sense 中。启用后，您可以管理所有文件中的 AIP 标签 <block ref="64b3b5ab9e2ec3786a437d32b22f89c6" category="inline-link-macro-rx"></block> 在 Cloud Manager 工作空间中。</block>
@@ -1721,7 +1720,6 @@
   <block id="7ccfda55457e583d1d8c584d8a9ed7f6" category="paragraph">请注意，您也可以<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在网络或云中的 Linux 主机上。某些计划在内部安装 Data sense 的用户也可以选择在内部安装 Connector 。</block>
   <block id="267b476717c1665614f57e91725c67ff" category="inline-link">多个连接器</block>
   <block id="8e952431e2e27533e34593f63c959513" category="paragraph">如您所见，在某些情况下可能需要使用<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
-  <block id="1a83ca7115bf26c65d9d3182c4ef30fa" category="admonition">如果您计划扫描 Azure NetApp Files 卷，则需要确保将部署在与要扫描的卷相同的区域。</block>
   <block id="5de07b40dee2a8b07f30a0fd66bd33fa" category="section-title">查看前提条件</block>
   <block id="14689ae888aa02beef451d07d59a62a7" category="paragraph">在云中部署 Cloud Data sense 之前，请查看以下前提条件以确保您的配置受支持。</block>
   <block id="e8b81a3fe00f3db6bf029fe691d52b19" category="list-text">从 Cloud Data sense 启用出站 Internet 访问</block>
@@ -2552,4 +2550,12 @@
   <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日(1.11.1版)</block>
   <block id="2d2a847fccc748834cee74d3441a948b" category="section-title">2022年3月15日(1.10.0版)</block>
   <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">数据感知软件一次可升级一个主要版本。例如、如果您安装了1.1.1.x版、则只能升级到1.12.x如果您有几个主要版本，则需要多次升级此软件。</block>
+  <block id="fae289ef9204f7c3119e084615a6d53f" category="list-text">如果您已在政府区域或无法访问Internet的内部位置(也称为非公开站点)部署Data sense、则AIP标签功能将不可用。</block>
+  <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">对于Azure NetApp Files 、必须将其部署在与要扫描的卷相同的区域中。</block>
+  <block id="87ebc84b19af9756bbc43a1c3850a080" category="list-text">可以使用7.8或7.9版、但Linux内核版本必须为4.14或更高版本</block>
+  <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府区域支持</block>
+  <block id="1c8dc4f89ff17cff9b19b208d74ea4a3" category="paragraph">如果在政府区域(AWS GovCloud、Azure Gov或Azure DoD)中部署了Connector、则支持Cloud Data sense。以这种方式部署时、Data sense具有以下限制：</block>
+  <block id="b3478a494adde25715314b14559dd6a4" category="list-text">无法扫描OneDrive帐户、SharePoint帐户和Google Drive帐户。</block>
+  <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">无法集成Microsoft Azure信息保护(AIP)标签功能。</block>
+  <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">在政府区域部署时是否存在任何限制？</block>
 </blocks>
