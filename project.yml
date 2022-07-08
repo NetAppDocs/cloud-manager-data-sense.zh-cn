@@ -64,6 +64,8 @@ sidebar:
       url: "/task-org-private-data.html"
     - title: 管理私有数据
       url: "/task-managing-highlights.html"
+    - title: 更改扫描设置
+      url: task-managing-repo-scanning.html
     - title: 生成报告
       url: "/task-generating-compliance-reports.html"
     - title: 响应 DAR

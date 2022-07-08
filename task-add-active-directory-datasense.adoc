@@ -21,7 +21,7 @@ summary: 您可以将全局 Active Directory 与 Cloud Data sense 集成在一�
 此集成可在 Data sense 的以下位置提供追加信息 ：
 
 * 您可以使用 " 文件所有者 " link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["筛选器"] 并在 " 调查 " 窗格中查看文件元数据的结果。此文件所有者不包含 SID （安全标识符），而是使用实际用户名进行填充。
-* 您可以看到 link:task-controlling-private-data.html#viewing-permissions-for-files["完整文件权限"] 单击 " 查看所有权限 " 按钮时对每个文件执行的操作。
+* 您可以看到 link:task-controlling-private-data.html#viewing-permissions-for-files-and-directories["完整文件权限"] 单击"查看所有权限"按钮时对每个文件和目录执行此操作。
 * 在中 link:task-controlling-governance-data.html["监管信息板"]下，打开权限面板将显示有关数据的更详细信息。
 
 
@@ -38,7 +38,7 @@ Active Directory 与 Cloud Data sense 的集成可以识别以下数据源中的
 * Cloud Volumes ONTAP
 * Azure NetApp Files
 * 适用于 ONTAP 的 FSX
-* 非 NetApp CIFS 文件共享（不适用于 NFS 文件共享）
+* 非NetApp CIFS文件共享(非NFS文件共享)
 
 
 不支持从数据库架构、OneDrive帐户、SharePoint帐户、Google Drive帐户、Amazon S3帐户、 或使用简单存储服务(S3)协议的对象存储。
@@ -50,6 +50,8 @@ Active Directory 与 Cloud Data sense 的集成可以识别以下数据源中的
 在部署 Data sense 并对数据源激活扫描之后，您可以将 Data sense 与 Active Directory 集成。可以使用 DNS 服务器 IP 地址或 LDAP 服务器 IP 地址访问 Active Directory 。
 
 Active Directory 凭据可以是只读凭据，但提供管理员凭据可确保 Data sense 可以读取任何需要提升权限的数据。这些凭据存储在 Cloud Data sense 实例上。
+
+如果要确保数据感知分类扫描不会更改文件的"上次访问时间"、我们建议用户具有"写入属性"权限。如果可能、我们建议将Active Directory配置的用户设置为组织中有权访问所有文件的父组的一部分。
 
 .要求
 * 您必须已为公司中的用户设置 Active Directory 。
@@ -70,7 +72,7 @@ LDAP 服务器 IP 地址或多个 IP 地址
 
 * 以下端口必须为 Data sense 实例的出站通信打开：
 +
-[cols="15,15,25,25"]
+[cols="20,20,30,30"]
 |===
 | 协议 | Port | 目标 | 目的 
 

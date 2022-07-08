@@ -43,7 +43,7 @@ Cloud Data sense 提供报告，您可以使用这些报告更好地了解组织
 转到数据感知选项卡以生成报告。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 数据感知 * 。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*。
 . 单击 * 合规性 * ，然后单击 * 报告 * 下 * 隐私风险评估 * 旁边的下载图标。
 +
 image:screenshot_privacy_risk_assessment.gif["Cloud Manager 中的合规性选项卡的屏幕截图，其中显示了报告窗格，您可以在其中单击隐私风险评估。"]
@@ -122,7 +122,7 @@ Retention:: 上次修改文件的时间范围。这很有用，因为您不应�
 转到数据感知选项卡以生成报告。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 数据感知 * 。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*。
 . 单击 * 合规性 * ，然后单击 * 报告 * 下的 * PCI DSS 报告 * 旁边的下载图标。
 +
 image:screenshot_pci_dss.gif["Cloud Manager 中的合规性选项卡的屏幕截图，其中显示了报告窗格，您可以在其中单击隐私风险评估。"]
@@ -160,7 +160,7 @@ Retention:: 上次修改文件的时间范围。这很有用，因为运行状�
 转到数据感知选项卡以生成报告。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 数据感知 * 。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*。
 . 单击 * 合规性 * ，然后单击 * 报告 * 下的 * HIPAA 报告 * 旁边的下载图标。
 +
 image:screenshot_hipaa.gif["Cloud Manager 中的合规性选项卡的屏幕截图，其中显示了报告窗格，您可以在其中单击 HIPAA 。"]
@@ -190,7 +190,7 @@ Cloud Data sense 可生成 PDF 报告，您可以根据需要查看该报告并�
 转到数据感知选项卡以生成报告。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 数据感知 * 。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*。
 . 单击 * 监管 * ，然后单击监管信息板中的 * 完整数据映射概述报告 * 按钮。
 +
 image:screenshot_compliance_data_mapping_report_button.png["监管信息板的屏幕截图，显示如何启动数据映射报告。"]

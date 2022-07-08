@@ -108,7 +108,7 @@ link:task-deploy-cloud-compliance.html["在 Cloud Manager 中部署 Cloud Data s
 验证前提条件后，在 Amazon S3 上启用 Cloud Data sense 。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 画布 * 。
+. 从Cloud Manager左侧导航菜单中、单击*画布*。
 . 选择 Amazon S3 工作环境。
 +
 image:screenshot_s3_we.gif["Amazon S3 工作环境图标的屏幕截图"]

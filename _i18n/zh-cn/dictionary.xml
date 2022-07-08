@@ -293,7 +293,6 @@
   <block id="630b1746cba34ee88564bdc613bf0b35" category="paragraph">您可以通过从 Cloud Manager 顶部选择 * 帐户 * 下拉列表，然后单击您帐户旁边的 * 管理帐户 * 来查找 Cloud Manager 帐户 ID 。您的帐户 ID 位于概述选项卡中。</block>
   <block id="5926b237f59ca274742cde276b6a5bac" category="section-title">将 Cloud Data sense BYOL 许可证添加到您的帐户中</block>
   <block id="02c6444ad614e59dee7ae1689fab2801" category="paragraph">为 Cloud Manager 帐户购买 Cloud Data sense 许可证后，您需要将此许可证添加到 Cloud Manager 中才能使用 Data sense 服务。</block>
-  <block id="14e73879f741aacd67e792f34954460d" category="list-text">单击 * 所有服务 &gt; 数字电子钱包 &gt; 数据服务许可证 * 。</block>
   <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">单击 * 添加许可证 * 。</block>
   <block id="c1b2dc0798d3960e25b8a12c751f53ec" category="list-text">在 _Add License_ 对话框中，输入许可证信息并单击 * 添加许可证 * ：</block>
   <block id="7f7c5e4ae2c507e186a653433fed0cd3" category="list-text">如果您拥有数据感知许可证序列号并知道您的 NSS 帐户，请选择 * 输入序列号 * 选项并输入该信息。</block>
@@ -485,7 +484,6 @@
   <block id="1be367688fc23bb032651eb31109ed8b" category="paragraph">* 注意： * 扫描 S3 存储分段时，当前不支持在内部位置部署 Cloud Data sense 。</block>
   <block id="837c1bb1176f89b108bb8eed4314592a" category="section-title">在 S3 工作环境中激活 Data sense</block>
   <block id="5f276b0eb14937eeb24e212fa7a0e43b" category="paragraph">验证前提条件后，在 Amazon S3 上启用 Cloud Data sense 。</block>
-  <block id="61c2f2d570697060ba80bae6ffdd50f8" category="list-text">在 Cloud Manager 顶部，单击 * 画布 * 。</block>
   <block id="d65142db38828c0dd5d365061085a9bf" category="list-text">选择 Amazon S3 工作环境。</block>
   <block id="0935819aba236aea3b813f76e288f13a" category="inline-image-macro">Amazon S3 工作环境图标的屏幕截图</block>
   <block id="a3a4b47224ab5ffd3c2bd00fdf40f4ab" category="paragraph"><block ref="a3a4b47224ab5ffd3c2bd00fdf40f4ab" category="inline-image-macro-rx" type="image"></block></block>
@@ -550,7 +548,6 @@
   <block id="2b37397498157ed616fd415901df0835" category="paragraph">* 注意： * 扫描 Azure NetApp Files 卷时，当前不支持在内部位置部署云数据感知。</block>
   <block id="f77e8a45486f483464f5f52dca10d70c" category="section-title">在您的工作环境中实现云数据感知</block>
   <block id="20a452722d026aa77880a9fd88194b4f" category="paragraph">您可以在 Azure NetApp Files 卷上启用云数据感知。</block>
-  <block id="d270db2bb61d015b27718ed8c1f25b57" category="list-text">在 Cloud Manager 顶部，单击 * 数据感知 * ，然后选择 * 配置 * 选项卡。</block>
   <block id="b6599bf453dd513e01762c7781050350" category="inline-image-macro">部署 Cloud Data sense 实例后立即显示配置选项卡的屏幕截图。</block>
   <block id="3fa60157071f64285cbc6d2d32d19012" category="paragraph"><block ref="3fa60157071f64285cbc6d2d32d19012" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd786557a341a9cbd5fb1a642121a675" category="inline-link-macro">了解映射和分类扫描</block>
@@ -1125,7 +1122,6 @@
   <block id="255e1125d849f7edda6bed80ac46496e" category="inline-image-macro">从策略选项卡中选择调查特定策略的结果的屏幕截图。</block>
   <block id="81d6d5b017dce15ac441154a1942e517" category="paragraph"><block ref="81d6d5b017dce15ac441154a1942e517" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b0449a02f1a4c60439d939f1f9e382e5" category="section-title">创建自定义策略</block>
-  <block id="54493f05733c09f82465526928da246f" category="paragraph">您可以创建自己的自定义策略，为特定于您的组织的搜索提供结果。</block>
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">筛选 " 数据调查 " 页面中的数据</block>
   <block id="e79836025e6c80215ec3756e85223edb" category="list-text">在数据调查页面中，选择要使用的所有筛选器来定义搜索。请参见 <block ref="d1293e68d9fa9285793720fd1947772e" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="4383466aa7c287f23e7f4932fd00aaf2" category="list-text">按所需方式获取所有筛选器特征后，单击 * 从此搜索创建策略 * 。</block>
@@ -1203,7 +1199,6 @@
   <block id="c39a62af3ed5ce08e86086b818d3d335" category="paragraph">此外，如果您添加了要扫描的数据库服务器，则 _Data Fusion 功能允许您扫描文件，以确定这些文件或其他数据库中是否存在数据库中的唯一标识符。请参见 <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">个人数据表</block>
   <block id="0b89e2aeea46e7ca57ab15ff5bbc7f74" category="paragraph">对于某些类型的个人数据， Data sense 使用 _proximity validation_来 验证其结果。通过查找与所发现的个人数据相邻的一个或多个预定义关键字来进行验证。例如， Data sense 可识别美国如果在 SSN 旁边看到一个接近词，则将社会安全号（ SSN ）作为 SSN ，例如 _SSN_ 或 _社交 安全 _ 。 <block ref="62bae47b4917c28b4ad589ca12fe7ebd" category="inline-link-macro-rx"></block> 显示 Data sense 何时使用接近验证。</block>
-  <block id="df4c66c4f63f4c5e874acda3b86c5b2c" category="list-text">在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。</block>
   <block id="60ad0ad2112ed7d01c4169fe8dd4d46c" category="list-text">要调查所有个人数据的详细信息，请单击个人数据百分比旁边的图标。</block>
   <block id="819ca50f7f9d152780e0af73aca0ddf8" category="inline-image-macro">选择个人数据百分比的屏幕截图。</block>
   <block id="d09574e77dd26bea3b96a734447bbe75" category="paragraph"><block ref="d09574e77dd26bea3b96a734447bbe75" category="inline-image-macro-rx" type="image"></block></block>
@@ -1256,7 +1251,6 @@
   <block id="850dcc64352d6ec82fb2c15e439c169b" category="list-text">您可以为文件分配特定状态。请参见 <block ref="8a1b9fcafc24ba7d6db53f4a655335df" category="inline-link-macro-rx"></block> 了解详细信息。</block>
   <block id="826ff42fce3b59aaac99a39a16e48c77" category="inline-link-macro">为文件分配用户</block>
   <block id="7f3e4f2b8ecea86e2f1c636c83d0be8a" category="list-text">您可以将此文件分配给 Cloud Manager 用户，以负责对该文件执行任何后续操作。请参见 <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> 了解详细信息。</block>
-  <block id="3f35cf889c11310542bc8d10e634400d" category="section-title">查看文件的权限</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">显示详细文件权限的屏幕截图。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">了解如何执行此操作</block>
@@ -1427,7 +1421,6 @@
   <block id="f196c67b757c83b8c5a1d80a1da79e14" category="paragraph">您可以将 Data sense 正在扫描的源文件移动到任何 NFS 共享。NFS 共享不需要与 Data sense 集成（请参见 <block ref="29fc238c82f37afa6e56193b0cf6f5eb" category="inline-link-macro-rx"></block>）。</block>
   <block id="4ae80798b0ef194ea50cfe00aa1b363c" category="admonition">您无法移动驻留在数据库中的文件。</block>
   <block id="362922d3096f2a8f75a966c92ac6d984" category="paragraph">要移动文件，您必须具有帐户管理员或工作空间管理员角色。</block>
-  <block id="c571c996a76d770b0c1d1febba3ad20f" category="paragraph">移动文件要求 NFS 共享允许从 Data sense 实例进行访问。</block>
   <block id="cc7802d7dd00fcef6b110f6c11d254d0" category="list-text">在数据调查结果窗格中，选择要移动的一个或多个文件。</block>
   <block id="9ec28b3e8959ec52791e2484cca2dae5" category="inline-image-macro">显示如何从数据调查页面选择要移动的文件以及移动按钮的屏幕截图。</block>
   <block id="9c17966e66e119d1fcd44440de888f1b" category="paragraph"><block ref="9c17966e66e119d1fcd44440de888f1b" category="inline-image-macro-rx" type="image"></block></block>
@@ -1788,7 +1781,6 @@
   <block id="cee01e26d9873a492cd26708c55925af" category="paragraph">如果您要扫描可通过 Internet 访问的 Cloud Volumes ONTAP 和内部 ONTAP 系统，则可以 <block ref="c89857d519a71c77b0c6382714aad98b" category="inline-link-macro-rx"></block> 或 <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block>。</block>
   <block id="d333c08e9475c687b2f43af219ed2ef8" category="inline-link-macro">在无法访问 Internet 的同一内部位置部署 Cloud Data sense</block>
   <block id="bad250383d747755d4698187d23fbd63" category="paragraph">如果要扫描安装在无法访问 Internet 的非公开站点上的内部 ONTAP 系统，则需要执行以下操作 <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。这还要求 Cloud Manager Connector 部署在同一内部位置。</block>
-  <block id="f947968927432b4644f18d2ac33b09e9" category="paragraph">您可以在 Cloud Volumes ONTAP 系统（在 AWS ， Azure 和 GCP 中）和内部 ONTAP 集群上启用云数据感知。</block>
   <block id="817ea177fc4419cc549ce831aeafb435" category="paragraph"><block ref="817ea177fc4419cc549ce831aeafb435" category="inline-image-macro-rx" type="image"></block></block>
   <block id="472e7a83931581b62865caa4abc4d063" category="list-text">确保云数据感知实例与包含 Cloud Volumes ONTAP 或内部 ONTAP 集群卷的每个网络之间存在网络连接。</block>
   <block id="3bc6d8be912323e41974b6ab56b6e194" category="list-text">确保 Cloud Volumes ONTAP 的安全组允许来自数据感知实例的入站流量。</block>
@@ -1806,14 +1798,12 @@
   <block id="b2c97ae425dd751b0e48a3acae79cf4a" category="inline-link-macro">筛选器</block>
   <block id="24f4168fd88693a87618a03db8811608" category="list-text">您可以使用 " 文件所有者 " <block ref="58ee51d48568237ca49c41cc2a7a829a" category="inline-link-macro-rx"></block> 并在 " 调查 " 窗格中查看文件元数据的结果。此文件所有者不包含 SID （安全标识符），而是使用实际用户名进行填充。</block>
   <block id="5f91c0845412e72586ca4ccff087de46" category="inline-link-macro">完整文件权限</block>
-  <block id="76a2568d44aedbfacc35617822e95485" category="list-text">您可以看到 <block ref="2eb65e0132f8d42218742a4af3905e1d" category="inline-link-macro-rx"></block> 单击 " 查看所有权限 " 按钮时对每个文件执行的操作。</block>
   <block id="81e5b92aee0f8f905eee80ff5eb977c0" category="inline-link-macro">监管信息板</block>
   <block id="42489059db009c868dd8059af06dcec7" category="list-text">在中 <block ref="f7adeeb4ba56b793f51d27ca048d717a" category="inline-link-macro-rx"></block>下，打开权限面板将显示有关数据的更详细信息。</block>
   <block id="84f064335aeff156ccda8eb3c64109d6" category="admonition">本地用户 SID 和未知域中的 SID 不会转换为实际用户名。</block>
   <block id="4a919c0fe6ccdcc43ad4d3dc9a232b18" category="paragraph">Active Directory 与 Cloud Data sense 的集成可以识别以下数据源中的数据：</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="list-text">Cloud Volumes ONTAP</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="list-text">适用于 ONTAP 的 FSX</block>
-  <block id="e43e62e4bd2ef2b0d4d1e421a22a0be2" category="list-text">非 NetApp CIFS 文件共享（不适用于 NFS 文件共享）</block>
   <block id="cd77c160f6007bd570b07762f3b9388f" category="section-title">正在连接到 Active Directory 服务器</block>
   <block id="fb4850605d162a3c4b4728471f852d3a" category="paragraph">Active Directory 凭据可以是只读凭据，但提供管理员凭据可确保 Data sense 可以读取任何需要提升权限的数据。这些凭据存储在 Cloud Data sense 实例上。</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">您必须已为公司中的用户设置 Active Directory 。</block>
@@ -2091,8 +2081,6 @@
   <block id="7c04897feb206ad3e6d38ea88ccde2d4" category="paragraph"><block ref="7c04897feb206ad3e6d38ea88ccde2d4" category="inline-link-rx"></block></block>
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看 Data sense 可以在您的数据中识别的所有类型的个人数据</block>
-  <block id="2cce25ab977b0dbc152674f93a9dcd6e" category="paragraph">Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大利亚驾驶执照编号，澳大利亚医疗保健服务编号和澳大利亚护照编号的文件并对其进行分类。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
-  <block id="b31480db3c4a98f4500e2a55a1aebc8b" category="paragraph">与 Data sense 集成的全局 Active Directory 服务器现在可以是 LDAP 服务器，而不是以前支持的 DNS 服务器。<block ref="f17adadb9807d1263647d20e03bc2613" category="inline-link-rx"></block>。</block>
   <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> 现在支持 Cloud Data sense 。现在，除了使用 NetApp 的 BYOL 许可证之外，您还可以使用此按需购买（ PAYGO ）订阅从部署在 Google Cloud 存储上的 Cloud Volumes ONTAP 系统扫描数据。</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">澳大利亚 TFN （税务文件编号）</block>
   <block id="e1ae59ed032376d2ab05147c6442f610" category="cell">澳大利亚驱动程序许可证编号</block>
@@ -2458,7 +2446,6 @@
   <block id="6775b9f23287b6402bc8411ab5b11d92" category="paragraph">您需要使用的步骤取决于您是在云中还是在内部主机上部署了Data sense。</block>
   <block id="3325b8b31e1f0276d3f3c68710c053ca" category="section-title">从云部署中卸载Data sense</block>
   <block id="117243dba6c9c06c6c248291c96b2528" category="paragraph">如果您不想再使用Data sense、可以从云提供商卸载并删除Cloud Data sense实例。</block>
-  <block id="b8e5adfb411b3f965688d14300f72fe8" category="list-text">在Data sense页面顶部、单击 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 按钮、然后单击*卸载数据感知*。</block>
   <block id="d05a8f1c218a9404fb6bc0b36df7780d" category="inline-image-macro">用于卸载Data sense软件的按钮的屏幕截图。</block>
   <block id="a6baf0432e96f26b75d936e4d60a595e" category="paragraph"><block ref="a6baf0432e96f26b75d936e4d60a595e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b6d077046b2cf0c110fa9676e30656f1" category="list-text">在_卸 载数据感知对话框中、键入*卸载*确认要删除实例以及所有关联数据、然后单击*卸载*。</block>
@@ -2467,9 +2454,7 @@
   <block id="14d42ec9da514e9d5a8e667c07121542" category="paragraph">如果您不再需要使用Data sense、或者您的问题描述 需要重新安装、则可以从主机卸载Data sense。</block>
   <block id="9fa93379f19a53edba45b6ad3485c2ec" category="list-text">在_卸 载数据感知对话框中、键入*卸载*确认要清除所有配置信息、然后单击*卸载*。</block>
   <block id="f5778aefaac6fff25d1b42554bc3eb10" category="list-text">要从主机完成卸载、请在主机上运行卸载脚本、例如：</block>
-  <block id="7698c6686eb8c7fbf683f3a1e915967f" category="paragraph">要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于CIFS共享、SharePoint和OneDrive中的数据。</block>
   <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">您可以单击 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 查看属于该组的用户列表。</block>
-  <block id="0e7d2f821010d49ba7fdedf5b66839be" category="paragraph">此外、您还可以单击用户或组的名称、此时将显示调查页面、并在"用户/组权限"筛选器中填充该用户或组的名称、以便您可以查看该用户或组有权访问的所有文件。</block>
   <block id="0dde885c45d0ef5ba59d628be1651196" category="inline-link-macro">有关数据调查报告的详细信息、请访问此处</block>
   <block id="d0db8780768b860617a4252d66600fdb" category="paragraph">如果要在优化页面内容后将其作为报告下载、请单击 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按钮。您可以将报告本地保存为.CSV文件(最多可包含5、000行数据)或导出到NFS共享的.json文件(最多可包含不限数量的行)。 <block ref="94b4ac215f06d804e337d419fce0c8e4" category="inline-link-macro-rx"></block>。</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">标识符数量</block>
@@ -2558,4 +2543,70 @@
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">无法扫描OneDrive帐户、SharePoint帐户和Google Drive帐户。</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">无法集成Microsoft Azure信息保护(AIP)标签功能。</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">在政府区域部署时是否存在任何限制？</block>
+  <block id="3f1d923e5a351dcc541f10e98f5da114" category="summary">您可以管理每个工作环境和数据源中正在扫描的数据。您可以在"存储库"基础上进行更改；这意味着您可以对每个卷、存储分段、共享、架构、用户、 等。具体取决于要扫描的数据源类型。</block>
+  <block id="cb73c564126960ae6ca282e79abf7c40" category="doc">更改存储库的扫描设置</block>
+  <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">映射扫描或映射与映射；分类扫描</block>
+  <block id="4645b000842c59ed1aaeb9e534c34e85" category="paragraph">您可以更改的部分内容包括存储库是否已扫描以及Data sense是否正在执行 <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。您也可以暂停和恢复扫描、例如、如果需要在一段时间内停止扫描卷。</block>
+  <block id="1c4489a47397251870bd0d51f8701063" category="section-title">查看正在扫描的存储库</block>
+  <block id="bdedbcd07e14573fe6ff9e61fa471628" category="paragraph">您可以查看Data sense正在扫描的每个工作环境和数据源的各个存储库。</block>
+  <block id="86cfaa233cd6203ca98aec701f702508" category="list-text">在配置选项卡中、单击工作环境对应的*配置*按钮。</block>
+  <block id="c220e333c84311a5247ea56021c7f9af" category="inline-image-macro">显示如何在工作环境中单击配置按钮的屏幕截图。</block>
+  <block id="42b33a03e844c37998934099293f35e3" category="paragraph"><block ref="42b33a03e844c37998934099293f35e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d572e0d4b826c4aedc53e9ebf7b16a8f" category="list-text">在扫描配置页面中、您可以查看所有存储库的扫描设置。</block>
+  <block id="2767187e50c5d0cd06a373007090d513" category="paragraph"><block ref="2767187e50c5d0cd06a373007090d513" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dbb0dfda8b378050531f81450c4bc33e" category="section-title">更改存储库的扫描类型</block>
+  <block id="80442a9b9f6c43539008be8521ce5283" category="paragraph">您可以随时从 " 配置 " 页面在工作环境中启动或停止仅映射扫描或映射和分类扫描。您也可以从仅映射扫描更改为映射和分类扫描，反之亦然。</block>
+  <block id="d2ec03a8c1a8422301c71b6c3e6e8b4c" category="admonition">不能将数据库设置为仅映射扫描。数据库扫描可以关闭或打开；相当于映射和分类。</block>
+  <block id="e2fd7fccc8e37c687bd3d80bafb4e9fd" category="list-text">在扫描配置页面中、您可以更改任何存储库(本示例中的存储分段)以执行*映射*或*映射和分类*扫描、或者选择*关闭*以停止扫描特定存储分段。</block>
+  <block id="d2c070afb22765e227addc428b9bb43d" category="inline-image-macro">显示如何为存储分段选择扫描类型的屏幕截图。</block>
+  <block id="8d501a2dffff147be5f9997f70b34348" category="paragraph"><block ref="8d501a2dffff147be5f9997f70b34348" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a4bff1a8423db1d5e3d7178be9560749" category="paragraph">通过某些类型的工作环境、您可以使用页面顶部的按钮栏更改所有存储库的全局扫描类型。这适用于Cloud Volumes ONTAP 、内部ONTAP 、Azure NetApp Files 和适用于ONTAP 系统的Amazon FSX。</block>
+  <block id="648f292c272072450d20c88db515b454" category="paragraph">以下示例显示了Azure NetApp Files 系统的此按钮栏。</block>
+  <block id="b0d05a288f1ee1691adac4ca34c54fca" category="inline-image-macro">显示如何为工作环境中的所有卷配置相同扫描设置的屏幕截图。</block>
+  <block id="12a2ab51f6d8555b1efcc9582dee655b" category="paragraph"><block ref="12a2ab51f6d8555b1efcc9582dee655b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c47f43803aeca87b8119b45040e033c" category="section-title">暂停和恢复对存储库的扫描</block>
+  <block id="73344c9ec25564b49b1fcd623ff60d92" category="paragraph">如果要暂时停止扫描某些内容、可以"暂停"存储库上的扫描。这与"关闭"扫描不同。关闭扫描后、系统中将删除有关该卷的所有索引编制和信息。暂停扫描意味着、Data sense不会在将来扫描存储库的任何更改或添加内容、但所有当前结果仍会显示在系统中。</block>
+  <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">您可以随时"恢复"扫描。</block>
+  <block id="8b072c4e238b04c04c81cef3ed309703" category="list-text">在扫描配置页面中、单击暂停按钮以暂停卷的扫描、或者按恢复按钮以恢复对先前已暂停的卷的扫描。</block>
+  <block id="bc9b17eea5246a704bb26be367a3b35f" category="inline-image-macro">显示如何暂停和恢复卷扫描的屏幕截图。</block>
+  <block id="9b0105a4da00bc6036dcb389d0f65890" category="paragraph"><block ref="9b0105a4da00bc6036dcb389d0f65890" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bbd24be95708f4b5983476f6dfe9842a" category="paragraph">您可以在任何受支持的云提供商的Cloud Volumes ONTAP 系统和内部ONTAP 集群上启用云数据感知。</block>
+  <block id="d1344a7442837afc7dec09106074db55" category="list-text">从Cloud Manager左侧导航菜单中、单击*数据感知*、然后选择*配置*选项卡。</block>
+  <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日(1.14版)</block>
+  <block id="45b5235b8c737e18e646514c30664517" category="section-title">现在、您可以查看有权访问目录的用户和组</block>
+  <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">了解如何查看有权访问文件夹和文件共享的用户和组</block>
+  <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">过去、您可以查看为单个文件授予的打开权限类型。现在、您可以查看有权访问目录(文件夹和文件共享)的所有用户或组的列表及其权限类型。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
+  <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">您可以"暂停"扫描存储库、以暂时停止扫描某些内容</block>
+  <block id="1c32547b30cc36869742df049964326d" category="inline-link">请参见如何暂停和恢复扫描</block>
+  <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">暂停扫描意味着Data sense不会对卷或存储分段的任何添加或更改执行未来扫描、但系统中仍会显示所有当前结果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
+  <block id="74055d71ba1631fb4f3285d57f607264" category="section-title">Data sense可识别来自另外三种状态的美国驾驶证数据</block>
+  <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">Data sense可以识别和分类包含来自印第安纳、纽约和德克萨斯州的驾驶执照数据的文件。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">现在、策略将返回与搜索条件匹配的目录</block>
+  <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">了解有关创建策略的更多信息</block>
+  <block id="108104172f74542ec4477bdc3526c5a6" category="paragraph">过去、在创建自定义策略时、结果会显示与搜索条件匹配的文件。现在、结果还会显示与查询匹配的目录(文件夹和文件共享)。<block ref="15372ef6946b4e16102f5b52608f8748" category="inline-link-rx"></block>。</block>
+  <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">目前、数据感知一次最多可移动100、000个文件</block>
+  <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">请参见如何使用Data sense移动文件</block>
+  <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">如果您计划使用Data sense将文件从扫描的数据源移动到NFS共享、则最大文件数已增加到100、000个。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
+  <block id="b71c8f6fc8800b6bd7a829954617c2fb" category="paragraph">Data sense 可以识别包含澳大利亚 TFN （税务文件编号），澳大利亚驾驶执照编号，澳大利亚医疗保健服务编号和澳大利亚护照编号的文件并对其进行分类。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="c761b545ddd43d078ae7ea86495182db" category="paragraph">与 Data sense 集成的全局 Active Directory 服务器现在可以是 LDAP 服务器，而不是以前支持的 DNS 服务器。 <block ref="de464dfb9c55e9818cd55e6911bff3a5" category="inline-link-macro-rx"></block>。</block>
+  <block id="7d3fd85c1133d516ea08b3afb6e176b0" category="list-text">您可以看到 <block ref="48c020a7f60397cfd78a107333e0da79" category="inline-link-macro-rx"></block> 单击"查看所有权限"按钮时对每个文件和目录执行此操作。</block>
+  <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">非NetApp CIFS文件共享(非NFS文件共享)</block>
+  <block id="4f872362ba4f34050c74d7c25062ac0d" category="paragraph">如果要确保数据感知分类扫描不会更改文件的"上次访问时间"、我们建议用户具有"写入属性"权限。如果可能、我们建议将Active Directory配置的用户设置为组织中有权访问所有文件的父组的一部分。</block>
+  <block id="5f5211c62ad18524e9e94e7a1524c835" category="list-text">在Data sense页面顶部、单击 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 然后单击*卸载数据感知*。</block>
+  <block id="58c8e0b1374b7f5b507570dc0385f473" category="cell">印第安纳驾驶执照</block>
+  <block id="0e03a64a4a78cbeacfa2d9a80a300d92" category="cell">纽约驾驶执照</block>
+  <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">德克萨斯驱动程序许可证</block>
+  <block id="10d5fcf016b4a73801915a21a00696c8" category="list-text">从Cloud Manager左侧导航菜单中、单击*数据感知*。</block>
+  <block id="89b56b1e048dcf0ec285e29a05d6d029" category="paragraph">如果目标位置存在同名文件、则不会移动该文件。</block>
+  <block id="f466f17a82f9ca3b39b50be85ceb8395" category="list-text">移动文件要求NFS共享允许从数据感知实例IP地址进行访问。</block>
+  <block id="32e8c942a25aad00e497d3bf394f59d4" category="list-text">一次最多可以移动100、000个文件。</block>
+  <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">您可以创建自己的自定义策略，为特定于您的组织的搜索提供结果。系统将返回与搜索条件匹配的所有文件和目录(共享和文件夹)的结果。</block>
+  <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">请注意、根据策略结果删除数据和分配AIP标签的操作仅对文件有效。不能自动删除符合搜索条件的目录或为其分配AIP标签。</block>
+  <block id="ebfefcd98f010a948a1d7251ef132972" category="list-text">从Cloud Manager左侧导航菜单中、单击*数字电子邮件*、然后选择*数据服务许可证*选项卡。</block>
+  <block id="2b54a7ae07982e70cef31bd5b16e720e" category="list-text">从Cloud Manager左侧导航菜单中、单击*画布*。</block>
+  <block id="51b8dedb8a5e2f213889cf52ba25b5a0" category="list-text">从Cloud Manager左侧导航菜单中、单击*数据感知*、然后单击*合规性*选项卡。</block>
+  <block id="90915c385560094095567649cbd732aa" category="section-title">查看文件和目录的权限</block>
+  <block id="ef86e9a879fad347d62a184c49f26eb6" category="paragraph">要查看有权访问文件或目录的所有用户或组的列表及其权限类型、请单击*查看所有权限*。此按钮仅适用于CIFS共享、SharePoint和OneDrive中的数据。</block>
+  <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">此外、 您可以单击某个用户或组的名称、此时将显示调查页面、并在"用户/组权限"筛选器中填充该用户或组的名称、以便您可以查看该用户或组有权访问的所有文件和目录。</block>
+  <block id="5fbc192bfa4a81daea4e7a6b15e2ade8" category="sidebar">更改扫描设置</block>
 </blocks>

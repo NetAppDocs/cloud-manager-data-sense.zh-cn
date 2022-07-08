@@ -91,7 +91,7 @@ link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"^] 如果尚未�
 
 您可以为 ONTAP 卷的 FSX 启用云数据感知。
 
-. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后选择 * 配置 * 选项卡。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*、然后选择*配置*选项卡。
 +
 image:screenshot_fsx_scanning_activate.png["部署 Cloud Data sense 实例后立即显示配置选项卡的屏幕截图。"]
 

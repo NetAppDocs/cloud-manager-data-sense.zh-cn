@@ -24,7 +24,7 @@ summary: 您可以卸载Data sense软件以解决问题或从主机中永久删�
 
 如果您不想再使用Data sense、可以从云提供商卸载并删除Cloud Data sense实例。
 
-. 在Data sense页面顶部、单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮、然后单击*卸载数据感知*。
+. 在Data sense页面顶部、单击 image:screenshot_gallery_options.gif["更多按钮"] 然后单击*卸载数据感知*。
 +
 image:screenshot_compliance_uninstall.png["用于卸载Data sense软件的按钮的屏幕截图。"]
 
@@ -39,7 +39,7 @@ image:screenshot_compliance_uninstall.png["用于卸载Data sense软件的按钮
 
 如果您不再需要使用Data sense、或者您的问题描述 需要重新安装、则可以从主机卸载Data sense。
 
-. 在Data sense页面顶部、单击 image:screenshot_gallery_options.gif["更多按钮"] 按钮、然后单击*卸载数据感知*。
+. 在Data sense页面顶部、单击 image:screenshot_gallery_options.gif["更多按钮"] 然后单击*卸载数据感知*。
 +
 image:screenshot_compliance_uninstall.png["用于卸载Data sense软件的按钮的屏幕截图。"]
 

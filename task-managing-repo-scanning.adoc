@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-managing-repo-scanning.html 
+keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
+summary: '您可以管理每个工作环境和数据源中正在扫描的数据。您可以在"存储库"基础上进行更改；这意味着您可以对每个卷、存储分段、共享、架构、用户、 等。具体取决于要扫描的数据源类型。' 
+---
+= 更改存储库的扫描设置
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以管理每个工作环境和数据源中正在扫描的数据。您可以在"存储库"基础上进行更改；这意味着您可以对每个卷、存储分段、共享、架构、用户、 等。具体取决于要扫描的数据源类型。
+
+您可以更改的部分内容包括存储库是否已扫描以及Data sense是否正在执行 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["映射扫描或映射与映射；分类扫描"]。您也可以暂停和恢复扫描、例如、如果需要在一段时间内停止扫描卷。
+
+
+
+== 查看正在扫描的存储库
+
+您可以查看Data sense正在扫描的每个工作环境和数据源的各个存储库。
+
+.步骤
+. 在配置选项卡中、单击工作环境对应的*配置*按钮。
++
+image:screenshot_compliance_config_button.png["显示如何在工作环境中单击配置按钮的屏幕截图。"]
+
+. 在扫描配置页面中、您可以查看所有存储库的扫描设置。
++
+image:screenshot_compliance_repo_scan_settings.png[""]
+
+
+
+
+
+== 更改存储库的扫描类型
+
+您可以随时从 " 配置 " 页面在工作环境中启动或停止仅映射扫描或映射和分类扫描。您也可以从仅映射扫描更改为映射和分类扫描，反之亦然。
+
+
+TIP: 不能将数据库设置为仅映射扫描。数据库扫描可以关闭或打开；相当于映射和分类。
+
+.步骤
+. 在配置选项卡中、单击工作环境对应的*配置*按钮。
++
+image:screenshot_compliance_config_button.png["显示如何在工作环境中单击配置按钮的屏幕截图。"]
+
+. 在扫描配置页面中、您可以更改任何存储库(本示例中的存储分段)以执行*映射*或*映射和分类*扫描、或者选择*关闭*以停止扫描特定存储分段。
++
+image:screenshot_compliance_repo_scanning.png["显示如何为存储分段选择扫描类型的屏幕截图。"]
+
+
+
+通过某些类型的工作环境、您可以使用页面顶部的按钮栏更改所有存储库的全局扫描类型。这适用于Cloud Volumes ONTAP 、内部ONTAP 、Azure NetApp Files 和适用于ONTAP 系统的Amazon FSX。
+
+以下示例显示了Azure NetApp Files 系统的此按钮栏。
+
+image:screenshot_compliance_repo_scan_all.png["显示如何为工作环境中的所有卷配置相同扫描设置的屏幕截图。"]
+
+
+
+== 暂停和恢复对存储库的扫描
+
+如果要暂时停止扫描某些内容、可以"暂停"存储库上的扫描。这与"关闭"扫描不同。关闭扫描后、系统中将删除有关该卷的所有索引编制和信息。暂停扫描意味着、Data sense不会在将来扫描存储库的任何更改或添加内容、但所有当前结果仍会显示在系统中。
+
+您可以随时"恢复"扫描。
+
+.步骤
+. 在配置选项卡中、单击工作环境对应的*配置*按钮。
++
+image:screenshot_compliance_config_button.png["显示如何在工作环境中单击配置按钮的屏幕截图。"]
+
+. 在扫描配置页面中、单击暂停按钮以暂停卷的扫描、或者按恢复按钮以恢复对先前已暂停的卷的扫描。
++
+image:screenshot_compliance_repo_pause_resume.png["显示如何暂停和恢复卷扫描的屏幕截图。"]
+
+

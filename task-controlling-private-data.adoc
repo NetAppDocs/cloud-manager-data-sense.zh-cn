@@ -38,7 +38,7 @@ Cloud Data sense 可自动识别数据中的特定字词，字符串和模式（
 对于某些类型的个人数据， Data sense 使用 _proximity validation_来 验证其结果。通过查找与所发现的个人数据相邻的一个或多个预定义关键字来进行验证。例如， Data sense 可识别美国如果在 SSN 旁边看到一个接近词，则将社会安全号（ SSN ）作为 SSN ，例如 _SSN_ 或 _社交 安全 _ 。 link:reference-private-data-categories.html#types-of-personal-data["个人数据表"^] 显示 Data sense 何时使用接近验证。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*、然后单击*合规性*选项卡。
 . 要调查所有个人数据的详细信息，请单击个人数据百分比旁边的图标。
 +
 image:screenshot_compliance_personal.gif["选择个人数据百分比的屏幕截图。"]
@@ -67,7 +67,7 @@ Cloud Data sense 利用人工智能（ AI ），自然语言处理（ NLP ），
 NOTE: 扫描敏感个人数据时，仅支持英语。稍后将添加对更多语言的支持。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*、然后单击*合规性*选项卡。
 . 要调查所有敏感个人数据的详细信息，请单击敏感个人数据百分比旁边的图标。
 +
 image:screenshot_compliance_sensitive_personal.gif["选择敏感个人数据百分比的屏幕截图。"]
@@ -91,7 +91,7 @@ Cloud Data sense 会将扫描的数据划分为不同类型的类别。类别是
 NOTE: 类别支持英语，德语和西班牙语。稍后将添加对更多语言的支持。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*、然后单击*合规性*选项卡。
 . 直接从主屏幕中单击前 4 个类别之一的 * 调查结果 * 图标，或者单击 * 查看全部 * ，然后单击任意类别的图标。
 +
 image:screenshot_categories.gif["类别对话框的屏幕截图，您可以在其中单击某个类别旁边的调查结果图标。"]
@@ -108,7 +108,7 @@ Cloud Data sense 会提取所扫描的数据，并按文件类型对其进行细
 例如，您可能存储的 CAD 文件包含有关您的组织的非常敏感的信息。如果这些文件不安全，您可以通过限制权限或将文件移动到其他位置来控制敏感数据。
 
 .步骤
-. 在 Cloud Manager 顶部，单击 * 数据感知 * ，然后单击 * 合规性 * 选项卡。
+. 从Cloud Manager左侧导航菜单中、单击*数据感知*、然后单击*合规性*选项卡。
 . 直接从主屏幕中单击前 4 种文件类型之一的 * 调查结果 * 图标，或者单击 * 查看全部 * ，然后单击任意文件类型的图标。
 +
 image:screenshot_file_types.gif["文件类型对话框的屏幕截图，您可以在其中单击文件类型旁边的调查结果图标。"]
@@ -139,9 +139,9 @@ image:screenshot_compliance_file_details.png["显示数据调查页面中文件�
 
 
 
-== 查看文件的权限
+== 查看文件和目录的权限
 
-要查看有权访问文件的所有用户或组的列表及其权限类型，请单击 * 查看所有权限 * 。此按钮仅适用于CIFS共享、SharePoint和OneDrive中的数据。
+要查看有权访问文件或目录的所有用户或组的列表及其权限类型、请单击*查看所有权限*。此按钮仅适用于CIFS共享、SharePoint和OneDrive中的数据。
 
 请注意，如果您看到的是 SID （安全标识符），而不是用户和组名称，则应将 Active Directory 集成到 Data sense 中。 link:task-add-active-directory-datasense.html["了解如何执行此操作"]。
 
@@ -149,7 +149,7 @@ image:screenshot_compliance_permissions.png["显示详细文件权限的屏幕�
 
 您可以单击 image:button_down_caret.png["注意"] 查看属于该组的用户列表。
 
-此外、您还可以单击用户或组的名称、此时将显示调查页面、并在"用户/组权限"筛选器中填充该用户或组的名称、以便您可以查看该用户或组有权访问的所有文件。
+此外、 您可以单击某个用户或组的名称、此时将显示调查页面、并在"用户/组权限"筛选器中填充该用户或组的名称、以便您可以查看该用户或组有权访问的所有文件和目录。
 
 
 
