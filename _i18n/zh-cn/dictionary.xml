@@ -2609,4 +2609,6 @@
   <block id="ef86e9a879fad347d62a184c49f26eb6" category="paragraph">要查看有权访问文件或目录的所有用户或组的列表及其权限类型、请单击*查看所有权限*。此按钮仅适用于CIFS共享、SharePoint和OneDrive中的数据。</block>
   <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">此外、 您可以单击某个用户或组的名称、此时将显示调查页面、并在"用户/组权限"筛选器中填充该用户或组的名称、以便您可以查看该用户或组有权访问的所有文件和目录。</block>
   <block id="5fbc192bfa4a81daea4e7a6b15e2ade8" category="sidebar">更改扫描设置</block>
+  <block id="3e75ffa254c777c4ea8d93dfbb0b6eba" category="paragraph">+如果要确保数据感知分类扫描不会更改文件的"上次访问时间"、我们建议用户具有"写入属性"权限。如果可能、我们建议将Active Directory配置的用户设置为组织中有权访问所有文件的父组的一部分。</block>
+  <block id="8a45623b5a3c251ed21845e747d3e9fa" category="paragraph">对于CIFS卷/文件共享、如果要确保数据感知分类扫描未更改文件的"上次访问时间"、建议用户具有写入属性权限。如果可能、我们建议将Active Directory配置的用户设置为组织中有权访问所有文件的父组的一部分。</block>
 </blocks>

@@ -51,7 +51,7 @@ Active Directory 与 Cloud Data sense 的集成可以识别以下数据源中的
 
 Active Directory 凭据可以是只读凭据，但提供管理员凭据可确保 Data sense 可以读取任何需要提升权限的数据。这些凭据存储在 Cloud Data sense 实例上。
 
-如果要确保数据感知分类扫描不会更改文件的"上次访问时间"、我们建议用户具有"写入属性"权限。如果可能、我们建议将Active Directory配置的用户设置为组织中有权访问所有文件的父组的一部分。
+对于CIFS卷/文件共享、如果要确保数据感知分类扫描未更改文件的"上次访问时间"、建议用户具有写入属性权限。如果可能、我们建议将Active Directory配置的用户设置为组织中有权访问所有文件的父组的一部分。
 
 .要求
 * 您必须已为公司中的用户设置 Active Directory 。

@@ -50,6 +50,9 @@ link:task-deploy-cloud-compliance.html["部署 Cloud Data sense"^] 如果尚未�
 
 * 您需要采用格式 ` <host_name> ： /<share_path>` 添加的共享列表。您可以单独输入共享，也可以提供要扫描的文件共享的行分隔列表。
 * 对于 CIFS （ SMB ）共享，请确保您具有 Active Directory 凭据来提供对共享的读取访问权限。如果 Cloud Data sense 需要扫描任何需要提升权限的数据，则最好使用管理员凭据。
++
+如果要确保数据感知分类扫描不会更改文件的"上次访问时间"、我们建议用户具有"写入属性"权限。如果可能、我们建议将Active Directory配置的用户设置为组织中有权访问所有文件的父组的一部分。
+
 
 
 
