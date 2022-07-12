@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/zh-cn/cloud-manager-data-sense/search.html"
           data-type="widget" 
-          data-placeholder="搜索文档" 
-          data-no-results-found="未找到与 {query} 匹配的结果。" 
-          data-did-you-mean="搜索 {suggestion}。" 
-          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
-          data-results-found="找到 {hitCount} 个结果"  
+          data-placeholder="搜索文档"
+          data-no-results-found="未找到与 {query} 匹配的结果。"
+          data-did-you-mean="搜索 {suggestion}。"
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?"
+          data-results-found="找到 {hitCount} 个结果"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -761,7 +763,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-07-08 17:12:06 +0000">07/08/2022</time>
+    <time datetime="2022-07-12 19:38:57 +0000">07/12/2022</time>
     
   
 
@@ -989,6 +991,9 @@
 <p>对于每个工作环境，单击 * 编辑 CIFS 凭据 * ，然后输入 Data sense 访问系统上 CIFS 卷所需的用户名和密码。</p>
 <div class="paragraph">
 <p>这些凭据可以是只读的，但提供管理员凭据可确保 Data sense 可以读取任何需要提升权限的数据。这些凭据存储在 Cloud Data sense 实例上。</p>
+</div>
+<div class="paragraph">
+<p>如果要确保数据感知分类扫描不会更改文件的"上次访问时间"、我们建议用户具有"写入属性"权限。如果可能、我们建议将Active Directory配置的用户设置为组织中有权访问所有文件的父组的一部分。</p>
 </div>
 </li>
 </ol>
