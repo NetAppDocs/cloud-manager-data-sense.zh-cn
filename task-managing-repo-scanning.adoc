@@ -78,4 +78,10 @@ image:screenshot_compliance_config_button.png["显示如何在工作环境中单
 +
 image:screenshot_compliance_repo_pause_resume.png["显示如何暂停和恢复卷扫描的屏幕截图。"]
 
++
+请注意、某些数据源会在菜单中提供暂停和恢复功能、如下所示用于SharePoint站点。
+
++
+image:screenshot_compliance_repo_pause_resume2.png["显示如何在SharePoint站点上暂停和恢复扫描的屏幕截图。"]
+
 
